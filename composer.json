@@ -47,7 +47,10 @@
     ]
   },
   "config": {
-    "bin-dir": "bin/"
+    "bin-dir": "bin/",
+    "preferred-install": {
+      "drupal/*": "dist"
+    }
   },
   "extra": {
     "installer-paths": {
