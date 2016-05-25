@@ -38,6 +38,14 @@
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
     }
   ],
+  "scripts": {
+    "post-install-cmd": [
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    ],
+    "post-update-cmd": [
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+    ]
+  },
   "config": {
     "bin-dir": "bin/"
   },
