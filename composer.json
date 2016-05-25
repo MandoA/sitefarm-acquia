@@ -41,11 +41,6 @@
   "config": {
     "bin-dir": "bin/"
   },
-  "autoload": {
-    "classmap": [
-      "scripts/ScriptHandler.php"
-    ]
-  },
   "extra": {
     "installer-paths": {
       "docroot/core": [
