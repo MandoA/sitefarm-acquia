@@ -8,7 +8,7 @@
 /docroot/themes/contrib
 
 # Ignore Drupal's file directory
-web/sites/*/files
+docroot/sites/*/files
 
 # Ignore Composer-managed dependencies.
 vendor/
