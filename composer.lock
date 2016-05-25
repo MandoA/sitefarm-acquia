@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "769696c20292b28fa0b66d0b0f94e48f",
-    "content-hash": "74ff899407e21e83344c9f28b5cce78c",
+    "hash": "b5036f452d727311f3d0dc09723d12bf",
+    "content-hash": "34ebb9ac3e4877465022d6ad14fce7da",
     "packages": [
         {
             "name": "codegyre/robo",
