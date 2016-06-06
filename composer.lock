@@ -797,7 +797,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.1.zip",
-                "reference": null,
+                "reference": "ac1526df5836a611f04bb421945beddb6306b7f2",
                 "shasum": null
             },
             "require": {
@@ -1003,7 +1003,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha26.zip",
-                "reference": null,
+                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8",
                 "shasum": null
             },
             "require": {
@@ -1043,7 +1043,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta3.zip",
-                "reference": null,
+                "reference": "14d66f68c13a0b93134ba15ac2ef641e6799eb1c",
                 "shasum": null
             },
             "require": {
@@ -1082,7 +1082,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.0.zip",
-                "reference": null,
+                "reference": "99802b6a9f7711d30838acaa1af9ce2cf5b4d614",
                 "shasum": null
             },
             "require": {
@@ -1123,7 +1123,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.23.zip",
-                "reference": null,
+                "reference": "a5b77a400c6af3edc35a5c8307cb2b6ea7632341",
                 "shasum": null
             },
             "require": {
@@ -1168,7 +1168,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-alpha6.zip",
-                "reference": null,
+                "reference": "27af4de9fd961fa6ae1369604d05fec8b06db867",
                 "shasum": null
             },
             "require": {
@@ -1199,7 +1199,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/layout_plugin-8.x-1.0-alpha22.zip",
-                "reference": null,
+                "reference": "90be55a68dd33d3564c26fab77573b62f6cda77e",
                 "shasum": null
             },
             "require": {
@@ -1301,7 +1301,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/masquerade-8.x-1.0-beta1.zip",
-                "reference": null,
+                "reference": "4a208ad231cb8efb71eaa9ab7bafb66fac39e7cb",
                 "shasum": null
             },
             "require": {
@@ -1333,7 +1333,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta8.zip",
-                "reference": null,
+                "reference": "6a1b892f9b1f1a3b027dbddca81676e0d69a6ef3",
                 "shasum": null
             },
             "require": {
@@ -1386,7 +1386,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha23.zip",
-                "reference": null,
+                "reference": "fed1710d1b366bb3417b197270c6d73caeae4fa1",
                 "shasum": null
             },
             "require": {
@@ -1432,7 +1432,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-alpha2.zip",
-                "reference": null,
+                "reference": "75a432927539383b391e6905fb5614cbe85a4b84",
                 "shasum": null
             },
             "require": {
@@ -1466,7 +1466,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta4.zip",
-                "reference": null,
+                "reference": "a463015692bd82a9446982f9ab044894dfdecdea",
                 "shasum": null
             },
             "require": {
@@ -1506,7 +1506,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-alpha3.zip",
-                "reference": null,
+                "reference": "c4952e15e2906ff2040bc01f5e8f37d23950269e",
                 "shasum": null
             },
             "require": {
@@ -1540,7 +1540,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/radix_layouts-8.x-3.0-rc1.zip",
-                "reference": null,
+                "reference": "cd2f246d43bd6e2e4333d3d9d7e5e2510a9fbf05",
                 "shasum": null
             },
             "require": {
@@ -1572,7 +1572,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.0-alpha1.zip",
-                "reference": null,
+                "reference": "f88e28a5033d2a9952929faff6fa59764583b80c",
                 "shasum": null
             },
             "require": {
@@ -1605,7 +1605,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/roleassign-8.x-1.0-alpha2.zip",
-                "reference": null,
+                "reference": "36f3de9aef53b87bf7a3b21fd75e927649de2fa8",
                 "shasum": null
             },
             "require": {
@@ -1636,7 +1636,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/scheduled_updates-8.x-1.0-alpha5.zip",
-                "reference": null,
+                "reference": "cdeceb8fd89a3644fb34a8a5bcc194ca7cbd84fe",
                 "shasum": null
             },
             "require": {
@@ -1672,7 +1672,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-alpha2.zip",
-                "reference": null,
+                "reference": "918d0d5e8e8ee7f446d3e068cb6aa2d7c61ee625",
                 "shasum": null
             },
             "require": {
@@ -1703,7 +1703,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/workbench_moderation-8.x-1.0.zip",
-                "reference": null,
+                "reference": "0c5527f911bcea52c71b8387b9fcbe9e71bc4332",
                 "shasum": null
             },
             "require": {
@@ -3993,7 +3993,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "011afbfe3d334b166c0aaf9f974b99054a40b9d6"
+                "reference": "67f63cfd80622838d336b02dcaae7a66ddc2718a"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -4059,7 +4059,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2016-06-01 02:44:41"
+            "time": "2016-06-06 22:32:55"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -4067,7 +4067,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "094432e6f5641c3863b9973f6cbe813733b60f11"
+                "reference": "fbf401f08a083a64f71edf5461d796cd6f7e6b17"
             },
             "type": "drupal-theme",
             "authors": [
@@ -4077,7 +4077,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2016-06-01 01:54:16"
+            "time": "2016-06-06 21:27:25"
         },
         {
             "name": "zendframework/zend-diactoros",
