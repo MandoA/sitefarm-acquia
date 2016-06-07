@@ -13,7 +13,7 @@ steps:
     database: sitefarm_acquia_probo.sql.gz
     databaseGzipped: true
     databaseUpdates: true
-  - name: Drush ULI
+  - name: Drush Reset Password
     command: 'cd /var/www/html ; drush upwd admin --password="probo"'
   - name: Run Behat NoJS
     plugin: Script
