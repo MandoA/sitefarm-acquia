@@ -14,7 +14,7 @@ steps:
     databaseGzipped: true
     databaseUpdates: true
   - name: Drush ULI
-    command: 'cd /var/www/html ; drush uli'
+    command: 'cd /var/www/html ; drush upwd admin --password="probo"'
   - name: Run Behat NoJS
     plugin: Script
     script:
