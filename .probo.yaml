@@ -1,0 +1,24 @@
+assets:
+  - probossh.tar.gz
+  - sitefarm_acquia_probo.sql.gz
+steps:
+  - name: Import SSH Keys
+    command: 'tar -C $HOME/.ssh -zxvf $ASSET_DIR/probossh.tar.gz ; ls -al $HOME/.ssh'
+  - name: Build Drupal
+    command: 'composer self-update ; composer global update ; cd /src ; composer install'
+  - name: Drupal site setup
+    plugin: Drupal
+    drupalVersion: 8
+    subDirectory: docroot
+    database: sitefarm_acquia_probo.sql.gz
+    databaseGzipped: true
+    databaseUpdates: true
+  - name: Drush ULI
+    command: 'cd /var/www/html ; drush uli'
+  - name: Run Behat
+    plugin: Script
+    script:
+      - cp $SRC_DIR/behat.probo.yml /var/www/html/profiles/sitefarm/behat.yml
+      - cp -r $SRC_DIR/tests/features/acquia /var/www/html/profiles/sitefarm/tests/features/.
+      - cd /var/www/html/profiles/sitefarm
+      - $SRC_DIR/bin/behat --profile probo --tags "~@javascript"
