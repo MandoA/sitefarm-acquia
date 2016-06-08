@@ -12,12 +12,12 @@
             "version": "0.7.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Codegyre/Robo.git",
+                "url": "https://github.com/consolidation-org/Robo.git",
                 "reference": "9982edecb19f59420031dd9855b0d31e861b8b68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codegyre/Robo/zipball/9982edecb19f59420031dd9855b0d31e861b8b68",
+                "url": "https://api.github.com/repos/consolidation-org/Robo/zipball/9982edecb19f59420031dd9855b0d31e861b8b68",
                 "reference": "9982edecb19f59420031dd9855b0d31e861b8b68",
                 "shasum": ""
             },
@@ -3993,7 +3993,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "4362f70798ba277b2bb3c672bb3623fe43b62fa3"
+                "reference": "44bedff556082c6227bd31f971a156db3a1ed7f4"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -4019,7 +4019,7 @@
                 "drupal/scheduled_updates": "8.*",
                 "drupal/token": "8.*",
                 "drupal/workbench_moderation": "8.*",
-                "ucdavis/sitefarm_one": "dev-8.x-1.x"
+                "ucdavis/sitefarm_one": "@dev"
             },
             "require-dev": {
                 "behat/behat": "^3.1",
@@ -4059,7 +4059,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2016-06-07 03:14:22"
+            "time": "2016-06-08 20:15:48"
         },
         {
             "name": "ucdavis/sitefarm_one",
