@@ -1,6 +1,5 @@
 assets:
   - probossh.tar.gz
-  - sitefarm_acquia_probo.sql.gz
 steps:
   - name: Import SSH Keys
     command: 'tar -C $HOME/.ssh -zxvf $ASSET_DIR/probossh.tar.gz ; ls -al $HOME/.ssh'
@@ -10,11 +9,9 @@ steps:
     plugin: Drupal
     drupalVersion: 8
     subDirectory: docroot
-    database: sitefarm_acquia_probo.sql.gz
-    databaseGzipped: true
-    databaseUpdates: true
-  - name: Drush Reset Password
-    command: 'cd /var/www/html ; drush upwd admin --password="probo"'
+    runInstall: true
+    profileName: sitefarm
+    installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu'
   - name: Run Behat NoJS
     plugin: Script
     script:
