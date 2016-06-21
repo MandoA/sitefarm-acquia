@@ -20,4 +20,4 @@ steps:
       - cd /var/www/html/profiles/sitefarm
       - $SRC_DIR/bin/behat --profile probo --tags "~@javascript"
   - name: Run behat js tests
-    command: 'wget http://selenium-release.storage.googleapis.com/2.48/selenium-server-standalone-2.48.2.jar > /dev/null 2>&1 ; apt-get install xvfb -y ; xvfb-run java -jar selenium-server-standalone-2.48.2.jar > /dev/null 2>&1 & sleep 5 ; cd /var/www/html/profiles/sitefarm ; $SRC_DIR/bin/behat --profile probo --tags "@javascript" ; disown' 
+    command: 'wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar > /dev/null 2>&1 ; apt-get install xvfb -y ; xvfb-run java -jar selenium-server-standalone-2.53.0.jar > /dev/null 2>&1 & sleep 5 ; cd /var/www/html/profiles/sitefarm ; $SRC_DIR/bin/behat --profile probo --tags "@javascript" ; disown'
