@@ -929,6 +929,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -4330,7 +4333,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "a0d01336f9a92f7b9992305e7751bfbc935b27e2"
+                "reference": "dfc7b6e973b181b6bbb8f97deeec11482eae99e0"
             },
             "type": "drupal-theme",
             "authors": [
@@ -4340,7 +4343,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2016-06-07 03:14:02"
+            "time": "2016-06-23 01:05:00"
         },
         {
             "name": "zendframework/zend-diactoros",
