@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "629ce1a242129e16674a4ab13a201755",
-    "content-hash": "f7ce843ff7102c7c38b1cc0d90ce187d",
+    "hash": "d97a9e79d228384ad97ee19d54f9c762",
+    "content-hash": "8a303c30401c39b1cdd0a46012b51567",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -419,20 +419,20 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "0d75c63b6de66144517a1da9084422b78c2ff251"
+                "reference": "8de7c73b2eae217f4e7028d7262ff2330aa4b4e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/0d75c63b6de66144517a1da9084422b78c2ff251",
-                "reference": "0d75c63b6de66144517a1da9084422b78c2ff251",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/8de7c73b2eae217f4e7028d7262ff2330aa4b4e8",
+                "reference": "8de7c73b2eae217f4e7028d7262ff2330aa4b4e8",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "~1.0",
+                "composer-plugin-api": "^1.0",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -459,7 +459,7 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "time": "2016-02-29 03:45:02"
+            "time": "2016-03-28 18:54:21"
         },
         {
             "name": "doctrine/annotations",
@@ -4249,11 +4249,13 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "44bedff556082c6227bd31f971a156db3a1ed7f4"
+                "reference": "e837b906709ddf09b173097452d96ee73a04953d"
             },
             "require": {
                 "composer/installers": "^1.0",
                 "cweagans/composer-patches": "^1.4",
+                "drupal/address": "8.*",
+                "drupal/auto_entitylabel": "8.*",
                 "drupal/cas": "8.*",
                 "drupal/cas_attributes": "8.*",
                 "drupal/config_update": "8.*",
@@ -4294,6 +4296,11 @@
                     "themes/contrib/{$name}": [
                         "type:drupal-theme"
                     ]
+                },
+                "patches": {
+                    "drupal/auto_entitylabel": {
+                        "fix warnings on admin page": "https://www.drupal.org/files/issues/notices_and_warnings-2712441.patch"
+                    }
                 }
             },
             "scripts": {
@@ -4315,7 +4322,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2016-06-08 20:15:48"
+            "time": "2016-06-27 21:53:06"
         },
         {
             "name": "ucdavis/sitefarm_one",
