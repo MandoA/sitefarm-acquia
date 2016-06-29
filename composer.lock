@@ -4303,6 +4303,9 @@
                 "patches": {
                     "drupal/auto_entitylabel": {
                         "fix warnings on admin page": "https://www.drupal.org/files/issues/notices_and_warnings-2712441.patch"
+                    },
+                    "drupal/address": {
+                        "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
                     }
                 }
             },
