@@ -11,3 +11,23 @@ probo:
         alias: 'local'
       drupal:
         drupal_root: '/var/www/html'
+
+
+# Setup for Google Chrome only tests.
+probo-chrome:
+  suites:
+    default:
+      filters:
+        tags: "@chrome"
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost
+      selenium2:
+        browser: chrome
+        capabilities: {"browser": "chrome", "browserName": "chrome", "browserVersion": "ANY", "version": "ANY"}
+    Drupal\DrupalExtension:
+      api_driver: 'drupal'
+      drush:
+        alias: 'local'
+      drupal:
+        drupal_root: '/var/www/html'
