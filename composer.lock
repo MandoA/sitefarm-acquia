@@ -1295,16 +1295,16 @@
         },
         {
             "name": "drupal/features",
-            "version": "8.3.0-beta5",
+            "version": "8.3.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "6d23d8e5b3e69c879e4b02c0e6ca52eba44260c6"
+                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta5.zip",
-                "reference": "6d23d8e5b3e69c879e4b02c0e6ca52eba44260c6",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta6.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1330,7 +1330,7 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-06-09 14:12:34"
+            "time": "2016-07-08 12:53:14"
         },
         {
             "name": "drupal/google_analytics",
