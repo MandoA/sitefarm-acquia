@@ -36,6 +36,10 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git"
     }
   ],
   "scripts": {

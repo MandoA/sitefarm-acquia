@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "165e4dfc2bb3959020e73803279e46a2",
-    "content-hash": "08d82b31d722cfde14b69bb80b811dc0",
+    "hash": "9c5dd666fc166c06ec582527c18db596",
+    "content-hash": "0e9f56863f5b8d5cfbdcf3c58d3e8483",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1304,7 +1304,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta6.zip",
-                "reference": null,
+                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e",
                 "shasum": null
             },
             "require": {
@@ -6467,6 +6467,29 @@
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
             "time": "2016-04-12 18:09:53"
+        },
+        {
+            "name": "ucdavis/aggiefeed",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
+                "reference": "9ddf0fa3564dc3b11d6e5d87dd2e2a57de8dfac5"
+            },
+            "type": "drupal-module",
+            "authors": [
+                {
+                    "name": "Mark Miller",
+                    "email": "mrkmiller@ucdavis.edu"
+                }
+            ],
+            "description": "Allows the AggieFeed embed code to be configured and added into a Drupal website.",
+            "homepage": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module",
+            "support": {
+                "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
+                "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
+            },
+            "time": "2016-07-12 01:48:22"
         }
     ],
     "aliases": [],
