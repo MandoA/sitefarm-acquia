@@ -6474,7 +6474,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
-                "reference": "9ddf0fa3564dc3b11d6e5d87dd2e2a57de8dfac5"
+                "reference": "8bf298c902ed81dd3b4c91d640ad39ab4a239475"
             },
             "type": "drupal-module",
             "authors": [
