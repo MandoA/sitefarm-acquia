@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9c5dd666fc166c06ec582527c18db596",
-    "content-hash": "0e9f56863f5b8d5cfbdcf3c58d3e8483",
+    "hash": "602bd6575f26b013efd82a2c45a2f33b",
+    "content-hash": "7bd60bffd0d546832c9dd529b4a51e48",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -6489,7 +6489,7 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2016-07-12 01:48:22"
+            "time": "2016-07-19 22:54:08"
         }
     ],
     "aliases": [],
