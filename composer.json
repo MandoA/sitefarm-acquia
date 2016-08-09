@@ -44,10 +44,12 @@
   ],
   "scripts": {
     "post-install-cmd": [
-      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
     ],
     "post-update-cmd": [
-      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
     ]
   },
   "config": {
