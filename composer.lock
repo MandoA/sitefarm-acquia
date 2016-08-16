@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "28a97612d17923acbb107643976223ae",
-    "content-hash": "851a9e154e9bf0efef5109964dec08f1",
+    "hash": "3c61655bfb9e6dfe74f3bdc6d8908102",
+    "content-hash": "0b22573f19b7db75058b4b146089cbaf",
     "packages": [
         {
             "name": "drupal/sharemessage",
@@ -38,6 +38,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
