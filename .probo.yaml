@@ -4,7 +4,13 @@ steps:
   - name: Import SSH Keys
     command: 'tar -C $HOME/.ssh -zxvf $ASSET_DIR/probossh.tar.gz ; ls -al $HOME/.ssh'
   - name: Build Drupal
-    command: 'composer self-update ; composer global update ; cd /src ; composer install'
+    plugin: Script
+    script:
+      - composer self-update ; composer global update
+      - cd /src
+      - composer install
+      - composer require "ucdavis/sitefarm:dev-8dev"
+      - composer require "ucdavis/sitefarm_one:dev-8dev"
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8
@@ -18,6 +24,6 @@ steps:
       - cp $SRC_DIR/behat.probo.yml /var/www/html/profiles/sitefarm/behat.yml
       - cp -r $SRC_DIR/tests/features/acquia /var/www/html/profiles/sitefarm/tests/features/.
       - cd /var/www/html/profiles/sitefarm
-      - $SRC_DIR/bin/behat --profile probo --tags "~@javascript"
+      - $SRC_DIR/bin/behat --profile probo --tags "~@javascript" --colors
   - name: Run behat js tests
-    command: 'wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar > /dev/null 2>&1 ; apt-get install xvfb -y ; xvfb-run java -jar selenium-server-standalone-2.53.0.jar > /dev/null 2>&1 & sleep 5 ; cd /var/www/html/profiles/sitefarm ; $SRC_DIR/bin/behat --profile probo --tags "@javascript" ; disown'
+    command: 'wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar > /dev/null 2>&1 ; apt-get install xvfb -y ; xvfb-run java -jar selenium-server-standalone-2.53.0.jar > /dev/null 2>&1 & sleep 5 ; cd /var/www/html/profiles/sitefarm ; $SRC_DIR/bin/behat --profile probo --tags "@javascript" --colors ; disown'
