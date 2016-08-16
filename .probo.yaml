@@ -8,9 +8,9 @@ steps:
     script:
       - composer self-update ; composer global update
       - cd /src
-      - composer install
-      - composer require "ucdavis/sitefarm:dev-8dev"
-      - composer require "ucdavis/sitefarm_one:dev-8dev"
+      - composer install --ansi
+      - composer require "ucdavis/sitefarm:dev-8dev" --ansi
+      - composer require "ucdavis/sitefarm_one:dev-8dev" --ansi
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8
