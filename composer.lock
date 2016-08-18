@@ -4,53 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3c61655bfb9e6dfe74f3bdc6d8908102",
-    "content-hash": "0b22573f19b7db75058b4b146089cbaf",
+    "hash": "edfffcc10792deab38f30b4572ea274a",
+    "content-hash": "94fa8aae6d3a41e25793bed6752e4347",
     "packages": [
-        {
-            "name": "drupal/sharemessage",
-            "version": "8.1.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/sharemessage.git",
-                "reference": "1f6f082129c868f6f8016d31902964012a12d93f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sharemessage-8.x-1.0-beta1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*"
-            },
-            "replace": {
-                "drupal/sharemessage_demo": "self.version"
-            },
-            "suggest": {
-                "drupal/block": "Required by drupal/sharemessage_demo",
-                "drupal/core": "Required by drupal/sharemessage_demo",
-                "drupal/node": "Required by drupal/sharemessage_demo",
-                "drupal/path": "Required by drupal/sharemessage_demo",
-                "drupal/text": "Required by drupal/sharemessage_demo"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": {
-                    "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Sharing module using AddThis widgets and entity based storage.",
-            "homepage": "https://www.drupal.org/project/sharemessage",
-            "time": "2016-05-30 20:34:10"
-        },
         {
             "name": "codegyre/robo",
             "version": "0.7.2",
@@ -950,6 +906,103 @@
             "time": "2016-04-13 15:46:44"
         },
         {
+            "name": "drupal/acquia_connector",
+            "version": "8.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/acquia_connector",
+                "reference": "27291c409c70def252bb4426835aeb62ce6f0c74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/acquia_search": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/acquia_search",
+                "drupal/search_api_solr": "Required by drupal/acquia_search",
+                "drupal/views": "Required by drupal/acquia_search"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows Drupal to securely communicate with the Acquia Subscription, and checks for updates to Acquia Drupal.",
+            "homepage": "https://www.drupal.org/project/acquia_connector",
+            "time": "2016-07-14 13:17:54"
+        },
+        {
+            "name": "drupal/acsf",
+            "version": "8.1.27",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/acsf",
+                "reference": "1205f766882a1e7467f53dfd430cfde22974aa7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.27.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/acsf_duplication": "self.version",
+                "drupal/acsf_theme": "self.version",
+                "drupal/acsf_variables": "self.version"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~5.3"
+            },
+            "suggest": {
+                "drupal/acsf_variables": "Required by drupal/acsf_theme",
+                "drupal/core": "Required by drupal/acsf_duplication, drupal/acsf_theme, drupal/acsf_variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\acsf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Acquia",
+                    "email": "support@acquia.com"
+                }
+            ],
+            "description": "This is the module that connects a Drupal codebase to Acquia Cloud Site Factory.",
+            "homepage": "https://www.drupal.org/project/acsf",
+            "time": "2016-08-10 10:20:14"
+        },
+        {
             "name": "drupal/address",
             "version": "8.1.0-beta3",
             "source": {
@@ -985,39 +1038,6 @@
             "description": "Provides functionality for handling postal addresses.",
             "homepage": "http://drupal.org/project/address",
             "time": "2016-06-02 19:30:35"
-        },
-        {
-            "name": "drupal/anchor_link",
-            "version": "8.1.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/anchor_link.git",
-                "reference": "2f4504c7483b02d2f21fdf1598b01e8f274849f7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.0-alpha1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/ckeditor": "8.*",
-                "drupal/core": "8.*",
-                "drupal/editor": "8.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8",
-            "homepage": "https://www.drupal.org/project/anchor_link",
-            "time": "2016-07-12 13:40:23"
         },
         {
             "name": "drupal/auto_entitylabel",
@@ -1120,6 +1140,37 @@
             "description": "Provides tokens for CAS attributes and an interface for token replacement in user account and profile fields; as well as role mapping capability.",
             "homepage": "https://www.drupal.org/project/cas_attributes",
             "time": "2016-04-20 17:55:37"
+        },
+        {
+            "name": "drupal/clamav",
+            "version": "8.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/clamav",
+                "reference": "7c8de3658898bc5049b30833f8c3991143666b5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/clamav-8.x-1.0-alpha1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Integration with the ClamAV anti-virus scanner.",
+            "homepage": "https://www.drupal.org/project/clamav",
+            "time": "2015-12-20 20:55:09"
         },
         {
             "name": "drupal/config_update",
@@ -1747,6 +1798,50 @@
                 "seo"
             ],
             "time": "2016-05-14 11:04:56"
+        },
+        {
+            "name": "drupal/mollom",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/mollom",
+                "reference": "3b5577be29c58c374a1ef592e75ff580200d4a00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mollom-8.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "mollom/client": "dev-psr4",
+                "php": ">=5.3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://drupal.org/project/mollom"
+                }
+            ],
+            "description": "Automatically moderates user-submitted content and protects your site from spam and profanity.",
+            "homepage": "https://drupal.org/project/mollom",
+            "keywords": [
+                "acquia",
+                "mollom",
+                "spam"
+            ],
+            "time": "2015-11-24 18:21:23"
         },
         {
             "name": "drupal/page_manager",
@@ -2551,6 +2646,50 @@
                 "xml"
             ],
             "time": "2016-04-11 13:54:57"
+        },
+        {
+            "name": "mollom/client",
+            "version": "dev-psr4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mollom/MollomPHP.git",
+                "reference": "bfb97d639d8b0a757c47742af5cfc59dd8363e44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mollom/MollomPHP/zipball/bfb97d639d8b0a757c47742af5cfc59dd8363e44",
+                "reference": "bfb97d639d8b0a757c47742af5cfc59dd8363e44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mollom\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://github.com/mollom/MollomPHP/graphs/contributors"
+                }
+            ],
+            "description": "Generic PHP library for Mollom's REST API.",
+            "keywords": [
+                "acquia",
+                "mollom",
+                "spam"
+            ],
+            "time": "2015-12-03 21:18:35"
         },
         {
             "name": "paragonie/random_compat",
@@ -5190,6 +5329,39 @@
             "time": "2015-06-14 21:17:01"
         },
         {
+            "name": "drupal/anchor_link",
+            "version": "8.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/anchor_link.git",
+                "reference": "2f4504c7483b02d2f21fdf1598b01e8f274849f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.0-alpha1.zip",
+                "reference": "2f4504c7483b02d2f21fdf1598b01e8f274849f7",
+                "shasum": null
+            },
+            "require": {
+                "drupal/ckeditor": "8.*",
+                "drupal/core": "8.*",
+                "drupal/editor": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8",
+            "homepage": "https://www.drupal.org/project/anchor_link",
+            "time": "2016-07-12 13:40:23"
+        },
+        {
             "name": "drupal/ckwordcount",
             "version": "8.1.0-beta2",
             "source": {
@@ -5338,6 +5510,37 @@
             "time": "2015-12-22 20:10:14"
         },
         {
+            "name": "drupal/externalauth",
+            "version": "8.1.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/externalauth.git",
+                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/externalauth-8.x-1.0-alpha3.zip",
+                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Helper module to authenticate users using an external site / service and storing identification details",
+            "homepage": "https://www.drupal.org/project/externalauth",
+            "time": "2016-01-20 17:57:19"
+        },
+        {
             "name": "drupal/notification",
             "version": "dev-8.x-1.x",
             "source": {
@@ -5372,6 +5575,50 @@
                 "Drupal"
             ],
             "time": "2016-05-08 13:54:45"
+        },
+        {
+            "name": "drupal/sharemessage",
+            "version": "8.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/sharemessage.git",
+                "reference": "1f6f082129c868f6f8016d31902964012a12d93f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sharemessage-8.x-1.0-beta1.zip",
+                "reference": "1f6f082129c868f6f8016d31902964012a12d93f",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/sharemessage_demo": "self.version"
+            },
+            "suggest": {
+                "drupal/block": "Required by drupal/sharemessage_demo",
+                "drupal/core": "Required by drupal/sharemessage_demo",
+                "drupal/node": "Required by drupal/sharemessage_demo",
+                "drupal/path": "Required by drupal/sharemessage_demo",
+                "drupal/text": "Required by drupal/sharemessage_demo"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Sharing module using AddThis widgets and entity based storage.",
+            "homepage": "https://www.drupal.org/project/sharemessage",
+            "time": "2016-05-30 20:34:10"
         },
         {
             "name": "fabpot/goutte",
