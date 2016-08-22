@@ -12,6 +12,8 @@ events:
           type: script
           script:
             - cd docroot
+            - which drush
+            - echo $PATH
             - drush acsf-init
 
 ssh-keys:
