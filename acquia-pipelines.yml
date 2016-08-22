@@ -6,6 +6,7 @@ events:
       - build:
           type: script
           script:
+            - composer global require drush/drush:8.*
             - composer install
       - acsf:
           type: script
