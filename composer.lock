@@ -4560,7 +4560,7 @@
                     },
                     "drupal/menu_block": {
                         "Undefined Index": "https://www.drupal.org/files/issues/undefined_index-2759019-11.patch"
-                    }
+                    },
                     "drupal/sharemessage": {
                         "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
                     }
