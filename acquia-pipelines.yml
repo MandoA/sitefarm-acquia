@@ -6,15 +6,12 @@ events:
       - build:
           type: script
           script:
-            - composer global require drush/drush:8.*
-            - composer install
+            - composer install --prefer-dist
       - acsf:
           type: script
           script:
             - cd docroot
-            - which drush
-            - echo $PATH
-            - drush acsf-init
+            - ../vendor/bin/drush --include=modules/contrib/acsf/acsf_init acsf-init
 
 ssh-keys:
   my_module:
