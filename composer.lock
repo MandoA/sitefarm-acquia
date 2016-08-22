@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "165e4dfc2bb3959020e73803279e46a2",
-    "content-hash": "08d82b31d722cfde14b69bb80b811dc0",
+    "hash": "f1b3651b9bc05e72a66916f552a2c9c8",
+    "content-hash": "723492cf496006a578ff6ddea35033fa",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -462,6 +462,39 @@
             "time": "2016-03-28 18:54:21"
         },
         {
+            "name": "dnoegel/php-xdg-base-dir",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dnoegel/php-xdg-base-dir.git",
+                "reference": "265b8593498b997dc2d31e75b89f053b5cc9621a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/265b8593498b997dc2d31e75b89f053b5cc9621a",
+                "reference": "265b8593498b997dc2d31e75b89f053b5cc9621a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "@stable"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "XdgBaseDir\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "implementation of xdg base directory specification for php",
+            "time": "2014-10-24 07:27:01"
+        },
+        {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
             "source": {
@@ -906,6 +939,103 @@
             "time": "2016-04-13 15:46:44"
         },
         {
+            "name": "drupal/acquia_connector",
+            "version": "8.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/acquia_connector",
+                "reference": "27291c409c70def252bb4426835aeb62ce6f0c74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.3.zip",
+                "reference": "27291c409c70def252bb4426835aeb62ce6f0c74",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/acquia_search": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/acquia_search",
+                "drupal/search_api_solr": "Required by drupal/acquia_search",
+                "drupal/views": "Required by drupal/acquia_search"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows Drupal to securely communicate with the Acquia Subscription, and checks for updates to Acquia Drupal.",
+            "homepage": "https://www.drupal.org/project/acquia_connector",
+            "time": "2016-07-14 13:17:54"
+        },
+        {
+            "name": "drupal/acsf",
+            "version": "8.1.27",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/acsf",
+                "reference": "1205f766882a1e7467f53dfd430cfde22974aa7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.27.zip",
+                "reference": "1205f766882a1e7467f53dfd430cfde22974aa7a",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/acsf_duplication": "self.version",
+                "drupal/acsf_theme": "self.version",
+                "drupal/acsf_variables": "self.version"
+            },
+            "require-dev": {
+                "mockery/mockery": "dev-master",
+                "phpunit/phpunit": "~5.3"
+            },
+            "suggest": {
+                "drupal/acsf_variables": "Required by drupal/acsf_theme",
+                "drupal/core": "Required by drupal/acsf_duplication, drupal/acsf_theme, drupal/acsf_variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\acsf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Acquia",
+                    "email": "support@acquia.com"
+                }
+            ],
+            "description": "This is the module that connects a Drupal codebase to Acquia Cloud Site Factory.",
+            "homepage": "https://www.drupal.org/project/acsf",
+            "time": "2016-08-10 10:20:14"
+        },
+        {
             "name": "drupal/address",
             "version": "8.1.0-beta3",
             "source": {
@@ -929,6 +1059,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1042,6 +1175,37 @@
             "time": "2016-04-20 17:55:37"
         },
         {
+            "name": "drupal/clamav",
+            "version": "8.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/clamav",
+                "reference": "7c8de3658898bc5049b30833f8c3991143666b5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/clamav-8.x-1.0-alpha1.zip",
+                "reference": "7c8de3658898bc5049b30833f8c3991143666b5a",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Integration with the ClamAV anti-virus scanner.",
+            "homepage": "https://www.drupal.org/project/clamav",
+            "time": "2015-12-20 20:55:09"
+        },
+        {
             "name": "drupal/config_update",
             "version": "8.1.1",
             "source": {
@@ -1082,16 +1246,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.1.3",
+            "version": "8.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "ac94c29c14d85c8e77f5cb1d0ab38036f5f25c9c"
+                "reference": "a6555edbe58e0a6a1d107cbf8c6568dd5e4531a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/ac94c29c14d85c8e77f5cb1d0ab38036f5f25c9c",
-                "reference": "ac94c29c14d85c8e77f5cb1d0ab38036f5f25c9c",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/a6555edbe58e0a6a1d107cbf8c6568dd5e4531a2",
+                "reference": "a6555edbe58e0a6a1d107cbf8c6568dd5e4531a2",
                 "shasum": ""
             },
             "require": {
@@ -1146,8 +1310,10 @@
                 "drupal/content_translation": "self.version",
                 "drupal/contextual": "self.version",
                 "drupal/core-annotation": "self.version",
+                "drupal/core-assertion": "self.version",
                 "drupal/core-bridge": "self.version",
                 "drupal/core-datetime": "self.version",
+                "drupal/core-dependency-injection": "self.version",
                 "drupal/core-diff": "self.version",
                 "drupal/core-discovery": "self.version",
                 "drupal/core-event-dispatcher": "self.version",
@@ -1246,7 +1412,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-06-15 20:08:27"
+            "time": "2016-07-11 13:07:34"
         },
         {
             "name": "drupal/ctools",
@@ -1290,16 +1456,16 @@
         },
         {
             "name": "drupal/features",
-            "version": "8.3.0-beta5",
+            "version": "8.3.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "6d23d8e5b3e69c879e4b02c0e6ca52eba44260c6"
+                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta5.zip",
-                "reference": "6d23d8e5b3e69c879e4b02c0e6ca52eba44260c6",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta6.zip",
+                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e",
                 "shasum": null
             },
             "require": {
@@ -1325,7 +1491,7 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-06-09 14:12:34"
+            "time": "2016-07-08 12:53:14"
         },
         {
             "name": "drupal/google_analytics",
@@ -1579,6 +1745,41 @@
             "time": "2015-11-14 19:35:25"
         },
         {
+            "name": "drupal/menu_block",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/menu_block",
+                "reference": "ad536680d9c2f91ca65dadc1642621b3284a3f22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.1.zip",
+                "reference": "ad536680d9c2f91ca65dadc1642621b3284a3f22",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/menu_ui": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Undefined Index": "https://www.drupal.org/files/issues/undefined_index-2759019-11.patch"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides configurable blocks of menu links.",
+            "homepage": "https://www.drupal.org/project/menu_block",
+            "time": "2016-06-30 13:06:26"
+        },
+        {
             "name": "drupal/metatag",
             "version": "8.1.0-beta8",
             "source": {
@@ -1630,6 +1831,50 @@
                 "seo"
             ],
             "time": "2016-05-14 11:04:56"
+        },
+        {
+            "name": "drupal/mollom",
+            "version": "8.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/mollom",
+                "reference": "3b5577be29c58c374a1ef592e75ff580200d4a00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/mollom-8.x-1.1.zip",
+                "reference": "3b5577be29c58c374a1ef592e75ff580200d4a00",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "mollom/client": "dev-psr4",
+                "php": ">=5.3.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://drupal.org/project/mollom"
+                }
+            ],
+            "description": "Automatically moderates user-submitted content and protects your site from spam and profanity.",
+            "homepage": "https://drupal.org/project/mollom",
+            "keywords": [
+                "acquia",
+                "mollom",
+                "spam"
+            ],
+            "time": "2015-11-24 18:21:23"
         },
         {
             "name": "drupal/page_manager",
@@ -1983,6 +2228,105 @@
                 "Drupal"
             ],
             "time": "2016-04-15 20:47:27"
+        },
+        {
+            "name": "drush/drush",
+            "version": "8.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drush-ops/drush.git",
+                "reference": "85b58140d576cfdb9546a23c3ff44b72d0dae5bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/85b58140d576cfdb9546a23c3ff44b72d0dae5bc",
+                "reference": "85b58140d576cfdb9546a23c3ff44b72d0dae5bc",
+                "shasum": ""
+            },
+            "require": {
+                "pear/console_table": "~1.3.0",
+                "php": ">=5.4.5",
+                "psr/log": "~1.0",
+                "psy/psysh": "~0.6",
+                "symfony/console": "~2.7",
+                "symfony/var-dumper": "~2.7",
+                "symfony/yaml": "~2.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "symfony/process": "2.7.*"
+            },
+            "suggest": {
+                "drush/config-extra": "Provides configuration workflow commands, such as config-merge.",
+                "ext-pcntl": "*"
+            },
+            "bin": [
+                "drush",
+                "drush.launcher",
+                "drush.php",
+                "drush.bat",
+                "drush.complete.sh"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Drush": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com"
+                },
+                {
+                    "name": "Owen Barton",
+                    "email": "drupal@owenbarton.com"
+                },
+                {
+                    "name": "Mark Sonnabaum",
+                    "email": "marksonnabaum@gmail.com"
+                },
+                {
+                    "name": "Antoine Beaupré",
+                    "email": "anarcat@koumbit.org"
+                },
+                {
+                    "name": "Greg Anderson",
+                    "email": "greg.1.anderson@greenknowe.org"
+                },
+                {
+                    "name": "Jonathan Araña Cruz",
+                    "email": "jonhattan@faita.net"
+                },
+                {
+                    "name": "Jonathan Hedstrom",
+                    "email": "jhedstrom@gmail.com"
+                },
+                {
+                    "name": "Christopher Gervais",
+                    "email": "chris@ergonlogic.com"
+                },
+                {
+                    "name": "Dave Reid",
+                    "email": "dave@davereid.net"
+                },
+                {
+                    "name": "Damian Lee",
+                    "email": "damiankloip@googlemail.com"
+                }
+            ],
+            "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
+            "homepage": "http://www.drush.org",
+            "time": "2016-05-05 12:21:03"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -2371,6 +2715,93 @@
             "time": "2014-11-20 16:49:30"
         },
         {
+            "name": "jakub-onderka/php-console-color",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JakubOnderka/PHP-Console-Color.git",
+                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "jakub-onderka/php-code-style": "1.0",
+                "jakub-onderka/php-parallel-lint": "0.*",
+                "jakub-onderka/php-var-dump-check": "0.*",
+                "phpunit/phpunit": "3.7.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JakubOnderka\\PhpConsoleColor": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "jakub.onderka@gmail.com",
+                    "homepage": "http://www.acci.cz"
+                }
+            ],
+            "time": "2014-04-08 15:00:19"
+        },
+        {
+            "name": "jakub-onderka/php-console-highlighter",
+            "version": "v0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JakubOnderka/PHP-Console-Highlighter.git",
+                "reference": "7daa75df45242c8d5b75a22c00a201e7954e4fb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Highlighter/zipball/7daa75df45242c8d5b75a22c00a201e7954e4fb5",
+                "reference": "7daa75df45242c8d5b75a22c00a201e7954e4fb5",
+                "shasum": ""
+            },
+            "require": {
+                "jakub-onderka/php-console-color": "~0.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "jakub-onderka/php-code-style": "~1.0",
+                "jakub-onderka/php-parallel-lint": "~0.5",
+                "jakub-onderka/php-var-dump-check": "~0.1",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JakubOnderka\\PhpConsoleHighlighter": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Onderka",
+                    "email": "acci@acci.cz",
+                    "homepage": "http://www.acci.cz/"
+                }
+            ],
+            "time": "2015-04-20 18:58:01"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.2.0",
             "source": {
@@ -2434,6 +2865,101 @@
                 "xml"
             ],
             "time": "2016-04-11 13:54:57"
+        },
+        {
+            "name": "mollom/client",
+            "version": "dev-psr4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mollom/MollomPHP.git",
+                "reference": "bfb97d639d8b0a757c47742af5cfc59dd8363e44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mollom/MollomPHP/zipball/bfb97d639d8b0a757c47742af5cfc59dd8363e44",
+                "reference": "bfb97d639d8b0a757c47742af5cfc59dd8363e44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mollom\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://github.com/mollom/MollomPHP/graphs/contributors"
+                }
+            ],
+            "description": "Generic PHP library for Mollom's REST API.",
+            "keywords": [
+                "acquia",
+                "mollom",
+                "spam"
+            ],
+            "time": "2015-12-03 21:18:35"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2016-04-19 13:41:41"
         },
         {
             "name": "paragonie/random_compat",
@@ -2595,6 +3121,61 @@
             ],
             "description": "More info available on: http://pear.php.net/package/Console_Getopt",
             "time": "2015-07-20 20:28:12"
+        },
+        {
+            "name": "pear/console_table",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pear/Console_Table.git",
+                "reference": "64100b9ee81852f4fa17823e55d0b385a544f976"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pear/Console_Table/zipball/64100b9ee81852f4fa17823e55d0b385a544f976",
+                "reference": "64100b9ee81852f4fa17823e55d0b385a544f976",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "suggest": {
+                "pear/Console_Color2": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Table.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "homepage": "http://pear.php.net/user/yunosh"
+                },
+                {
+                    "name": "Tal Peer",
+                    "homepage": "http://pear.php.net/user/tal"
+                },
+                {
+                    "name": "Xavier Noguer",
+                    "homepage": "http://pear.php.net/user/xnoguer"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "homepage": "http://pear.php.net/user/richard"
+                }
+            ],
+            "description": "Library that makes it easy to build console style tables.",
+            "homepage": "http://pear.php.net/package/Console_Table/",
+            "keywords": [
+                "console"
+            ],
+            "time": "2016-01-21 16:14:31"
         },
         {
             "name": "pear/pear-core-minimal",
@@ -2781,6 +3362,78 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "psy/psysh",
+            "version": "v0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/psysh.git",
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e64e10b20f8d229cac76399e1f3edddb57a0f280",
+                "reference": "e64e10b20f8d229cac76399e1f3edddb57a0f280",
+                "shasum": ""
+            },
+            "require": {
+                "dnoegel/php-xdg-base-dir": "0.1",
+                "jakub-onderka/php-console-highlighter": "0.3.*",
+                "nikic/php-parser": "^1.2.1|~2.0",
+                "php": ">=5.3.9",
+                "symfony/console": "~2.3.10|^2.4.2|~3.0",
+                "symfony/var-dumper": "~2.7|~3.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "~1.5",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0",
+                "squizlabs/php_codesniffer": "~2.0",
+                "symfony/finder": "~2.1|~3.0"
+            },
+            "suggest": {
+                "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
+                "ext-pdo-sqlite": "The doc command requires SQLite to work.",
+                "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
+                "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history."
+            },
+            "bin": [
+                "bin/psysh"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.8.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Psy/functions.php"
+                ],
+                "psr-4": {
+                    "Psy\\": "src/Psy/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "An interactive shell for modern PHP.",
+            "homepage": "http://psysh.org",
+            "keywords": [
+                "REPL",
+                "console",
+                "interactive",
+                "shell"
+            ],
+            "time": "2016-03-09 05:03:14"
         },
         {
             "name": "stack/builder",
@@ -4134,6 +4787,69 @@
             "time": "2016-04-14 08:48:44"
         },
         {
+            "name": "symfony/var-dumper",
+            "version": "v2.8.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "bca3d84dc861243fffd5b11b824443a01227a62a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/bca3d84dc861243fffd5b11b824443a01227a62a",
+                "reference": "bca3d84dc861243fffd5b11b824443a01227a62a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "twig/twig": "~1.20|~2.0"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2016-07-26 08:02:44"
+        },
+        {
             "name": "symfony/yaml",
             "version": "v2.8.6",
             "source": {
@@ -4266,6 +4982,7 @@
                 "drupal/layout_plugin": "8.*",
                 "drupal/ldap": "8.*",
                 "drupal/masquerade": "8.*",
+                "drupal/menu_block": "8.*",
                 "drupal/metatag": "8.*",
                 "drupal/page_manager": "8.*",
                 "drupal/panelizer": "8.*",
@@ -4300,6 +5017,15 @@
                 "patches": {
                     "drupal/auto_entitylabel": {
                         "fix warnings on admin page": "https://www.drupal.org/files/issues/notices_and_warnings-2712441.patch"
+                    },
+                    "drupal/address": {
+                        "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
+                    },
+                    "drupal/menu_block": {
+                        "Undefined Index": "https://www.drupal.org/files/issues/undefined_index-2759019-11.patch"
+                    },
+                    "drupal/sharemessage": {
+                        "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
                     }
                 }
             },
@@ -4330,7 +5056,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "a0d01336f9a92f7b9992305e7751bfbc935b27e2"
+                "reference": "dfc7b6e973b181b6bbb8f97deeec11482eae99e0"
             },
             "type": "drupal-theme",
             "authors": [
@@ -4340,7 +5066,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2016-06-07 03:14:02"
+            "time": "2016-06-23 01:05:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -5066,6 +5792,82 @@
             "time": "2015-06-14 21:17:01"
         },
         {
+            "name": "drupal/anchor_link",
+            "version": "8.1.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/anchor_link.git",
+                "reference": "2f4504c7483b02d2f21fdf1598b01e8f274849f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.0-alpha1.zip",
+                "reference": "2f4504c7483b02d2f21fdf1598b01e8f274849f7",
+                "shasum": null
+            },
+            "require": {
+                "drupal/ckeditor": "8.*",
+                "drupal/core": "8.*",
+                "drupal/editor": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8",
+            "homepage": "https://www.drupal.org/project/anchor_link",
+            "time": "2016-07-12 13:40:23"
+        },
+        {
+            "name": "drupal/ckwordcount",
+            "version": "8.1.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckwordcount.git",
+                "reference": "78b946b9843ea271af1b955e02bec8941c6ee3b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckwordcount-8.x-1.0-beta2.zip",
+                "reference": "78b946b9843ea271af1b955e02bec8941c6ee3b6",
+                "shasum": null
+            },
+            "require": {
+                "drupal/ckeditor": "*",
+                "drupal/core": "8.*",
+                "drupal/notification": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the ability to count words and/or characters to CKEditor.",
+            "homepage": "http://drupal.org/project/ckwordcount",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2016-07-27 19:52:10"
+        },
+        {
             "name": "drupal/drupal-driver",
             "version": "v1.1.6",
             "source": {
@@ -5169,6 +5971,117 @@
                 "web"
             ],
             "time": "2015-12-22 20:10:14"
+        },
+        {
+            "name": "drupal/externalauth",
+            "version": "8.1.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/externalauth.git",
+                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/externalauth-8.x-1.0-alpha3.zip",
+                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Helper module to authenticate users using an external site / service and storing identification details",
+            "homepage": "https://www.drupal.org/project/externalauth",
+            "time": "2016-01-20 17:57:19"
+        },
+        {
+            "name": "drupal/notification",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/notification.git",
+                "reference": "d5d9f1d4e9c3aeb14d9e63f29eab7dfab9874a3d"
+            },
+            "require": {
+                "drupal/ckeditor": "8.*",
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Adds the Notification plugin to CKEditor.",
+            "homepage": "http://drupal.org/project/notification",
+            "keywords": [
+                "Drupal"
+            ],
+            "time": "2016-05-08 13:54:45"
+        },
+        {
+            "name": "drupal/sharemessage",
+            "version": "8.1.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/sharemessage.git",
+                "reference": "1f6f082129c868f6f8016d31902964012a12d93f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sharemessage-8.x-1.0-beta1.zip",
+                "reference": "1f6f082129c868f6f8016d31902964012a12d93f",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/sharemessage_demo": "self.version"
+            },
+            "suggest": {
+                "drupal/block": "Required by drupal/sharemessage_demo",
+                "drupal/core": "Required by drupal/sharemessage_demo",
+                "drupal/node": "Required by drupal/sharemessage_demo",
+                "drupal/path": "Required by drupal/sharemessage_demo",
+                "drupal/text": "Required by drupal/sharemessage_demo"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Sharing module using AddThis widgets and entity based storage.",
+            "homepage": "https://www.drupal.org/project/sharemessage",
+            "time": "2016-05-30 20:34:10"
         },
         {
             "name": "fabpot/goutte",
@@ -6459,6 +7372,29 @@
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
             "time": "2016-04-12 18:09:53"
+        },
+        {
+            "name": "ucdavis/aggiefeed",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
+                "reference": "c5a1b7ee6d17d1cdd1d326cf876d55c59689f61f"
+            },
+            "type": "drupal-module",
+            "authors": [
+                {
+                    "name": "Mark Miller",
+                    "email": "mrkmiller@ucdavis.edu"
+                }
+            ],
+            "description": "Allows the AggieFeed embed code to be configured and added into a Drupal website.",
+            "homepage": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module",
+            "support": {
+                "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
+                "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
+            },
+            "time": "2016-07-19 22:54:08"
         }
     ],
     "aliases": [],

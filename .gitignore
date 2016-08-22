@@ -10,6 +10,9 @@ settings.local.php
 /docroot/modules/contrib
 /docroot/themes/contrib
 
+# Ignore Libraries which have been copied from the Profile.
+/docroot/libraries
+
 # Ignore Drupal's file directory
 docroot/sites/*/files
 

@@ -8,6 +8,7 @@
   "require-dev": {
     "behat/behat": "^3.1",
     "drupal/drupal-extension": "^3.1",
+    "drush/drush": "8.*",
     "behat/mink": "~1.6",
     "behat/mink-goutte-driver": "~1.2",
     "behat/mink-extension": "*",
@@ -21,8 +22,12 @@
   "require": {
     "composer/installers": "^1.0",
     "drupal-composer/drupal-scaffold": "^1.2",
-    "cweagans/composer-patches": "^1.4",
-    "ucdavis/sitefarm": "dev-8.x-1.x"
+    "cweagans/composer-patches": "^1.5",
+    "ucdavis/sitefarm": "dev-8.x-1.x",
+    "drupal/acquia_connector": "8.*",
+    "drupal/acsf": "8.*",
+    "drupal/clamav": "8.*",
+    "drupal/mollom": "8.*"
   },
   "repositories": [
     {
@@ -36,14 +41,20 @@
     {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git"
     }
   ],
   "scripts": {
     "post-install-cmd": [
-      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
     ],
     "post-update-cmd": [
-      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+      "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
     ]
   },
   "config": {
