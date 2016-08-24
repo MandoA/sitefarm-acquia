@@ -50,11 +50,11 @@
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
+      "cp -a web/profiles/sitefarm/libraries/. web/libraries/"
     ],
     "post-update-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
+      "cp -a web/profiles/sitefarm/libraries/. web/libraries/"
     ]
   },
   "config": {
@@ -65,25 +65,25 @@
   },
   "extra": {
     "installer-paths": {
-      "docroot/core": [
+      "web/core": [
         "drupal/core"
       ],
-      "docroot/modules/contrib/{$name}": [
+      "web/modules/contrib/{$name}": [
         "type:drupal-module"
       ],
-      "docroot/modules/custom/{$name}": [
+      "web/modules/custom/{$name}": [
         "type:drupal-custom-module"
       ],
-      "docroot/profiles/{$name}": [
+      "web/profiles/{$name}": [
         "type:drupal-profile"
       ],
-      "docroot/libraries/{$name}": [
+      "web/libraries/{$name}": [
         "type:drupal-library"
       ],
-      "docroot/themes/contrib/{$name}": [
+      "web/themes/contrib/{$name}": [
         "type:drupal-theme"
       ],
-      "docroot/themes/custom/{$name}": [
+      "web/themes/custom/{$name}": [
         "type:drupal-custom-theme"
       ],
       "drush/contrib/{$name}": [
