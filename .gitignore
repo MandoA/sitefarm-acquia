@@ -5,16 +5,16 @@ settings.local.php
 /bin
 
 # Ignore non-custom parts of Drupal.
-/docroot/core
-/docroot/profiles
-/docroot/modules/contrib
-/docroot/themes/contrib
+/web/core
+/web/profiles
+/web/modules/contrib
+/web/themes/contrib
 
 # Ignore Libraries which have been copied from the Profile.
-/docroot/libraries
+/web/libraries
 
 # Ignore Drupal's file directory
-docroot/sites/*/files
+web/sites/*/files
 
 # Ignore Composer-managed dependencies.
 vendor/
