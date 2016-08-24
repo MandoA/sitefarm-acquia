@@ -10,7 +10,7 @@ events:
       - acsf:
           type: script
           script:
-            - cd docroot
+            - cd web
             - ../bin/drush --include=modules/contrib/acsf/acsf_init acsf-init
 
 ssh-keys:
