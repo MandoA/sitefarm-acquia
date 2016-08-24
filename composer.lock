@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "589a183fee57872129c11aff6cbe3eeb",
-    "content-hash": "d26fd0b1d1ab2865a17803cee548abbd",
+    "hash": "1c316cbb422beb088979508f056c4b54",
+    "content-hash": "b018c6f3d2b01e13c33d974ba444fb0e",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1106,7 +1106,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/cas",
-                "reference": "5dfa6ae7d93b4190aba645be48d9b48f99da32ee"
+                "reference": "df1d032cfb5285c8df419defcaf54e3a9701fe03"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -1145,7 +1145,7 @@
             ],
             "description": "Provides CAS authentication for Drupal.",
             "homepage": "http://drupal.org/project/cas",
-            "time": "2016-05-11 21:21:13"
+            "time": "2016-08-12 12:39:21"
         },
         {
             "name": "drupal/cas_attributes",
@@ -1153,7 +1153,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/cas_attributes",
-                "reference": "f09fad7fc19b57d40618df0c45db9a9cdef99d72"
+                "reference": "fc817b6e10e5944f2bc6d62d184cb674b90ff6a5"
             },
             "require": {
                 "drupal/cas": "8.*",
@@ -1172,7 +1172,7 @@
             ],
             "description": "Provides tokens for CAS attributes and an interface for token replacement in user account and profile fields; as well as role mapping capability.",
             "homepage": "https://www.drupal.org/project/cas_attributes",
-            "time": "2016-04-20 17:55:37"
+            "time": "2016-08-23 15:56:49"
         },
         {
             "name": "drupal/ckwordcount",
@@ -1466,16 +1466,16 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "8.3.0-alpha26",
+            "version": "8.3.0-alpha27",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8"
+                "reference": "231e2649678d58901368a9e5681f36865ce84e73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha26.zip",
-                "reference": "c14a5eee970c3d0aab02e88f6c6a4d18091439b8",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1502,7 +1502,7 @@
             ],
             "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-05-06 18:51:13"
+            "time": "2016-08-20 19:59:03"
         },
         {
             "name": "drupal/default_content",
@@ -1537,17 +1537,48 @@
             "time": "2015-10-02 04:07:57"
         },
         {
-            "name": "drupal/features",
-            "version": "8.3.0-beta6",
+            "name": "drupal/externalauth",
+            "version": "8.1.0-alpha3",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/features",
-                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e"
+                "url": "https://git.drupal.org/project/externalauth.git",
+                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta6.zip",
-                "reference": "245b7175b971e4239e3ee5685ca7c92942bf8a6e",
+                "url": "https://ftp.drupal.org/files/projects/externalauth-8.x-1.0-alpha3.zip",
+                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Helper module to authenticate users using an external site / service and storing identification details",
+            "homepage": "https://www.drupal.org/project/externalauth",
+            "time": "2016-01-20 17:57:19"
+        },
+        {
+            "name": "drupal/features",
+            "version": "8.3.0-beta7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/features",
+                "reference": "fd22277b68a2aa06ff0d86af954e694db68677a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta7.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1573,20 +1604,20 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-07-08 12:53:14"
+            "time": "2016-08-04 18:45:56"
         },
         {
             "name": "drupal/google_analytics",
-            "version": "8.2.0",
+            "version": "8.2.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/google_analytics",
-                "reference": "99802b6a9f7711d30838acaa1af9ce2cf5b4d614"
+                "reference": "5a44ad5643af5510ec15c07727ce0d124ee1c1c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.0.zip",
-                "reference": "99802b6a9f7711d30838acaa1af9ce2cf5b4d614",
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.1.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1614,7 +1645,7 @@
             ],
             "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
             "homepage": "https://www.drupal.org/project/google_analytics",
-            "time": "2016-04-23 19:09:32"
+            "time": "2016-08-09 21:26:53"
         },
         {
             "name": "drupal/honeypot",
@@ -1752,10 +1783,11 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ldap",
-                "reference": "984ffcea3d7975897d10989cb20bcd81b470315b"
+                "reference": "2b0a9081d6af566d52d644d81c41f809fc9a2025"
             },
             "require": {
-                "drupal/core": "8.*"
+                "drupal/core": "8.*",
+                "drupal/externalauth": "8.*"
             },
             "replace": {
                 "drupal/ldap_authentication": "self.version",
@@ -1764,21 +1796,14 @@
                 "drupal/ldap_help": "self.version",
                 "drupal/ldap_query": "self.version",
                 "drupal/ldap_servers": "self.version",
-                "drupal/ldap_sso": "self.version",
                 "drupal/ldap_user": "self.version",
                 "drupal/ldap_views": "self.version"
             },
             "suggest": {
                 "drupal/authorization": "Required by drupal/ldap_authorization",
-                "drupal/core": "Required by drupal/ldap_authorization, drupal/ldap_feeds, drupal/ldap_help, drupal/ldap_query, drupal/ldap_servers, drupal/ldap_sso, drupal/ldap_user, drupal/ldap_views",
+                "drupal/core": "Required by drupal/ldap_authorization, drupal/ldap_feeds, drupal/ldap_help, drupal/ldap_query, drupal/ldap_servers, drupal/ldap_user, drupal/ldap_views",
                 "drupal/externalauth": "Required by drupal/ldap_user",
-                "drupal/feeds": "Required by drupal/ldap_feeds",
-                "drupal/ldap_authentication": "Required by drupal/ldap_sso",
-                "drupal/ldap_query": "Required by drupal/ldap_feeds, drupal/ldap_views",
-                "drupal/ldap_servers": "Required by drupal/ldap_authorization, drupal/ldap_feeds, drupal/ldap_help, drupal/ldap_query, drupal/ldap_sso, drupal/ldap_user",
-                "drupal/ldap_test": "Required by drupal/ldap_help",
-                "drupal/ldap_user": "Required by drupal/ldap_authorization",
-                "drupal/views": "Required by drupal/ldap_views"
+                "drupal/feeds": "Required by drupal/ldap_feeds"
             },
             "type": "drupal-module",
             "extra": {
@@ -1792,7 +1817,7 @@
             ],
             "description": "Implements LDAP authentication",
             "homepage": "https://www.drupal.org/project/ldap",
-            "time": "2016-05-18 22:01:25"
+            "time": "2016-08-17 01:44:28"
         },
         {
             "name": "drupal/masquerade",
@@ -1828,16 +1853,16 @@
         },
         {
             "name": "drupal/menu_block",
-            "version": "8.1.1",
+            "version": "8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/menu_block",
-                "reference": "ad536680d9c2f91ca65dadc1642621b3284a3f22"
+                "reference": "2d172bf6cc108cb55842ce640484437c447e2579"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.1.zip",
-                "reference": "ad536680d9c2f91ca65dadc1642621b3284a3f22",
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.2.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1859,20 +1884,20 @@
             ],
             "description": "Provides configurable blocks of menu links.",
             "homepage": "https://www.drupal.org/project/menu_block",
-            "time": "2016-06-30 13:06:26"
+            "time": "2016-08-01 08:45:26"
         },
         {
             "name": "drupal/metatag",
-            "version": "8.1.0-beta8",
+            "version": "8.1.0-beta10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/metatag",
-                "reference": "6a1b892f9b1f1a3b027dbddca81676e0d69a6ef3"
+                "reference": "c0610ad2ad9318298823c24db66b8769095910a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta8.zip",
-                "reference": "6a1b892f9b1f1a3b027dbddca81676e0d69a6ef3",
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta10.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1912,7 +1937,7 @@
                 "php",
                 "seo"
             ],
-            "time": "2016-05-14 11:04:56"
+            "time": "2016-08-22 17:45:58"
         },
         {
             "name": "drupal/mollom",
@@ -1996,22 +2021,23 @@
         },
         {
             "name": "drupal/page_manager",
-            "version": "8.1.0-alpha23",
+            "version": "8.1.0-alpha24",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/page_manager",
-                "reference": "fed1710d1b366bb3417b197270c6d73caeae4fa1"
+                "reference": "e17581138de8047ffa4b740a6d9074f854aa80c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha23.zip",
-                "reference": "fed1710d1b366bb3417b197270c6d73caeae4fa1",
+                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-1.0-alpha24.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
                 "drupal/block": "8.*",
                 "drupal/core": "8.*",
-                "drupal/ctools": "~8.3.0-alpha21"
+                "drupal/ctools": "~8.3.0-alpha21",
+                "drupal/system": ">=8.0.5"
             },
             "replace": {
                 "drupal/page_manager_ui": "self.version"
@@ -2038,7 +2064,7 @@
             ],
             "description": "Provides a way to place blocks on a custom page.",
             "homepage": "https://www.drupal.org/project/page_manager",
-            "time": "2016-02-16 19:47:59"
+            "time": "2016-08-20 19:15:40"
         },
         {
             "name": "drupal/panelizer",
@@ -2326,16 +2352,16 @@
         },
         {
             "name": "drupal/token",
-            "version": "8.1.0-alpha2",
+            "version": "8.1.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "918d0d5e8e8ee7f446d3e068cb6aa2d7c61ee625"
+                "reference": "1c68e82525fda1bd12021502da81b929b9ae5c02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-alpha2.zip",
-                "reference": "918d0d5e8e8ee7f446d3e068cb6aa2d7c61ee625",
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta1.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -2353,20 +2379,20 @@
             ],
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
-            "time": "2016-01-21 08:02:24"
+            "time": "2016-08-09 07:03:16"
         },
         {
             "name": "drupal/workbench_moderation",
-            "version": "8.1.0",
+            "version": "8.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/workbench_moderation",
-                "reference": "0c5527f911bcea52c71b8387b9fcbe9e71bc4332"
+                "reference": "661c2108c84e961a00ae7174c91053858447a7d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/workbench_moderation-8.x-1.0.zip",
-                "reference": "0c5527f911bcea52c71b8387b9fcbe9e71bc4332",
+                "url": "https://ftp.drupal.org/files/projects/workbench_moderation-8.x-1.1.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -2389,7 +2415,7 @@
             "keywords": [
                 "Drupal"
             ],
-            "time": "2016-04-15 20:47:27"
+            "time": "2016-06-28 04:04:37"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -5725,37 +5751,6 @@
                 "web"
             ],
             "time": "2015-12-22 20:10:14"
-        },
-        {
-            "name": "drupal/externalauth",
-            "version": "8.1.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/externalauth.git",
-                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/externalauth-8.x-1.0-alpha3.zip",
-                "reference": "acbff130706922e77d16e82d01f751cf7c7cc7a9",
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Helper module to authenticate users using an external site / service and storing identification details",
-            "homepage": "https://www.drupal.org/project/externalauth",
-            "time": "2016-01-20 17:57:19"
         },
         {
             "name": "drupal/focal_point",
