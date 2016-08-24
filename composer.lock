@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "704a5f33ef7082b7d73fcc7e15401928",
-    "content-hash": "41bdc4e667141c20127479eb398376da",
+    "hash": "d4db32ecadcf3b64f58858a1d3de330b",
+    "content-hash": "e53ca9ecc77fdc2d9fae5f48102b6577",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -1379,46 +1379,6 @@
             "time": "2016-07-11 13:07:34"
         },
         {
-            "name": "drupal/crop",
-            "version": "8.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/crop.git",
-                "reference": "8506e099c9f7cd889db4e982890011df2b956bca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.0-rc1.zip",
-                "reference": "8506e099c9f7cd889db4e982890011df2b956bca",
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*",
-                "drupal/image": "8.*",
-                "drupal/user": "8.*"
-            },
-            "replace": {
-                "drupal/crop_media_entity": "self.version"
-            },
-            "suggest": {
-                "drupal/core": "Required by drupal/crop_media_entity",
-                "drupal/media_entity": "Required by drupal/crop_media_entity"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides storage and API for image crops.",
-            "homepage": "https://www.drupal.org/project/crop",
-            "time": "2016-05-18 15:47:02"
-        },
-        {
             "name": "drupal/ctools",
             "version": "8.3.0-alpha26",
             "source": {
@@ -1496,39 +1456,6 @@
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
             "time": "2016-07-08 12:53:14"
-        },
-        {
-            "name": "drupal/focal_point",
-            "version": "8.1.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/focal_point",
-                "reference": "c329a0e3af711ff2865b809e8b547b9406595085"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.0-beta2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*",
-                "drupal/crop": ">=8.1.0-alpha2",
-                "drupal/image": "8.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Allows users to specify the focal point of an image for use during cropping.",
-            "homepage": "https://www.drupal.org/project/focal_point",
-            "time": "2016-08-08 20:53:53"
         },
         {
             "name": "drupal/google_analytics",
@@ -5511,6 +5438,46 @@
             "time": "2016-07-27 19:52:10"
         },
         {
+            "name": "drupal/crop",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/crop.git",
+                "reference": "8506e099c9f7cd889db4e982890011df2b956bca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.0-rc1.zip",
+                "reference": "8506e099c9f7cd889db4e982890011df2b956bca",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/image": "8.*",
+                "drupal/user": "8.*"
+            },
+            "replace": {
+                "drupal/crop_media_entity": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/crop_media_entity",
+                "drupal/media_entity": "Required by drupal/crop_media_entity"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides storage and API for image crops.",
+            "homepage": "https://www.drupal.org/project/crop",
+            "time": "2016-05-18 15:47:02"
+        },
+        {
             "name": "drupal/default_content",
             "version": "8.1.0-alpha2",
             "source": {
@@ -5677,6 +5644,39 @@
             "description": "Helper module to authenticate users using an external site / service and storing identification details",
             "homepage": "https://www.drupal.org/project/externalauth",
             "time": "2016-01-20 17:57:19"
+        },
+        {
+            "name": "drupal/focal_point",
+            "version": "8.1.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/focal_point",
+                "reference": "c329a0e3af711ff2865b809e8b547b9406595085"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.0-beta2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/crop": ">=8.1.0-alpha2",
+                "drupal/image": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows users to specify the focal point of an image for use during cropping.",
+            "homepage": "https://www.drupal.org/project/focal_point",
+            "time": "2016-08-08 20:53:53"
         },
         {
             "name": "drupal/notification",
