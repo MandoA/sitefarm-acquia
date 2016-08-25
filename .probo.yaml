@@ -14,7 +14,7 @@ steps:
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8
-    subDirectory: docroot
+    subDirectory: web
     runInstall: true
     profileName: sitefarm
     installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu'
