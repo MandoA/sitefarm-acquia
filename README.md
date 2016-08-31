@@ -26,7 +26,7 @@ Follow the steps below to update your core files.
 1. Run `git diff` to determine if any of the scaffolding files have changed. 
    Review the files for any changes and restore any customizations to 
   `.htaccess` or `robots.txt`.
-1. Commit everything all together in a single commit, so `web` will remain in
+1. Commit everything all together in a single commit, so `docroot` will remain in
    sync with the `core` when checking out branches or running `git bisect`.
 1. In the event that there are non-trivial conflicts in step 2, you may wish 
    to perform these steps on a branch, and use `git merge` to combine the 
