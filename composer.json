@@ -22,6 +22,7 @@
   "require": {
     "composer/installers": "^1.0",
     "drupal-composer/drupal-scaffold": "^1.2",
+    "zendframework/zend-stdlib": "~3.0.1",
     "cweagans/composer-patches": "^1.5",
     "ucdavis/sitefarm": "dev-8.x-1.x",
     "drupal/acquia_connector": "8.*",
