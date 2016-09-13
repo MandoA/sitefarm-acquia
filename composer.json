@@ -90,11 +90,6 @@
         "type:drupal-drush"
       ]
     },
-    "patches": {
-      "drupal/core": {
-        "fix config directory file permissions": "https://www.drupal.org/files/issues/2783749-16.patch"
-      }
-    },
     "enable-patching": true
   }
 }
