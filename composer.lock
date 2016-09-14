@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "29ba70a6739351bd4691e7f304f2258b",
-    "content-hash": "c57f51140e3bb24ac42da531f5241376",
+    "hash": "b4a57c1b6a80032ab5e195a5e262018e",
+    "content-hash": "65cb0c9f15f2104a5271f94a433fae66",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -64,16 +64,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v0.8.3",
+            "version": "v0.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "f8839e77aaf825fdc678182264be53e12bc9d3b2"
+                "reference": "5d8d13bfaed08119be763da2a0fc9f38fff8af54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/f8839e77aaf825fdc678182264be53e12bc9d3b2",
-                "reference": "f8839e77aaf825fdc678182264be53e12bc9d3b2",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/5d8d13bfaed08119be763da2a0fc9f38fff8af54",
+                "reference": "5d8d13bfaed08119be763da2a0fc9f38fff8af54",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "localization",
                 "postal"
             ],
-            "time": "2016-08-04 16:29:10"
+            "time": "2016-09-05 18:45:53"
         },
         {
             "name": "commerceguys/enum",
@@ -1108,7 +1108,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/cas",
-                "reference": "df1d032cfb5285c8df419defcaf54e3a9701fe03"
+                "reference": "f20df0d95157efc8239899370362d359d5d1938b"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -1147,7 +1147,7 @@
             ],
             "description": "Provides CAS authentication for Drupal.",
             "homepage": "http://drupal.org/project/cas",
-            "time": "2016-08-12 12:39:21"
+            "time": "2016-09-10 21:59:20"
         },
         {
             "name": "drupal/cas_attributes",
@@ -1465,6 +1465,46 @@
             "time": "2016-09-07 19:16:42"
         },
         {
+            "name": "drupal/crop",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/crop.git",
+                "reference": "8506e099c9f7cd889db4e982890011df2b956bca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.0-rc1.zip",
+                "reference": "8506e099c9f7cd889db4e982890011df2b956bca",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/image": "8.*",
+                "drupal/user": "8.*"
+            },
+            "replace": {
+                "drupal/crop_media_entity": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/crop_media_entity",
+                "drupal/media_entity": "Required by drupal/crop_media_entity"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides storage and API for image crops.",
+            "homepage": "https://www.drupal.org/project/crop",
+            "time": "2016-05-18 15:47:02"
+        },
+        {
             "name": "drupal/ctools",
             "version": "8.3.0-alpha27",
             "source": {
@@ -1569,16 +1609,16 @@
         },
         {
             "name": "drupal/features",
-            "version": "8.3.0-beta7",
+            "version": "8.3.0-beta8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "fd22277b68a2aa06ff0d86af954e694db68677a9"
+                "reference": "1edc3b91b51b849fb798612126b50d7d66b5830b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta7.zip",
-                "reference": "fd22277b68a2aa06ff0d86af954e694db68677a9",
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.0-beta8.zip",
+                "reference": "1edc3b91b51b849fb798612126b50d7d66b5830b",
                 "shasum": null
             },
             "require": {
@@ -1604,7 +1644,40 @@
             ],
             "description": "Enables administrators to package configuration into modules.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-08-04 18:45:56"
+            "time": "2016-09-02 20:10:53"
+        },
+        {
+            "name": "drupal/focal_point",
+            "version": "8.1.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/focal_point",
+                "reference": "c329a0e3af711ff2865b809e8b547b9406595085"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.0-beta2.zip",
+                "reference": "c329a0e3af711ff2865b809e8b547b9406595085",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/crop": ">=8.1.0-alpha2",
+                "drupal/image": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows users to specify the focal point of an image for use during cropping.",
+            "homepage": "https://www.drupal.org/project/focal_point",
+            "time": "2016-08-08 20:53:53"
         },
         {
             "name": "drupal/google_analytics",
@@ -1783,7 +1856,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ldap",
-                "reference": "2b0a9081d6af566d52d644d81c41f809fc9a2025"
+                "reference": "60ad67658386cb03be492f24a5cacc154a0a0b43"
             },
             "require": {
                 "drupal/core": "8.*",
@@ -1817,7 +1890,7 @@
             ],
             "description": "Implements LDAP authentication",
             "homepage": "https://www.drupal.org/project/ldap",
-            "time": "2016-08-17 01:44:28"
+            "time": "2016-09-04 05:40:59"
         },
         {
             "name": "drupal/masquerade",
@@ -4747,7 +4820,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "69d98b773000c54996c291204f230915361b65d6"
+                "reference": "29031b7913853892b393e87e2db84ebe23c39c8b"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -4759,9 +4832,11 @@
                 "drupal/cas_attributes": "8.*",
                 "drupal/ckwordcount": "8.*",
                 "drupal/config_update": "8.*",
+                "drupal/crop": "8.*",
                 "drupal/ctools": "8.*",
                 "drupal/default_content": "8.*",
                 "drupal/features": "8.*",
+                "drupal/focal_point": "8.*",
                 "drupal/google_analytics": "8.*",
                 "drupal/honeypot": "8.*",
                 "drupal/layout_plugin": "8.*",
@@ -4825,7 +4900,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2016-08-24 00:10:55"
+            "time": "2016-09-12 21:14:27"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -5602,46 +5677,6 @@
             "time": "2015-06-14 21:17:01"
         },
         {
-            "name": "drupal/crop",
-            "version": "8.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/crop.git",
-                "reference": "8506e099c9f7cd889db4e982890011df2b956bca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.0-rc1.zip",
-                "reference": "8506e099c9f7cd889db4e982890011df2b956bca",
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*",
-                "drupal/image": "8.*",
-                "drupal/user": "8.*"
-            },
-            "replace": {
-                "drupal/crop_media_entity": "self.version"
-            },
-            "suggest": {
-                "drupal/core": "Required by drupal/crop_media_entity",
-                "drupal/media_entity": "Required by drupal/crop_media_entity"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides storage and API for image crops.",
-            "homepage": "https://www.drupal.org/project/crop",
-            "time": "2016-05-18 15:47:02"
-        },
-        {
             "name": "drupal/drupal-driver",
             "version": "v1.1.6",
             "source": {
@@ -5745,39 +5780,6 @@
                 "web"
             ],
             "time": "2015-12-22 20:10:14"
-        },
-        {
-            "name": "drupal/focal_point",
-            "version": "8.1.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/focal_point",
-                "reference": "c329a0e3af711ff2865b809e8b547b9406595085"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.0-beta2.zip",
-                "reference": "c329a0e3af711ff2865b809e8b547b9406595085",
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*",
-                "drupal/crop": ">=8.1.0-alpha2",
-                "drupal/image": "8.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Allows users to specify the focal point of an image for use during cropping.",
-            "homepage": "https://www.drupal.org/project/focal_point",
-            "time": "2016-08-08 20:53:53"
         },
         {
             "name": "drush/drush",
