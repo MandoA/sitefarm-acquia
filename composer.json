@@ -22,8 +22,9 @@
   "require": {
     "composer/installers": "^1.0",
     "drupal-composer/drupal-scaffold": "^1.2",
+    "zendframework/zend-stdlib": "~3.0.1",
     "cweagans/composer-patches": "^1.5",
-    "ucdavis/sitefarm": "dev-8.x-1.x",
+    "ucdavis/sitefarm": "dev-8.x-1.x#8.x-1.0-alpha1",
     "drupal/acquia_connector": "8.*",
     "drupal/acsf": "8.*",
     "drupal/clamav": "8.*",
@@ -89,11 +90,6 @@
       "drush/contrib/{$name}": [
         "type:drupal-drush"
       ]
-    },
-    "patches": {
-      "drupal/core": {
-        "fix config directory file permissions": "https://www.drupal.org/files/issues/2783749-16.patch"
-      }
     },
     "enable-patching": true
   }
