@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4a57c1b6a80032ab5e195a5e262018e",
-    "content-hash": "65cb0c9f15f2104a5271f94a433fae66",
+    "hash": "1d452010fc49b463c01634be4a047f70",
+    "content-hash": "12d44ef32d59fdb256e73a74ec5c02c5",
     "packages": [
         {
             "name": "codegyre/robo",
@@ -2419,6 +2419,37 @@
             "description": "Sharing module using AddThis widgets and entity based storage.",
             "homepage": "https://www.drupal.org/project/sharemessage",
             "time": "2016-05-30 20:34:10"
+        },
+        {
+            "name": "drupal/social_media_links",
+            "version": "8.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/social_media_links",
+                "reference": "3bde31be580375b3bbc88b19f6dd711a2edcdf5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/social_media_links-8.x-2.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "The module provides a block that display links (icons) tou your profiles on various social networking sites.",
+            "homepage": "https://www.drupal.org/project/social_media_links",
+            "time": "2015-12-11 09:56:08"
         },
         {
             "name": "drupal/token",
