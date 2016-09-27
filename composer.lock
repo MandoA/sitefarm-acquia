@@ -1033,6 +1033,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2426,7 +2429,7 @@
             "time": "2016-05-30 20:34:10"
         },
         {
-        "name": "drupal/social_media_links",
+            "name": "drupal/social_media_links",
             "version": "8.2.1",
             "source": {
                 "type": "git",
