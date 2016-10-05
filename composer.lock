@@ -2424,6 +2424,37 @@
             "time": "2016-05-30 20:34:10"
         },
         {
+            "name": "drupal/social_media_links",
+            "version": "8.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/social_media_links",
+                "reference": "3bde31be580375b3bbc88b19f6dd711a2edcdf5e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/social_media_links-8.x-2.1.zip",
+                "reference": "3bde31be580375b3bbc88b19f6dd711a2edcdf5e",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "The module provides a block that display links (icons) tou your profiles on various social networking sites.",
+            "homepage": "https://www.drupal.org/project/social_media_links",
+            "time": "2015-12-11 09:56:08"
+        },
+        {
             "name": "drupal/token",
             "version": "8.1.0-beta2",
             "source": {
@@ -4832,7 +4863,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "29031b7913853892b393e87e2db84ebe23c39c8b"
+                "reference": "1060e81c13309d933ac8e00daa57c0211ed8f62d"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -4866,6 +4897,7 @@
                 "drupal/roleassign": "8.*",
                 "drupal/scheduled_updates": "8.*",
                 "drupal/sharemessage": "8.*",
+                "drupal/social_media_links": "8.*",
                 "drupal/token": "8.*",
                 "drupal/workbench_moderation": "8.*",
                 "ucdavis/aggiefeed": "dev-8.x-1.x",
@@ -4912,7 +4944,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2016-09-12 21:14:27"
+            "time": "2016-10-03 16:04:39"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -4920,7 +4952,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "2935217b4003d1c92d65182b8a645c6e350299b3"
+                "reference": "b25f59f271b9e74a4e551303d9ccf73b911aeaf8"
             },
             "type": "drupal-theme",
             "authors": [
@@ -4930,7 +4962,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2016-06-30 02:14:14"
+            "time": "2016-10-03 15:36:37"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -6340,37 +6372,6 @@
                 "web"
             ],
             "time": "2015-12-22 20:10:14"
-        },
-        {
-            "name": "drupal/social_media_links",
-            "version": "8.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/social_media_links",
-                "reference": "3bde31be580375b3bbc88b19f6dd711a2edcdf5e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_media_links-8.x-2.1.zip",
-                "reference": "3bde31be580375b3bbc88b19f6dd711a2edcdf5e",
-                "shasum": null
-            },
-            "require": {
-                "drupal/core": "8.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-8.x-2.x": "8.2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "The module provides a block that display links (icons) tou your profiles on various social networking sites.",
-            "homepage": "https://www.drupal.org/project/social_media_links",
-            "time": "2015-12-11 09:56:08"
         },
         {
             "name": "drush/drush",
