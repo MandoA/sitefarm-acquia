@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "56fb56eee5ea7526b00b3b90be32b991",
-    "content-hash": "4b0bc5d024d036a0e8bd0896d5d98171",
+    "hash": "0df1d88d89a2cfdac15176765168b403",
+    "content-hash": "cc9017f2122acd4e61438a1fb50a7460",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -966,7 +966,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.5.zip",
-                "reference": null,
+                "reference": "0f3c8d8a2b3b2e9e990ea7998249650977ae5404",
                 "shasum": null
             },
             "require": {
@@ -1005,7 +1005,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.32.zip",
-                "reference": null,
+                "reference": "451dd779e5aaff7a9085deded258a2a113d8618e",
                 "shasum": null
             },
             "require": {
@@ -1278,7 +1278,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/clamav-8.x-1.0-alpha3.zip",
-                "reference": null,
+                "reference": "a13e9dcea3703d7665e89f92e81781149b32815a",
                 "shasum": null
             },
             "require": {
@@ -2483,6 +2483,50 @@
             "description": "Sharing module using AddThis widgets and entity based storage.",
             "homepage": "https://www.drupal.org/project/sharemessage",
             "time": "2016-05-30 20:34:10"
+        },
+        {
+            "name": "drupal/simple_sitemap",
+            "version": "8.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/simple_sitemap.git",
+                "reference": "c8633a94226de25e72cd324338e19999b7d1688b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pawel Ginalski (gbyte.co)",
+                    "email": "contact@gbyte.co",
+                    "homepage": "https://www.drupal.org/u/gbyte.co",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Sam Becker (Sam152)",
+                    "homepage": "https://www.drupal.org/u/sam152",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Creates a standard conform XML sitemap of your content.",
+            "homepage": "https://drupal.org/project/simple_sitemap",
+            "time": "2016-08-23 08:40:03"
         },
         {
             "name": "drupal/social_media_links",
