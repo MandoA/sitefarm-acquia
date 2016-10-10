@@ -4997,6 +4997,9 @@
                     "drupal/address": {
                         "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
                     },
+                    "patches_applied": {
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch"
+                    },
                     "drupal/sharemessage": {
                         "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
                     }
