@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "56fb56eee5ea7526b00b3b90be32b991",
-    "content-hash": "4b0bc5d024d036a0e8bd0896d5d98171",
+    "hash": "878a875e77ff193f4031b2b85fcb7205",
+    "content-hash": "f51160e5f1f5fc6ada60882c25c61674",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1491,6 +1491,11 @@
                 "symfony/css-selector": "~2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "patches_applied": {
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
