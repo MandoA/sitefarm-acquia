@@ -966,7 +966,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.5.zip",
-                "reference": null,
+                "reference": "0f3c8d8a2b3b2e9e990ea7998249650977ae5404",
                 "shasum": null
             },
             "require": {
@@ -1005,7 +1005,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.32.zip",
-                "reference": null,
+                "reference": "451dd779e5aaff7a9085deded258a2a113d8618e",
                 "shasum": null
             },
             "require": {
@@ -1090,16 +1090,16 @@
         },
         {
             "name": "drupal/anchor_link",
-            "version": "8.1.0",
+            "version": "8.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/anchor_link.git",
-                "reference": "01f17d3146a457887304eb872c55275730d95fc5"
+                "reference": "05197813c92a93a00026de2aa6e4ff215bf6b6a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.0.zip",
-                "reference": "01f17d3146a457887304eb872c55275730d95fc5",
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.2.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1119,7 +1119,7 @@
             ],
             "description": "This plugin module adds the better link dialog and anchor related features to CKEditor in Drupal 8",
             "homepage": "https://www.drupal.org/project/anchor_link",
-            "time": "2016-10-06 16:55:45"
+            "time": "2016-10-12 13:40:05"
         },
         {
             "name": "drupal/auto_entitylabel",
@@ -1278,7 +1278,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/clamav-8.x-1.0-alpha3.zip",
-                "reference": null,
+                "reference": "a13e9dcea3703d7665e89f92e81781149b32815a",
                 "shasum": null
             },
             "require": {
