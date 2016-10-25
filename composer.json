@@ -60,7 +60,6 @@
     ]
   },
   "config": {
-    "bin-dir": "bin/",
     "preferred-install": {
       "drupal/*": "dist"
     }
