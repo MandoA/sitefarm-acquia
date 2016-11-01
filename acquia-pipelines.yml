@@ -11,7 +11,7 @@ events:
           type: script
           script:
             - cd docroot
-            - ../bin/drush --include=modules/contrib/acsf/acsf_init acsf-init
+            - ../vendor/bin/drush --include=modules/contrib/acsf/acsf_init acsf-init
 
 ssh-keys:
   my_module:
