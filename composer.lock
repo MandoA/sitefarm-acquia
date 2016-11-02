@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a855ecb1065e9a23e30a5f1cb3c73b44",
-    "content-hash": "63402cd2017d93c6b48dfddf8150b72e",
+    "hash": "85f76f4819f8918d39b86ee18b4df182",
+    "content-hash": "06b480e10101fd39d75f664132eedd14",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1127,7 +1127,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/auto_entitylabel",
-                "reference": "6b45fedc21eb840c83ea97d907424aa4e3b0b73b"
+                "reference": "1d746e22453359dc6c8797a146679edfcded60c5"
             },
             "require": {
                 "drupal/core": "8.*"
@@ -1138,7 +1138,7 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "fix warnings on admin page": "https://www.drupal.org/files/issues/notices_and_warnings-2712441-11.patch"
+                    "fix warnings on admin page": "https://www.drupal.org/files/issues/notices_and_warnings-2712441.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1147,7 +1147,7 @@
             ],
             "description": "Allows hiding of entity label fields and automatic label creation.",
             "homepage": "https://www.drupal.org/project/auto_entitylabel",
-            "time": "2016-10-21 12:46:16"
+            "time": "2016-05-04 09:00:31"
         },
         {
             "name": "drupal/cas",
@@ -8563,6 +8563,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "ucdavis/sitefarm": 20,
+        "drupal/auto_entitylabel": 20,
         "drupal/metatag": 20
     },
     "prefer-stable": true,
