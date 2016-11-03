@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85f76f4819f8918d39b86ee18b4df182",
-    "content-hash": "06b480e10101fd39d75f664132eedd14",
+    "hash": "a855ecb1065e9a23e30a5f1cb3c73b44",
+    "content-hash": "63402cd2017d93c6b48dfddf8150b72e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4870,14 +4870,14 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "c15816eb5ef26a064d47eeee9d8253779bb3502b"
+                "reference": "c6ab4daa1a79284a703d94b3cf6a8dcd60c352ce"
             },
             "require": {
                 "composer/installers": "^1.0",
                 "cweagans/composer-patches": "^1.4",
                 "drupal/address": "8.*",
                 "drupal/anchor_link": "8.*",
-                "drupal/auto_entitylabel": "8.*",
+                "drupal/auto_entitylabel": "dev-8.x-1.x#1d746e22453359dc6c8797a146679edfcded60c5",
                 "drupal/cas": "8.*",
                 "drupal/ckwordcount": "8.*",
                 "drupal/config_update": "8.*",
@@ -4956,7 +4956,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2016-11-01 21:24:07"
+            "time": "2016-11-02 22:01:21"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -8563,7 +8563,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "ucdavis/sitefarm": 20,
-        "drupal/auto_entitylabel": 20,
         "drupal/metatag": 20
     },
     "prefer-stable": true,
