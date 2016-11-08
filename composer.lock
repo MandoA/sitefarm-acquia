@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a855ecb1065e9a23e30a5f1cb3c73b44",
-    "content-hash": "63402cd2017d93c6b48dfddf8150b72e",
+    "hash": "d7c1ed0e94491142210ff43b7136bc03",
+    "content-hash": "1d328ea5679aaf1dfa6887e45fbb4729",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1467,7 +1467,8 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch"
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                    "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-54.patch"
                 }
             },
             "autoload": {
@@ -4938,7 +4939,8 @@
                         "fix CasSubscriber breaking Console": "https://www.drupal.org/files/issues/d8_cas_console-2822111-2.patch"
                     },
                     "drupal/core": {
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch"
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-54.patch"
                     },
                     "drupal/sharemessage": {
                         "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
@@ -6395,7 +6397,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/photoswipe-8.x-1.0-beta2.zip",
-                "reference": "0a5f8accc6e691aab766383993d443eb8f711a36",
+                "reference": null,
                 "shasum": null
             },
             "require": {
