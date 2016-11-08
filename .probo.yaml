@@ -20,6 +20,11 @@ steps:
     installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu'
   - name: Fix files directory permissions
     command: 'chown -R www-data:www-data /var/www/html/sites/default/files'
+  - name: Run PhpUnit
+    plugin: Script
+    script:
+      - cd /var/www/html/profiles/sitefarm
+      - $SRC_DIR/sitefarm-acquia/vendor/bin/phpunit
   - name: Run Behat NoJS
     plugin: Script
     script:
