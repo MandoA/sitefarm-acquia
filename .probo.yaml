@@ -11,11 +11,6 @@ steps:
       - composer install --ansi
       - composer require "ucdavis/sitefarm:dev-8dev" --ansi
       - composer require "ucdavis/sitefarm_one:dev-8dev" --ansi
-  - name: Run PhpUnit
-    plugin: Script
-    script:
-      - cd $SRC_DIR/sitefarm-acquia/docroot/profiles/sitefarm
-      - $SRC_DIR/sitefarm-acquia/vendor/bin/phpunit --colors="always"
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8
