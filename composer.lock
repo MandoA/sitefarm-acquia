@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b7bf966365128d7cac0b8b74ea3594f2",
-    "content-hash": "0749b391e829c8c272dd4fe02884c10f",
+    "hash": "5ea72030fbc41f8b11142b802db83d98",
+    "content-hash": "8f7b22dcf7f1b852ce72061b02f7e6f6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2576,6 +2576,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -5060,6 +5063,9 @@
                     },
                     "drupal/sharemessage": {
                         "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
+                    },
+                    "drupal/url_embed": {
+                        "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
                     }
                 }
             },
@@ -8681,8 +8687,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "ucdavis/sitefarm": 20,
-        "drupal/metatag": 20,
-        "drupal/url_embed": 20
+        "drupal/metatag": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
