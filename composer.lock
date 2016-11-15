@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5ea72030fbc41f8b11142b802db83d98",
-    "content-hash": "8f7b22dcf7f1b852ce72061b02f7e6f6",
+    "hash": "807b1c5f755431715f2000e59a931dfd",
+    "content-hash": "056b733c59faf6afa8143fcfde95dab9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1605,6 +1605,41 @@
             "description": "Imports default content when a module is enabled",
             "homepage": "https://www.drupal.org/project/default_content",
             "time": "2016-09-15 21:41:18"
+        },
+        {
+            "name": "drupal/editor_file",
+            "version": "8.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/editor_file.git",
+                "reference": "7983297c6294cc01b3bfbdda27d4068e86944ce7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_file-8.x-1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ckeditor": "8.*",
+                "drupal/core": "8.*",
+                "drupal/editor": "8.*",
+                "drupal/file": "8.*",
+                "drupal/filter": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allow users to link uploaded files in the text Editor.",
+            "homepage": "https://www.drupal.org/project/editor_file",
+            "time": "2016-11-01 22:11:18"
         },
         {
             "name": "drupal/embed",
@@ -5003,6 +5038,7 @@
                 "drupal/crop": "8.*",
                 "drupal/ctools": "8.*",
                 "drupal/default_content": "8.*",
+                "drupal/editor_file": "8.*",
                 "drupal/externalauth": "8.*",
                 "drupal/features": "8.*",
                 "drupal/focal_point": "8.*",
