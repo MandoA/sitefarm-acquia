@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "807b1c5f755431715f2000e59a931dfd",
-    "content-hash": "056b733c59faf6afa8143fcfde95dab9",
+    "hash": "a855ecb1065e9a23e30a5f1cb3c73b44",
+    "content-hash": "63402cd2017d93c6b48dfddf8150b72e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -103,6 +103,7 @@
                 }
             ],
             "description": "Modern task runner",
+            "abandoned": "consolidation/robo",
             "time": "2016-04-13 20:14:17"
         },
         {
@@ -1617,7 +1618,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/editor_file-8.x-1.2.zip",
-                "reference": null,
+                "reference": "7983297c6294cc01b3bfbdda27d4068e86944ce7",
                 "shasum": null
             },
             "require": {
