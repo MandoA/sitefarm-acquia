@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a855ecb1065e9a23e30a5f1cb3c73b44",
-    "content-hash": "63402cd2017d93c6b48dfddf8150b72e",
+    "hash": "30c997290a8f74dd479bf0f61d576620",
+    "content-hash": "2ed217f88bfa031bfe4f51f55a571e66",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -103,6 +103,7 @@
                 }
             ],
             "description": "Modern task runner",
+            "abandoned": "consolidation/robo",
             "time": "2016-04-13 20:14:17"
         },
         {
@@ -1467,7 +1468,8 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch"
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                    "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-54.patch"
                 }
             },
             "autoload": {
@@ -1606,6 +1608,72 @@
             "time": "2016-09-15 21:41:18"
         },
         {
+            "name": "drupal/editor_file",
+            "version": "8.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/editor_file.git",
+                "reference": "7983297c6294cc01b3bfbdda27d4068e86944ce7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_file-8.x-1.2.zip",
+                "reference": "7983297c6294cc01b3bfbdda27d4068e86944ce7",
+                "shasum": null
+            },
+            "require": {
+                "drupal/ckeditor": "8.*",
+                "drupal/core": "8.*",
+                "drupal/editor": "8.*",
+                "drupal/file": "8.*",
+                "drupal/filter": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allow users to link uploaded files in the text Editor.",
+            "homepage": "https://www.drupal.org/project/editor_file",
+            "time": "2016-11-01 22:11:18"
+        },
+        {
+            "name": "drupal/embed",
+            "version": "8.1.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/embed.git",
+                "reference": "135281965da85d0cfa04f3c0c77ce7821dfab662"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.0-rc3.zip",
+                "reference": "135281965da85d0cfa04f3c0c77ce7821dfab662",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a framework for different types of embeds in text editors.",
+            "homepage": "https://www.drupal.org/project/embed",
+            "time": "2016-07-10 18:43:18"
+        },
+        {
             "name": "drupal/externalauth",
             "version": "8.1.0-alpha4",
             "source": {
@@ -1698,6 +1766,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "fix tokens not being added to preview causing access denied": "https://www.drupal.org/files/issues/access_denied_on-2807813-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -2526,6 +2597,38 @@
             "time": "2016-09-20 10:19:14"
         },
         {
+            "name": "drupal/url_embed",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/url_embed.git",
+                "reference": "7ded4406672153e5e7adca13bedd3dfb0818afdd"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/editor": "8.*",
+                "drupal/embed": "8.*",
+                "drupal/filter": "8.*",
+                "embed/embed": "~2.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows URLs to be embedded using a text editor.",
+            "homepage": "https://www.drupal.org/project/url_embed",
+            "time": "2016-06-29 19:11:57"
+        },
+        {
             "name": "easyrdf/easyrdf",
             "version": "0.9.1",
             "source": {
@@ -2638,6 +2741,61 @@
                 "validator"
             ],
             "time": "2016-07-03 21:52:18"
+        },
+        {
+            "name": "embed/embed",
+            "version": "v2.7.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oscarotero/Embed.git",
+                "reference": "90a6fd4515e816162d00481a2a2fc42af8740e38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oscarotero/Embed/zipball/90a6fd4515e816162d00481a2a2fc42af8740e38",
+                "reference": "90a6fd4515e816162d00481a2a2fc42af8740e38",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.12",
+                "guzzlehttp/guzzle": "5.x",
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle@5.x": "To use Guzzle5 request resolver"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Embed\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Otero",
+                    "email": "oom@oscarotero.com",
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library to retrieve page info using oembed, opengraph, etc",
+            "homepage": "https://github.com/oscarotero/Embed",
+            "keywords": [
+                "embed",
+                "embedly",
+                "oembed",
+                "opengraph",
+                "twitter cards"
+            ],
+            "time": "2016-10-07 18:29:01"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4847,7 +5005,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
-                "reference": "c5a1b7ee6d17d1cdd1d326cf876d55c59689f61f"
+                "reference": "208d5cbac65a4924abf077e0293ff43b63e1481b"
             },
             "type": "drupal-module",
             "authors": [
@@ -4862,7 +5020,7 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2016-07-19 22:54:08"
+            "time": "2016-11-02 20:15:33"
         },
         {
             "name": "ucdavis/sitefarm",
@@ -4884,6 +5042,7 @@
                 "drupal/crop": "8.*",
                 "drupal/ctools": "8.*",
                 "drupal/default_content": "8.*",
+                "drupal/editor_file": "8.*",
                 "drupal/externalauth": "8.*",
                 "drupal/features": "8.*",
                 "drupal/focal_point": "8.*",
@@ -4906,6 +5065,7 @@
                 "drupal/simple_sitemap": "8.*",
                 "drupal/social_media_links": "8.*",
                 "drupal/token": "8.*",
+                "drupal/url_embed": "8.1.x-dev",
                 "ucdavis/aggiefeed": "dev-8.x-1.x",
                 "ucdavis/sitefarm_one": "@dev"
             },
@@ -4938,10 +5098,17 @@
                         "fix CasSubscriber breaking Console": "https://www.drupal.org/files/issues/d8_cas_console-2822111-2.patch"
                     },
                     "drupal/core": {
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch"
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-54.patch"
                     },
                     "drupal/sharemessage": {
                         "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
+                    },
+                    "drupal/url_embed": {
+                        "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                    },
+                    "drupal/focal_point": {
+                        "fix tokens not being added to preview causing access denied": "https://www.drupal.org/files/issues/access_denied_on-2807813-2.patch"
                     }
                 }
             },
