@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a855ecb1065e9a23e30a5f1cb3c73b44",
-    "content-hash": "63402cd2017d93c6b48dfddf8150b72e",
+    "hash": "30c997290a8f74dd479bf0f61d576620",
+    "content-hash": "2ed217f88bfa031bfe4f51f55a571e66",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1766,6 +1766,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "fix tokens not being added to preview causing access denied": "https://www.drupal.org/files/issues/access_denied_on-2807813-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -5103,6 +5106,9 @@
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                    },
+                    "drupal/focal_point": {
+                        "fix tokens not being added to preview causing access denied": "https://www.drupal.org/files/issues/access_denied_on-2807813-2.patch"
                     }
                 }
             },
