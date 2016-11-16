@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "30c997290a8f74dd479bf0f61d576620",
-    "content-hash": "2ed217f88bfa031bfe4f51f55a571e66",
+    "hash": "43d157f4c1676d242ebd30a104d112de",
+    "content-hash": "bfe1089eb415f11d34e9ae0c6ec6ba6c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2533,6 +2533,59 @@
             "description": "Creates a standard conform XML sitemap of your content.",
             "homepage": "https://drupal.org/project/simple_sitemap",
             "time": "2016-08-23 08:40:03"
+        },
+        {
+            "name": "drupal/sitemap",
+            "version": "8.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/sitemap.git",
+                "reference": "f2f238b6e10fa88956535d287b0b27f1b3d604d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sitemap-8.x-1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nik Alexandrov",
+                    "homepage": "https://www.drupal.org/u/nafes",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Anna Kalata",
+                    "homepage": "https://www.drupal.org/u/akalata",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "killes@www.drop.org",
+                    "homepage": "https://www.drupal.org/u/killeswww.drop.org",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/3295/committers",
+                    "role": "contributor"
+                }
+            ],
+            "description": "Display a sitemap.",
+            "homepage": "http://drupal.org/project/sitemap",
+            "time": "2016-08-20 17:44:17"
         },
         {
             "name": "drupal/social_media_links",
