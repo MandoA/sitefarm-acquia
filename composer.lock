@@ -103,6 +103,7 @@
                 }
             ],
             "description": "Modern task runner",
+            "abandoned": "consolidation/robo",
             "time": "2016-04-13 20:14:17"
         },
         {
@@ -1607,6 +1608,41 @@
             "time": "2016-09-15 21:41:18"
         },
         {
+            "name": "drupal/editor_file",
+            "version": "8.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/editor_file.git",
+                "reference": "7983297c6294cc01b3bfbdda27d4068e86944ce7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/editor_file-8.x-1.2.zip",
+                "reference": "7983297c6294cc01b3bfbdda27d4068e86944ce7",
+                "shasum": null
+            },
+            "require": {
+                "drupal/ckeditor": "8.*",
+                "drupal/core": "8.*",
+                "drupal/editor": "8.*",
+                "drupal/file": "8.*",
+                "drupal/filter": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allow users to link uploaded files in the text Editor.",
+            "homepage": "https://www.drupal.org/project/editor_file",
+            "time": "2016-11-01 22:11:18"
+        },
+        {
             "name": "drupal/embed",
             "version": "8.1.0-rc3",
             "source": {
@@ -1730,6 +1766,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "fix tokens not being added to preview causing access denied": "https://www.drupal.org/files/issues/access_denied_on-2807813-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -5019,7 +5058,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
-                "reference": "c5a1b7ee6d17d1cdd1d326cf876d55c59689f61f"
+                "reference": "208d5cbac65a4924abf077e0293ff43b63e1481b"
             },
             "type": "drupal-module",
             "authors": [
@@ -5034,7 +5073,7 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2016-07-19 22:54:08"
+            "time": "2016-11-02 20:15:33"
         },
         {
             "name": "ucdavis/sitefarm",
@@ -5056,6 +5095,7 @@
                 "drupal/crop": "8.*",
                 "drupal/ctools": "8.*",
                 "drupal/default_content": "8.*",
+                "drupal/editor_file": "8.*",
                 "drupal/externalauth": "8.*",
                 "drupal/features": "8.*",
                 "drupal/focal_point": "8.*",
@@ -5119,6 +5159,9 @@
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                    },
+                    "drupal/focal_point": {
+                        "fix tokens not being added to preview causing access denied": "https://www.drupal.org/files/issues/access_denied_on-2807813-2.patch"
                     }
                 }
             },
