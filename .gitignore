@@ -16,6 +16,9 @@ settings.local.php
 # Ignore Drupal's file directory
 docroot/sites/*/files
 
+# Ignore SimpleTest directory
+docroot/sites/simpletest
+
 # Ignore Composer-managed dependencies.
 vendor/
 
