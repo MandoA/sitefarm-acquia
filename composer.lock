@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "05294f8dc3c1cf225387c908cf0fdcb6",
-    "content-hash": "3346ca03575d732fd69244158fd16ae4",
+    "hash": "04bc8d33856b7e6cb4919f576c4735e5",
+    "content-hash": "8d279b26a2c7d07ddf5eb003191fe7a1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1166,8 +1166,7 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "license": [
@@ -2326,7 +2325,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/photoswipe-8.x-1.0-beta3.zip",
-                "reference": null,
+                "reference": "111293a26ad92388ff8fb4163dfd2ad60b7225d1",
                 "shasum": null
             },
             "require": {
@@ -2336,6 +2335,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -5060,7 +5062,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "a73c2d317d840a2b9fb579b7897331eae062245b"
+                "reference": "a06ee68249645ede63a27fa1652ee9183ffd99a5"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5134,6 +5136,9 @@
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-54.patch"
                     },
+                    "drupal/photoswipe": {
+                        "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
+                    },
                     "drupal/sharemessage": {
                         "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
                     },
@@ -5153,7 +5158,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2016-11-16 22:29:34"
+            "time": "2016-11-18 19:18:20"
         },
         {
             "name": "ucdavis/sitefarm_one",
