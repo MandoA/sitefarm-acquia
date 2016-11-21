@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "04bc8d33856b7e6cb4919f576c4735e5",
-    "content-hash": "8d279b26a2c7d07ddf5eb003191fe7a1",
+    "hash": "7c8c48ca8ffc80baee30374c02f544c5",
+    "content-hash": "23dd51118055fe5371e51b0904e6a454",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2589,6 +2589,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Hide sitemap Taxonomy Term titles if no content": "https://www.drupal.org/files/issues/2828839-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -5197,6 +5200,9 @@
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                    },
+                    "drupal/sitemap": {
+                        "Hide sitemap Taxonomy Term titles if no content": "https://www.drupal.org/files/issues/2828839-2.patch"
                     }
                 }
             },
