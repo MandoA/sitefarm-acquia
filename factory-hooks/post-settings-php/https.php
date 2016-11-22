@@ -2,9 +2,6 @@
 /**
  * Redirects *.ucdavis.edu traffic to https://
  */
-error_log("HTTPS: ". $_SERVER['HTTPS']);
-error_log("HTTP_X_SSL: ". $_SERVER['HTTP_X_SSL']);
-
 if (isset($_SERVER['AH_SITE_ENVIRONMENT']) &&
   ($_SERVER['HTTPS'] != 'on') &&
   preg_match("/ucdavis\.edu$/", $_SERVER['HTTP_HOST']) &&
