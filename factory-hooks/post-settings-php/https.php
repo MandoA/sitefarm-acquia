@@ -6,13 +6,10 @@ error_log("HTTPS: ". $_SERVER['HTTPS']);
 error_log("HTTP_X_SSL: ". $_SERVER['HTTP_X_SSL']);
 
 if (isset($_SERVER['AH_SITE_ENVIRONMENT']) &&
-  ($_SERVER['HTTPS'] === 'OFF') &&
+  ($_SERVER['HTTPS'] != 'on') &&
   preg_match("/ucdavis\.edu$/", $_SERVER['HTTP_HOST']) &&
   (php_sapi_name() != "cli")) {
-  if (!isset($_SERVER['HTTP_X_SSL']) ||
-    (isset($_SERVER['HTTP_X_SSL']) && $_SERVER['HTTP_X_SSL'] != 'ON')) {
     header('HTTP/1.0 301 Moved Permanently');
     header('Location: https://'. $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
     exit();
-  }
 }
