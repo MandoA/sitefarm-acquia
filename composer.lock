@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7c8c48ca8ffc80baee30374c02f544c5",
-    "content-hash": "23dd51118055fe5371e51b0904e6a454",
+    "hash": "449bc30a2f0ccc56be06fef3cea552d7",
+    "content-hash": "bf0f6467201b92a35c1c0286e0ff4b4e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1149,6 +1149,32 @@
             "description": "Allows hiding of entity label fields and automatic label creation.",
             "homepage": "https://www.drupal.org/project/auto_entitylabel",
             "time": "2016-05-04 09:00:31"
+        },
+        {
+            "name": "drupal/better_normalizers",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/better_normalizers.git",
+                "reference": "1cd9b4b50e91f5e595eb86813611dc368227c4b6"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/hal": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Improve the normalizers in core.",
+            "homepage": "https://www.drupal.org/project/better_normalizers",
+            "time": "2016-04-13 01:37:30"
         },
         {
             "name": "drupal/cas",
@@ -8792,7 +8818,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ucdavis/sitefarm": 20
+        "ucdavis/sitefarm": 20,
+        "drupal/better_normalizers": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
