@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "04bc8d33856b7e6cb4919f576c4735e5",
-    "content-hash": "8d279b26a2c7d07ddf5eb003191fe7a1",
+    "hash": "3b7e7af8463d5495b987a54424d6e407",
+    "content-hash": "182b2059dad150bba8a8aee470f581aa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1090,6 +1090,50 @@
             "time": "2016-10-26 15:15:28"
         },
         {
+            "name": "drupal/admin_toolbar",
+            "version": "8.1.17",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/admin_toolbar.git",
+                "reference": "195f503ee4350c8be74b9515c21e264384a2fcaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.17.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/toolbar": "8.*"
+            },
+            "replace": {
+                "drupal/admin_toolbar_tools": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/admin_toolbar_tools"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Anis Taktak",
+                    "homepage": "https://www.drupal.org/u/matio89"
+                }
+            ],
+            "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "time": "2016-08-19 14:05:31"
+        },
+        {
             "name": "drupal/anchor_link",
             "version": "8.1.2",
             "source": {
@@ -1149,6 +1193,32 @@
             "description": "Allows hiding of entity label fields and automatic label creation.",
             "homepage": "https://www.drupal.org/project/auto_entitylabel",
             "time": "2016-05-04 09:00:31"
+        },
+        {
+            "name": "drupal/better_normalizers",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/better_normalizers.git",
+                "reference": "1cd9b4b50e91f5e595eb86813611dc368227c4b6"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/hal": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Improve the normalizers in core.",
+            "homepage": "https://www.drupal.org/project/better_normalizers",
+            "time": "2016-04-13 01:37:30"
         },
         {
             "name": "drupal/cas",
@@ -2567,6 +2637,62 @@
             "description": "Creates a standard conform XML sitemap of your content.",
             "homepage": "https://drupal.org/project/simple_sitemap",
             "time": "2016-11-10 18:32:16"
+        },
+        {
+            "name": "drupal/sitemap",
+            "version": "8.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/sitemap.git",
+                "reference": "f2f238b6e10fa88956535d287b0b27f1b3d604d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sitemap-8.x-1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                },
+                "patches_applied": {
+                    "Hide sitemap Taxonomy Term titles if no content": "https://www.drupal.org/files/issues/2828839-2.patch"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Nik Alexandrov",
+                    "homepage": "https://www.drupal.org/u/nafes",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Anna Kalata",
+                    "homepage": "https://www.drupal.org/u/akalata",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "killes@www.drop.org",
+                    "homepage": "https://www.drupal.org/u/killeswww.drop.org",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/3295/committers",
+                    "role": "contributor"
+                }
+            ],
+            "description": "Display a sitemap.",
+            "homepage": "http://drupal.org/project/sitemap",
+            "time": "2016-08-20 17:44:17"
         },
         {
             "name": "drupal/social_media_links",
@@ -5039,7 +5165,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
-                "reference": "208d5cbac65a4924abf077e0293ff43b63e1481b"
+                "reference": "bd0fdc4c131d5cbd7117b34210fe7fef288f1129"
             },
             "type": "drupal-module",
             "authors": [
@@ -5054,7 +5180,7 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2016-11-02 20:15:33"
+            "time": "2016-11-28 20:03:21"
         },
         {
             "name": "ucdavis/sitefarm",
@@ -5144,6 +5270,9 @@
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                    },
+                    "drupal/sitemap": {
+                        "Hide sitemap Taxonomy Term titles if no content": "https://www.drupal.org/files/issues/2828839-2.patch"
                     }
                 }
             },
@@ -8733,7 +8862,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ucdavis/sitefarm": 20
+        "ucdavis/sitefarm": 20,
+        "drupal/better_normalizers": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
