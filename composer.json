@@ -21,33 +21,25 @@
   },
   "require": {
     "composer/installers": "^1.0",
-    "drupal-composer/drupal-scaffold": "^1.2",
+    "drupal-composer/drupal-scaffold": "^2.2",
     "zendframework/zend-stdlib": "~3.0.1",
     "cweagans/composer-patches": "^1.5",
     "ucdavis/sitefarm": "dev-8.x-1.x",
-    "drupal/acquia_connector": "8.*",
-    "drupal/acsf": "8.*",
-    "drupal/clamav": "8.*",
-    "drupal/mollom": "8.*"
+    "drupal/acquia_connector": "1.*",
+    "drupal/acsf": "1.*",
+    "drupal/clamav": "1.*",
+    "drupal/mollom": "1.*"
   },
-  "repositories": [
-    {
+  "repositories": {
+    "drupal": {
       "type": "composer",
-      "url": "https://packagist.drupal-composer.org"
+      "url": "https://packages.drupal.org/8"
     },
-    {
+    "ucdavis/sitefarm": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git"
     }
-  ],
+  },
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
