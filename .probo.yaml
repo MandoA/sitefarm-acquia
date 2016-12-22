@@ -3,6 +3,8 @@ assets:
 steps:
   - name: Import SSH Keys
     command: 'tar -C $HOME/.ssh -zxvf $ASSET_DIR/probossh.tar.gz ; ls -al $HOME/.ssh'
+  - name: Update php cli memory limit
+    command: echo 'memory_limit=-1' > /etc/php5/cli/conf.d/30-cli_memory_limit.ini
   - name: Build Drupal
     plugin: Script
     script:
