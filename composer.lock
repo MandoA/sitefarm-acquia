@@ -1719,16 +1719,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.2.4",
+            "version": "8.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "0741cbf486fc55721b5dab050b37c721c80df097"
+                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/0741cbf486fc55721b5dab050b37c721c80df097",
-                "reference": "0741cbf486fc55721b5dab050b37c721c80df097",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/fbf10f63dba6b312e1d1b67bac521db1648384f3",
+                "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3",
                 "shasum": ""
             },
             "require": {
@@ -1898,7 +1898,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2016-12-07 18:31:42"
+            "time": "2017-01-04 11:31:35"
         },
         {
             "name": "drupal/crop",
@@ -2661,21 +2661,25 @@
         },
         {
             "name": "drupal/metatag",
-            "version": "1.0.0-beta11",
+            "version": "1.0.0-beta12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/metatag",
-                "reference": "8.x-1.0-beta11"
+                "reference": "8.x-1.0-beta12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta11.zip",
-                "reference": "8.x-1.0-beta11",
-                "shasum": "d73fb7ba41833bd8ccb9a661aafc47258b4c7e18"
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0-beta12.zip",
+                "reference": null,
+                "shasum": "ba93038c42295e58a20ba1ff7e7ac85fd032dda9"
             },
             "require": {
                 "drupal/core": "*",
                 "drupal/token": "*"
+            },
+            "require-dev": {
+                "drupal/metatag_dc": "*",
+                "drupal/metatag_open_graph": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -2683,7 +2687,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta11",
+                    "version": "8.x-1.0-beta12",
                     "datestamp": "1483477143"
                 }
             },
@@ -3116,8 +3120,7 @@
                 "drupal": {
                     "version": "8.x-1.0-beta2",
                     "datestamp": "1481758983"
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3141,17 +3144,17 @@
         },
         {
             "name": "drupal/simple_sitemap",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/simple_sitemap",
-                "reference": "8.x-2.7"
+                "reference": "8.x-2.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.7.zip",
-                "reference": "8.x-2.7",
-                "shasum": "4d1fb3f71fc63e64095de3658c571f3d3a6223fc"
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.8.zip",
+                "reference": null,
+                "shasum": "f88b904f8e71d849693309b9315f25e7c06a6d77"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3162,7 +3165,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.7",
+                    "version": "8.x-2.8",
                     "datestamp": "1482783482"
                 }
             },
@@ -3299,17 +3302,17 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "b838318eddf46e4f382489de5516ab916257c393"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "204b2f18a3d770589d66656aa83121d2156d0a31"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3320,7 +3323,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
+                    "version": "8.x-1.0-rc1",
                     "datestamp": "1483290542"
                 }
             },
@@ -3363,11 +3366,17 @@
         },
         {
             "name": "drupal/url_embed",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/url_embed",
-                "reference": "7ded4406672153e5e7adca13bedd3dfb0818afdd"
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/url_embed-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "01a6b3ae79f315318d2b2ff7a37c76db95d3af0b"
             },
             "require": {
                 "drupal/core": "*",
@@ -3380,8 +3389,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1467270840"
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1483115583"
                 },
                 "patches_applied": {
                     "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
@@ -3419,22 +3428,21 @@
                 "source": "http://cgit.drupalcode.org/url_embed",
                 "issues": "https://www.drupal.org/project/issues/url_embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
-            },
-            "time": "2016-06-29 19:11:57"
+            }
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta3",
+            "version": "5.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta3"
+                "reference": "8.x-5.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta3.zip",
-                "reference": "8.x-5.0-beta3",
-                "shasum": "96f642404a62e17464b8f74234b8a93c01dfddf7"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta4.zip",
+                "reference": null,
+                "shasum": "cd448b95df1f5b8b8f1d5ae1ee2a901ebadc995d"
             },
             "require": {
                 "drupal/core": "*"
@@ -3448,7 +3456,7 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta3",
+                    "version": "8.x-5.0-beta4",
                     "datestamp": "1482752282"
                 }
             },
@@ -5392,16 +5400,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.29.0",
+            "version": "v1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "74f723e542368ca2080b252740be5f1113ebb898"
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/74f723e542368ca2080b252740be5f1113ebb898",
-                "reference": "74f723e542368ca2080b252740be5f1113ebb898",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c6ff71094fde15d12398eaba029434b013dc5e59",
+                "reference": "c6ff71094fde15d12398eaba029434b013dc5e59",
                 "shasum": ""
             },
             "require": {
@@ -5414,7 +5422,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.29-dev"
+                    "dev-master": "1.30-dev"
                 }
             },
             "autoload": {
@@ -5449,7 +5457,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-12-13 17:28:18"
+            "time": "2016-12-23 11:06:22"
         },
         {
             "name": "ucdavis/aggiefeed",
@@ -5480,7 +5488,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "95efce346e0487f82242687a56cd748c7064e861"
+                "reference": "98438f44a9cf22bb6f58b88dd13eac2162dc5a2c"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5549,9 +5557,6 @@
                     "drupal/photoswipe": {
                         "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
                     },
-                    "drupal/sharemessage": {
-                        "make display fields available to content types via config": "https://www.drupal.org/files/issues/find_a_way_to_provide-2714741-42.patch"
-                    },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
                     },
@@ -5571,7 +5576,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-01-04 17:55:12"
+            "time": "2017-01-04 18:21:05"
         },
         {
             "name": "ucdavis/sitefarm_one",
