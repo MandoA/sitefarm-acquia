@@ -5480,7 +5480,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "d7f636f1967c2023112c4300809aa043223f8b62"
+                "reference": "95efce346e0487f82242687a56cd748c7064e861"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5518,7 +5518,7 @@
                 "drupal/url_embed": "1.*",
                 "drupal/webform": "5.*",
                 "ucdavis/aggiefeed": "dev-8.x-1.x",
-                "ucdavis/sitefarm_one": "dev-8.x-1.x"
+                "ucdavis/sitefarm_one": "@dev"
             },
             "require-dev": {
                 "behat/behat": "^3.1",
@@ -5571,7 +5571,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-01-04 16:23:28"
+            "time": "2017-01-04 17:55:12"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6683,12 +6683,12 @@
             "version": "1.0.0-rc11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/hechoendrupal/DrupalConsole.git",
+                "url": "https://github.com/hechoendrupal/drupal-console.git",
                 "reference": "7eb98a13458da1a63f87435ced4128cd15f34d9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/DrupalConsole/zipball/7eb98a13458da1a63f87435ced4128cd15f34d9e",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/7eb98a13458da1a63f87435ced4128cd15f34d9e",
                 "reference": "7eb98a13458da1a63f87435ced4128cd15f34d9e",
                 "shasum": ""
             },
