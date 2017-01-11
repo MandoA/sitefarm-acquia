@@ -11,6 +11,7 @@ steps:
       apt-get update
       DEBIAN_FRONTEND=noninteractive apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-gd php7.0-curl php7.0-json php7.0-mbstring php7.0-mysql php7.0-mcrypt php7.0-imagick php7.0-dev php7.0-gmp php7.0-xml php7.0-bcmath php7.0-redis php7.0-uploadprogress php7.0-soap php7.0-pgsql php7.0-ldap php7.0-yaml
       cp /etc/php5/mods-available/general_settings.ini /etc/php/7.0/apache2/conf.d/20-general_settings.ini
+      echo 'memory_limit=-1' > /etc/php/7.0/cli/conf.d/30-cli_memory_limit.ini
       a2dismod php5
       a2enmod php7.0
       a2enmod mpm_prefork
@@ -28,8 +29,6 @@ steps:
       apache2ctl graceful
   - name: Import SSH Keys
     command: 'tar -C $HOME/.ssh -zxvf $ASSET_DIR/probossh.tar.gz ; ls -al $HOME/.ssh'
-  - name: Update php cli memory limit
-    command: echo 'memory_limit=-1' > /etc/php/7.0/cli/conf.d/30-cli_memory_limit.ini
   - name: Build Drupal
     plugin: Script
     script:
