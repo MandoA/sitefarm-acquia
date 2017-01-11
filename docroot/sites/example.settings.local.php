@@ -105,10 +105,3 @@ $settings['rebuild_access'] = TRUE;
  * directory.
  */
 $settings['skip_permissions_hardening'] = TRUE;
-
-/**
- * Use <link> tags for CSS instead of the default <style> with @import.
- *
- * The @import is not supported by some javascript such as BrowserSync
- */
-$settings['css_link_tags'] = TRUE;
