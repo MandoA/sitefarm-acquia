@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb299a02b609298eeff2748008023e8a",
+    "content-hash": "f18850b2636df80df4e4d7407a816a3d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1693,7 +1693,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1477674962"
+                    "datestamp": "1484770683"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2910,7 +2910,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1474313339"
+                    "datestamp": "1484781483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5521,11 +5521,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8dev",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "da47ec1ad35fcc1572e10eaa931877a648e94de0"
+                "reference": "24ded753063d32b20dd09121edc729501d357023"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5542,6 +5542,7 @@
                 "drupal/default_content": "1.*",
                 "drupal/editor_file": "1.*",
                 "drupal/externalauth": "1.*",
+                "drupal/fancy_file_delete": "1.*",
                 "drupal/features": "3.*",
                 "drupal/focal_point": "1.*",
                 "drupal/google_analytics": "2.*",
@@ -5613,7 +5614,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-01-09 21:23:14"
+            "time": "2017-01-25 19:13:59"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -5621,7 +5622,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "afbfdb8bfb1be66ca1870e3448977c6a2566ae6e"
+                "reference": "a354dcbdcbe181fcebb8bc172da7528d1a4da88c"
             },
             "type": "drupal-theme",
             "authors": [
@@ -5631,7 +5632,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2016-12-13 23:02:18"
+            "time": "2017-01-25 16:49:52"
         },
         {
             "name": "zendframework/zend-diactoros",
