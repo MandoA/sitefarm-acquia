@@ -5622,7 +5622,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "a354dcbdcbe181fcebb8bc172da7528d1a4da88c"
+                "reference": "a8a2310fc512cc8bcd4a22630d9e2194593392e5"
             },
             "type": "drupal-theme",
             "authors": [
@@ -5632,7 +5632,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-01-25 16:49:52"
+            "time": "2017-01-30 20:22:13"
         },
         {
             "name": "zendframework/zend-diactoros",
