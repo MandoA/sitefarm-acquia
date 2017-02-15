@@ -1626,7 +1626,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/clamav-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "28c1cebdd4bdf2fc045aa8ce68610b83a46b396a"
             },
             "require": {
@@ -1681,7 +1681,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "4fc57add91c090ea3c9ed4848579b450253b1eed"
             },
             "require": {
@@ -2708,7 +2708,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "66973516a854935e825a5eadf7ff298e34a41bde"
             },
             "require": {
@@ -2771,7 +2771,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "604e45e89c19f5a8960b6a8ae3d80500d4328e6b"
             },
             "require": {
@@ -2959,7 +2959,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-rc1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc1",
                 "shasum": "2460339ac8739317b3c4e66e9ce7142cc02adac3"
             },
             "require": {
@@ -3066,7 +3066,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.0-alpha3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha3",
                 "shasum": "9e27696fdb8a4992694151fdde5588cfac28c789"
             },
             "require": {
@@ -3079,7 +3079,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha3",
-                    "datestamp": "1486078383"
+                    "datestamp": "1487092684"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3370,7 +3370,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/social_media_links-8.x-2.2.zip",
-                "reference": null,
+                "reference": "8.x-2.2",
                 "shasum": "a6c058d8f20837cace59e537db9030cfbcd0750e"
             },
             "require": {
@@ -3468,6 +3468,57 @@
             }
         },
         {
+            "name": "drupal/trumba",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/trumba",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/trumba-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "abeb8453721a6b2155366693542a828f937cf332"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1485892983"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "carsonblack",
+                    "homepage": "https://www.drupal.org/user/226013"
+                },
+                {
+                    "name": "tstolz",
+                    "homepage": "https://www.drupal.org/user/2592432"
+                }
+            ],
+            "description": "Provides a way to place trumba calendar elements (spuds) on a page.",
+            "homepage": "https://www.drupal.org/project/trumba",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/trumba",
+                "issues": "http://drupal.org/project/issues/trumba"
+            }
+        },
+        {
             "name": "drupal/url_embed",
             "version": "1.0.0-alpha1",
             "source": {
@@ -3544,7 +3595,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta5.zip",
-                "reference": null,
+                "reference": "8.x-5.0-beta5",
                 "shasum": "91cd6651923310974fa01aa12b9811c7811e3969"
             },
             "require": {
@@ -3560,7 +3611,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta5",
-                    "datestamp": "1485776283"
+                    "datestamp": "1487025483"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4103,57 +4154,6 @@
                 "spam"
             ],
             "time": "2015-12-03 21:18:35"
-        },
-        {
-            "name": "drupal/trumba",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/trumba",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/trumba-8.x-1.2.zip",
-                "reference": null,
-                "shasum": "abeb8453721a6b2155366693542a828f937cf332"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1485892983"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "carsonblack",
-                    "homepage": "https://www.drupal.org/user/226013"
-                },
-                {
-                    "name": "tstolz",
-                    "homepage": "https://www.drupal.org/user/2592432"
-                }
-            ],
-            "description": "Provides a way to place trumba calendar elements (spuds) on a page.",
-            "homepage": "https://www.drupal.org/project/trumba",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/trumba",
-                "issues": "http://drupal.org/project/issues/trumba"
-            }
         },
         {
             "name": "paragonie/random_compat",
