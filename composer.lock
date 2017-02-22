@@ -3079,7 +3079,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha3",
-                    "datestamp": "1487092684"
+                    "datestamp": "1486078383"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3611,7 +3611,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta5",
-                    "datestamp": "1487025483"
+                    "datestamp": "1485776283"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5642,7 +5642,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "09adc3939686e174ebe2f3e1f909450c94987bbd"
+                "reference": "6d47a48b2960297b60c818c9b8b03428156a99e4"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5733,7 +5733,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-02-08 22:13:34"
+            "time": "2017-02-21 22:25:21"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -5741,7 +5741,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "e8c83c9fd091654e25bc60cde2c13b315d833df7"
+                "reference": "b0748d9aad22b118ef58638360a1caade398df2b"
             },
             "type": "drupal-theme",
             "authors": [
@@ -5751,7 +5751,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-02-08 22:14:26"
+            "time": "2017-02-22 17:07:17"
         },
         {
             "name": "zendframework/zend-diactoros",
