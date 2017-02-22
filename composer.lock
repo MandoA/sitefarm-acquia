@@ -2698,6 +2698,69 @@
             }
         },
         {
+            "name": "drupal/menu_breadcrumb",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/menu_breadcrumb",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "66973516a854935e825a5eadf7ff298e34a41bde"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1485387784"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "RyanPrice",
+                    "homepage": "https://www.drupal.org/user/873848"
+                },
+                {
+                    "name": "aaron",
+                    "homepage": "https://www.drupal.org/user/33420"
+                },
+                {
+                    "name": "gdevlugt",
+                    "homepage": "https://www.drupal.org/user/167273"
+                },
+                {
+                    "name": "rphair",
+                    "homepage": "https://www.drupal.org/user/3196607"
+                },
+                {
+                    "name": "vaibhavjain",
+                    "homepage": "https://www.drupal.org/user/1159692"
+                },
+                {
+                    "name": "xurizaemon",
+                    "homepage": "https://www.drupal.org/user/76026"
+                }
+            ],
+            "description": "Create breadcrumbs from nested menu titles and/or taxonomy membership.",
+            "homepage": "https://www.drupal.org/project/menu_breadcrumb",
+            "support": {
+                "source": "http://cgit.drupalcode.org/menu_breadcrumb"
+            }
+        },
+        {
             "name": "drupal/metatag",
             "version": "1.0.0",
             "source": {
@@ -5579,7 +5642,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "09adc3939686e174ebe2f3e1f909450c94987bbd"
+                "reference": "6d47a48b2960297b60c818c9b8b03428156a99e4"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5603,6 +5666,7 @@
                 "drupal/honeypot": "1.*",
                 "drupal/masquerade": "2.*",
                 "drupal/menu_block": "1.*",
+                "drupal/menu_breadcrumb": "1.*",
                 "drupal/metatag": "1.*",
                 "drupal/notification": "1.*",
                 "drupal/pathauto": "1.*",
@@ -5669,7 +5733,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-02-08 22:13:34"
+            "time": "2017-02-21 22:25:21"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -5677,7 +5741,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "e8c83c9fd091654e25bc60cde2c13b315d833df7"
+                "reference": "b0748d9aad22b118ef58638360a1caade398df2b"
             },
             "type": "drupal-theme",
             "authors": [
@@ -5687,7 +5751,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-02-08 22:14:26"
+            "time": "2017-02-22 17:07:17"
         },
         {
             "name": "zendframework/zend-diactoros",
