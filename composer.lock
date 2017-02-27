@@ -1525,6 +1525,9 @@
                 "drupal": {
                     "version": "8.x-1.0-beta2",
                     "datestamp": "1481807883"
+                },
+                "patches_applied": {
+                    "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1588,11 +1591,7 @@
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1474040339"
-                },
-                "patches_applied": {
-                    "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
                 }
-
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
