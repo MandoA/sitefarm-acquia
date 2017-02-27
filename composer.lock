@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f18850b2636df80df4e4d7407a816a3d",
+    "content-hash": "6908133183fefa9ce3f14fab6b48d8f8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1293,7 +1293,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0-rc4.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc4",
                 "shasum": "541b020ce839dd9c75374e213c1131d9c1f6f52d"
             },
             "require": {
@@ -1310,8 +1310,7 @@
                 "drupal": {
                     "version": "8.x-1.0-rc4",
                     "datestamp": "1486736883"
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -1455,7 +1454,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/better_normalizers-8.x-1.0-beta2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta2",
                 "shasum": "1b15175a108ccb3a84fd3e5433b606a1bec19db0"
             },
             "require": {
@@ -1589,7 +1588,11 @@
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1474040339"
+                },
+                "patches_applied": {
+                    "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
                 }
+
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -2042,7 +2045,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha4.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha4",
                 "shasum": "e4db72ccdb4e8800367c088cbf4c0648290581e3"
             },
             "require": {
@@ -2306,7 +2309,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/features-8.x-3.3.zip",
-                "reference": null,
+                "reference": "8.x-3.3",
                 "shasum": "ae0248b3ad233edfc50970b9dfdd95fed71fecb9"
             },
             "require": {
@@ -2786,7 +2789,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1485901983"
+                    "datestamp": "1485902197"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3063,7 +3066,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.0-alpha4.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha4",
                 "shasum": "883401f9983a00ac23bfda9830bf6b77d53209ad"
             },
             "require": {
@@ -3592,7 +3595,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta7.zip",
-                "reference": null,
+                "reference": "8.x-5.0-beta7",
                 "shasum": "1c2be66200291e38ebe41e27641e2607d4be7baa"
             },
             "require": {
@@ -5643,11 +5646,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8.x-1.x",
+            "version": "dev-8dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "6d47a48b2960297b60c818c9b8b03428156a99e4"
+                "reference": "e19864a6924a5fb6c930300543a5d148331aa2bb"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5709,8 +5712,8 @@
                     ]
                 },
                 "patches": {
-                    "drupal/address": {
-                        "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
+                    "drupal/cas": {
+                        "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
                     },
                     "drupal/core": {
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
@@ -5738,7 +5741,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-02-21 22:25:21"
+            "time": "2017-02-27 18:13:38"
         },
         {
             "name": "ucdavis/sitefarm_one",
