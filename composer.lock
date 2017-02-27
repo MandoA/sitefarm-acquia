@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6908133183fefa9ce3f14fab6b48d8f8",
+    "content-hash": "f18850b2636df80df4e4d7407a816a3d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1525,6 +1525,9 @@
                 "drupal": {
                     "version": "8.x-1.0-beta2",
                     "datestamp": "1481807883"
+                },
+                "patches_applied": {
+                    "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1592,7 +1595,6 @@
                 "patches_applied": {
                     "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
                 }
-
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -5646,11 +5648,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8dev",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "e19864a6924a5fb6c930300543a5d148331aa2bb"
+                "reference": "6d47a48b2960297b60c818c9b8b03428156a99e4"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5712,8 +5714,8 @@
                     ]
                 },
                 "patches": {
-                    "drupal/cas": {
-                        "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
+                    "drupal/address": {
+                        "prevent php error when selecting a country of None": "https://www.drupal.org/files/issues/errorelement_should_return_false-2619878-23.patch"
                     },
                     "drupal/core": {
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
@@ -5741,7 +5743,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-02-27 18:13:38"
+            "time": "2017-02-21 22:25:21"
         },
         {
             "name": "ucdavis/sitefarm_one",
