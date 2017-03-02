@@ -3383,6 +3383,9 @@
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1485022383"
+                },
+                "patches_applied": {
+                    "Fix errors when icons do not have descriptions": "https://www.drupal.org/files/issues/social_media_links-If_social_media_icon_has_no_description-1817760-1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5726,6 +5729,9 @@
                     },
                     "drupal/sitemap": {
                         "Hide sitemap Taxonomy Term titles if no content": "https://www.drupal.org/files/issues/2828839-2.patch"
+                    },
+                    "drupal/social_media_links": {
+                        "Fix errors when icons do not have descriptions": "https://www.drupal.org/files/issues/social_media_links-If_social_media_icon_has_no_description-1817760-1.patch"
                     }
                 }
             },
