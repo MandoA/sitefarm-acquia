@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6908133183fefa9ce3f14fab6b48d8f8",
+    "content-hash": "f18850b2636df80df4e4d7407a816a3d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5645,11 +5645,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8dev",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "e19864a6924a5fb6c930300543a5d148331aa2bb"
+                "reference": "6d47a48b2960297b60c818c9b8b03428156a99e4"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5740,7 +5740,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-02-27 18:13:38"
+            "time": "2017-02-21 22:25:21"
         },
         {
             "name": "ucdavis/sitefarm_one",
