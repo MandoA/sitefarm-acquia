@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d53d7d6781a8a5f5a46889a9da3cc34b",
+    "content-hash": "f18850b2636df80df4e4d7407a816a3d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5695,7 +5695,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "6d47a48b2960297b60c818c9b8b03428156a99e4"
+                "reference": "24c5eba5d02ad15e8f48acaf2549cc9f8128f5b1"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5735,6 +5735,7 @@
                 "drupal/trumba": "1.*",
                 "drupal/url_embed": "1.*",
                 "drupal/webform": "5.*",
+                "drupal/webform_views": "5.*",
                 "ucdavis/aggiefeed": "dev-8.x-1.x",
                 "ucdavis/sitefarm_one": "@dev"
             },
@@ -5789,7 +5790,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-02-21 22:25:21"
+            "time": "2017-03-08 02:00:46"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -5797,7 +5798,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "b0748d9aad22b118ef58638360a1caade398df2b"
+                "reference": "4b84fa0700bade72b4f7ccc16b18a72b3c476986"
             },
             "type": "drupal-theme",
             "authors": [
@@ -5807,7 +5808,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-02-22 17:07:17"
+            "time": "2017-03-08 01:41:31"
         },
         {
             "name": "zendframework/zend-diactoros",
