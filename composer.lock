@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f18850b2636df80df4e4d7407a816a3d",
+    "content-hash": "4fa20b86eaee03b1795fe38c58e102c8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -982,17 +982,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.34.0",
+            "version": "1.35.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acsf",
-                "reference": "8.x-1.34"
+                "reference": "8.x-1.35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.34.zip",
-                "reference": "8.x-1.34",
-                "shasum": "b854e1b61cd72b26cf2215ed7a57f2eced15d27c"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.35.zip",
+                "reference": "8.x-1.35",
+                "shasum": "a2443e886d2abd50507114b442ed4a0c316d62d4"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -1002,7 +1002,7 @@
             },
             "require-dev": {
                 "drupal/acsf_variables": "*",
-                "drupal/samlauth": "^2",
+                "drupal/samlauth": "^2.0.0-alpha1",
                 "mockery/mockery": "dev-master",
                 "phpunit/phpunit": "~5.3"
             },
@@ -1012,8 +1012,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.34",
-                    "datestamp": "1482323883"
+                    "version": "8.x-1.35",
+                    "datestamp": "1489664583"
                 }
             },
             "autoload": {
@@ -1076,7 +1076,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.34.0",
+            "version": "1.35.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1087,8 +1087,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.34",
-                    "datestamp": "1482323883"
+                    "version": "8.x-1.35",
+                    "datestamp": "1489664583"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1145,7 +1145,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.34.0",
+            "version": "1.35.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -1157,8 +1157,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.34",
-                    "datestamp": "1482323883"
+                    "version": "8.x-1.35",
+                    "datestamp": "1489664583"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1215,7 +1215,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.34.0",
+            "version": "1.35.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1226,8 +1226,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.34",
-                    "datestamp": "1482323883"
+                    "version": "8.x-1.35",
+                    "datestamp": "1489664583"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3145,6 +3145,59 @@
             }
         },
         {
+            "name": "drupal/samlauth",
+            "version": "2.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/samlauth",
+                "reference": "8.x-2.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/samlauth-8.x-2.0-alpha1.zip",
+                "reference": null,
+                "shasum": "c113add0083cf1411b99672ddb83dd11f53418a7"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/externalauth": "*",
+                "onelogin/php-saml": "~2.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha1",
+                    "datestamp": "1488462483"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "cweagans",
+                    "homepage": "https://www.drupal.org/user/404732"
+                },
+                {
+                    "name": "roderik",
+                    "homepage": "https://www.drupal.org/user/8841"
+                }
+            ],
+            "description": "Allows users to authenticate against an external SAML identity provider.",
+            "homepage": "http://drupal.org/project/samlauth",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/samlauth",
+                "issues": "http://drupal.org/project/samlauth"
+            }
+        },
+        {
             "name": "drupal/scheduled_updates",
             "version": "1.0.0-alpha5",
             "source": {
@@ -4206,6 +4259,60 @@
                 "spam"
             ],
             "time": "2015-12-03 21:18:35"
+        },
+        {
+            "name": "onelogin/php-saml",
+            "version": "2.10.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/onelogin/php-saml.git",
+                "reference": "3319d7707f342e38291eee6b01a4a5f8df1b333b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/onelogin/php-saml/zipball/3319d7707f342e38291eee6b01a4a5f8df1b333b",
+                "reference": "3319d7707f342e38291eee6b01a4a5f8df1b333b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-mcrypt": "*",
+                "ext-openssl": "*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "pdepend/pdepend": "1.1.0",
+                "phploc/phploc": "*",
+                "phpunit/phpunit": "4.8",
+                "satooshi/php-coveralls": "1.0.1",
+                "sebastian/phpcpd": "*",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "suggest": {
+                "ext-gettext": "Install gettext and php5-gettext libs to handle translations",
+                "ext-mcrypt": "Install mcrypt and php5-mcrypt libs in order to support encryption",
+                "lib-openssl": "Install openssl lib in order to handle with x509 certs (require to support sign and encryption)"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "extlib/xmlseclibs",
+                    "lib/Saml",
+                    "lib/Saml2"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "OneLogin PHP SAML Toolkit",
+            "homepage": "https://onelogin.zendesk.com/hc/en-us/sections/200245634-SAML-Toolkits",
+            "keywords": [
+                "SAML2",
+                "onelogin",
+                "saml"
+            ],
+            "time": "2017-03-13T09:56:49+00:00"
         },
         {
             "name": "paragonie/random_compat",
