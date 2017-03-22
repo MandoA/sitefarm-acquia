@@ -28,7 +28,8 @@
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
     "drupal/clamav": "1.*",
-    "drupal/mollom": "1.*"
+    "drupal/mollom": "1.*",
+    "drupal/samlauth": "2.*"
   },
   "repositories": {
     "drupal": {
