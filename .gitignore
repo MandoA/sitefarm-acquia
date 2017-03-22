@@ -1,5 +1,6 @@
 # Ignore local configuration files that may contain sensitive information.
 settings.local.php
+services.local.yml
 
 # Ignore binaries.
 /bin
