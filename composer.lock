@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3661d709175b15056f074b189495143c",
+    "content-hash": "4fa20b86eaee03b1795fe38c58e102c8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2054,7 +2054,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha4",
-                    "datestamp": "1487293084"
+                    "datestamp": "1487333078"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2420,7 +2420,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-1.10.zip",
-                "reference": null,
+                "reference": "8.x-1.10",
                 "shasum": "030acbb1eb4e43766712472295842bf4248079bc"
             },
             "require": {
@@ -3561,17 +3561,17 @@
         },
         {
             "name": "drupal/trumba",
-            "version": "1.2.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/trumba",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/trumba-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "abeb8453721a6b2155366693542a828f937cf332"
+                "url": "https://ftp.drupal.org/files/projects/trumba-8.x-1.4.zip",
+                "reference": null,
+                "shasum": "21e195e1be894fb1c2b61ed169709add7e5919eb"
             },
             "require": {
                 "drupal/core": "*"
@@ -3582,8 +3582,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1485892983"
+                    "version": "8.x-1.4",
+                    "datestamp": "1491329283"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5836,7 +5836,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "7b346c24d35ec41e1a9cd20eb868ab83c5582fe0"
+                "reference": "639e55158828137cbe5ad7e8678773a764a9c649"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5900,9 +5900,6 @@
                     ]
                 },
                 "patches": {
-                    "drupal/cas": {
-                        "CasHelper use LoggerChannelFactoryInterface instead of LoggerChannelFactory": "https://www.drupal.org/files/issues/2855126-CasHelper-use-LoggerChannelFactory-instead-of-LoggerChannelFactoryInterface-9.patch"
-                    },
                     "drupal/core": {
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-54.patch"
@@ -5912,9 +5909,6 @@
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
-                    },
-                    "drupal/sitemap": {
-                        "Hide sitemap Taxonomy Term titles if no content": "https://www.drupal.org/files/issues/2828839-2.patch"
                     },
                     "drupal/social_media_links": {
                         "Fix errors when icons do not have descriptions": "https://www.drupal.org/files/issues/social_media_links-If_social_media_icon_has_no_description-1817760-1.patch"
@@ -5932,7 +5926,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-03-21 21:03:34"
+            "time": "2017-04-04 20:09:37"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -5940,7 +5934,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "9ebfce1fb0ced54db3a3ec594903601a6e336f50"
+                "reference": "49dce894ffb254682e3e232af47d9e0d886ccfa9"
             },
             "type": "drupal-theme",
             "authors": [
@@ -5950,7 +5944,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-03-21 20:10:15"
+            "time": "2017-04-04 19:42:55"
         },
         {
             "name": "zendframework/zend-diactoros",
