@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fa20b86eaee03b1795fe38c58e102c8",
+    "content-hash": "1b283d2052d1eec5f79e7212277dd3be",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1347,7 +1347,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.19.zip",
-                "reference": null,
+                "reference": "8.x-1.19",
                 "shasum": "87de41eab3c5cd49d4e1b5b764cb3b9d5ad683a0"
             },
             "require": {
@@ -1445,17 +1445,11 @@
         },
         {
             "name": "drupal/better_normalizers",
-            "version": "1.0.0-beta2",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/better_normalizers",
-                "reference": "8.x-1.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_normalizers-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "1b15175a108ccb3a84fd3e5433b606a1bec19db0"
+                "reference": "4cee3891b3ade3d1c45555c669efdbe30b63b087"
             },
             "require": {
                 "drupal/core": "*"
@@ -1466,8 +1460,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1486809483"
+                    "version": "8.x-1.0-beta1+2-dev",
+                    "datestamp": "1486808884"
+                },
+                "patches_applied": {
+                    "Get rid of rest dependency after 8.3 core released": "https://www.drupal.org/files/issues/get_rid_of_rest-2851712-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1496,7 +1493,8 @@
             "homepage": "https://www.drupal.org/project/better_normalizers",
             "support": {
                 "source": "http://cgit.drupalcode.org/better_normalizers"
-            }
+            },
+            "time": "2017-02-11 11:14:44"
         },
         {
             "name": "drupal/cas",
@@ -1872,6 +1870,46 @@
                 "symfony/css-selector": "~2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "installer-paths": {
+                    "docroot/core": [
+                        "drupal/core"
+                    ],
+                    "docroot/modules/contrib/{$name}": [
+                        "type:drupal-module"
+                    ],
+                    "docroot/modules/custom/{$name}": [
+                        "type:drupal-custom-module"
+                    ],
+                    "docroot/profiles/{$name}": [
+                        "type:drupal-profile"
+                    ],
+                    "docroot/libraries/{$name}": [
+                        "type:drupal-library"
+                    ],
+                    "docroot/themes/contrib/{$name}": [
+                        "type:drupal-theme"
+                    ],
+                    "docroot/themes/custom/{$name}": [
+                        "type:drupal-custom-theme"
+                    ],
+                    "drush/contrib/{$name}": [
+                        "type:drupal-drush"
+                    ]
+                },
+                "enable-patching": true,
+                "patches": {
+                    "drupal/core": {
+                        "multiple image upload dimension fix 66": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch"
+                    },
+                    "drupal/better_normalizers": {
+                        "Get rid of rest dependency after 8.3 core released": "https://www.drupal.org/files/issues/get_rid_of_rest-2851712-2.patch"
+                    },
+                    "drupal/webform": {
+                        "Change rest.link_manager to hal.link_manager": "https://www.drupal.org/files/issues/webform_link_manager-2867556-2.patch"
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -3692,7 +3730,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta11.zip",
-                "reference": null,
+                "reference": "8.x-5.0-beta11",
                 "shasum": "76030da33a7067429bb44278925d44ecd47b23da"
             },
             "require": {
@@ -3706,6 +3744,9 @@
                 "drupal": {
                     "version": "8.x-5.0-beta11",
                     "datestamp": "1491471183"
+                },
+                "patches_applied": {
+                    "Change rest.link_manager to hal.link_manager": "https://www.drupal.org/files/issues/webform_link_manager-2867556-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9660,7 +9701,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ucdavis/sitefarm": 20
+        "ucdavis/sitefarm": 20,
+        "drupal/better_normalizers": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
