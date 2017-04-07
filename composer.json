@@ -93,17 +93,6 @@
         "type:drupal-drush"
       ]
     },
-    "enable-patching": true,
-    "patches": {
-      "drupal/core": {
-        "multiple image upload dimension fix 66": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch"
-      },
-      "drupal/better_normalizers": {
-        "Get rid of rest dependency after 8.3 core released": "https://www.drupal.org/files/issues/get_rid_of_rest-2851712-2.patch"
-      },
-      "drupal/webform": {
-        "Change rest.link_manager to hal.link_manager": "https://www.drupal.org/files/issues/webform_link_manager-2867556-2.patch"
-      }
-    }
+    "enable-patching": true
   }
 }
