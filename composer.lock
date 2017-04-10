@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b283d2052d1eec5f79e7212277dd3be",
+    "content-hash": "4fa20b86eaee03b1795fe38c58e102c8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5888,7 +5888,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "639e55158828137cbe5ad7e8678773a764a9c649"
+                "reference": "e2f292693af2a45acd1ae86b0f8b0c76b1a90c2c"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5896,7 +5896,7 @@
                 "drupal/address": "1.*",
                 "drupal/admin_toolbar": "1.*",
                 "drupal/anchor_link": "1.*",
-                "drupal/better_normalizers": "1.*",
+                "drupal/better_normalizers": "dev-1.x",
                 "drupal/cas": "1.*",
                 "drupal/ckwordcount": "1.*",
                 "drupal/config_update": "1.*",
@@ -5954,7 +5954,10 @@
                 "patches": {
                     "drupal/core": {
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
-                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-54.patch"
+                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch"
+                    },
+                    "drupal/better_normalizers": {
+                        "Get rid of rest dependency after 8.3 core released": "https://www.drupal.org/files/issues/get_rid_of_rest-2851712-2.patch"
                     },
                     "drupal/photoswipe": {
                         "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
@@ -5964,6 +5967,9 @@
                     },
                     "drupal/social_media_links": {
                         "Fix errors when icons do not have descriptions": "https://www.drupal.org/files/issues/social_media_links-If_social_media_icon_has_no_description-1817760-1.patch"
+                    },
+                    "drupal/webform": {
+                        "Change rest.link_manager to hal.link_manager": "https://www.drupal.org/files/issues/webform_link_manager-2867556-2.patch"
                     }
                 }
             },
@@ -5978,7 +5984,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-04-04 20:09:37"
+            "time": "2017-04-10 22:15:38"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -5986,7 +5992,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "49dce894ffb254682e3e232af47d9e0d886ccfa9"
+                "reference": "81a32540aa093711c867ee6cf38a59932fbec5d9"
             },
             "type": "drupal-theme",
             "authors": [
@@ -5996,7 +6002,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-04-04 19:42:55"
+            "time": "2017-04-10 21:06:01"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -9701,8 +9707,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ucdavis/sitefarm": 20,
-        "drupal/better_normalizers": 20
+        "ucdavis/sitefarm": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
