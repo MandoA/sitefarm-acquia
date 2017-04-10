@@ -27,6 +27,7 @@
     "ucdavis/sitefarm": "dev-8.x-1.x",
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
+    "drupal/better_normalizers": "dev-1.x",
     "drupal/clamav": "1.*",
     "drupal/mollom": "1.*",
     "drupal/samlauth": "2.*"
