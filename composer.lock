@@ -1897,7 +1897,12 @@
                         "type:drupal-drush"
                     ]
                 },
-                "enable-patching": true            },
+                "enable-patching": true,
+                "patches_applied": {
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                    "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -5876,7 +5881,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "e2f292693af2a45acd1ae86b0f8b0c76b1a90c2c"
+                "reference": "b68a3f5520675337072b72f6ec872de1c07adf89"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5961,10 +5966,34 @@
                     }
                 }
             },
+            "license": [
+                "proprietary"
+            ],
             "authors": [
                 {
+                    "name": "Regents of the University of California",
+                    "email": "copyright@ucdavis.edu",
+                    "role": "Copyright Owner"
+                },
+                {
+                    "name": "Carson Black",
+                    "email": "cfblack@ucdavis.edu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Shawn DeArmond",
+                    "email": "sgdearmond@ucdavis.edu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anthony Horn",
+                    "email": "ahorn@ucdavis.edu",
+                    "role": "Developer"
+                },
+                {
                     "name": "Mark Miller",
-                    "email": "mrkmiller@ucdavis.edu"
+                    "email": "mrkmiller@ucdavis.edu",
+                    "role": "Developer"
                 }
             ],
             "description": "Drupal 8 profile for the SiteFarm platform",
@@ -5972,7 +6001,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-04-10 22:15:38"
+            "time": "2017-04-12 19:36:26"
         },
         {
             "name": "ucdavis/sitefarm_one",

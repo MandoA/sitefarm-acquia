@@ -2,7 +2,24 @@
   "name": "ucdavis/sitefarm-acquia",
   "description": "Drupal 8 SiteFarm distribution for Acquia hosting.",
   "type": "project",
-  "license": "GPL-2.0+",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Regents of the University of California",
+      "email": "copyright@ucdavis.edu",
+      "role": "Copyright Owner"
+    },
+    {
+      "name": "Shawn DeArmond",
+      "email": "sgdearmond@ucdavis.edu",
+      "role": "Developer"
+    },
+    {
+      "name": "Mark Miller",
+      "email": "mrkmiller@ucdavis.edu",
+      "role": "Developer"
+    }
+  ],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
