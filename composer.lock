@@ -991,7 +991,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.37.zip",
-                "reference": null,
+                "reference": "8.x-1.37",
                 "shasum": "d324399aa1b58b8c7781d2fbcace1f739b67a173"
             },
             "require": {
@@ -1713,16 +1713,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.3.0",
+            "version": "8.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drupal-composer/drupal-core.git",
-                "reference": "e503a252ec5c2811abed6af0c7b70afda8e93a3f"
+                "url": "https://github.com/drupal/core.git",
+                "reference": "53326f9503e5e9e406fab22e4fbae6ddb706f7be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/e503a252ec5c2811abed6af0c7b70afda8e93a3f",
-                "reference": "e503a252ec5c2811abed6af0c7b70afda8e93a3f",
+                "url": "https://api.github.com/repos/drupal/core/zipball/53326f9503e5e9e406fab22e4fbae6ddb706f7be",
+                "reference": "53326f9503e5e9e406fab22e4fbae6ddb706f7be",
                 "shasum": ""
             },
             "require": {
@@ -1924,7 +1924,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-04-06T00:12:44+00:00"
+            "time": "2017-04-19T16:07:22+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6009,7 +6009,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "81a32540aa093711c867ee6cf38a59932fbec5d9"
+                "reference": "cf76d61899b53fcfc8827d9fda67325b7d5f82f1"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6019,7 +6019,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-04-10 21:06:01"
+            "time": "2017-05-09 19:42:57"
         },
         {
             "name": "zendframework/zend-diactoros",
