@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fa20b86eaee03b1795fe38c58e102c8",
+    "content-hash": "805fa00b7c6a01aa08a6373151980d42",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1899,6 +1899,7 @@
                 },
                 "enable-patching": true,
                 "patches_applied": {
+                    "Drupalimage calling drupallink functions without checking if the plugin is loaded fix": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch",
                     "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch"
                 }
