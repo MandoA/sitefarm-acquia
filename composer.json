@@ -112,8 +112,6 @@
     "enable-patching": true,
     "patches": {
       "drupal/core": {
-        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
-        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
         "Drupalimage calling drupallink functions without checking if the plugin is loaded fix": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch"
       }
     }
