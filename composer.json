@@ -109,6 +109,11 @@
         "type:drupal-drush"
       ]
     },
-    "enable-patching": true
+    "enable-patching": true,
+    "patches": {
+      "drupal/core": {
+        "Drupalimage calling drupallink functions without checking if the plugin is loaded fix": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch"
+      }
+    }
   }
 }
