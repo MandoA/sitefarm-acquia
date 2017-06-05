@@ -58,7 +58,7 @@
     ],
     "post-update-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/".
+      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/",
       "rm docroot/robots.txt"
     ]
   },
