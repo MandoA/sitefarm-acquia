@@ -5883,7 +5883,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "d0fd55f9babf1c89747c7ab6ac138b8ea2ff9e0f"
+                "reference": "9841db34ba2390a7f06abe84b73f7be126b0d16b"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -5960,9 +5960,6 @@
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
-                    },
-                    "drupal/social_media_links": {
-                        "Fix errors when icons do not have descriptions": "https://www.drupal.org/files/issues/social_media_links-If_social_media_icon_has_no_description-1817760-1.patch"
                     }
                 }
             },
@@ -6001,7 +5998,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-06-19 23:34:30"
+            "time": "2017-06-20 00:35:59"
         },
         {
             "name": "ucdavis/sitefarm_one",
