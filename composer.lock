@@ -2893,6 +2893,9 @@
                 "drupal": {
                     "version": "8.x-4.0-beta1",
                     "datestamp": "1494450185"
+                },
+                "patches_applied": {
+                    "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6027,6 +6030,9 @@
                     },
                     "drupal/webform": {
                         "Change rest.link_manager to hal.link_manager": "https://www.drupal.org/files/issues/webform_link_manager-2867556-2.patch"
+                    },
+                    "drupal/migrate_plus": {
+                        "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                     }
                 }
             },
