@@ -5,26 +5,10 @@ probo:
   extensions:
     Behat\MinkExtension:
       base_url: http://localhost
-    Drupal\DrupalExtension:
-      api_driver: 'drupal'
-      drush:
-        alias: 'local'
-      drupal:
-        drupal_root: '/var/www/html'
-
-
-# Setup for Google Chrome only tests.
-probo-chrome:
-  suites:
-    default:
-      filters:
-        tags: "@chrome"
-  extensions:
-    Behat\MinkExtension:
-      base_url: http://localhost
+      show_cmd: '/usr/bin/google-chrome %s'
       selenium2:
         browser: chrome
-        capabilities: {"browser": "chrome", "browserName": "chrome", "browserVersion": "ANY", "version": "ANY"}
+        capabilities: {"browser": "chrome", "browserName": "chrome", "browserVersion": "ANY", "version": "ANY", 'chrome': {'switches':['--no-sandbox']}}
     Drupal\DrupalExtension:
       api_driver: 'drupal'
       drush:
