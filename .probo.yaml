@@ -10,8 +10,10 @@ steps:
       - composer self-update ; composer global update
       - cd /src
       - composer install --ansi
-      - composer require "ucdavis/sitefarm:dev-8dev" --ansi
-      - composer require "ucdavis/sitefarm_one:dev-8dev" --ansi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=8dev; fi
+      - composer require "ucdavis/sitefarm:dev-$BRANCH" --ansi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=8dev; fi
+      - composer require "ucdavis/sitefarm_one:dev-$BRANCH" --ansi
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8
