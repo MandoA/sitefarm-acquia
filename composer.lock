@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "40f70a8ab3ed1dd57cb2dcce333adb42",
+    "content-hash": "f293a21f0eb5ef718795f994f253d647",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1414,7 +1414,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/better_normalizers-8.x-1.0-beta3.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta3",
                 "shasum": "876c5f0006c3764677e1dbe6dec60a32d5a2d636"
             },
             "require": {
@@ -6044,7 +6044,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "937453479207e7bda74fbd775e91f306bfe10f58"
+                "reference": "40d5973752e6f18850b3f3510641647c4aa649f5"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6091,7 +6091,7 @@
                 "drupal/webform": "5.*",
                 "drupal/webform_views": "5.*",
                 "ucdavis/aggiefeed": "dev-8.x-1.x",
-                "ucdavis/sitefarm_one": "dev-8.x-2.x"
+                "ucdavis/sitefarm_one": "@dev"
             },
             "require-dev": {
                 "behat/behat": "^3.1",
@@ -6163,7 +6163,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-07-17 22:36:25"
+            "time": "2017-07-17 23:37:40"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -9886,7 +9886,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ucdavis/sitefarm": 20
+        "ucdavis/sitefarm": 20,
+        "ucdavis/sitefarm_one": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
