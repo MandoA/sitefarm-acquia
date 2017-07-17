@@ -1405,44 +1405,30 @@
         },
         {
             "name": "drupal/better_normalizers",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/better_normalizers",
-                "reference": "57dc5eb4a757db7ef35eff5bdb7f6c28ade30268"
+                "reference": "8.x-1.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/better_normalizers-8.x-1.0-beta3.zip",
+                "reference": null,
+                "shasum": "876c5f0006c3764677e1dbe6dec60a32d5a2d636"
             },
             "require": {
                 "drupal/core": "^8.3"
             },
             "type": "drupal-module",
             "extra": {
-                "installer-paths": {
-                    "docroot/core": [
-                        "drupal/core"
-                    ],
-                    "docroot/modules/contrib/{$name}": [
-                        "type:drupal-module"
-                    ],
-                    "docroot/modules/custom/{$name}": [
-                        "type:drupal-custom-module"
-                    ],
-                    "docroot/profiles/{$name}": [
-                        "type:drupal-profile"
-                    ],
-                    "docroot/libraries/{$name}": [
-                        "type:drupal-library"
-                    ],
-                    "docroot/themes/contrib/{$name}": [
-                        "type:drupal-theme"
-                    ],
-                    "docroot/themes/custom/{$name}": [
-                        "type:drupal-custom-theme"
-                    ],
-                    "drush/contrib/{$name}": [
-                        "type:drupal-drush"
-                    ]
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
                 },
-                "enable-patching": true
+                "drupal": {
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1493796785"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -1470,8 +1456,7 @@
             "homepage": "https://www.drupal.org/project/better_normalizers",
             "support": {
                 "source": "http://cgit.drupalcode.org/better_normalizers"
-            },
-            "time": "2017-05-03 02:35:27"
+            }
         },
         {
             "name": "drupal/cas",
@@ -1690,16 +1675,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.3.4",
+            "version": "8.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "f34eee7255142ab5416107972ef13d011f11e163"
+                "reference": "7adfc8c43615258e242868a393e82971a67be51a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/f34eee7255142ab5416107972ef13d011f11e163",
-                "reference": "f34eee7255142ab5416107972ef13d011f11e163",
+                "url": "https://api.github.com/repos/drupal/core/zipball/7adfc8c43615258e242868a393e82971a67be51a",
+                "reference": "7adfc8c43615258e242868a393e82971a67be51a",
                 "shasum": ""
             },
             "require": {
@@ -1878,7 +1863,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-06-21T18:13:27+00:00"
+            "time": "2017-07-05T17:03:07+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6059,7 +6044,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "3916b1e092709f0f191882c7f05c1f921e2c061d"
+                "reference": "937453479207e7bda74fbd775e91f306bfe10f58"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6067,7 +6052,7 @@
                 "drupal/address": "1.*",
                 "drupal/admin_toolbar": "1.*",
                 "drupal/anchor_link": "1.*",
-                "drupal/better_normalizers": "dev-1.x",
+                "drupal/better_normalizers": "1.*",
                 "drupal/cas": "1.*",
                 "drupal/ckwordcount": "1.*",
                 "drupal/config_update": "1.*",
@@ -6106,7 +6091,7 @@
                 "drupal/webform": "5.*",
                 "drupal/webform_views": "5.*",
                 "ucdavis/aggiefeed": "dev-8.x-1.x",
-                "ucdavis/sitefarm_one": "@dev"
+                "ucdavis/sitefarm_one": "dev-8.x-2.x"
             },
             "require-dev": {
                 "behat/behat": "^3.1",
@@ -6131,9 +6116,6 @@
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch"
-                    },
-                    "drupal/better_normalizers": {
-                        "Get rid of rest dependency after 8.3 core released": "https://www.drupal.org/files/issues/get_rid_of_rest-2851712-2.patch"
                     },
                     "drupal/photoswipe": {
                         "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
@@ -6181,15 +6163,15 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-07-14 17:03:19"
+            "time": "2017-07-17 22:36:25"
         },
         {
             "name": "ucdavis/sitefarm_one",
-            "version": "dev-8.x-1.x",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "cf76d61899b53fcfc8827d9fda67325b7d5f82f1"
+                "reference": "b7c5b42645f3edfd5101e84c1348017104a57df7"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6199,7 +6181,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-05-09 19:42:57"
+            "time": "2017-07-14 18:41:11"
         },
         {
             "name": "zendframework/zend-diactoros",
