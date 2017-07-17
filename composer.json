@@ -65,16 +65,17 @@
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
     }
-
   },
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
+      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/",
+      "rm docroot/robots.txt"
     ],
     "post-update-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/"
+      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/",
+      "rm docroot/robots.txt"
     ]
   },
   "config": {
