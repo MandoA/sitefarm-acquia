@@ -1367,7 +1367,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.5.zip",
-                "reference": null,
+                "reference": "8.x-1.5",
                 "shasum": "60fefc0fb910c28af5ba6e35a7cc47d04c0ad7b0"
             },
             "require": {
@@ -1416,13 +1416,33 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                "installer-paths": {
+                    "docroot/core": [
+                        "drupal/core"
+                    ],
+                    "docroot/modules/contrib/{$name}": [
+                        "type:drupal-module"
+                    ],
+                    "docroot/modules/custom/{$name}": [
+                        "type:drupal-custom-module"
+                    ],
+                    "docroot/profiles/{$name}": [
+                        "type:drupal-profile"
+                    ],
+                    "docroot/libraries/{$name}": [
+                        "type:drupal-library"
+                    ],
+                    "docroot/themes/contrib/{$name}": [
+                        "type:drupal-theme"
+                    ],
+                    "docroot/themes/custom/{$name}": [
+                        "type:drupal-custom-theme"
+                    ],
+                    "drush/contrib/{$name}": [
+                        "type:drupal-drush"
+                    ]
                 },
-                "drupal": {
-                    "version": "8.x-1.0-beta2+2-dev",
-                    "datestamp": "1493779095"
-                }
+                "enable-patching": true
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -1831,33 +1851,6 @@
             },
             "type": "drupal-core",
             "extra": {
-                "installer-paths": {
-                    "docroot/core": [
-                        "drupal/core"
-                    ],
-                    "docroot/modules/contrib/{$name}": [
-                        "type:drupal-module"
-                    ],
-                    "docroot/modules/custom/{$name}": [
-                        "type:drupal-custom-module"
-                    ],
-                    "docroot/profiles/{$name}": [
-                        "type:drupal-profile"
-                    ],
-                    "docroot/libraries/{$name}": [
-                        "type:drupal-library"
-                    ],
-                    "docroot/themes/contrib/{$name}": [
-                        "type:drupal-theme"
-                    ],
-                    "docroot/themes/custom/{$name}": [
-                        "type:drupal-custom-theme"
-                    ],
-                    "drush/contrib/{$name}": [
-                        "type:drupal-drush"
-                    ]
-                },
-                "enable-patching": true,
                 "patches_applied": {
                     "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
@@ -2038,7 +2031,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha6.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha6",
                 "shasum": "ec378158521afff8181f3536e140a31c161fc867"
             },
             "require": {
@@ -2516,7 +2509,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.27.zip",
-                "reference": null,
+                "reference": "8.x-1.27",
                 "shasum": "b40f86ef45a7f4325343e8aa455ecbdceab51ffe"
             },
             "require": {
@@ -2752,7 +2745,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "d478de3726d80d9bea305e2c2421482f50a24dc8"
             },
             "require": {
@@ -3898,7 +3891,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta15.zip",
-                "reference": null,
+                "reference": "8.x-5.0-beta15",
                 "shasum": "6bf79f53e2232a395ed892b1ba8b8bf95820d789"
             },
             "require": {
@@ -3975,7 +3968,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/webform_views-8.x-5.0-alpha2.zip",
-                "reference": null,
+                "reference": "8.x-5.0-alpha2",
                 "shasum": "288e0efa09423e3c3368d6aff9002ca41292238c"
             },
             "require": {
