@@ -14,6 +14,11 @@ steps:
       - composer require "ucdavis/sitefarm:dev-$BRANCH" --ansi
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=8dev; fi
       - composer require "ucdavis/sitefarm_one:dev-$BRANCH" --ansi
+  - name: Run PhpUnit
+    plugin: Script
+    script:
+      - cd $SRC_DIR/docroot/profiles/sitefarm
+      - $SRC_DIR/vendor/bin/phpunit --colors="always"
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8
