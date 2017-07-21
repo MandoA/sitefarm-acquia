@@ -866,7 +866,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.12.zip",
-                "reference": null,
+                "reference": "8.x-1.12",
                 "shasum": "ac8e7a955dd92dc8dc0d3476f2e3c2b0dcb3855a"
             },
             "require": {
@@ -1254,7 +1254,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/address-8.x-1.1.zip",
-                "reference": null,
+                "reference": "8.x-1.1",
                 "shasum": "b669af5f16b92a0f7df334a3c4118bd2334f2ed2"
             },
             "require": {
@@ -3652,7 +3652,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/social_media_links-8.x-2.5.zip",
-                "reference": null,
+                "reference": "8.x-2.5",
                 "shasum": "b55fa3d5a15ebdb039d77f2a9b3e7a8ee8ffccd2"
             },
             "require": {
@@ -6044,7 +6044,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "40d5973752e6f18850b3f3510641647c4aa649f5"
+                "reference": "137ce4ad8ebade209bc5232183d1c4d069bc7b82"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6163,7 +6163,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-07-17 23:37:40"
+            "time": "2017-07-21 15:49:13"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6171,7 +6171,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "b7c5b42645f3edfd5101e84c1348017104a57df7"
+                "reference": "2199874781bbad9ce006526505914ed15091db41"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6181,7 +6181,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-07-14 18:41:11"
+            "time": "2017-07-21 15:48:56"
         },
         {
             "name": "zendframework/zend-diactoros",
