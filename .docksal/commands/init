@@ -16,7 +16,7 @@ cp $PROJECT_ROOT/.docksal/example.docksal-local.env $PROJECT_ROOT/.docksal/docks
 # Start containers
 fin up
 # Install
-composer install
+fin exec composer install
 # Set local config files
 cp $SITEDIR_PATH/default.settings.local.php $SITEDIR_PATH/settings.local.php
 cp $SITEDIR_PATH/default.services.local.yml $SITEDIR_PATH/services.local.yml
