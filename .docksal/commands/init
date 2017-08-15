@@ -11,7 +11,6 @@ SITEDIR_PATH="${DOCROOT_PATH}/sites/${SITE_DIRECTORY}"
 
 #-------------------------- END: Settings --------------------------------
 
-
 # Set docksal-local.env
 cp $PROJECT_ROOT/.docksal/example.docksal-local.env $PROJECT_ROOT/.docksal/docksal-local.env
 # Start containers
@@ -22,6 +21,7 @@ composer install
 cp $SITEDIR_PATH/default.settings.local.php $SITEDIR_PATH/settings.local.php
 cp $SITEDIR_PATH/default.services.local.yml $SITEDIR_PATH/services.local.yml
 # Set config
+fin hosts remove $VIRTUAL_HOST
 fin hosts add $VIRTUAL_HOST
 echo "
 \$databases['default']['default'] = array (
