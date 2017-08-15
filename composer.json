@@ -41,7 +41,8 @@
     "drupal-composer/drupal-scaffold": "^2.2",
     "zendframework/zend-stdlib": "~3.0.1",
     "cweagans/composer-patches": "^1.5",
-    "ucdavis/sitefarm": "dev-8.x-1.x",
+    "ucdavis/sitefarm": "dev-8.x-2.x",
+    "ucdavis/sitefarm_one": "dev-8.x-2.x",
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
     "drupal/clamav": "1.*",
@@ -65,7 +66,6 @@
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
     }
-
   },
   "scripts": {
     "post-install-cmd": [
