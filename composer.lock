@@ -895,7 +895,7 @@
                     "homepage": "https://www.drupal.org/user/1"
                 },
                 {
-                    "name": "Gábor Hojtsy",
+                    "name": "G??bor Hojtsy",
                     "homepage": "https://www.drupal.org/user/4166"
                 },
                 {
@@ -997,7 +997,7 @@
                     "homepage": "https://www.drupal.org/user/78090"
                 },
                 {
-                    "name": "Rok Žlender",
+                    "name": "Rok ??lender",
                     "homepage": "https://www.drupal.org/user/61873"
                 },
                 {
@@ -1066,7 +1066,7 @@
                     "homepage": "https://www.drupal.org/user/78090"
                 },
                 {
-                    "name": "Rok Žlender",
+                    "name": "Rok ??lender",
                     "homepage": "https://www.drupal.org/user/61873"
                 },
                 {
@@ -1136,7 +1136,7 @@
                     "homepage": "https://www.drupal.org/user/78090"
                 },
                 {
-                    "name": "Rok Žlender",
+                    "name": "Rok ??lender",
                     "homepage": "https://www.drupal.org/user/61873"
                 },
                 {
@@ -1205,7 +1205,7 @@
                     "homepage": "https://www.drupal.org/user/78090"
                 },
                 {
-                    "name": "Rok Žlender",
+                    "name": "Rok ??lender",
                     "homepage": "https://www.drupal.org/user/61873"
                 },
                 {
@@ -1675,16 +1675,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.3.5",
+            "version": "8.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "7adfc8c43615258e242868a393e82971a67be51a"
+                "reference": "32f66ed9cc593f8e9ab0eaaaeff4cadbd859d5ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/7adfc8c43615258e242868a393e82971a67be51a",
-                "reference": "7adfc8c43615258e242868a393e82971a67be51a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/32f66ed9cc593f8e9ab0eaaaeff4cadbd859d5ff",
+                "reference": "32f66ed9cc593f8e9ab0eaaaeff4cadbd859d5ff",
                 "shasum": ""
             },
             "require": {
@@ -1863,7 +1863,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-07-05T17:03:07+00:00"
+            "time": "2017-08-16T17:10:35+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2267,7 +2267,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/fancy_file_delete"
             },
-            "time": "2016-10-21 16:33:38"
+            "time": "2016-10-21T16:33:38+00:00"
         },
         {
             "name": "drupal/features",
@@ -4490,7 +4490,7 @@
                 "mollom",
                 "spam"
             ],
-            "time": "2015-12-03 21:18:35"
+            "time": "2015-12-03T21:18:35+00:00"
         },
         {
             "name": "onelogin/php-saml",
@@ -6036,7 +6036,7 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2016-11-28 20:03:21"
+            "time": "2016-11-28T20:03:21+00:00"
         },
         {
             "name": "ucdavis/sitefarm",
@@ -6163,7 +6163,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-08-03 17:57:21"
+            "time": "2017-08-03T17:57:21+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6181,7 +6181,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-08-03 17:59:56"
+            "time": "2017-08-03T17:59:56+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -7753,7 +7753,7 @@
                     "email": "marksonnabaum@gmail.com"
                 },
                 {
-                    "name": "Antoine Beaupré",
+                    "name": "Antoine Beaupr??",
                     "email": "anarcat@koumbit.org"
                 },
                 {
@@ -7761,7 +7761,7 @@
                     "email": "greg.1.anderson@greenknowe.org"
                 },
                 {
-                    "name": "Jonathan Araña Cruz",
+                    "name": "Jonathan Ara??a Cruz",
                     "email": "jonhattan@faita.net"
                 },
                 {
@@ -8061,7 +8061,7 @@
             ],
             "authors": [
                 {
-                    "name": "Juan Francisco Calderón Zumba",
+                    "name": "Juan Francisco Calder??n Zumba",
                     "email": "juanfcz@gmail.com",
                     "homepage": "http://github.com/jcalderonzumba"
                 }
@@ -8118,7 +8118,7 @@
             ],
             "authors": [
                 {
-                    "name": "Juan Francisco Calderón Zumba",
+                    "name": "Juan Francisco Calder??n Zumba",
                     "email": "juanfcz@gmail.com",
                     "homepage": "http://github.com/jcalderonzumba"
                 }
@@ -9464,7 +9464,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jean-François Simon",
+                    "name": "Jean-Fran??ois Simon",
                     "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
