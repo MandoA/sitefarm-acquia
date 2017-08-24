@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f293a21f0eb5ef718795f994f253d647",
+    "content-hash": "9afe80233d9632b8ef878154e9358c55",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1456,6 +1456,57 @@
             "homepage": "https://www.drupal.org/project/better_normalizers",
             "support": {
                 "source": "http://cgit.drupalcode.org/better_normalizers"
+            }
+        },
+        {
+            "name": "drupal/block_style_plugins",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/block_style_plugins",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "10103ae1ba5c510feea8ac144e002d3cf44af72c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1503437943",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "segovia94",
+                    "homepage": "https://www.drupal.org/user/780142"
+                }
+            ],
+            "description": "Plugin system for allowing modules or themes to add style configuration to blocks",
+            "homepage": "https://www.drupal.org/project/block_style_plugins",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/block_style_plugins",
+                "issues": "https://www.drupal.org/project/issues/block_style_plugins"
             }
         },
         {
