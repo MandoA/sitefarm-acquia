@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 
+#-------------------------- Settings --------------------------------
+
 # PROJECT_ROOT is passed from fin.
-# The following variables are configured in the '.env' file:
-# DOCROOT, VIRTUAL_HOST, SITE_DIRECTORY, DOCROOT_PATH, SITEDIR_PATH
+# The following variables are configured in the '.env' file: DOCROOT, VIRTUAL_HOST, SITE_DIRECTORY.
+
+DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
+SITEDIR_PATH="${DOCROOT_PATH}/sites/${SITE_DIRECTORY}"
+
+#-------------------------- END: Settings --------------------------------
 
 # Start containers
 fin up
