@@ -1,0 +1,59 @@
+# Acquia alike stack
+#
+# - Apache 2.2
+# - MySQL 5.6
+# - PHP 5.6 / PHP 7.0
+# - Varnish 3
+# - Memcached 1.4
+# - ApacheSolr 4.x
+
+version: "2.1"
+
+services:
+  # Web
+  web:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: web
+    depends_on:
+      - cli
+
+  # DB
+  db:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: db
+
+  # CLI
+  cli:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: cli
+
+  # Varnish
+  varnish:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: varnish
+    depends_on:
+      - web
+
+#  # Memcached
+#  memcached:
+#    extends:
+#      file: ${HOME}/.docksal/stacks/services.yml
+#      service: memcached
+#
+#  # Solr
+#  solr:
+#    extends:
+#      file: ${HOME}/.docksal/stacks/services.yml
+#      service: solr
+
+  # Browser
+  browser:
+    hostname: browser
+    image: selenium/standalone-chrome
+    dns:
+      - ${DOCKSAL_DNS1}
+      - ${DOCKSAL_DNS2}

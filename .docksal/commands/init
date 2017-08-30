@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+#-------------------------- Settings --------------------------------
+
+# PROJECT_ROOT is passed from fin.
+# The following variables are configured in the '.env' file: DOCROOT, VIRTUAL_HOST, SITE_DIRECTORY.
+
+DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
+SITEDIR_PATH="${DOCROOT_PATH}/sites/${SITE_DIRECTORY}"
+
+#-------------------------- END: Settings --------------------------------
+
+# Start containers
+fin up
+
+# Remove old directories and install
+rm -rf $PROJECT_ROOT/vendor
+echo "Deleted: $PROJECT_ROOT/vendor"
+rm -rf $DOCROOT_PATH/core
+echo "Deleted: $DOCROOT_PATH/core"
+rm -rf $DOCROOT_PATH/modules/contrib
+echo "Deleted: $DOCROOT_PATH/modules/contrib"
+fin exec composer install
+
+# Set local config files
+fin perm
+cp $SITEDIR_PATH/default.settings.local.php $SITEDIR_PATH/settings.local.php
+cp $SITEDIR_PATH/default.services.local.yml $SITEDIR_PATH/services.local.yml
+
+# Set extra config
+echo "
+\$databases['default']['default'] = array (
+  'database' => 'default',
+  'username' => 'user',
+  'password' => 'user',
+  'prefix' => '',
+  'host' => '$(fin vm ip)',
+  'port' => '33061',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+" >> $SITEDIR_PATH/settings.local.php
+
+# Set hosts
+fin hosts remove $VIRTUAL_HOST
+fin hosts add $VIRTUAL_HOST
+
+# Install site
+cd $DOCROOT
+fin drush site-install sitefarm -y --site-name="SiteFarm Acquia"
+
+# Get login link
+echo "Access SiteFarm: "
+fin drush uli --uri="http://$VIRTUAL_HOST"
+
+# Set permissions
+fin perm
