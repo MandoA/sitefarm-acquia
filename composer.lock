@@ -2680,6 +2680,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Error serializing field added by contrib module": "https://www.drupal.org/files/issues/2903261-8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2932,6 +2935,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6538,6 +6544,15 @@
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch"
+                    },
+                    "drupal/openapi": {
+                        "check value is set": "https://www.drupal.org/files/issues/check-value-2903630-3.patch"
+                    },
+                    "drupal/metatag": {
+                        "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
+                    },
+                    "drupal/jsonapi": {
+                        "Error serializing field added by contrib module": "https://www.drupal.org/files/issues/2903261-8.patch"
                     },
                     "drupal/photoswipe": {
                         "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
