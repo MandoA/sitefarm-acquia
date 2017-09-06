@@ -111,6 +111,6 @@
         "type:drupal-drush"
       ]
     },
-    "enable-patching": true,
+    "enable-patching": true
   }
 }
