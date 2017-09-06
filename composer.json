@@ -112,13 +112,5 @@
       ]
     },
     "enable-patching": true,
-    "patches": {
-      "drupal/metatag": {
-        "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
-      },
-      "drupal/jsonapi": {
-        "Error serializing field added by contrib module": "https://www.drupal.org/files/issues/2903261-8.patch"
-      }
-    }
   }
 }
