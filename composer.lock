@@ -1888,7 +1888,7 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-177.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
                     "Drupalimage calling drupallink functions without checking if the plugin is loaded": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch"
                 }
@@ -2937,7 +2937,8 @@
                     }
                 },
                 "patches_applied": {
-                    "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
+                    "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch",
+                    "fix error creating bundle without entity_type": "https://www.drupal.org/files/issues/metatag-n2899752-57.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6541,7 +6542,7 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-177.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch"
                     },
@@ -6549,7 +6550,8 @@
                         "check value is set": "https://www.drupal.org/files/issues/check-value-2903630-3.patch"
                     },
                     "drupal/metatag": {
-                        "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
+                        "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch",
+                        "fix error creating bundle without entity_type": "https://www.drupal.org/files/issues/metatag-n2899752-57.patch"
                     },
                     "drupal/jsonapi": {
                         "Error serializing field added by contrib module": "https://www.drupal.org/files/issues/2903261-8.patch"
