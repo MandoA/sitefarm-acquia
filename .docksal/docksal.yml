@@ -54,6 +54,8 @@ services:
   browser:
     hostname: browser
     image: selenium/standalone-chrome-debug
+    ports:
+      - "${VNC_PORT_MAPPING:-5900}"
     dns:
       - ${DOCKSAL_DNS1}
       - ${DOCKSAL_DNS2}
