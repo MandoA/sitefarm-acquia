@@ -8,6 +8,7 @@ steps:
     plugin: Script
     script:
       - composer self-update ; composer global update
+      - composer global require hirak/prestissimo
       - cd /src
       - composer install --ansi
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=8dev; fi

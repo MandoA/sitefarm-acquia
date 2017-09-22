@@ -53,7 +53,7 @@ services:
   # Browser
   browser:
     hostname: browser
-    image: selenium/standalone-chrome
+    image: selenium/standalone-chrome-debug
     dns:
       - ${DOCKSAL_DNS1}
       - ${DOCKSAL_DNS2}
