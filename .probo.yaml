@@ -9,6 +9,7 @@ steps:
     script:
       - composer self-update ; composer global update
       - composer global require hirak/prestissimo
+      - composer global update drush/drush
       - drush version
       - which drush
       - echo $PATH
