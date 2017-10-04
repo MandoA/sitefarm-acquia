@@ -1368,6 +1368,10 @@
                     "homepage": "https://www.drupal.org/u/matio89"
                 },
                 {
+                    "name": "adriancid",
+                    "homepage": "https://www.drupal.org/user/1962106"
+                },
+                {
                     "name": "bolbol",
                     "homepage": "https://www.drupal.org/user/3400070"
                 },
@@ -1730,16 +1734,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.4.0-rc2",
+            "version": "8.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "b2a6d61fe5752a7c8336611852f027f327e329d3"
+                "reference": "d4be8e12d9e8b4db82ece760c632213247f56fa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/b2a6d61fe5752a7c8336611852f027f327e329d3",
-                "reference": "b2a6d61fe5752a7c8336611852f027f327e329d3",
+                "url": "https://api.github.com/repos/drupal/core/zipball/d4be8e12d9e8b4db82ece760c632213247f56fa7",
+                "reference": "d4be8e12d9e8b4db82ece760c632213247f56fa7",
                 "shasum": ""
             },
             "require": {
@@ -1920,7 +1924,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-09-20T12:43:15+00:00"
+            "time": "2017-10-04T19:25:32+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2330,11 +2334,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1501016642",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
+                    "datestamp": "1477067642"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3650,7 +3650,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.10",
-                    "datestamp": "1506357544",
+                    "datestamp": "1506805827",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4011,7 +4011,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta18",
-                    "datestamp": "1505244243",
+                    "datestamp": "1506634743",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
