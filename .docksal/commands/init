@@ -10,8 +10,11 @@ SITEDIR_PATH="${DOCROOT_PATH}/sites/${SITE_DIRECTORY}"
 
 #-------------------------- END: Settings --------------------------------
 
+cd $PROJECT_ROOT
+
 # Start containers
 fin up
+fin exec composer global require hirak/prestissimo
 
 # Remove old directories and install
 rm -rf $PROJECT_ROOT/vendor
@@ -45,8 +48,18 @@ echo "
 fin hosts remove $VIRTUAL_HOST
 fin hosts add $VIRTUAL_HOST
 
+# Set profile branch to match distro branch
+DISTRO_BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+cd $DOCROOT_PATH/profiles/sitefarm/
+git fetch origin
+git fetch composer
+if git checkout $DISTRO_BRANCH 2> /dev/null ; then
+git pull origin $DISTRO_BRANCH
+else
+git checkout -b $DISTRO_BRANCH -t origin/$DISTRO_BRANCH
+fi
+
 # Install site
-cd $DOCROOT
 fin drush site-install sitefarm -y --site-name="SiteFarm Acquia"
 
 # Get login link

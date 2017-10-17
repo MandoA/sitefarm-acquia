@@ -8,6 +8,11 @@ steps:
     plugin: Script
     script:
       - composer self-update ; composer global update
+      - composer global require hirak/prestissimo
+      - composer global require "drush/drush:^8.1.13"
+      - drush version
+      - which drush
+      - echo $PATH
       - cd /src
       - composer install --ansi
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=8dev; fi
@@ -34,7 +39,7 @@ steps:
       - cp $SRC_DIR/behat.probo.yml /var/www/html/profiles/sitefarm/behat.yml
       - cp -r $SRC_DIR/tests/features/acquia /var/www/html/profiles/sitefarm/tests/features/.
       - cd /var/www/html/profiles/sitefarm
-      - $SRC_DIR/vendor/bin/behat --profile probo --tags "~@javascript" --colors
+      - $SRC_DIR/vendor/bin/behat --profile probo --tags "~@javascript" --colors --format progress
   - name: Run Behat JS
     plugin: Script
     script:
@@ -48,5 +53,5 @@ steps:
       - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar > /dev/null 2>&1
       - xvfb-run java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver="/usr/bin/chromedriver" > /dev/null 2>&1 & sleep 5
       - cd /var/www/html/profiles/sitefarm
-      - $SRC_DIR/vendor/bin/behat --profile probo --tags "@javascript" --colors
+      - $SRC_DIR/vendor/bin/behat --profile probo --tags "@javascript" --colors --format progress
       - disown
