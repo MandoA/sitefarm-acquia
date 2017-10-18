@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e0c0e4cb5f177b8a88a4e0542863953",
+    "content-hash": "c7612755138cb12d89d9432df02ff071",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2433,21 +2433,21 @@
         },
         {
             "name": "drupal/focal_point",
-            "version": "1.0.0-beta4",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/focal_point",
-                "reference": "8.x-1.0-beta4"
+                "reference": "8.x-1.0-beta5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.0-beta4.zip",
-                "reference": "8.x-1.0-beta4",
-                "shasum": "5c196948872af0621f1004d07c7d5aec583c11db"
+                "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "ab5eb9a0e6d487998e3c30fa50a3f73349a76983"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/crop": "^1.0.0-alpha2"
+                "drupal/crop": "*"
             },
             "require-dev": {
                 "drupal/crop": "*"
@@ -2458,8 +2458,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta4",
-                    "datestamp": "1479749360",
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1507560540",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
