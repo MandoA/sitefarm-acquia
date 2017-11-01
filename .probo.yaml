@@ -31,8 +31,12 @@ steps:
     runInstall: true
     profileName: sitefarm
     installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu'
+    settingsAppend: '$settings["file_private_path"] = "/var/www/html/sites/default/private-files";'
   - name: Fix files directory permissions
-    command: 'chown -R www-data:www-data /var/www/html/sites/default/files'
+    plugin: Script
+    script:
+      - chown -R www-data:www-data /var/www/html/sites/default/private-files
+      - chown -R www-data:www-data /var/www/html/sites/default/files
   - name: Run Behat NoJS
     plugin: Script
     script:
