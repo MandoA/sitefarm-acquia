@@ -23,6 +23,7 @@ if [[ ! -f "$BEHAT_PATH/behat.yml" ]]; then
 fi
 
 # Launch VNC viewer
+echo "Opening vnc://:secret@192.168.64.100:${VNC_PORT_MAPPING%\:5900*}"
 open "vnc://:secret@192.168.64.100:${VNC_PORT_MAPPING%\:5900*}"
 
 # Launch Behat tests

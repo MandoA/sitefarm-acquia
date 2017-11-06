@@ -50,6 +50,18 @@ Open the SiteFarm Acquia web directory(`sitefarm-acquia/docroot`) in your browse
 
 # Local Dev Tips
 
+## Running Behat with Docksal
+
+Docksal includes Docker images for running Behat with selenium and the chrome driver. No need to install anything else.
+
+`$ fin behat` = Runs all behat tests
+
+`$ fin behat --tags=@local` = Runs all behat tests with the `@local` tag
+
+`$ fin bhl` = Shortcut for `$ fin behat --tags=@local`
+
+A VNC window will open displaying the browser as it goes through the `@javascript` tests. If your OS doesn't support that, follow the connection information that is displayed in the script output.
+
 ## Updating Drupal Core
 
 This project will attempt to keep all of your Drupal Core files up-to-date; the 
