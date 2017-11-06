@@ -1,15 +1,54 @@
 This is a SiteFarm Composer-based Drupal distribution for Acquia Hosting.
 
-## Get Started
-You will need the following installed:
+# Configuring Your Localhost
 
-* [Composer](https://getcomposer.org), obviously
+## Step 1: Install Composer
 
-When you have that, run this command:
-```
-$ composer install
-```
+[Install composer globally.](https://getcomposer.org/doc/00-intro.md) 
+
+## Step 2: Fire Up Local Dev Stack
+
+Install and enable [Docksal](https://docksal.io) (recommended), [MAMP](https://www.mamp.info/), [WAMP](http://www.wampserver.com/), [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), or whatever you local development environment of choice and make sure the [Web Server System Requirements](https://www.drupal.org/docs/8/system-requirements/web-server) for Drupal 8 are being met.
+
+## Step 3: Configure Your Local Host
+
+### Docksal
+
+Open your CLI of choice and navigate to the SiteFarm Acquia directory (`sitefarm-acquia`).
+
+Run, `$ fin init`
+
+The script will prompt you for your sudo password, and then at the end provide you with a login link.
+
+You're done! You can skip the rest of the steps.
+
+### Other Local Dev Stack
+
+You will want to set up a local host on your local PHP/MySQL tool of choice. Give it a name like `sitefarm-acquia.local` and set the document root to `sitefarm-acquia/docroot`
+
+## Step 5: Boss Composer Around (ignore if using Docksal)
+
+Open your CLI of choice and navigate to the SiteFarm Acquia directory (`sitefarm-acquia`).
+
+Run, `$ composer install`
+
 Composer will download and install the SiteFarm install profile. You can then install it like you would any other Drupal site.
+
+## Step 6: Add a Database (ignore if using Docksal)
+
+Using a tool like [Sequel Pro](https://www.sequelpro.com/) or [phpMyAdmin](https://www.phpmyadmin.net/) create a local database.
+
+Copy `docroot/sites/default/default.settings.local.php` and `default.services.local.yml` to `settings.local.php` and `services.local.yml` respectively.
+
+Add your new database connection information into settings.local.php
+
+## Step 7: Install Drupal (ignore if using Docksal)
+
+Before installing drupal you may want to increase your `memory_limit` in your `php.ini` file. I like to bump it up to `520M`. You may also want to increase your `post_max_size` to `120M`. This will reduce the likelihood of errors on install.
+
+Open the SiteFarm Acquia web directory(`sitefarm-acquia/docroot`) in your browser or use the local host name, my example was `sitefarm-acquia.local` and follow the instructions to install Drupal.
+
+# Local Dev Tips
 
 ## Updating Drupal Core
 
