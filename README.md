@@ -6,6 +6,10 @@ This is a SiteFarm Composer-based Drupal distribution for Acquia Hosting.
 
 [Install composer globally.](https://getcomposer.org/doc/00-intro.md) 
 
+Recommended: Install [Prestissimo](https://github.com/hirak/prestissimo) globally:
+
+`$ composer global require hirak/prestissimo`
+
 ## Step 2: Fire Up Local Dev Stack
 
 Install and enable [Docksal](https://docksal.io) (recommended), [MAMP](https://www.mamp.info/), [WAMP](http://www.wampserver.com/), [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), or whatever you local development environment of choice and make sure the [Web Server System Requirements](https://www.drupal.org/docs/8/system-requirements/web-server) for Drupal 8 are being met.
