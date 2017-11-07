@@ -22,5 +22,10 @@ if [[ ! -f "$BEHAT_PATH/behat.yml" ]]; then
 	cp $BEHAT_PATH/behat.template.yml $BEHAT_PATH/behat.yml
 fi
 
+# Launch VNC viewer
+VNC_URL="vnc://:secret@$(fin vm ip):${VNC_PORT_MAPPING%\:5900*}"
+echo "Opening $VNC_URL"
+open "$VNC_URL"
+
 # Launch Behat tests
-fin exec "cd $FIN_BEHAT_PATH ; /var/www/vendor/bin/behat -p docker $1"
+fin exec "cd $FIN_BEHAT_PATH ; /var/www/vendor/bin/behat -p docker $@"
