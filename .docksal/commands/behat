@@ -23,8 +23,9 @@ if [[ ! -f "$BEHAT_PATH/behat.yml" ]]; then
 fi
 
 # Launch VNC viewer
-echo "Opening vnc://:secret@192.168.64.100:${VNC_PORT_MAPPING%\:5900*}"
-open "vnc://:secret@192.168.64.100:${VNC_PORT_MAPPING%\:5900*}"
+VNC_URL="vnc://:secret@$(fin vm ip):${VNC_PORT_MAPPING%\:5900*}"
+echo "Opening $VNC_URL"
+open "$VNC_URL"
 
 # Launch Behat tests
 fin exec "cd $FIN_BEHAT_PATH ; /var/www/vendor/bin/behat -p docker $@"
