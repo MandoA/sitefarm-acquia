@@ -2291,6 +2291,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Check permission before showing Clone operation": "https://www.drupal.org/files/issues/check-permission-2743379-1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
