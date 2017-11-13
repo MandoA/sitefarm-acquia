@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7612755138cb12d89d9432df02ff071",
+    "content-hash": "ec0261fd7041c0ee160973813e045ea7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -893,7 +893,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.13",
-                    "datestamp": "1502725444",
+                    "datestamp": "1502799051",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -906,16 +906,16 @@
             ],
             "authors": [
                 {
-                    "name": "CharuAg",
-                    "homepage": "https://www.drupal.org/user/2923221"
-                },
-                {
                     "name": "Dries",
                     "homepage": "https://www.drupal.org/user/1"
                 },
                 {
                     "name": "Gábor Hojtsy",
                     "homepage": "https://www.drupal.org/user/4166"
+                },
+                {
+                    "name": "Mark Trapp",
+                    "homepage": "https://www.drupal.org/user/212019"
                 },
                 {
                     "name": "Stanislav Mixnovich",
@@ -930,10 +930,6 @@
                     "homepage": "https://www.drupal.org/user/736644"
                 },
                 {
-                    "name": "janusman",
-                    "homepage": "https://www.drupal.org/user/153120"
-                },
-                {
                     "name": "kolafson",
                     "homepage": "https://www.drupal.org/user/822402"
                 },
@@ -944,6 +940,10 @@
                 {
                     "name": "paul.lovvik",
                     "homepage": "https://www.drupal.org/user/289213"
+                },
+                {
+                    "name": "vlad.pavlovic",
+                    "homepage": "https://www.drupal.org/user/92673"
                 }
             ],
             "description": "Allows Drupal to securely communicate with the Acquia Subscription, and checks for updates to Acquia Drupal.",
@@ -1423,7 +1423,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1497280742",
+                    "datestamp": "1509961084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1734,16 +1734,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.4.0",
+            "version": "8.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "d4be8e12d9e8b4db82ece760c632213247f56fa7"
+                "reference": "68d25c07b7306340900abc4020c38683a817f0eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d4be8e12d9e8b4db82ece760c632213247f56fa7",
-                "reference": "d4be8e12d9e8b4db82ece760c632213247f56fa7",
+                "url": "https://api.github.com/repos/drupal/core/zipball/68d25c07b7306340900abc4020c38683a817f0eb",
+                "reference": "68d25c07b7306340900abc4020c38683a817f0eb",
                 "shasum": ""
             },
             "require": {
@@ -1806,6 +1806,7 @@
                 "drupal/core-annotation": "self.version",
                 "drupal/core-assertion": "self.version",
                 "drupal/core-bridge": "self.version",
+                "drupal/core-class-finder": "self.version",
                 "drupal/core-datetime": "self.version",
                 "drupal/core-dependency-injection": "self.version",
                 "drupal/core-diff": "self.version",
@@ -1899,9 +1900,9 @@
             "extra": {
                 "patches_applied": {
                     "Fix broken ckeditor style dropdowns for Objects": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
-                    "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-13.patch",
-                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
-                    "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch"
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-184-8-3-x-test-do-not-test.patch",
+                    "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
+                    "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                 }
             },
             "autoload": {
@@ -1925,7 +1926,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-10-04T19:25:32+00:00"
+            "time": "2017-11-03T13:20:16+00:00"
         },
         {
             "name": "drupal/crop",
@@ -1954,7 +1955,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1491032884",
+                    "datestamp": "1509015245",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2099,7 +2100,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha6",
-                    "datestamp": "1493675943",
+                    "datestamp": "1508448545",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3001,11 +3002,14 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1506715150",
+                    "datestamp": "1507021979",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3298,6 +3302,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "check value is set": "https://www.drupal.org/files/issues/check-value-2903630-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4368,7 +4375,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta19",
-                    "datestamp": "1506634743",
+                    "datestamp": "1509357785",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6299,11 +6306,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8.x-2.x",
+            "version": "dev-8.x-3.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "284947e8c61df3e654959fe871d93a9795786ce9"
+                "reference": "c06d13f17b399a684fb5d0e4624258bc40f72d7d"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6312,6 +6319,7 @@
                 "drupal/admin_toolbar": "1.*",
                 "drupal/anchor_link": "1.*",
                 "drupal/better_normalizers": "1.*",
+                "drupal/block_style_plugins": "1.*",
                 "drupal/cas": "1.*",
                 "drupal/ckwordcount": "1.*",
                 "drupal/config_update": "1.*",
@@ -6326,6 +6334,7 @@
                 "drupal/geolocation": "1.*",
                 "drupal/google_analytics": "2.*",
                 "drupal/honeypot": "1.*",
+                "drupal/jsonapi": "1.*",
                 "drupal/masquerade": "2.*",
                 "drupal/menu_block": "1.*",
                 "drupal/menu_breadcrumb": "1.*",
@@ -6334,7 +6343,9 @@
                 "drupal/migrate_source_csv": "~2",
                 "drupal/migrate_tools": "4.*",
                 "drupal/notification": "1.*",
+                "drupal/openapi": "1.*",
                 "drupal/pathauto": "1.*",
+                "drupal/pdb_vue": "1.*",
                 "drupal/photoswipe": "1.*",
                 "drupal/redirect": "1.*",
                 "drupal/robotstxt": "1.*",
@@ -6373,9 +6384,15 @@
                 "patches": {
                     "drupal/core": {
                         "Fix broken ckeditor style dropdowns for Objects": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/improve_the_views-2786577-28.patch",
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-184-8-3-x-test-do-not-test.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
-                        "Drupalimage calling drupallink functions without checking if the plugin is loaded": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-1.patch"
+                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
+                    },
+                    "drupal/openapi": {
+                        "check value is set": "https://www.drupal.org/files/issues/check-value-2903630-3.patch"
+                    },
+                    "drupal/metatag": {
+                        "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
                     },
                     "drupal/photoswipe": {
                         "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
@@ -6416,6 +6433,11 @@
                     "name": "Mark Miller",
                     "email": "mrkmiller@ucdavis.edu",
                     "role": "Developer"
+                },
+                {
+                    "name": "Jessica Hayes",
+                    "email": "jlhayes@ucdavis.edu",
+                    "role": "Developer"
                 }
             ],
             "description": "Drupal 8 profile for the SiteFarm platform",
@@ -6423,15 +6445,15 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-10-02T19:50:18+00:00"
+            "time": "2017-11-09T23:07:10+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
-            "version": "dev-8.x-2.x",
+            "version": "dev-8.x-3.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "4a3be5219a5170c7661e6db92ebb0de40ff78cf6"
+                "reference": "ac203ac4a36a1eb44a1a975944d7b6ecf2d9b577"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6441,7 +6463,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-09-20T23:33:20+00:00"
+            "time": "2017-11-09T16:50:49+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
