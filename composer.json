@@ -45,26 +45,35 @@
     "ucdavis/sitefarm_one": "dev-8.x-3.x",
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
-    "drupal/samlauth": "2.*"
+    "drupal/samlauth": "2.*",
+    "oomphinc/composer-installers-extender": "^1.1",
+    "npm-asset/slick-carousel": "^1.8",
+    "bower-asset/word-count-ckeditor": "^1.17",
+    "npm-asset/photoswipe": "^4.1"
   },
-  "repositories": {
-    "drupal": {
+  "repositories": [
+    {
       "type": "composer",
-      "url": "https://packages.drupal.org/8"
+      "url": "https://packages.drupal.org/8",
+      "vendor-alias": "drupal"
     },
-    "ucdavis/sitefarm": {
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+    {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm.git"
     },
-    "ucdavis/aggiefeed": {
+    {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git"
     },
-    "ucdavis/sitefarm_one": {
+    {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
     }
-  },
+  ],
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
@@ -83,6 +92,10 @@
     }
   },
   "extra": {
+    "installer-types": [
+      "bower-asset",
+      "npm-asset"
+    ],
     "installer-paths": {
       "docroot/core": [
         "drupal/core"
@@ -97,7 +110,9 @@
         "type:drupal-profile"
       ],
       "docroot/libraries/{$name}": [
-        "type:drupal-library"
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
       ],
       "docroot/themes/contrib/{$name}": [
         "type:drupal-theme"
