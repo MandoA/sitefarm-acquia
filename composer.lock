@@ -1401,17 +1401,17 @@
         },
         {
             "name": "drupal/anchor_link",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/anchor_link",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "60fefc0fb910c28af5ba6e35a7cc47d04c0ad7b0"
+                "url": "https://ftp.drupal.org/files/projects/anchor_link-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "89c436f459e62dbdfdaf52a92f9f9265eec1df13"
             },
             "require": {
                 "drupal/core": "*"
@@ -1422,7 +1422,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
+                    "version": "8.x-1.6",
                     "datestamp": "1509961084",
                     "security-coverage": {
                         "status": "covered",
@@ -1930,17 +1930,17 @@
         },
         {
             "name": "drupal/crop",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/crop",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "0ad542254940c844f8a22c1b386131f06c665b4f"
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "8075371124c0fd3c70e17c071ac09e9c8d5cf1ed"
             },
             "require": {
                 "drupal/core": "*"
@@ -1954,7 +1954,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
+                    "version": "8.x-1.3",
                     "datestamp": "1509015245",
                     "security-coverage": {
                         "status": "covered",
@@ -2078,17 +2078,17 @@
         },
         {
             "name": "drupal/default_content",
-            "version": "1.0.0-alpha6",
+            "version": "1.0.0-alpha7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/default_content",
-                "reference": "8.x-1.0-alpha6"
+                "reference": "8.x-1.0-alpha7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha6.zip",
-                "reference": "8.x-1.0-alpha6",
-                "shasum": "ec378158521afff8181f3536e140a31c161fc867"
+                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha7.zip",
+                "reference": "8.x-1.0-alpha7",
+                "shasum": "4f1b49cdad6d74ef879f4700caaa11703ba85ad7"
             },
             "require": {
                 "drupal/core": "~8.3"
@@ -2099,7 +2099,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha6",
+                    "version": "8.x-1.0-alpha7",
                     "datestamp": "1508448545",
                     "security-coverage": {
                         "status": "not-covered",
@@ -4113,17 +4113,17 @@
         },
         {
             "name": "drupal/social_media_links",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social_media_links",
-                "reference": "8.x-2.5"
+                "reference": "8.x-2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_media_links-8.x-2.5.zip",
-                "reference": "8.x-2.5",
-                "shasum": "b55fa3d5a15ebdb039d77f2a9b3e7a8ee8ffccd2"
+                "url": "https://ftp.drupal.org/files/projects/social_media_links-8.x-2.6.zip",
+                "reference": "8.x-2.6",
+                "shasum": "53462cb307b104552ae5370b917e55ca50fba526"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4134,8 +4134,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.5",
-                    "datestamp": "1500374942",
+                    "version": "8.x-2.6",
+                    "datestamp": "1510489384",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4353,17 +4353,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta19",
+            "version": "5.0.0-beta24",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta19"
+                "reference": "8.x-5.0-beta24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta19.zip",
-                "reference": "8.x-5.0-beta19",
-                "shasum": "c117f293e1f009a86adfd7cff1007e4e89b2c5fd"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta24.zip",
+                "reference": "8.x-5.0-beta24",
+                "shasum": "bb2df75e466c6bd6fbf552bff183574bd628f33f"
             },
             "require": {
                 "drupal/core": "*"
@@ -4374,8 +4374,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta19",
-                    "datestamp": "1509357785",
+                    "version": "8.x-5.0-beta24",
+                    "datestamp": "1510867685",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -7499,16 +7499,16 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.0.2",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console.git",
-                "reference": "8561b13b3026053a575bc54a4aa5bd351ed89f6a"
+                "reference": "5c34670976c861a6dc275c7c9e1042bbfc3c87db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/8561b13b3026053a575bc54a4aa5bd351ed89f6a",
-                "reference": "8561b13b3026053a575bc54a4aa5bd351ed89f6a",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/5c34670976c861a6dc275c7c9e1042bbfc3c87db",
+                "reference": "5c34670976c861a6dc275c7c9e1042bbfc3c87db",
                 "shasum": ""
             },
             "require": {
@@ -7516,7 +7516,7 @@
                 "composer/installers": "~1.0",
                 "doctrine/annotations": "^1.2",
                 "doctrine/collections": "^1.3",
-                "drupal/console-core": "1.0.2",
+                "drupal/console-core": "1.2.0",
                 "drupal/console-dotenv": "~0",
                 "drupal/console-extend-plugin": "~0",
                 "gabordemooij/redbean": "~4.3",
@@ -7574,25 +7574,25 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-09-05T07:41:50+00:00"
+            "time": "2017-11-15T18:10:20+00:00"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.0.2",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "cbc763fb7d85e2d05f062021e222d8816b91bfda"
+                "reference": "017b6fcbe91c7671e5fcf4741af54f4cabba9ae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/cbc763fb7d85e2d05f062021e222d8816b91bfda",
-                "reference": "cbc763fb7d85e2d05f062021e222d8816b91bfda",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/017b6fcbe91c7671e5fcf4741af54f4cabba9ae9",
+                "reference": "017b6fcbe91c7671e5fcf4741af54f4cabba9ae9",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-configuration": "^1.0",
-                "drupal/console-en": "1.0.2",
+                "drupal/console-en": "1.2.0",
                 "php": "^5.5.9 || ^7.0",
                 "stecman/symfony-console-completion": "~0.7",
                 "symfony/config": "~2.8|~3.0",
@@ -7655,7 +7655,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-09-05T07:08:07+00:00"
+            "time": "2017-11-15T17:42:24+00:00"
         },
         {
             "name": "drupal/console-dotenv",
@@ -7698,16 +7698,16 @@
         },
         {
             "name": "drupal/console-en",
-            "version": "1.0.2",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "21a7c2dbfd237a97bb8593c6f7c397a2032aa1d2"
+                "reference": "3e8b103b95184e3235bcd2a871e4f6c4d7de8306"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/21a7c2dbfd237a97bb8593c6f7c397a2032aa1d2",
-                "reference": "21a7c2dbfd237a97bb8593c6f7c397a2032aa1d2",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/3e8b103b95184e3235bcd2a871e4f6c4d7de8306",
+                "reference": "3e8b103b95184e3235bcd2a871e4f6c4d7de8306",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -7748,7 +7748,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2017-09-04T05:42:48+00:00"
+            "time": "2017-11-15T17:23:44+00:00"
         },
         {
             "name": "drupal/console-extend-plugin",
@@ -7793,16 +7793,16 @@
         },
         {
             "name": "drupal/drupal-driver",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jhedstrom/DrupalDriver.git",
-                "reference": "125d39918c97f7a08e3110d456a0a1db864dae46"
+                "reference": "63d322d4474fe430366554f9548de3ea04caf536"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jhedstrom/DrupalDriver/zipball/125d39918c97f7a08e3110d456a0a1db864dae46",
-                "reference": "125d39918c97f7a08e3110d456a0a1db864dae46",
+                "url": "https://api.github.com/repos/jhedstrom/DrupalDriver/zipball/63d322d4474fe430366554f9548de3ea04caf536",
+                "reference": "63d322d4474fe430366554f9548de3ea04caf536",
                 "shasum": ""
             },
             "require": {
@@ -7846,7 +7846,7 @@
                 "test",
                 "web"
             ],
-            "time": "2016-06-20T16:29:51+00:00"
+            "time": "2017-11-10T19:27:28+00:00"
         },
         {
             "name": "drupal/drupal-extension",
