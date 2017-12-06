@@ -46,10 +46,7 @@
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
     "drupal/samlauth": "2.*",
-    "oomphinc/composer-installers-extender": "^1.1",
-    "npm-asset/slick-carousel": "^1.8",
-    "bower-asset/word-count-ckeditor": "^1.17",
-    "npm-asset/photoswipe": "^4.1"
+    "oomphinc/composer-installers-extender": "^1.1"
   },
   "repositories": [
     {
@@ -77,12 +74,12 @@
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/",
+      "Sitefarm\\Composer\\Assets::rename",
       "rm docroot/robots.txt"
     ],
     "post-update-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/",
+      "Sitefarm\\Composer\\Assets::rename",
       "rm docroot/robots.txt"
     ]
   },
@@ -125,5 +122,10 @@
       ]
     },
     "enable-patching": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Sitefarm\\": "src"
+    }
   }
 }
