@@ -5,7 +5,7 @@ cors.config:
   # Specify allowed request methods, specify ['*'] to allow all possible ones.
   allowedMethods: ['*']
   # Configure requests allowed from specific origins.
-  allowedOrigins: ['http://localhost:3000']
+  allowedOrigins: ['*.ucdavis.edu', '*.ucdsitefarm.acsitefactory.com', '*.test-ucdsitefarm.acsitefactory.com', '*.dev-ucdsitefarm.acsitefactory.com']
   # Sets the Access-Control-Expose-Headers header.
   exposedHeaders: true
   # Sets the Access-Control-Max-Age header.
