@@ -6278,7 +6278,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "2ac4163e0d70598843756bef6675deadef2bcde3"
+                "reference": "7738bded3c73f5c6d13e0eb5305b2b27d4d1fb84"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6352,7 +6352,7 @@
                 "patches": {
                     "drupal/core": {
                         "Fix broken ckeditor style dropdowns for Objects": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-184-8-3-x-test-do-not-test.patch",
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/the_views_integration-2786577-229.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                     },
@@ -6413,7 +6413,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2017-11-30T00:34:01+00:00"
+            "time": "2018-01-03T22:05:38+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6421,7 +6421,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "9219ea63246b5f8fd76c699978c92d6d6e74558b"
+                "reference": "dcf91a7f305e6203c5adf873e9faf00340655477"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6431,7 +6431,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2017-11-29T23:07:02+00:00"
+            "time": "2018-01-03T22:05:47+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
