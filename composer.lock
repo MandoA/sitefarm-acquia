@@ -59,22 +59,6 @@
             "time": "2017-04-11T20:03:41+00:00"
         },
         {
-            "name": "bower-asset/word-count-ckeditor",
-            "version": "v1.17",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/w8tcha/CKEditor-WordCount-Plugin.git",
-                "reference": "b29a29d4dc8a42732ce46720e1efc30c826e4c93"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/w8tcha/CKEditor-WordCount-Plugin/zipball/b29a29d4dc8a42732ce46720e1efc30c826e4c93",
-                "reference": "b29a29d4dc8a42732ce46720e1efc30c826e4c93",
-                "shasum": null
-            },
-            "type": "bower-asset"
-        },
-        {
             "name": "commerceguys/addressing",
             "version": "v1.0.0-beta3",
             "source": {
@@ -4804,31 +4788,17 @@
             "time": "2017-09-04T12:26:28+00:00"
         },
         {
-            "name": "npm-asset/photoswipe",
-            "version": "4.1.2",
+            "name": "npm-asset/ckeditor-medialink",
+            "version": "1.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.2.tgz",
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-1.0.0.tgz",
                 "reference": null,
                 "shasum": null
             },
             "type": "npm-asset",
             "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "npm-asset/slick-carousel",
-            "version": "1.8.1",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
+                "GPL-2.0"
             ]
         },
         {
@@ -7137,6 +7107,22 @@
             "time": "2017-04-04T11:38:05+00:00"
         },
         {
+            "name": "bower-asset/word-count-ckeditor",
+            "version": "v1.17",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:w8tcha/CKEditor-WordCount-Plugin.git",
+                "reference": "b29a29d4dc8a42732ce46720e1efc30c826e4c93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/w8tcha/CKEditor-WordCount-Plugin/zipball/b29a29d4dc8a42732ce46720e1efc30c826e4c93",
+                "reference": "b29a29d4dc8a42732ce46720e1efc30c826e4c93",
+                "shasum": null
+            },
+            "type": "bower-asset"
+        },
+        {
             "name": "container-interop/container-interop",
             "version": "1.2.0",
             "source": {
@@ -8372,6 +8358,34 @@
             "type": "npm-asset",
             "license": [
                 "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
+            ]
+        },
+        {
+            "name": "npm-asset/photoswipe",
+            "version": "4.1.2",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.2.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/slick-carousel",
+            "version": "1.8.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
