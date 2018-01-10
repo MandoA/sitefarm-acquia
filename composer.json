@@ -58,6 +58,10 @@
     },
     {
       "type": "vcs",
+      "url": "/src/sitefarm"
+    },
+    {
+      "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm.git"
     },
     {
