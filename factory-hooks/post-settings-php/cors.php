@@ -5,4 +5,4 @@
  *
  * This file will be included into settings.php for all sites on Site Factory.
  */
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/cors.services.yml';
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/themes/site/cors.services.yml';
