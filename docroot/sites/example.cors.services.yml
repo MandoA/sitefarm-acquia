@@ -7,8 +7,8 @@ parameters:
     enabled: true
     # Specify allowed headers, like 'x-allowed-header'.
     allowedHeaders: ['x-csrf-token', 'authorization', 'content-type', 'accept', 'origin', 'x-requested-with']
-    # Specify allowed request methods, specify ['*'] to allow all possible ones.
-    allowedMethods: ['POST', 'GET', 'OPTIONS', 'DELETE', 'PUT', 'PATCH']
+    # Specify allowed request methods, such as 'POST', 'GET', 'OPTIONS', 'DELETE', 'PUT', 'PATCH'. Specify ['*'] to allow all.
+    allowedMethods: ['GET']
     # Configure requests allowed from specific origins.
     allowedOrigins: ['http://sitefarm-acquia.local']
     # Sets the Access-Control-Expose-Headers header.
