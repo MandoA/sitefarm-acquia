@@ -6357,7 +6357,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "3e4094f9aa279797bce4739f5d5f8d077de932a0"
+                "reference": "700d9e384772002e84901f7218a9121b4acf9e0b"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6492,7 +6492,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-01-23T00:18:30+00:00"
+            "time": "2018-03-01T20:32:03+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6500,7 +6500,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "dcf91a7f305e6203c5adf873e9faf00340655477"
+                "reference": "5b47a8a69b68cd25ce001a6b292b481c7cac830b"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6510,7 +6510,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2018-01-03T22:05:47+00:00"
+            "time": "2018-03-01T20:35:33+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
