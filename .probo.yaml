@@ -57,5 +57,4 @@ steps:
       - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar > /dev/null 2>&1
       - xvfb-run java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver="/usr/bin/chromedriver" > /dev/null 2>&1 & sleep 5
       - cd /var/www/html/profiles/sitefarm
-      - $SRC_DIR/vendor/bin/behat --profile probo --tags "@javascript" --colors --strict --format progress
-      - disown
+      - $SRC_DIR/vendor/bin/behat --profile probo --tags "@javascript" --colors --format progress
