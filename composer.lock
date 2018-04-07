@@ -1864,7 +1864,8 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/the_views_integration-2786577-229.patch",
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270_0.patch",
+                    "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                     "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                 }
             },
@@ -3557,8 +3558,7 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -6551,7 +6551,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "4aa854dc8adbd91782d63ddb946ce15595170eea"
+                "reference": "3d43e94a25317ebd7ae6e02681ff649d927ff5ac"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6625,9 +6625,8 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "Fix broken ckeditor style dropdowns for Objects": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/the_views_integration-2786577-229.patch",
-                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270_0.patch",
+                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                     },
                     "drupal/entity_clone": {
@@ -6638,9 +6637,6 @@
                     },
                     "drupal/metatag": {
                         "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
-                    },
-                    "drupal/photoswipe": {
-                        "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
                     },
                     "drupal/pdb": {
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
@@ -6693,7 +6689,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-03-28T21:09:50+00:00"
+            "time": "2018-04-07T17:06:05+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
