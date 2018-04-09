@@ -1,12 +1,18 @@
 image: proboci/ubuntu-14.04-lamp:php7.1-nightly
 assets:
   - probossh.tar.gz
+phpIniOptions:
+  upload_max_filesize: 64M
+  post_max_size: 64M
+  memory_limit: 512M
 steps:
   - name: Import SSH Keys
     plugin: Script
     script:
       - mkdir $HOME/.ssh
       - tar -C $HOME/.ssh -zxvf $ASSET_DIR/probossh.tar.gz
+      - chmod 600 $HOME/.ssh/id_rsa*
+      - ssh-keyscan -H bitbucket.org >> $HOME/.ssh/known_hosts
       - ls -al $HOME/.ssh
   - name: Build Drupal
     plugin: Script
