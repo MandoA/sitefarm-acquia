@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e8f6bfad1a939c82455465ee55892bc",
+    "content-hash": "ba172dde99a5a929295aad51efbf4a86",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3028,8 +3028,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -6551,7 +6550,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "3d43e94a25317ebd7ae6e02681ff649d927ff5ac"
+                "reference": "53e40be1d296083cb0aab0fe808812c28867db87"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6635,9 +6634,6 @@
                     "drupal/openapi": {
                         "check value is set": "https://www.drupal.org/files/issues/check-value-2903630-3.patch"
                     },
-                    "drupal/metatag": {
-                        "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
-                    },
                     "drupal/pdb": {
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
                     },
@@ -6689,7 +6685,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-04-07T17:06:05+00:00"
+            "time": "2018-04-11T18:42:54+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
