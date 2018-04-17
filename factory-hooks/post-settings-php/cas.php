@@ -5,7 +5,9 @@
  *
  * This file will be included into settings.php for all sites on Site Factory.
  */
-if (isset($_SERVER['AH_SITE_ENVIRONMENT']) && ($_SERVER['AH_SITE_ENVIRONMENT'] ==  'prod')) {
+if (isset($_SERVER['AH_SITE_ENVIRONMENT']) &&
+  in_array($_SERVER['AH_SITE_ENVIRONMENT'], ['01live', '01update'])
+  ) {
   // Prod environment should use the Prod CAS Server.
   $config['cas.settings']['server']['hostname'] = 'cas.ucdavis.edu';
 }
