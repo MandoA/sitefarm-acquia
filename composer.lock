@@ -866,7 +866,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1352,7 +1352,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1403,7 +1403,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1634,7 +1634,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1654,16 +1654,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.2",
+            "version": "8.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "bc21760d4be4ad117851809183c8d18880ab275a"
+                "reference": "b012f0ae51504880e920f2c6efdbdf03b6fe2129"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/bc21760d4be4ad117851809183c8d18880ab275a",
-                "reference": "bc21760d4be4ad117851809183c8d18880ab275a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/b012f0ae51504880e920f2c6efdbdf03b6fe2129",
+                "reference": "b012f0ae51504880e920f2c6efdbdf03b6fe2129",
                 "shasum": ""
             },
             "require": {
@@ -1890,7 +1890,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-04-18T17:00:56+00:00"
+            "time": "2018-04-25T15:39:01+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2010,10 +2010,6 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
-                },
-                {
                     "name": "merlinofchaos",
                     "homepage": "https://www.drupal.org/user/26979"
                 },
@@ -2104,6 +2100,10 @@
                 {
                     "name": "larowlan",
                     "homepage": "https://www.drupal.org/user/395439"
+                },
+                {
+                    "name": "matslats",
+                    "homepage": "https://www.drupal.org/user/140053"
                 }
             ],
             "description": "Imports default content when a module is enabled",
@@ -2145,7 +2145,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -2356,7 +2356,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -2894,7 +2894,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -2957,7 +2957,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3347,10 +3347,6 @@
                     "homepage": "https://www.drupal.org/user/1800446"
                 },
                 {
-                    "name": "richgerdes",
-                    "homepage": "https://www.drupal.org/user/3437973"
-                },
-                {
                     "name": "rogierbom",
                     "homepage": "https://www.drupal.org/user/1352176"
                 },
@@ -3514,7 +3510,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3723,7 +3719,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3828,7 +3824,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -4038,7 +4034,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -4263,7 +4259,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
