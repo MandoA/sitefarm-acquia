@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e8f6bfad1a939c82455465ee55892bc",
+    "content-hash": "ba172dde99a5a929295aad51efbf4a86",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -866,7 +866,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -953,7 +953,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.45",
-                    "datestamp": "1521024480",
+                    "datestamp": "1523273884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1020,7 +1020,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.45",
-                    "datestamp": "1521024480",
+                    "datestamp": "1523273884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1082,7 +1082,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.45",
-                    "datestamp": "1521024480",
+                    "datestamp": "1523273884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1143,7 +1143,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.45",
-                    "datestamp": "1521024480",
+                    "datestamp": "1523273884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1352,7 +1352,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1403,7 +1403,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1634,7 +1634,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -1654,16 +1654,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.1",
+            "version": "8.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be"
+                "reference": "b012f0ae51504880e920f2c6efdbdf03b6fe2129"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/2aeca7dfa2661296602ac16bf9fd6085f0a121be",
-                "reference": "2aeca7dfa2661296602ac16bf9fd6085f0a121be",
+                "url": "https://api.github.com/repos/drupal/core/zipball/b012f0ae51504880e920f2c6efdbdf03b6fe2129",
+                "reference": "b012f0ae51504880e920f2c6efdbdf03b6fe2129",
                 "shasum": ""
             },
             "require": {
@@ -1890,7 +1890,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-03-27T09:58:42+00:00"
+            "time": "2018-04-25T15:39:01+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2010,10 +2010,6 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
-                },
-                {
                     "name": "merlinofchaos",
                     "homepage": "https://www.drupal.org/user/26979"
                 },
@@ -2104,6 +2100,10 @@
                 {
                     "name": "larowlan",
                     "homepage": "https://www.drupal.org/user/395439"
+                },
+                {
+                    "name": "matslats",
+                    "homepage": "https://www.drupal.org/user/140053"
                 }
             ],
             "description": "Imports default content when a module is enabled",
@@ -2145,7 +2145,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -2356,7 +2356,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -2894,7 +2894,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -2957,7 +2957,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3028,8 +3028,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3348,10 +3347,6 @@
                     "homepage": "https://www.drupal.org/user/1800446"
                 },
                 {
-                    "name": "richgerdes",
-                    "homepage": "https://www.drupal.org/user/3437973"
-                },
-                {
                     "name": "rogierbom",
                     "homepage": "https://www.drupal.org/user/1352176"
                 },
@@ -3515,7 +3510,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3724,7 +3719,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3829,7 +3824,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -4039,7 +4034,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -4264,7 +4259,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -6551,7 +6546,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "3d43e94a25317ebd7ae6e02681ff649d927ff5ac"
+                "reference": "53e40be1d296083cb0aab0fe808812c28867db87"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6635,9 +6630,6 @@
                     "drupal/openapi": {
                         "check value is set": "https://www.drupal.org/files/issues/check-value-2903630-3.patch"
                     },
-                    "drupal/metatag": {
-                        "FieldItemNormalizer throws an error": "https://www.drupal.org/files/issues/metatag-2636852-86.patch"
-                    },
                     "drupal/pdb": {
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
                     },
@@ -6689,7 +6681,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-04-07T17:06:05+00:00"
+            "time": "2018-04-11T18:42:54+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6711,16 +6703,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.5.1",
+            "version": "8.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "1aef7d924d920e72206e399635e042e0320a976f"
+                "reference": "e127bed7cd2e037ff4d714c342e8865df4c6e474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/1aef7d924d920e72206e399635e042e0320a976f",
-                "reference": "1aef7d924d920e72206e399635e042e0320a976f",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/e127bed7cd2e037ff4d714c342e8865df4c6e474",
+                "reference": "e127bed7cd2e037ff4d714c342e8865df4c6e474",
                 "shasum": ""
             },
             "require": {
@@ -6810,7 +6802,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-03-28T19:26:40+00:00"
+            "time": "2018-04-18T17:30:49+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
