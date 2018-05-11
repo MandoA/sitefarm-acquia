@@ -2,12 +2,12 @@
 /**
  * Disables APC cache on selected sites for troubleshooting purposes.
  */
-$sites = [
+$sf_sites = [
   'lettersandscience.ucdsitefarm.acsitefactory.com',
   'lettersandscience.test-ucdsitefarm.acsitefactory.com',
 ];
 
-if (in_array($_SERVER['HTTP_HOST'], $sites)) {
+if (in_array($_SERVER['HTTP_HOST'], $sf_sites)) {
   ## ACQUIA SUPPORT: Completely avoid using APCu for cache bins and the class loader.
   $settings['cache']['default'] = 'cache.backend.database';
   $settings['cache']['bins']['bootstrap'] = 'cache.backend.database';
