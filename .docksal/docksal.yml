@@ -29,7 +29,8 @@ services:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli
-
+    environment:
+      - PHP_IDE_CONFIG
   # Varnish
   varnish:
     extends:
