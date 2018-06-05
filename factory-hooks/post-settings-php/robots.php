@@ -7,7 +7,7 @@
  */
 
 /**
- * Redirects *.ucdavis.edu traffic to https://
+ * Sets robots.txt to Disallow: / for non-launched domains.
  */
 if (isset($_SERVER['AH_SITE_ENVIRONMENT']) &&
   preg_match("/(\.sf\.ucdavis\.edu)|(\.(test-)?(dev-)?ucdsitefarm\.acsitefactory\.com)$/", $_SERVER['HTTP_HOST']) &&
