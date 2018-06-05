@@ -12,6 +12,5 @@
 if (isset($_SERVER['AH_SITE_ENVIRONMENT']) &&
   preg_match("/(\.sf\.ucdavis\.edu)|(\.(test-)?(dev-)?ucdsitefarm\.acsitefactory\.com)$/", $_SERVER['HTTP_HOST']) &&
   (php_sapi_name() != "cli")) {
-  //
-  $config['robotstxt.settings']['content'] = 'User-agent: *\nDisallow: /';
+  $config['robotstxt.settings']['content'] = "User-agent: *\nDisallow: /";
 }
