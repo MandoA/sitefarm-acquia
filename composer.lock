@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba172dde99a5a929295aad51efbf4a86",
+    "content-hash": "4de4d383718c53382680afd50f5a2305",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -746,16 +746,16 @@
         },
         {
             "name": "drupal-composer/drupal-scaffold",
-            "version": "2.5.1",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0"
+                "reference": "745f0a2d4141fc83d3b42222beff43d66afb3dc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0",
-                "reference": "2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/745f0a2d4141fc83d3b42222beff43d66afb3dc6",
+                "reference": "745f0a2d4141fc83d3b42222beff43d66afb3dc6",
                 "shasum": ""
             },
             "require": {
@@ -781,10 +781,10 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "time": "2018-06-06T20:36:41+00:00"
+            "time": "2017-12-08T22:53:11+00:00"
         },
         {
             "name": "drupal/acquia_connector",
@@ -2778,7 +2778,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-beta2",
-                    "datestamp": "1521762184",
+                    "datestamp": "1521762446",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
