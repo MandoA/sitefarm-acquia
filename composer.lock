@@ -3296,8 +3296,7 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -6575,7 +6574,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "53e40be1d296083cb0aab0fe808812c28867db87"
+                "reference": "246f5c935f5e95a05f617278968f0eb21e3d48df"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6649,15 +6648,12 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270_0.patch",
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                     },
                     "drupal/entity_clone": {
                         "Check permission before showing Clone operation": "https://www.drupal.org/files/issues/check-permission-2743379-1.patch"
-                    },
-                    "drupal/openapi": {
-                        "check value is set": "https://www.drupal.org/files/issues/check-value-2903630-3.patch"
                     },
                     "drupal/pdb": {
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
@@ -6710,7 +6706,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-04-11T18:42:54+00:00"
+            "time": "2018-06-14T20:08:46+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6718,7 +6714,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "377a72f6362c17e4074104e4f605843ab7368fb8"
+                "reference": "33bb8a0101133197379334117100fbafc3cea399"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6728,7 +6724,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2018-03-21T19:06:54+00:00"
+            "time": "2018-06-14T20:09:59+00:00"
         },
         {
             "name": "webflo/drupal-core-strict",
