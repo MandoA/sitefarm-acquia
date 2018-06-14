@@ -39,7 +39,7 @@
     "drupal/core": "^8.5",
     "webflo/drupal-core-strict": "^8.5",
     "composer/installers": "^1.0",
-    "drupal-composer/drupal-scaffold": "^2.2",
+    "drupal-composer/drupal-scaffold": "2.4.0",
     "zendframework/zend-stdlib": "~3.0.1",
     "cweagans/composer-patches": "^1.5",
     "ucdavis/sitefarm": "dev-8.x-4.x",
