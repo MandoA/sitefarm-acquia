@@ -13,6 +13,14 @@ SITEDIR_PATH="${SITES_PATH}/${SITE_DIRECTORY}"
 
 cd $PROJECT_ROOT
 
+# Create docksal-local.env if needed
+DOCKSALLOCALFILE='.docksal/docksal-local.env'
+if [ ! -f $DOCKSALLOCALFILE ]; then
+    echo "Creating .docksal/docksal-local.env file. Use this file to change Docksal settings."
+    cp .docksal/example.docksal-local.env $DOCKSALLOCALFILE
+    echo "VIRTUAL_HOST='sitefarm-subtheme.local'" >> $DOCKSALLOCALFILE
+fi
+
 # Start containers
 fin up
 
@@ -54,4 +62,4 @@ fin themer/refresh
 cd $PROJECT_ROOT
 chmod -R 755 .
 
-echo "You can now visit your site at: http://$VIRTUAL_HOST/login"
+fin exec 'echo "You can now visit your site at: http://$VIRTUAL_HOST/login"'
