@@ -1395,17 +1395,17 @@
         },
         {
             "name": "drupal/block_style_plugins",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/block_style_plugins",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "10103ae1ba5c510feea8ac144e002d3cf44af72c"
+                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "a123274e7c97b0fae930abd91894fa4b8f5bcf08"
             },
             "require": {
                 "drupal/core": "*"
@@ -1416,8 +1416,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1503437943",
+                    "version": "8.x-1.2",
+                    "datestamp": "1531268924",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
