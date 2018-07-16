@@ -18,7 +18,7 @@ DOCKSALLOCALFILE='.docksal/docksal-local.env'
 if [ ! -f $DOCKSALLOCALFILE ]; then
     echo "Creating .docksal/docksal-local.env file. Use this file to change Docksal settings."
     cp .docksal/example.docksal-local.env $DOCKSALLOCALFILE
-    echo "VIRTUAL_HOST='sitefarm-subtheme.local'" >> $DOCKSALLOCALFILE
+    echo "VIRTUAL_HOST=${PWD##*/}.local" >> $DOCKSALLOCALFILE
 fi
 
 # Start containers
