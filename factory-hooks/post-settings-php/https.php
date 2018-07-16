@@ -4,10 +4,10 @@
  * Redirects ucdsitefarm.acsitefactory.com traffic to sf.ucdavis.edu
  */
 if (isset($_SERVER['AH_SITE_ENVIRONMENT']) &&
-    $match = preg_match("/(.*)\.(dev|test|)-?ucdsitefarm\.acsitefactory\.com$/", $_SERVER['HTTP_HOST']) &&
+    preg_match("/(.*)\.(dev|test|)-?ucdsitefarm\.acsitefactory\.com$/", $_SERVER['HTTP_HOST'], $matches) &&
     php_sapi_name() != "cli") {
-  $site = strip_tags($match[1]);
-  $env = strip_tags($match[2]);
+  $site = strip_tags($matches[1]);
+  $env = strip_tags($matches[2]);
   switch ($env) {
     case '':
       $domain = $site . '.sf.ucdavis.edu';
