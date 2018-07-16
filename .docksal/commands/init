@@ -60,6 +60,7 @@ git checkout -b $DISTRO_BRANCH -t origin/$DISTRO_BRANCH
 fi
 
 # Install site
+cd $DOCROOT_PATH
 fin drush site-install sitefarm -y --site-name="SiteFarm Acquia"
 
 # Get login link
