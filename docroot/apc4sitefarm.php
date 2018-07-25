@@ -22,8 +22,32 @@
 
  */
 
+
+/**
+ * Redirects to https on Site Factory
+ */
+if (isset($_SERVER['AH_SITE_ENVIRONMENT']) &&
+  ($_SERVER['HTTPS'] != 'on') &&
+  (php_sapi_name() != "cli")) {
+  header('HTTP/1.0 301 Moved Permanently');
+  header('Location: https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
+  exit();
+}
+
 ////////// READ OPTIONAL CONFIGURATION FILE ////////////
-if (file_exists("apc.conf.php")) include("apc.conf.php");
+if (isset($_SERVER['AH_SITE_ENVIRONMENT'])) {
+  $conf_file = sprintf('/mnt/files/%s.%s/apc.conf.php', $_ENV['AH_SITE_GROUP'], $_ENV['AH_SITE_ENVIRONMENT']);
+  if (file_exists($conf_file)) {
+    require $conf_file;
+  }
+}
+else {
+  // Local config.
+  defaults('ADMIN_USERNAME','apc'); 			// Admin Username
+  defaults('ADMIN_PASSWORD','12345');  	// Admin Password - CHANGE THIS TO ENABLE!!!
+}
+
+
 ////////////////////////////////////////////////////////
 
 ////////// BEGIN OF DEFAULT CONFIG AREA ///////////////////////////////////////////////////////////
@@ -36,8 +60,8 @@ defaults('USE_AUTHENTICATION',1);			// Use (internal) authentication - best choi
 // If set to 1:
 //  You need to change ADMIN_PASSWORD to make
 //  this work!
-defaults('ADMIN_USERNAME','apc'); 			// Admin Username
-defaults('ADMIN_PASSWORD','password');  	// Admin Password - CHANGE THIS TO ENABLE!!!
+//defaults('ADMIN_USERNAME','apc'); 			// Admin Username
+//defaults('ADMIN_PASSWORD','password');  	// Admin Password - CHANGE THIS TO ENABLE!!!
 
 // (beckerr) I'm using a clear text password here, because I've no good idea how to let
 //           users generate a md5 or crypt password in a easy way to fill it in above

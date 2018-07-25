@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
-fin exec 'sudo pecl install apcu -y'
+fin exec 'sudo pecl install apcu'
 
 fin restart
+
+echo ""
+echo "APCu is now installed in Docksal. If cli is ever rebuilt, run this again."
+echo "You can view APCu usage at $VIRTUAL_HOST/apc4sitefarm.php"
+echo "username: apc"
+echo "password: 12345"
