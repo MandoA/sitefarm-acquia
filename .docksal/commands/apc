@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+fin exec 'sudo pecl install apcu -y'
+
+fin restart
