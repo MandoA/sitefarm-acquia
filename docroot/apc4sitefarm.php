@@ -40,11 +40,16 @@ if (isset($_SERVER['AH_SITE_ENVIRONMENT'])) {
   if (file_exists($conf_file)) {
     require $conf_file;
   }
+  else {
+    // Nobody can login.
+      defaults('ADMIN_USERNAME','apc');
+    defaults('ADMIN_PASSWORD','password');
+  }
 }
 else {
   // Local config.
-  defaults('ADMIN_USERNAME','apc'); 			// Admin Username
-  defaults('ADMIN_PASSWORD','12345');  	// Admin Password - CHANGE THIS TO ENABLE!!!
+  defaults('ADMIN_USERNAME','apc');
+  defaults('ADMIN_PASSWORD','12345');
 }
 
 
