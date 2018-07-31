@@ -1,4 +1,4 @@
-image: proboci/ubuntu-14.04-lamp:php7.1-nightly
+image: proboci/ubuntu-14.04-lamp:php-7.1
 assets:
   - probossh.tar.gz
 phpIniOptions:
@@ -20,6 +20,7 @@ steps:
       - composer self-update ; composer global update
       - composer global require hirak/prestissimo
       - composer global require "drush/drush:^8.1.13"
+      - yes | pecl -q install apcu
       - drush version
       - which drush
       - echo $PATH
@@ -42,6 +43,12 @@ steps:
     profileName: sitefarm
     installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu'
     settingsAppend: '$settings["file_private_path"] = "/var/www/html/sites/default/private-files";'
+    phpIniOptions:
+      upload_max_filesize: 256M
+      post_max_size: 256M
+      memory_limit: 256M
+      extension: apcu.so
+      apc.shm_size:  192M
   - name: Fix files directory permissions
     plugin: Script
     script:

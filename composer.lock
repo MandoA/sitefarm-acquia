@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4de4d383718c53382680afd50f5a2305",
+    "content-hash": "da8e0c21f8a9ef906fc2f6b1c7c882dd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1395,17 +1395,17 @@
         },
         {
             "name": "drupal/block_style_plugins",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/block_style_plugins",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "10103ae1ba5c510feea8ac144e002d3cf44af72c"
+                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "a123274e7c97b0fae930abd91894fa4b8f5bcf08"
             },
             "require": {
                 "drupal/core": "*"
@@ -1416,8 +1416,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1503437943",
+                    "version": "8.x-1.2",
+                    "datestamp": "1531268924",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1618,16 +1618,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.4",
+            "version": "8.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "6b4dc1cf3347761f63152a31786b4680b8ac7781"
+                "reference": "900c28f19d4b5643f43c1cf046684046402eaac4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/6b4dc1cf3347761f63152a31786b4680b8ac7781",
-                "reference": "6b4dc1cf3347761f63152a31786b4680b8ac7781",
+                "url": "https://api.github.com/repos/drupal/core/zipball/900c28f19d4b5643f43c1cf046684046402eaac4",
+                "reference": "900c28f19d4b5643f43c1cf046684046402eaac4",
                 "shasum": ""
             },
             "require": {
@@ -1828,7 +1828,7 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270_0.patch",
+                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                     "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                 }
@@ -1854,7 +1854,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-06-06T21:02:51+00:00"
+            "time": "2018-07-04T21:08:11+00:00"
         },
         {
             "name": "drupal/crop",
@@ -1910,6 +1910,61 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/crop",
                 "issues": "https://www.drupal.org/project/issues/crop"
+            }
+        },
+        {
+            "name": "drupal/css_editor",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/css_editor",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/css_editor-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "e7e54ec3781420ead909e51a8864174a253fce26"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1510935485",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "caiosba",
+                    "homepage": "https://www.drupal.org/user/1774198"
+                },
+                {
+                    "name": "encelado",
+                    "homepage": "https://www.drupal.org/user/701446"
+                },
+                {
+                    "name": "infojunkie",
+                    "homepage": "https://www.drupal.org/user/48424"
+                }
+            ],
+            "description": "Customize your CSS directly from the browser.",
+            "homepage": "https://www.drupal.org/project/css_editor",
+            "support": {
+                "source": "http://cgit.drupalcode.org/css_editor"
             }
         },
         {
@@ -2511,17 +2566,17 @@
         },
         {
             "name": "drupal/google_analytics",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/google_analytics",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "15cd0642ad99f3776a46b702e5012713405a0733"
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "9ea88a81925ba538d9fa7ac6ce4f1598e5ee48e4"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2536,8 +2591,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1506372845",
+                    "version": "8.x-2.3",
+                    "datestamp": "1531469021",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2689,17 +2744,17 @@
         },
         {
             "name": "drupal/jsonapi",
-            "version": "1.20.0",
+            "version": "1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/jsonapi",
-                "reference": "8.x-1.20"
+                "reference": "8.x-1.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "29761b2ad790cb10fcf6baf6df87d69267239f04"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi-8.x-1.23.zip",
+                "reference": "8.x-1.23",
+                "shasum": "4fb88736a9ad90a995bdc9c3ab90e7731b6d89e5"
             },
             "require": {
                 "drupal/core": "^8.4.3"
@@ -2715,8 +2770,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1528486680",
+                    "version": "8.x-1.23",
+                    "datestamp": "1532084496",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2890,17 +2945,17 @@
         },
         {
             "name": "drupal/menu_breadcrumb",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/menu_breadcrumb",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "8184f073f0dce6049f49c5a55ddf90ac6dbd892d"
+                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "ef6c58bda143509151df9fa284ea7063f478e1f9"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2911,8 +2966,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1511002685",
+                    "version": "8.x-1.6",
+                    "datestamp": "1531735125",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3146,24 +3201,25 @@
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "4.0.0-beta3",
+            "version": "4.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_tools",
-                "reference": "8.x-4.0-beta3"
+                "reference": "8.x-4.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.0-beta3.zip",
-                "reference": "8.x-4.0-beta3",
-                "shasum": "5256ef34d63bbcc564bd9e1e4434c34f12983dba"
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-4.0-rc1.zip",
+                "reference": "8.x-4.0-rc1",
+                "shasum": "1c66adfaecfbcb8dee4bd9cf7bd249c1beb08c40"
             },
             "require": {
                 "drupal/core": "^8.3",
-                "drupal/migrate_plus": "*"
+                "drupal/migrate_plus": "^4"
             },
             "require-dev": {
-                "drupal/coder": "^8"
+                "drupal/coder": "^8",
+                "drupal/migrate_source_csv": "^2.2"
             },
             "type": "drupal-module",
             "extra": {
@@ -3171,11 +3227,11 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-beta3",
-                    "datestamp": "1519400285",
+                    "version": "8.x-4.0-rc1",
+                    "datestamp": "1531143824",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -3495,20 +3551,23 @@
         },
         {
             "name": "drupal/photoswipe",
-            "version": "1.0.0-beta4",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/photoswipe",
-                "reference": "8.x-1.0-beta4"
+                "reference": "8.x-1.0-beta5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/photoswipe-8.x-1.0-beta4.zip",
-                "reference": "8.x-1.0-beta4",
-                "shasum": "4c2e67960c492cdee4772cafc61ffff79a191aad"
+                "url": "https://ftp.drupal.org/files/projects/photoswipe-8.x-1.0-beta5.zip",
+                "reference": "8.x-1.0-beta5",
+                "shasum": "c0cd9c48a41e6e9c8cf7d36c30eaa7e44370d079"
             },
             "require": {
                 "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "bower-asset/photoswipe": "Required to user drupal/photoswipe."
             },
             "type": "drupal-module",
             "extra": {
@@ -3516,8 +3575,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta4",
-                    "datestamp": "1521800284",
+                    "version": "8.x-1.0-beta5",
+                    "datestamp": "1530806321",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3526,9 +3585,13 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
+                {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
                 {
                     "name": "ParisLiakos",
                     "homepage": "https://www.drupal.org/user/1011436"
@@ -3540,12 +3603,24 @@
                 {
                     "name": "sun",
                     "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "thomas.frobieter",
+                    "homepage": "https://www.drupal.org/user/409335"
                 }
             ],
             "description": "Javascript-based photo gallery display for your Drupal website (very sleek with mobile browsers).",
             "homepage": "https://www.drupal.org/project/photoswipe",
+            "keywords": [
+                "Drupal",
+                "Gallery",
+                "Lightbox",
+                "Mobile",
+                "Photoswipe"
+            ],
             "support": {
-                "source": "http://cgit.drupalcode.org/photoswipe"
+                "source": "http://cgit.drupalcode.org/photoswipe",
+                "issues": "https://www.drupal.org/project/issues/photoswipe"
             }
         },
         {
@@ -3601,17 +3676,17 @@
         },
         {
             "name": "drupal/robotstxt",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/robotstxt",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/robotstxt-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "19c61a6daf23a59c7adb441a33f5d1f54cfe363d"
+                "url": "https://ftp.drupal.org/files/projects/robotstxt-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "d520a92abfd67b55fbffdead510a57f9c9abf46b"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3622,8 +3697,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1491149284",
+                    "version": "8.x-1.2",
+                    "datestamp": "1529154524",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4389,24 +4464,25 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-rc15",
+            "version": "5.0.0-rc16",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-rc15"
+                "reference": "8.x-5.0-rc16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc15.zip",
-                "reference": "8.x-5.0-rc15",
-                "shasum": "b018959277d4e528f2d6a1ec9e39513d7667f7ce"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-rc16.zip",
+                "reference": "8.x-5.0-rc16",
+                "shasum": "033611e87c3d715f5081022ebcd1e183333a72e7"
             },
             "require": {
                 "drupal/core": "*"
             },
             "require-dev": {
+                "drupal/address": "~1.4",
                 "drupal/devel": "*",
-                "drupal/token": "*",
+                "drupal/token": "~1.3",
                 "drupal/webform_node": "*",
                 "drupal/webform_scheduled_email": "*"
             },
@@ -4416,8 +4492,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-rc15",
-                    "datestamp": "1528795685",
+                    "version": "8.x-5.0-rc16",
+                    "datestamp": "1530298420",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6570,11 +6646,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8.x-4.x",
+            "version": "dev-8.x-5.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "246f5c935f5e95a05f617278968f0eb21e3d48df"
+                "reference": "864dae6c16893bd55989721fed0f70d47179fb86"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6588,6 +6664,7 @@
                 "drupal/ckwordcount": "1.*",
                 "drupal/config_update": "1.*",
                 "drupal/crop": "1.*",
+                "drupal/css_editor": "1.*",
                 "drupal/ctools": "3.*",
                 "drupal/default_content": "1.*",
                 "drupal/editor_file": "1.*",
@@ -6706,15 +6783,15 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-06-14T20:08:46+00:00"
+            "time": "2018-07-30T21:49:57+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
-            "version": "dev-8.x-4.x",
+            "version": "dev-8.x-5.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "33bb8a0101133197379334117100fbafc3cea399"
+                "reference": "06bb5bdb813ba12bbc63134d45268d93dbd432af"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6724,20 +6801,20 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2018-06-14T20:09:59+00:00"
+            "time": "2018-07-30T21:50:06+00:00"
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.5.4",
+            "version": "8.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "c186b84a25ed3aff1da56fc87eaa194e05ea2f36"
+                "reference": "a3eaee3a20cf87e956ee925e1ea564f16e768129"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/c186b84a25ed3aff1da56fc87eaa194e05ea2f36",
-                "reference": "c186b84a25ed3aff1da56fc87eaa194e05ea2f36",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/a3eaee3a20cf87e956ee925e1ea564f16e768129",
+                "reference": "a3eaee3a20cf87e956ee925e1ea564f16e768129",
                 "shasum": ""
             },
             "require": {
@@ -6828,7 +6905,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-06-06T21:30:52+00:00"
+            "time": "2018-07-04T21:30:54+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -7349,27 +7426,27 @@
         },
         {
             "name": "behat/mink-browserkit-driver",
-            "version": "v1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkBrowserKitDriver.git",
-                "reference": "10e67fb4a295efcd62ea0bf16025a85ea19534fb"
+                "reference": "1b9a7ce903cfdaaec5fb32bfdbb26118343662eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/10e67fb4a295efcd62ea0bf16025a85ea19534fb",
-                "reference": "10e67fb4a295efcd62ea0bf16025a85ea19534fb",
+                "url": "https://api.github.com/repos/minkphp/MinkBrowserKitDriver/zipball/1b9a7ce903cfdaaec5fb32bfdbb26118343662eb",
+                "reference": "1b9a7ce903cfdaaec5fb32bfdbb26118343662eb",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "^1.7.1@dev",
                 "php": ">=5.3.6",
-                "symfony/browser-kit": "~2.3|~3.0",
-                "symfony/dom-crawler": "~2.3|~3.0"
+                "symfony/browser-kit": "~2.3|~3.0|~4.0",
+                "symfony/dom-crawler": "~2.3|~3.0|~4.0"
             },
             "require-dev": {
-                "silex/silex": "~1.2",
-                "symfony/phpunit-bridge": "~2.7|~3.0"
+                "mink/driver-testsuite": "dev-master",
+                "symfony/http-kernel": "~2.3|~3.0|~4.0"
             },
             "type": "mink-driver",
             "extra": {
@@ -7401,7 +7478,7 @@
                 "browser",
                 "testing"
             ],
-            "time": "2016-03-05T08:59:47+00:00"
+            "time": "2018-05-02T09:25:31+00:00"
         },
         {
             "name": "behat/mink-extension",
