@@ -6787,6 +6787,9 @@
                     },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
+                    },
+                    "drupal/social_media_links": {
+                        "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-09/update-font-awesome-to-5-1-2991846-4.patch"
                     }
                 }
             },
