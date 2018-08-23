@@ -4480,7 +4480,8 @@
                     }
                 },
                 "patches_applied": {
-                    "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                    "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
+                    "Prevent double escaping ampersands": "https://www.drupal.org/files/issues/2729479-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6790,7 +6791,8 @@
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
                     },
                     "drupal/url_embed": {
-                        "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
+                        "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
+                        "Prevent double escaping ampersands": "https://www.drupal.org/files/issues/2729479-2.patch"
                     },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
