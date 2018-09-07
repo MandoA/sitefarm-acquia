@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da8e0c21f8a9ef906fc2f6b1c7c882dd",
+    "content-hash": "d4f6ee6aaa25e0959b9b0ad15edc34fe",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1622,16 +1622,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.6",
+            "version": "8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "7d7184a69ac90ce53929ce99f18458043416107a"
+                "reference": "4a2507b102fcedc74507fd372131f2ed72913429"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/7d7184a69ac90ce53929ce99f18458043416107a",
-                "reference": "7d7184a69ac90ce53929ce99f18458043416107a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/4a2507b102fcedc74507fd372131f2ed72913429",
+                "reference": "4a2507b102fcedc74507fd372131f2ed72913429",
                 "shasum": ""
             },
             "require": {
@@ -1749,10 +1749,12 @@
                 "drupal/link": "self.version",
                 "drupal/locale": "self.version",
                 "drupal/media": "self.version",
+                "drupal/media_library": "self.version",
                 "drupal/menu_link_content": "self.version",
                 "drupal/menu_ui": "self.version",
                 "drupal/migrate": "self.version",
                 "drupal/migrate_drupal": "self.version",
+                "drupal/migrate_drupal_multilingual": "self.version",
                 "drupal/migrate_drupal_ui": "self.version",
                 "drupal/minimal": "self.version",
                 "drupal/node": "self.version",
@@ -1784,7 +1786,8 @@
                 "drupal/user": "self.version",
                 "drupal/views": "self.version",
                 "drupal/views_ui": "self.version",
-                "drupal/workflows": "self.version"
+                "drupal/workflows": "self.version",
+                "drupal/workspaces": "self.version"
             },
             "require-dev": {
                 "behat/mink": "1.7.x-dev",
@@ -1795,7 +1798,7 @@
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "mikey179/vfsstream": "^1.2",
                 "phpspec/prophecy": "^1.4",
-                "phpunit/phpunit": "^4.8.35 || ^6.1",
+                "phpunit/phpunit": "^4.8.35 || ^6.5",
                 "symfony/css-selector": "^3.4.0",
                 "symfony/debug": "^3.4.0",
                 "symfony/phpunit-bridge": "^3.4.3"
@@ -1832,9 +1835,8 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
-                    "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
+                    "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/2018-09-07/edit_drupalimage-86x-2855521-21.patch"
                 }
             },
             "autoload": {
@@ -1858,7 +1860,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-08-01T20:50:42+00:00"
+            "time": "2018-09-05T22:16:20+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6732,9 +6734,8 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
-                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
+                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/2018-09-07/edit_drupalimage-86x-2855521-21.patch"
                     },
                     "drupal/entity_clone": {
                         "Check permission before showing Clone operation": "https://www.drupal.org/files/issues/check-permission-2743379-1.patch"
@@ -6812,16 +6813,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.5.6",
+            "version": "8.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "e95610956f961f4421fd9a36849dcd6e2b55f4fe"
+                "reference": "f59ade4ff11b4c77937b0f7b91164c374434d4c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/e95610956f961f4421fd9a36849dcd6e2b55f4fe",
-                "reference": "e95610956f961f4421fd9a36849dcd6e2b55f4fe",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/f59ade4ff11b4c77937b0f7b91164c374434d4c6",
+                "reference": "f59ade4ff11b4c77937b0f7b91164c374434d4c6",
                 "shasum": ""
             },
             "require": {
@@ -6912,7 +6913,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-08-01T21:00:49+00:00"
+            "time": "2018-09-05T22:30:52+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
