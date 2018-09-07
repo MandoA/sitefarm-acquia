@@ -130,11 +130,6 @@ $settings['css_link_tags'] = TRUE;
 $settings['hash_salt'] = 'S8hk3uuCAW46j8VxXtM_J6NAmKT7Vb9gXzyDRoncKgd2LqxIII5mh9j0tJTn-E9qrUqIL5ETDA';
 
 /**
- * Declare the Install Profile being used
- */
-$settings['install_profile'] = 'sitefarm';
-
-/**
  * Import CAS config from the Sitefarm Acquia factory hooks if available
  */
 $cas_settings_include = __DIR__ . '/../../../factory-hooks/post-settings-php/cas.php';
