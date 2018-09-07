@@ -166,7 +166,7 @@ $settings['file_private_path'] = 'sites/default/files';
 /**
  * Database settings - Edit these as needed
  */
-$databases['default']['default'] = array (
+$databases['default']['default'] = [
   'database' => 'database_name_goes_here',
   'username' => 'root',
   'password' => 'root',
@@ -175,7 +175,7 @@ $databases['default']['default'] = array (
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
-);
+];
 
 /**
  * Configuration Sync directory - Edit this as needed
