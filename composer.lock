@@ -1622,16 +1622,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.0",
+            "version": "8.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "4a2507b102fcedc74507fd372131f2ed72913429"
+                "reference": "1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/4a2507b102fcedc74507fd372131f2ed72913429",
-                "reference": "4a2507b102fcedc74507fd372131f2ed72913429",
+                "url": "https://api.github.com/repos/drupal/core/zipball/1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970",
+                "reference": "1c8b96c89288daf4d145c6dbcf1e8f0d0c9d7970",
                 "shasum": ""
             },
             "require": {
@@ -1860,7 +1860,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-09-05T22:16:20+00:00"
+            "time": "2018-09-10T11:50:07+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6813,16 +6813,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.6.0",
+            "version": "8.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "f59ade4ff11b4c77937b0f7b91164c374434d4c6"
+                "reference": "3a941992f02528327be3cd45de1eb3fe71a5ff30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/f59ade4ff11b4c77937b0f7b91164c374434d4c6",
-                "reference": "f59ade4ff11b4c77937b0f7b91164c374434d4c6",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/3a941992f02528327be3cd45de1eb3fe71a5ff30",
+                "reference": "3a941992f02528327be3cd45de1eb3fe71a5ff30",
                 "shasum": ""
             },
             "require": {
@@ -6913,7 +6913,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-09-05T22:30:52+00:00"
+            "time": "2018-09-10T13:30:49+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
