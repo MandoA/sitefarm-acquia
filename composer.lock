@@ -6712,7 +6712,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "dd078c095c2f3ad7e02a2c25c31d4d0130bf10e4"
+                "reference": "2f1b46071eb850864bb83729015a1c121d024819"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6850,7 +6850,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-09-20T21:53:40+00:00"
+            "time": "2018-09-24T00:23:46+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6858,7 +6858,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "2bda1e6f8e996ecc1e6289c86b6ee9fccfac522d"
+                "reference": "3f396a86865410cd487a44193cd6e70bf288f912"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6868,7 +6868,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2018-09-20T21:54:14+00:00"
+            "time": "2018-09-24T00:26:55+00:00"
         },
         {
             "name": "webflo/drupal-core-strict",
