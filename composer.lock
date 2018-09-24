@@ -6712,7 +6712,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "2f1b46071eb850864bb83729015a1c121d024819"
+                "reference": "19ab196728c4d38fd62b58b9a0049ecd6fa5c674"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6850,7 +6850,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-09-24T00:23:46+00:00"
+            "time": "2018-09-24T02:13:28+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
