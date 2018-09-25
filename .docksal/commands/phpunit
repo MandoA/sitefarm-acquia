@@ -17,7 +17,7 @@ set -e
 #   $DOCROOT - name of the docroot folder
 #   $DOCKER_RUNNING - (string) "true" or "false"
 
-phpunit_xml="${DOCROOT}/profiles/sitefarm/phpunit.xml.dist"
+phpunit_xml="${PROJECT_ROOT}/${DOCROOT}/profiles/sitefarm/phpunit.xml.dist"
 if [[ ! -f "${phpunit_xml}" ]]; then
 	echo "Could not find ${phpunit_xml}"
 	exit 1
