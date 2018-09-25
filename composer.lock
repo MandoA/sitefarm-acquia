@@ -4334,20 +4334,20 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.3.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "360f4f16985a2005b1ab5d8a8628b73a5012c902"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "6382a7e1aabbd8246f1117a26bf4916d285b401d"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.5"
             },
             "type": "drupal-module",
             "extra": {
@@ -4355,12 +4355,15 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1536408480",
+                    "version": "8.x-1.5",
+                    "datestamp": "1537557481",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6712,7 +6715,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "19ab196728c4d38fd62b58b9a0049ecd6fa5c674"
+                "reference": "8d470620715c38cef0d8e3ad254ce3e153019c80"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -6807,6 +6810,9 @@
                     },
                     "drupal/social_media_links": {
                         "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch"
+                    },
+                    "drupal/token": {
+                        "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
                     }
                 }
             },
@@ -6850,7 +6856,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2018-09-24T02:13:28+00:00"
+            "time": "2018-09-25T20:57:40+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -6858,7 +6864,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "3f396a86865410cd487a44193cd6e70bf288f912"
+                "reference": "64866633220430cf5d580d02fd71080fa4db982b"
             },
             "type": "drupal-theme",
             "authors": [
@@ -6868,7 +6874,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2018-09-24T00:26:55+00:00"
+            "time": "2018-09-25T20:57:45+00:00"
         },
         {
             "name": "webflo/drupal-core-strict",
