@@ -48,7 +48,6 @@ steps:
       post_max_size: 256M
       memory_limit: 512M
       extension: apcu.so
-      apc.shm_size:  192M
   - name: Fix files directory permissions
     plugin: Script
     script:
