@@ -47,7 +47,6 @@ steps:
       upload_max_filesize: 256M
       post_max_size: 256M
       memory_limit: 512M
-      extension: apcu.so
   - name: Fix files directory permissions
     plugin: Script
     script:
