@@ -88,7 +88,7 @@ if (getenv('AH_SITE_ENVIRONMENT') &&
       // Enable stampede protection.
       $settings['memcache']['stampede_protection'] = TRUE;
       // Move locks to memcache (This path may need to be modified)
-      $settings['container_yamls'][] = __DIR__ . '/memcache.yml';
+//      $settings['container_yamls'][] = __DIR__ . '/memcache.yml';
       // Enable compression for PHP 7.
       $settings['memcache']['options'][Memcached::OPT_COMPRESSION] = TRUE;
     }
