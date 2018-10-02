@@ -50,28 +50,18 @@ if (getenv('AH_SITE_ENVIRONMENT') &&
             'class' => 'Drupal\memcache\MemcacheSettings',
             'arguments' => ['@settings'],
           ],
-          'memcache.factory' => [
+          'memcache.backend.cache.factory' => [
             'class' => 'Drupal\memcache\Driver\MemcacheDriverFactory',
             'arguments' => ['@memcache.settings'],
           ],
           'memcache.backend.cache.container' => [
             'class' => 'Drupal\memcache\DrupalMemcacheFactory',
-            'factory' => ['@memcache.factory', 'get'],
+            'factory' => ['@memcache.backend.cache.factory', 'get'],
             'arguments' => ['container'],
           ],
           'lock.container' => [
             'class' => 'Drupal\memcache\Lock\MemcacheLockBackend',
             'arguments' => ['container', '@memcache.backend.cache.container'],
-          ],
-          'memcache.timestamp.invalidator.bin' => [
-            'class' => 'Drupal\memcache\Invalidator\MemcacheTimestampInvalidator',
-            # Adjust tolerance factor as appropriate when not running memcache on localhost.
-            'arguments' => ['@memcache.factory', 'memcache_bin_timestamps', 0.001],
-          ],
-          'memcache.backend.cache.container' => [
-            'class' => 'Drupal\memcache\DrupalMemcacheInterface',
-            'factory' => ['@memcache.factory', 'get'],
-            'arguments' => ['container'],
           ],
           'cache_tags_provider.container' => [
             'class' => 'Drupal\Core\Cache\DatabaseCacheTagsChecksum',
@@ -79,7 +69,12 @@ if (getenv('AH_SITE_ENVIRONMENT') &&
           ],
           'cache.container' => [
             'class' => 'Drupal\memcache\MemcacheBackend',
-            'arguments' => ['container', '@memcache.backend.cache.container', '@cache_tags_provider.container', '@memcache.timestamp.invalidator.bin'],
+            'arguments' => [
+              'container',
+              '@memcache.backend.cache.container',
+              '@cache_tags_provider.container',
+              '@lock.container',
+            ],
           ],
         ],
       ];
