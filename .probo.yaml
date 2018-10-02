@@ -46,9 +46,7 @@ steps:
     phpIniOptions:
       upload_max_filesize: 256M
       post_max_size: 256M
-      memory_limit: 256M
-      extension: apcu.so
-      apc.shm_size:  192M
+      memory_limit: 512M
   - name: Fix files directory permissions
     plugin: Script
     script:

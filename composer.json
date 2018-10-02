@@ -46,6 +46,7 @@
     "ucdavis/sitefarm_one": "dev-8.x-5.x",
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
+    "drupal/memcache": "2.*",
     "drupal/samlauth": "2.*"
   },
   "repositories": {
