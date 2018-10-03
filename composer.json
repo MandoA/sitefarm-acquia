@@ -46,6 +46,7 @@
     "ucdavis/sitefarm_one": "dev-8.x-5.x",
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
+    "drupal/memcache": "2.0.0-alpha7",
     "drupal/samlauth": "2.*"
   },
   "repositories": {
@@ -110,6 +111,11 @@
         "type:drupal-drush"
       ]
     },
-    "enable-patching": true
+    "enable-patching": true,
+    "patches": {
+      "drupal/memcache": {
+        "Undefined method error on Statistics page": "https://www.drupal.org/files/issues/2018-09-05/memcache_undefined-2997537-3.patch"
+      }
+    }
   }
 }
