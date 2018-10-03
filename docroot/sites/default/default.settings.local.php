@@ -84,6 +84,14 @@ $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
 /**
+ * Configuration for Memcache
+ */
+# $settings['cache']['default'] = 'cache.backend.memcache';
+# $settings['memcache']['servers'] = ['memcached:11211' => 'default'];
+# $settings['memcache']['bins'] = ['default' => 'default'];
+# $settings['memcache']['key_prefix'] = '';
+
+/**
  * Allow test modules and themes to be installed.
  *
  * Drupal ignores test modules and themes by default for performance reasons.
