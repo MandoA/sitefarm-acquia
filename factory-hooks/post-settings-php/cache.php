@@ -1,17 +1,9 @@
 <?php
 /**
- * Disables APC cache on selected sites for troubleshooting purposes.
+ * @file
+ * Caching settings module settings.
+ *
+ * This file will be included into settings.php for all sites on Site Factory.
  */
-$sf_sites = [
-  'lettersandscience.ucdsitefarm.acsitefactory.com',
-  'lettersandscience.test-ucdsitefarm.acsitefactory.com',
-];
-
-if (in_array($_SERVER['HTTP_HOST'], $sf_sites)) {
-  ## ACQUIA SUPPORT: Completely avoid using APCu for cache bins and the class loader.
-  $settings['cache']['default'] = 'cache.backend.database';
-  $settings['cache']['bins']['bootstrap'] = 'cache.backend.database';
-  $settings['cache']['bins']['discovery'] = 'cache.backend.database';
-  $settings['cache']['bins']['config'] = 'cache.backend.database';
-  $settings['class_loader_auto_detect'] = FALSE;
-}
+// Set max age for Varnish cache as defined in https://docs.acquia.com/site-factory/manage/website/cache/modify/
+$config['system.performance']['cache']['page']['max_age'] = 21600;
