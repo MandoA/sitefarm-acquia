@@ -4496,17 +4496,17 @@
         },
         {
             "name": "drupal/socialfeed",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-beta3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/socialfeed",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-beta3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialfeed-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "5385f2d23ad1c5f40e356e4092d9cc8f1a97ec7d"
+                "url": "https://ftp.drupal.org/files/projects/socialfeed-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "c81527fd29b70f5f3db6963756ece6a43ad190df"
             },
             "require": {
                 "abraham/twitteroauth": "^0.7.2",
@@ -4521,15 +4521,12 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1519809185",
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1538733484",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                  "Allow per block config": "https://www.drupal.org/files/issues/2018-08-02/socialfeed-block_configuration-2984276-5-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
