@@ -44,6 +44,7 @@
     "cweagans/composer-patches": "^1.5",
     "ucdavis/sitefarm": "dev-8.x-5.x",
     "ucdavis/sitefarm_one": "dev-8.x-5.x",
+    "ucdavis/sitefarm_acquia_purge": "dev-8.x-1.x",
     "drupal/acquia_connector": "1.*",
     "drupal/acquia_purge": "^1.0@beta",
     "drupal/acsf": "1.*",
@@ -67,6 +68,10 @@
     "ucdavis/sitefarm_one": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
+    },
+    "ucdavis/sitefarm_acquia_purge": {
+      "type": "vcs",
+      "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git"
     }
   },
   "scripts": {

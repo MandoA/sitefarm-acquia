@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06eb2c37ed3dbfce8ad16d9eca1e2dfb",
+    "content-hash": "5bd716f3f817a524e96ec6b0acb78682",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7241,6 +7241,31 @@
             "time": "2018-10-02T00:16:08+00:00"
         },
         {
+            "name": "ucdavis/sitefarm_acquia_purge",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
+                "reference": "1397f9e8058a5b9cbd08c711fda025359f127310"
+            },
+            "require": {
+                "drupal/acquia_purge": "^1.0@beta",
+                "drupal/purge": "^3.0@beta"
+            },
+            "type": "drupal-module",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Shawn DeArmond",
+                    "email": "sgdearmond@ucdavis.edu"
+                }
+            ],
+            "description": "Default configuration for SiteFarm implementation of Acquia Purge.",
+            "time": "2018-10-17T22:39:44+00:00"
+        },
+        {
             "name": "ucdavis/sitefarm_one",
             "version": "dev-8.x-5.x",
             "source": {
@@ -10955,6 +10980,7 @@
     "stability-flags": {
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_one": 20,
+        "ucdavis/sitefarm_acquia_purge": 20,
         "drupal/acquia_purge": 10,
         "drupal/purge": 10
     },
