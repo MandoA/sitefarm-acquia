@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df1f25cb92f0b9113fe1d900ecfb9f08",
+    "content-hash": "06eb2c37ed3dbfce8ad16d9eca1e2dfb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -935,17 +935,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.48.0",
+            "version": "1.50.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/acsf",
-                "reference": "8.x-1.48"
+                "reference": "8.x-1.50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.48.zip",
-                "reference": "8.x-1.48",
-                "shasum": "b2f420294fe86a61baa70c0dc55dfd4ec2e49718"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.50.zip",
+                "reference": "8.x-1.50",
+                "shasum": "87f52e12bfb68e40a1cc146e1be6b351ab3c591d"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -965,8 +965,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "version": "8.x-1.50",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1001,6 +1001,10 @@
                     "homepage": "https://www.drupal.org/user/762986"
                 },
                 {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
+                },
+                {
                     "name": "nagba",
                     "homepage": "https://www.drupal.org/user/21231"
                 },
@@ -1021,7 +1025,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.48.0",
+            "version": "1.50.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1032,8 +1036,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "version": "8.x-1.50",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1060,6 +1064,10 @@
                 {
                     "name": "attila.fekete",
                     "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
                 },
                 {
                     "name": "nagba",
@@ -1082,7 +1090,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.48.0",
+            "version": "1.50.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -1094,8 +1102,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "version": "8.x-1.50",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1122,6 +1130,10 @@
                 {
                     "name": "attila.fekete",
                     "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
                 },
                 {
                     "name": "nagba",
@@ -1144,7 +1156,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.48.0",
+            "version": "1.50.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1155,8 +1167,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.48",
-                    "datestamp": "1526468584",
+                    "version": "8.x-1.50",
+                    "datestamp": "1539175681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1183,6 +1195,10 @@
                 {
                     "name": "attila.fekete",
                     "homepage": "https://www.drupal.org/user/762986"
+                },
+                {
+                    "name": "lcatlett",
+                    "homepage": "https://www.drupal.org/user/855628"
                 },
                 {
                     "name": "nagba",
@@ -10939,8 +10955,8 @@
     "stability-flags": {
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_one": 20,
-        "drupal/purge": 10,
-        "drupal/acquia_purge": 10
+        "drupal/acquia_purge": 10,
+        "drupal/purge": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
