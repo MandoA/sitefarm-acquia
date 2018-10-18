@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bd716f3f817a524e96ec6b0acb78682",
+    "content-hash": "caad25674d26e0bcc3fd07ee966f40ed",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -10984,9 +10984,7 @@
     "stability-flags": {
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_one": 20,
-        "ucdavis/sitefarm_acquia_purge": 20,
-        "drupal/acquia_purge": 10,
-        "drupal/purge": 10
+        "ucdavis/sitefarm_acquia_purge": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
