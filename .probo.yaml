@@ -20,7 +20,6 @@ steps:
       - composer self-update ; composer global update
       - composer global require hirak/prestissimo
       - composer global require "drush/drush:^8.1.13"
-      - yes | pecl -q install apcu
       - drush version
       - which drush
       - echo $PATH
