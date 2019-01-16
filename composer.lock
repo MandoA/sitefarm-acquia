@@ -1799,16 +1799,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.4",
+            "version": "8.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "652bdf56b5e9e84648ea53ac7b1e7e73e7608ef4"
+                "reference": "6736973f399a3a9ac8ecd41f3a159e1153f7ee39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/652bdf56b5e9e84648ea53ac7b1e7e73e7608ef4",
-                "reference": "652bdf56b5e9e84648ea53ac7b1e7e73e7608ef4",
+                "url": "https://api.github.com/repos/drupal/core/zipball/6736973f399a3a9ac8ecd41f3a159e1153f7ee39",
+                "reference": "6736973f399a3a9ac8ecd41f3a159e1153f7ee39",
                 "shasum": ""
             },
             "require": {
@@ -1852,6 +1852,7 @@
                 "symfony/validator": "~3.4.0",
                 "symfony/yaml": "~3.4.5",
                 "twig/twig": "^1.35.0",
+                "typo3/phar-stream-wrapper": "^2.0.1",
                 "zendframework/zend-diactoros": "^1.1",
                 "zendframework/zend-feed": "^2.4"
             },
@@ -2037,7 +2038,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-12-05T11:58:02+00:00"
+            "time": "2019-01-15T17:41:52+00:00"
         },
         {
             "name": "drupal/crop",
@@ -7482,6 +7483,46 @@
             "time": "2018-07-13T07:12:17+00:00"
         },
         {
+            "name": "typo3/phar-stream-wrapper",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3/phar-stream-wrapper.git",
+                "reference": "0469d9fefa0146ea4299d3b11cfbb76faa7045bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/0469d9fefa0146ea4299d3b11cfbb76faa7045bf",
+                "reference": "0469d9fefa0146ea4299d3b11cfbb76faa7045bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3|^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.36"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\PharStreamWrapper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Interceptors for PHP's native phar:// stream handling",
+            "homepage": "https://typo3.org/",
+            "keywords": [
+                "phar",
+                "php",
+                "security",
+                "stream-wrapper"
+            ],
+            "time": "2018-10-18T08:46:28+00:00"
+        },
+        {
             "name": "ucdavis/aggiefeed",
             "version": "dev-8.x-1.x",
             "source": {
@@ -7700,16 +7741,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.6.4",
+            "version": "8.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "55bbc3930acef3120133185a5b0a4827ab89a841"
+                "reference": "8b185652e851aa9ef18ed12ee962068a55238cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/55bbc3930acef3120133185a5b0a4827ab89a841",
-                "reference": "55bbc3930acef3120133185a5b0a4827ab89a841",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/8b185652e851aa9ef18ed12ee962068a55238cf3",
+                "reference": "8b185652e851aa9ef18ed12ee962068a55238cf3",
                 "shasum": ""
             },
             "require": {
@@ -7753,6 +7794,7 @@
                 "symfony/validator": "v3.4.15",
                 "symfony/yaml": "v3.4.15",
                 "twig/twig": "v1.35.4",
+                "typo3/phar-stream-wrapper": "v2.0.1",
                 "wikimedia/composer-merge-plugin": "v1.4.1",
                 "zendframework/zend-diactoros": "1.4.1",
                 "zendframework/zend-escaper": "2.5.2",
@@ -7800,7 +7842,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2018-12-05T12:00:44+00:00"
+            "time": "2019-01-16T18:30:43+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
