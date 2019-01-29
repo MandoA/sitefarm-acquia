@@ -84,6 +84,14 @@ $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
 /**
+ * Configuration for Memcache
+ */
+# $settings['cache']['default'] = 'cache.backend.memcache';
+# $settings['memcache']['servers'] = ['memcached:11211' => 'default'];
+# $settings['memcache']['bins'] = ['default' => 'default'];
+# $settings['memcache']['key_prefix'] = '';
+
+/**
  * Allow test modules and themes to be installed.
  *
  * Drupal ignores test modules and themes by default for performance reasons.
@@ -130,11 +138,6 @@ $settings['css_link_tags'] = TRUE;
 $settings['hash_salt'] = 'S8hk3uuCAW46j8VxXtM_J6NAmKT7Vb9gXzyDRoncKgd2LqxIII5mh9j0tJTn-E9qrUqIL5ETDA';
 
 /**
- * Declare the Install Profile being used
- */
-$settings['install_profile'] = 'sitefarm';
-
-/**
  * Import CAS config from the Sitefarm Acquia factory hooks if available
  */
 $cas_settings_include = __DIR__ . '/../../../factory-hooks/post-settings-php/cas.php';
@@ -149,9 +152,24 @@ if (file_exists($cas_settings_include)) {
 //$config['system.mail']['interface']['default'] = 'devel_mail_log';
 
 /**
+ * Private file path:
+ *
+ * A local file system path where private files will be stored. This directory
+ * must be absolute, outside of the Drupal installation directory and not
+ * accessible over the web.
+ *
+ * Note: Caches need to be cleared when this value is changed to make the
+ * private:// stream wrapper available to the system.
+ *
+ * See https://www.drupal.org/documentation/modules/file for more information
+ * about securing private files.
+ */
+$settings['file_private_path'] = 'sites/default/files';
+
+/**
  * Database settings - Edit these as needed
  */
-$databases['default']['default'] = array (
+$databases['default']['default'] = [
   'database' => 'database_name_goes_here',
   'username' => 'root',
   'password' => 'root',
@@ -160,7 +178,7 @@ $databases['default']['default'] = array (
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
-);
+];
 
 /**
  * Configuration Sync directory - Edit this as needed

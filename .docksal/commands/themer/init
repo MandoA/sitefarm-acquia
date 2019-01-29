@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+
+#-------------------------- Settings --------------------------------
+
+# PROJECT_ROOT is passed from fin.
+# The following variables are configured in the '.env' file: DOCROOT, VIRTUAL_HOST, SITE_DIRECTORY.
+
+DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
+SITES_PATH="${DOCROOT_PATH}/sites"
+SITEDIR_PATH="${SITES_PATH}/${SITE_DIRECTORY}"
+
+#-------------------------- END: Settings --------------------------------
+
+cd $PROJECT_ROOT
+
+# Create docksal-local.env if needed
+DOCKSALLOCALFILE='.docksal/docksal-local.env'
+if [ ! -f $DOCKSALLOCALFILE ]; then
+    echo "Creating .docksal/docksal-local.env file. Use this file to change Docksal settings."
+    cp .docksal/example.docksal-local.env $DOCKSALLOCALFILE
+    echo "VIRTUAL_HOST=${PWD##*/}.local" >> $DOCKSALLOCALFILE
+fi
+
+# Start containers
+fin up
+
+
+# Set local config files
+fin perm
+
+cd $SITEDIR_PATH
+fin exec git clone https://bitbucket.org/ietwebdev/sitefarm-local-settings.git
+mv sitefarm-local-settings/* .
+rm -rf sitefarm-local-settings
+
+
+# Set extra config
+echo "
+\$databases['default']['default'] = array (
+  'database' => 'default',
+  'username' => 'user',
+  'password' => 'user',
+  'prefix' => '',
+  'host' => 'db',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+" >> $SITEDIR_PATH/settings.local.php
+
+# Set hosts
+echo "This will add the local domain to your computer. You may need to enter your administrator password for this computer."
+fin hosts remove
+fin hosts add
+
+# fin drush site-install sitefarm -y --site-name="SiteFarm Acquia"
+
+# Install site
+fin themer/refresh
+
+# Set permissions
+cd $PROJECT_ROOT
+chmod -R 755 .
+
+fin exec 'echo "You can now visit your site at: http://$VIRTUAL_HOST/login"'

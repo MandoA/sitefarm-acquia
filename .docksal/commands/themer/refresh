@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Refresh database
+##
+## Usage: fin refresh
+
+# Abort if anything fails
+set -e
+
+DOCROOT=${DOCROOT:-docroot};
+SITE_DIRECTORY=${SITE_DIRECTORY:-default};
+
+DOCROOT_PATH="${PROJECT_ROOT}/${DOCROOT}"
+SITEDIR_PATH="${DOCROOT_PATH}/sites/${SITE_DIRECTORY}"
+
+cd $SITEDIR_PATH
+
+DBFILE="${PROJECT_ROOT}/database.sql"
+
+if [ ! -f $DBFILE ]; then
+    echo 'Please place an uncompressed .sql file in the project root, and name it "database.sql".'
+    exit 1
+fi
+
+echo "Importing Database..."
+drush sql-cli < ${DBFILE}
+drush cr
+chmod -R 755 files
+
+cd ${DOCROOT_PATH}
