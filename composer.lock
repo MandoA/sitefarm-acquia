@@ -2006,7 +2006,7 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-87.views-rss-fields-link.functional-test-only.patch",
+                    "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                     "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch"
                 }
@@ -7582,7 +7582,7 @@
                 },
                 "patches": {
                     "drupal/core": {
-                        "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-87.views-rss-fields-link.functional-test-only.patch",
+                        "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch"
                     },
