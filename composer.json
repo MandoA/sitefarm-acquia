@@ -59,10 +59,6 @@
       "type": "composer",
       "url": "https://asset-packagist.org"
     },
-    "companion_sitefarm_branch": {
-      "type": "vcs",
-      "url": "/src/sitefarm"
-    },
     "ucdavis/sitefarm": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm.git"
