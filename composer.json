@@ -50,36 +50,36 @@
     "drupal/memcache": "2.0.0-alpha7",
     "drupal/samlauth": "2.*"
   },
-  "repositories": [
-    {
+  "repositories": {
+    "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
     },
-    {
+    "assets": {
       "type": "composer",
       "url": "https://asset-packagist.org"
     },
-    {
+    "companion_sitefarm_branch": {
       "type": "vcs",
       "url": "/src/sitefarm"
     },
-    {
+    "ucdavis/sitefarm": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm.git"
     },
-    {
+    "ucdavis/aggiefeed": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git"
     },
-    {
+    "ucdavis/sitefarm_one": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
     },
-    {
+    "ucdavis/sitefarm_acquia_purge": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git"
     }
-  ],
+},
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
