@@ -25,7 +25,7 @@ class Assets {
   public static $libraryPath = 'docroot/libraries/';
 
   /**
-   * List of Asset Packages
+   * List of Asset Packages.
    *
    * The original directory name is the key and the final destination name is
    * the value.
@@ -69,9 +69,9 @@ class Assets {
       // Original. If so then just move it and delete original.
       $subdirectory = $original_path . '/' . $destination;
       if (is_dir($subdirectory)) {
-        // Move the subdirectory to the library
+        // Move the subdirectory to the library.
         rename($subdirectory, $destination_path);
-        // Delete the original
+        // Delete the original.
         static::rrmdir($original_path);
       }
 
@@ -87,9 +87,10 @@ class Assets {
    * Recursively removes a folder along with all its files and directories.
    *
    * @param string $path
+   *   The file path used for removal.
    */
   public static function rrmdir($path) {
-    // Open the source directory to read in files
+    // Open the source directory to read in files.
     $iterator = new DirectoryIterator($path);
     foreach ($iterator as $file) {
       if ($file->isFile()) {
