@@ -79,7 +79,7 @@
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git"
     }
-},
+  },
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
