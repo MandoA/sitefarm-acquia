@@ -39,8 +39,8 @@ class Assets {
     'ckeditor-featureblock' => 'feature_block',
     'ckeditor-medialink' => 'media_link',
     'ckeditor-notification' => 'notification',
+    'ckeditor-wordcount-plugin' => 'wordcount',
     'slick-carousel' => 'slick',
-    'word-count-ckeditor' => 'wordcount',
   ];
 
   /**

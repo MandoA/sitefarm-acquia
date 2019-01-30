@@ -8658,22 +8658,6 @@
             "time": "2017-04-04T11:38:05+00:00"
         },
         {
-            "name": "bower-asset/word-count-ckeditor",
-            "version": "v1.17",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:w8tcha/CKEditor-WordCount-Plugin.git",
-                "reference": "b29a29d4dc8a42732ce46720e1efc30c826e4c93"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/w8tcha/CKEditor-WordCount-Plugin/zipball/b29a29d4dc8a42732ce46720e1efc30c826e4c93",
-                "reference": "b29a29d4dc8a42732ce46720e1efc30c826e4c93",
-                "shasum": null
-            },
-            "type": "bower-asset"
-        },
-        {
             "name": "commerceguys/intl",
             "version": "v0.7.5",
             "source": {
@@ -9995,6 +9979,22 @@
             "license": [
                 "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
             ]
+        },
+        {
+            "name": "npm-asset/ckeditor-wordcount-plugin",
+            "version": "v1.17.4",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:w8tcha/CKEditor-WordCount-Plugin.git",
+                "reference": "c3acbc7ee919ba8d65d491f2d25c249566f96938"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/w8tcha/CKEditor-WordCount-Plugin/zipball/c3acbc7ee919ba8d65d491f2d25c249566f96938",
+                "reference": "c3acbc7ee919ba8d65d491f2d25c249566f96938",
+                "shasum": null
+            },
+            "type": "npm-asset"
         },
         {
             "name": "npm-asset/photoswipe",
