@@ -37,6 +37,7 @@ class Assets {
   public static $assets = [
     'ckeditor-autosave-plugin' => 'autosave',
     'ckeditor-featureblock' => 'feature_block',
+    'ckeditor-indentblock' => 'indentblock',
     'ckeditor-medialink' => 'media_link',
     'ckeditor-notification' => 'notification',
     'ckeditor-wordcount-plugin' => 'wordcount',

@@ -79,13 +79,11 @@
   "scripts": {
     "post-install-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/",
       "Sitefarm\\Composer\\Assets::rename",
       "rm docroot/robots.txt"
     ],
     "post-update-cmd": [
       "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-      "cp -a docroot/profiles/sitefarm/libraries/. docroot/libraries/",
       "Sitefarm\\Composer\\Assets::rename",
       "rm docroot/robots.txt"
     ]
