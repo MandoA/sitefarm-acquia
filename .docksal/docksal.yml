@@ -26,8 +26,6 @@ services:
 
   # CLI
   cli:
-    image: ${COMPOSE_PROJECT_NAME_SAFE}_cli
-    build: ${PROJECT_ROOT}/.docksal/services/cli
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli
