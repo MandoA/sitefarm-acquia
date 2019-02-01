@@ -28,9 +28,7 @@ docroot="/var/www/html/$site.$env/docroot"
 #    aliases. This can prevent some hard to trace problems.
 DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 
+# Webform requires a cache refresh before running updates as per https://www.drupal.org/project/webform/issues/3022922
+$DRUSH_CMD cr
+
 $DRUSH_CMD updatedb
-# Run entity updates if the updatedb command didn't fail.
-if [ $? -eq 0 -a -n "$update_entities" ] ; then
-  # Possibly do some preparation here...
-  $DRUSH_CMD entity-updates
-fi
