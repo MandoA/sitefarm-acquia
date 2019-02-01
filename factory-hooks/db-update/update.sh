@@ -31,4 +31,4 @@ DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 # Webform requires a cache refresh before running updates as per https://www.drupal.org/project/webform/issues/3022922
 $DRUSH_CMD cr
 
-$DRUSH_CMD updatedb
+$DRUSH_CMD updatedb -y
