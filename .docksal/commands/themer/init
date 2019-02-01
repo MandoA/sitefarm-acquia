@@ -29,7 +29,7 @@ fin up
 fin perm
 
 cd $SITEDIR_PATH
-fin exec git clone https://dearmond@bitbucket.org/ietwebdev/sitefarm-local-settings.git
+fin exec git clone https://bitbucket.org/ietwebdev/sitefarm-local-settings.git
 mv sitefarm-local-settings/* .
 rm -rf sitefarm-local-settings
 
