@@ -1371,17 +1371,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "1.25.0",
+            "version": "1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar",
-                "reference": "8.x-1.25"
+                "reference": "8.x-1.26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.25.zip",
-                "reference": "8.x-1.25",
-                "shasum": "bc24929d5e49932518797c1228e647e98b03542b"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.26.zip",
+                "reference": "8.x-1.26",
+                "shasum": "7be9f91008bf17cf49b43d1c8e2211e7a8e40ce4"
             },
             "require": {
                 "drupal/core": "*"
@@ -1392,8 +1392,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.25",
-                    "datestamp": "1542915384",
+                    "version": "8.x-1.26",
+                    "datestamp": "1549218480",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1789,16 +1789,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.7",
+            "version": "8.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e0a09bda1da7552204464894811a59387608c9f9"
+                "reference": "0e0ccce552859f6fd3aec6b5754ad0d6ede07227"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e0a09bda1da7552204464894811a59387608c9f9",
-                "reference": "e0a09bda1da7552204464894811a59387608c9f9",
+                "url": "https://api.github.com/repos/drupal/core/zipball/0e0ccce552859f6fd3aec6b5754ad0d6ede07227",
+                "reference": "0e0ccce552859f6fd3aec6b5754ad0d6ede07227",
                 "shasum": ""
             },
             "require": {
@@ -2030,7 +2030,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-01-16T23:30:03+00:00"
+            "time": "2019-02-06T15:13:52+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2814,20 +2814,20 @@
         },
         {
             "name": "drupal/google_analytics",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/google_analytics",
-                "reference": "8.x-2.3"
+                "reference": "8.x-2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.3.zip",
-                "reference": "8.x-2.3",
-                "shasum": "9ea88a81925ba538d9fa7ac6ce4f1598e5ee48e4"
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "f2e78ec140024ddcd19e027704ba73c33731f656"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "~8.5"
             },
             "require-dev": {
                 "drupal/php": "*",
@@ -2839,7 +2839,7 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.3",
+                    "version": "8.x-2.4",
                     "datestamp": "1548968580",
                     "security-coverage": {
                         "status": "covered",
@@ -2864,7 +2864,7 @@
             "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
             "homepage": "https://www.drupal.org/project/google_analytics",
             "support": {
-                "source": "http://git.drupal.org/project/google_analytics.git",
+                "source": "https://git.drupal.org/project/google_analytics.git",
                 "issues": "https://www.drupal.org/project/issues/google_analytics"
             }
         },
@@ -7813,7 +7813,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "519d77c7c840e4a5ce2fd21be4f18f376a56b7a1"
+                "reference": "170b8f2bc35023ef909e355bf76717b065029879"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -7962,7 +7962,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2019-02-04T03:43:36+00:00"
+            "time": "2019-02-06T23:05:51+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -8009,16 +8009,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.6.7",
+            "version": "8.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "161c4e59e25caae08ff1f58b6fdbe4c4fdadf198"
+                "reference": "5f995882b1092df0934e01f2ffa856637603627e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/161c4e59e25caae08ff1f58b6fdbe4c4fdadf198",
-                "reference": "161c4e59e25caae08ff1f58b6fdbe4c4fdadf198",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/5f995882b1092df0934e01f2ffa856637603627e",
+                "reference": "5f995882b1092df0934e01f2ffa856637603627e",
                 "shasum": ""
             },
             "require": {
@@ -8110,7 +8110,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2019-01-17T00:00:45+00:00"
+            "time": "2019-02-06T15:30:47+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
