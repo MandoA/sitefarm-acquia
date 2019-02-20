@@ -2448,8 +2448,7 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -7811,7 +7810,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "a676738f1b9fd72f501e98a9a49b6ffce195c006"
+                "reference": "1a5bd875b0c3e72477bacce822f0fd877203084f"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -7896,9 +7895,6 @@
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch"
                     },
-                    "drupal/entity_clone": {
-                        "Check permission before showing Clone operation": "https://www.drupal.org/files/issues/check-permission-2743379-1.patch"
-                    },
                     "drupal/pdb": {
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
                     },
@@ -7960,7 +7956,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2019-02-11T21:27:17+00:00"
+            "time": "2019-02-20T22:31:13+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
