@@ -7899,6 +7899,9 @@
                     },
                     "drupal/webform": {
                         "Updating to version 5.1 causes errors with mismatched field definitions": "https://www.drupal.org/files/issues/2019-01-20/webform-langcode-update-3026068-11.patch"
+                    },
+                    "drupal/sharemessage": {
+                        "Check if the metatag module exists before letting Share Message write OG type.": "https://www.drupal.org/files/issues/2019-03-11/check-if-metatag.patch"
                     }
                 }
             },
