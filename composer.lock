@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06ce9fc2d7679a5e20694455e2d7f4a4",
+    "content-hash": "a8f56eb76c1dbd65bdec07507e2755d5",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -6127,9 +6127,6 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
-                },
-                "patches_applied": {
-                    "Updating to version 5.1 causes errors with mismatched field definitions": "https://www.drupal.org/files/issues/2019-01-20/webform-langcode-update-3026068-11.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9406,11 +9403,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-release-6.2.0",
+            "version": "dev-8.x-6.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "6540aef893ba859d4959051d0d31ed50cc6035b0"
+                "reference": "8bd2ed8497f6fc21972b9bf5374eee23ae11fefa"
             },
             "require": {
                 "cweagans/composer-patches": "^1.5",
@@ -9525,9 +9522,6 @@
                     },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
-                    },
-                    "drupal/webform": {
-                        "Updating to version 5.1 causes errors with mismatched field definitions": "https://www.drupal.org/files/issues/2019-01-20/webform-langcode-update-3026068-11.patch"
                     }
                 }
             },
@@ -9571,7 +9565,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2019-04-22T17:09:49+00:00"
+            "time": "2019-04-23T18:10:31+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -9604,7 +9598,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "f39eb2d34a76fee19fe9307596aaf19f85b2b190"
+                "reference": "ca1c2a3889e635abb0681731cae4fe67bd7c4571"
             },
             "type": "drupal-theme",
             "authors": [
@@ -9614,7 +9608,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2019-01-31T17:06:15+00:00"
+            "time": "2019-04-23T00:44:48+00:00"
         },
         {
             "name": "webflo/drupal-core-strict",
