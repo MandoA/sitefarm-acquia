@@ -177,6 +177,42 @@
             "time": "2017-12-20T14:37:45+00:00"
         },
         {
+            "name": "brumann/polyfill-unserialize",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dbrumann/polyfill-unserialize.git",
+                "reference": "844d7e44b62a1a3d5c68cfb7ebbd59c17ea0fd7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dbrumann/polyfill-unserialize/zipball/844d7e44b62a1a3d5c68cfb7ebbd59c17ea0fd7b",
+                "reference": "844d7e44b62a1a3d5c68cfb7ebbd59c17ea0fd7b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brumann\\Polyfill\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Brumann",
+                    "email": "denis.brumann@sensiolabs.de"
+                }
+            ],
+            "description": "Backports unserialize options introduced in PHP 7.0 to older PHP versions.",
+            "time": "2017-02-03T09:55:47+00:00"
+        },
+        {
             "name": "commerceguys/addressing",
             "version": "v1.0.3",
             "source": {
@@ -1292,17 +1328,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.54.0",
+            "version": "1.55.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acsf.git",
-                "reference": "8.x-1.54"
+                "reference": "8.x-1.55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.54.zip",
-                "reference": "8.x-1.54",
-                "shasum": "2fd725d9c70cbc7b62a264f1ef68c153ff5a9329"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.55.zip",
+                "reference": "8.x-1.55",
+                "shasum": "548e8beff07cacb7693536bcfbbfc3e0daad93cd"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -1313,7 +1349,7 @@
             },
             "require-dev": {
                 "drupal/acsf_variables": "*",
-                "drupal/coder": "^8.3",
+                "drupal/coder": "8.3.1",
                 "drupal/samlauth": "^2.0.0-alpha1",
                 "mockery/mockery": "dev-master",
                 "phpunit/phpunit": "^4.8|^5.7|^6.5",
@@ -1325,8 +1361,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.54",
-                    "datestamp": "1555501690",
+                    "version": "8.x-1.55",
+                    "datestamp": "1557315785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1393,7 +1429,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.54.0",
+            "version": "1.55.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1404,8 +1440,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.54",
-                    "datestamp": "1555501690",
+                    "version": "8.x-1.55",
+                    "datestamp": "1557315785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1466,7 +1502,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.54.0",
+            "version": "1.55.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -1478,8 +1514,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.54",
-                    "datestamp": "1555501690",
+                    "version": "8.x-1.55",
+                    "datestamp": "1557315785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1540,7 +1576,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.54.0",
+            "version": "1.55.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1551,8 +1587,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.54",
-                    "datestamp": "1555501690",
+                    "version": "8.x-1.55",
+                    "datestamp": "1557315785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2354,16 +2390,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.6.15",
+            "version": "8.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "936456cdeac25c6bbd2f55b0d587239c6a81ba86"
+                "reference": "a9c4c97c7da9ec1a38782912bb06784d28590539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/936456cdeac25c6bbd2f55b0d587239c6a81ba86",
-                "reference": "936456cdeac25c6bbd2f55b0d587239c6a81ba86",
+                "url": "https://api.github.com/repos/drupal/core/zipball/a9c4c97c7da9ec1a38782912bb06784d28590539",
+                "reference": "a9c4c97c7da9ec1a38782912bb06784d28590539",
                 "shasum": ""
             },
             "require": {
@@ -2407,7 +2443,7 @@
                 "symfony/validator": "~3.4.0",
                 "symfony/yaml": "~3.4.5",
                 "twig/twig": "^1.38.2",
-                "typo3/phar-stream-wrapper": "^2.0.1",
+                "typo3/phar-stream-wrapper": "^2.1.1",
                 "zendframework/zend-diactoros": "^1.1",
                 "zendframework/zend-feed": "^2.4"
             },
@@ -2595,7 +2631,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-04-17T20:00:11+00:00"
+            "time": "2019-05-08T16:00:58+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2825,7 +2861,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha7",
-                    "datestamp": "1508448545",
+                    "datestamp": "1556924587",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3515,8 +3551,16 @@
             "authors": [
                 {
                     "name": "Jeff Geerling",
-                    "homepage": "https://www.drupal.org/user/389011",
+                    "homepage": "https://www.drupal.org/user/213194",
                     "email": "geerlingguy@mac.com"
+                },
+                {
+                    "name": "geerlingguy",
+                    "homepage": "https://www.drupal.org/user/389011"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
                 }
             ],
             "description": "Mitigates spam form submissions using the honeypot method.",
@@ -3579,6 +3623,14 @@
                 {
                     "name": "dawehner",
                     "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "joachim",
+                    "homepage": "https://www.drupal.org/user/107701"
+                },
+                {
+                    "name": "kaythay",
+                    "homepage": "https://www.drupal.org/user/2182186"
                 },
                 {
                     "name": "rszrama",
@@ -5182,7 +5234,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha5",
-                    "datestamp": "1537628284",
+                    "datestamp": "1556654285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -5269,7 +5321,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha5",
-                    "datestamp": "1537628284",
+                    "datestamp": "1556654285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -6212,7 +6264,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-alpha6",
-                    "datestamp": "1540871280",
+                    "datestamp": "1557288185",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -7083,7 +7135,7 @@
             "version": "v1.17.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:w8tcha/CKEditor-WordCount-Plugin.git",
+                "url": "https://github.com/w8tcha/CKEditor-WordCount-Plugin.git",
                 "reference": "c3acbc7ee919ba8d65d491f2d25c249566f96938"
             },
             "dist": {
@@ -9340,22 +9392,26 @@
         },
         {
             "name": "typo3/phar-stream-wrapper",
-            "version": "v2.0.1",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/phar-stream-wrapper.git",
-                "reference": "0469d9fefa0146ea4299d3b11cfbb76faa7045bf"
+                "reference": "e438b0c78652b33407983eb29d215a1a3f68f6f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/0469d9fefa0146ea4299d3b11cfbb76faa7045bf",
-                "reference": "0469d9fefa0146ea4299d3b11cfbb76faa7045bf",
+                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/e438b0c78652b33407983eb29d215a1a3f68f6f3",
+                "reference": "e438b0c78652b33407983eb29d215a1a3f68f6f3",
                 "shasum": ""
             },
             "require": {
+                "brumann/polyfill-unserialize": "^1.0",
+                "ext-fileinfo": "*",
+                "ext-json": "*",
                 "php": "^5.3.3|^7.0"
             },
             "require-dev": {
+                "ext-xdebug": "*",
                 "phpunit/phpunit": "^4.8.36"
             },
             "type": "library",
@@ -9376,7 +9432,7 @@
                 "security",
                 "stream-wrapper"
             ],
-            "time": "2018-10-18T08:46:28+00:00"
+            "time": "2019-05-05T17:30:51+00:00"
         },
         {
             "name": "ucdavis/aggiefeed",
@@ -9612,20 +9668,21 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.6.15",
+            "version": "8.6.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "585bb3aa03185d6ac699654bebdb1fb237eda626"
+                "reference": "a83f70d4fd7b4e95ae920dd9b036db0df2fb8a61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/585bb3aa03185d6ac699654bebdb1fb237eda626",
-                "reference": "585bb3aa03185d6ac699654bebdb1fb237eda626",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/a83f70d4fd7b4e95ae920dd9b036db0df2fb8a61",
+                "reference": "a83f70d4fd7b4e95ae920dd9b036db0df2fb8a61",
                 "shasum": ""
             },
             "require": {
                 "asm89/stack-cors": "1.2.0",
+                "brumann/polyfill-unserialize": "v1.0.3",
                 "composer/installers": "v1.5.0",
                 "composer/semver": "1.4.2",
                 "doctrine/annotations": "v1.2.7",
@@ -9665,7 +9722,7 @@
                 "symfony/validator": "v3.4.15",
                 "symfony/yaml": "v3.4.15",
                 "twig/twig": "v1.38.2",
-                "typo3/phar-stream-wrapper": "v2.0.1",
+                "typo3/phar-stream-wrapper": "v2.1.1",
                 "wikimedia/composer-merge-plugin": "v1.4.1",
                 "zendframework/zend-diactoros": "1.4.1",
                 "zendframework/zend-escaper": "2.5.2",
@@ -9713,7 +9770,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies",
-            "time": "2019-04-17T21:00:48+00:00"
+            "time": "2019-05-08T17:30:50+00:00"
         },
         {
             "name": "webflo/drupal-finder",
