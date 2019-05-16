@@ -32,12 +32,12 @@
     "jcalderonzumba/gastonjs": "~1.0.2",
     "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
     "mikey179/vfsStream": "~1.2",
-    "phpunit/phpunit": "^6.5",
-    "drupal/console": "~1.0"
+    "phpunit/phpunit": "^6.5"
   },
   "require": {
-    "drupal/core": "^8.6",
-    "webflo/drupal-core-strict": "^8.6",
+    "drupal/core": "~8.6",
+    "drupal/console": "~1.0",
+    "webflo/drupal-core-strict": "~8.6",
     "composer/installers": "^1.0",
     "drupal-composer/drupal-scaffold": "^2.5.0",
     "zendframework/zend-stdlib": "~3.0.1",
