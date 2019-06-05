@@ -9496,7 +9496,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
-                "reference": "1397f9e8058a5b9cbd08c711fda025359f127310"
+                "reference": "16a96dfa2a6a2701f5075c73ae702eb6228c7f27"
             },
             "require": {
                 "drupal/acquia_purge": "^1.0@beta",
@@ -9513,7 +9513,7 @@
                 }
             ],
             "description": "Default configuration for SiteFarm implementation of Acquia Purge.",
-            "time": "2018-10-17T22:39:44+00:00"
+            "time": "2019-06-05T19:27:43+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
