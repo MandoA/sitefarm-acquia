@@ -1,4 +1,4 @@
-image: proboci/ubuntu-14.04-lamp:php-7.1
+image: proboci/ubuntu-16.04-lamp:php-7.2
 assets:
   - probossh.tar.gz
 phpIniOptions:
