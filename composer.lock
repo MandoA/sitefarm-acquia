@@ -1325,17 +1325,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.58.0",
+            "version": "1.59.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acsf.git",
-                "reference": "8.x-1.58"
+                "reference": "8.x-1.59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.58.zip",
-                "reference": "8.x-1.58",
-                "shasum": "af71fdd9c109d64d1d4b1db705bdcfd78ee6a750"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.59.zip",
+                "reference": "8.x-1.59",
+                "shasum": "92370185b9d5787b224520782e3e803cb704d561"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -1358,8 +1358,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.58",
-                    "datestamp": "1560943686",
+                    "version": "8.x-1.59",
+                    "datestamp": "1564571285",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1426,7 +1426,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.58.0",
+            "version": "1.59.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1437,8 +1437,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.58",
-                    "datestamp": "1560943686",
+                    "version": "8.x-1.59",
+                    "datestamp": "1564571285",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1499,7 +1499,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.58.0",
+            "version": "1.59.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -1511,8 +1511,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.58",
-                    "datestamp": "1560943686",
+                    "version": "8.x-1.59",
+                    "datestamp": "1564571285",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1573,7 +1573,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.58.0",
+            "version": "1.59.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "~8.0"
@@ -1584,8 +1584,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.58",
-                    "datestamp": "1560943686",
+                    "version": "8.x-1.59",
+                    "datestamp": "1564571285",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3935,17 +3935,17 @@
         },
         {
             "name": "drupal/menu_breadcrumb",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_breadcrumb.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "c68782d805b12b1d15d4e0bea2e16a76dac89bd2"
+                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "d8539da4069d0f4269dde11429b058fae5e43eb5"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3956,8 +3956,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1554988685",
+                    "version": "8.x-1.10",
+                    "datestamp": "1564669385",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4349,8 +4349,7 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -9376,7 +9375,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "6df526633c392986f917111946db57b7fc1c0d97"
+                "reference": "813d34943b0a5096297e4279ee76f3a8a587b405"
             },
             "require": {
                 "cweagans/composer-patches": "^1.5",
@@ -9482,10 +9481,6 @@
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                     },
-                    "drupal/openapi": {
-                        "Exclude disabled JSON API resources": "https://www.drupal.org/files/issues/2018-09-18/3000458--exclude-disabled-resource-types--2.patch",
-                        "Documentation for JSON API collections needs minor adjustments": "https://www.drupal.org/files/issues/2018-09-18/3000609--jsonapi-collections-fixes--2.patch"
-                    },
                     "drupal/social_media_links": {
                         "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch"
                     },
@@ -9534,7 +9529,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2019-05-31T22:41:45+00:00"
+            "time": "2019-08-05T21:05:22+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -9567,7 +9562,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "ca1c2a3889e635abb0681731cae4fe67bd7c4571"
+                "reference": "276d03d6271ef6cd20c9f570d65a4831f2f36e74"
             },
             "type": "drupal-theme",
             "authors": [
@@ -9577,7 +9572,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2019-04-23T00:44:48+00:00"
+            "time": "2019-08-06T20:20:48+00:00"
         },
         {
             "name": "webflo/drupal-core-strict",
