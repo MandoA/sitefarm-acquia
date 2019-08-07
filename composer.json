@@ -32,7 +32,8 @@
     "jcalderonzumba/gastonjs": "~1.0.2",
     "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
     "mikey179/vfsStream": "~1.2",
-    "phpunit/phpunit": "^6.5"
+    "phpunit/phpunit": "^6.5",
+    "rubenrua/symfony-clean-tags-composer-plugin": "^1.0"
   },
   "require": {
     "drupal/core": "~8.6",
@@ -48,7 +49,7 @@
     "drupal/acquia_connector": "1.*",
     "drupal/acsf": "1.*",
     "drupal/memcache": "2.0.0-alpha7",
-    "drupal/samlauth": "2.*"
+    "drupal/samlauth": "3.*"
   },
   "repositories": {
     "drupal": {
