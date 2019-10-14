@@ -9486,6 +9486,9 @@
                     },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
+                    },
+                    "drupal/sharemessage": {
+                        "Check if the metatag module exists before letting Share Message write OG type.": "https://www.drupal.org/files/issues/2019-03-11/check-if-metatag.patch"
                     }
                 }
             },
