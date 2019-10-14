@@ -9566,7 +9566,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "a4eff50529789bca0a5697da4f9deb6ea0e3ce6b"
+                "reference": "bf85c3d9ef88f206d65af1ba1ab0bcee7da377f8"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -9722,7 +9722,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2019-10-14T22:01:25+00:00"
+            "time": "2019-10-14T23:01:51+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
