@@ -9717,7 +9717,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "abaac074bff68316aaedee48084561774f09cb1a"
+                "reference": "c500e782e34e7320ff83b3fc29865678649055d0"
             },
             "type": "drupal-theme",
             "authors": [
@@ -9727,7 +9727,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2019-10-23T23:27:25+00:00"
+            "time": "2019-10-29T21:41:27+00:00"
         },
         {
             "name": "webflo/drupal-core-strict",
