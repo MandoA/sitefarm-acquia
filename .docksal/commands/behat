@@ -23,7 +23,7 @@ if [[ ! -f "$BEHAT_PATH/behat.yml" ]]; then
 fi
 
 # Launch VNC viewer
-VNC_URL="vnc://:secret@$(fin vm ip):${VNC_PORT_MAPPING%\:5900*}"
+VNC_URL="vnc://:secret@${VIRTUAL_HOST}:${VNC_PORT_MAPPING%\:5900*}"
 echo "Opening $VNC_URL"
 open "$VNC_URL"
 
