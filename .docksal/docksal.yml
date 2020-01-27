@@ -31,6 +31,7 @@ services:
       service: cli
     environment:
       - PHP_IDE_CONFIG
+      - SYMFONY_REQUIRE
   # Varnish
   varnish:
     extends:
@@ -54,7 +55,7 @@ services:
   # Browser
   browser:
     hostname: browser
-    image: selenium/standalone-chrome-debug
+    image: selenium/standalone-chrome-debug:3.141.59-oxygen
     volumes:
       # Project root volume
       - project_root:/var/www:ro,nocopy

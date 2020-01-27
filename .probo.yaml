@@ -1,4 +1,4 @@
-image: proboci/ubuntu-14.04-lamp:php-7.1
+image: proboci/ubuntu-16.04-lamp:php-7.2
 assets:
   - probossh.tar.gz
 phpIniOptions:
@@ -25,9 +25,9 @@ steps:
       - echo $PATH
       - cd /src
       - composer install --ansi
-      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=8dev; fi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=dev; fi
       - composer require "ucdavis/sitefarm:dev-$BRANCH" --ansi
-      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=8dev; fi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=dev; fi
       - composer require "ucdavis/sitefarm_one:dev-$BRANCH" --ansi
   - name: Run PhpUnit
     plugin: Script
