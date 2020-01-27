@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+## Do a fresh Drupal installation of the SiteDen profile. Be sure to have xDebug disabled.
+##
+## Usage: fin reinstall [arguments]
+
+# Start containers
+fin up
+
+# Install site
+cd $DOCROOT
+fin drush site-install sitefarm -y --site-name="SiteFarm Acquia" $@
+# Get login link
+fin drush uli --uri="http://$VIRTUAL_HOST"
