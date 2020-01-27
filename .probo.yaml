@@ -33,7 +33,7 @@ steps:
     plugin: Script
     script:
       - cd $SRC_DIR/docroot/profiles/sitefarm
-      - $SRC_DIR/vendor/bin/phpunit --colors="always"
+      - SYMFONY_DEPRECATIONS_HELPER=disabled $SRC_DIR/vendor/bin/phpunit --colors="always"
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8
