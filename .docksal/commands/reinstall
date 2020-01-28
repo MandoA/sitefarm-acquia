@@ -8,7 +8,7 @@
 fin up
 
 # Install site
-cd $DOCROOT
+cd "${PROJECT_ROOT}/${DOCROOT}"
 fin drush site-install sitefarm -y --site-name="SiteFarm Acquia" $@
 # Get login link
 fin drush uli --uri="http://$VIRTUAL_HOST"
