@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6efcacc731917ce0247162401b0e9c37",
+    "content-hash": "3c6276eb67ba3416c0bf23fb0b8718ab",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -6863,7 +6863,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/w8tcha/CKEditor-AutoSave-Plugin/zipball/7860ff306a888b42bb1c52955c02fb168a957b48",
-                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48"
+                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48",
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6872,10 +6873,12 @@
         },
         {
             "name": "npm-asset/ckeditor-featureblock",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-1.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6887,7 +6890,9 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6896,10 +6901,12 @@
         },
         {
             "name": "npm-asset/ckeditor-medialink",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-1.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6911,7 +6918,9 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6929,7 +6938,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/w8tcha/CKEditor-WordCount-Plugin/zipball/f23cd04b20b11e112027be4024a2d6f585fd3c53",
-                "reference": "f23cd04b20b11e112027be4024a2d6f585fd3c53"
+                "reference": "f23cd04b20b11e112027be4024a2d6f585fd3c53",
+                "shasum": null
             },
             "type": "npm-asset"
         },
@@ -6938,7 +6948,9 @@
             "version": "4.1.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz"
+                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6950,7 +6962,9 @@
             "version": "1.8.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -9652,9 +9666,9 @@
                 "drupal/webform_views": "5.*",
                 "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
-                "npm-asset/ckeditor-featureblock": "^1.0",
+                "npm-asset/ckeditor-featureblock": "^2.0",
                 "npm-asset/ckeditor-indentblock": "^4.11",
-                "npm-asset/ckeditor-medialink": "^1.0",
+                "npm-asset/ckeditor-medialink": "^2.0",
                 "npm-asset/ckeditor-notification": "^4.7",
                 "npm-asset/ckeditor-wordcount-plugin": "^1.17",
                 "npm-asset/photoswipe": "^4.1",
@@ -13182,8 +13196,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "ucdavis/sitefarm": 20,
-        "ucdavis/sitefarm_one": 20,
-        "ucdavis/sitefarm_acquia_purge": 20
+        "ucdavis/sitefarm_acquia_purge": 20,
+        "ucdavis/sitefarm_one": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
