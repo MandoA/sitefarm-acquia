@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5aaae75e46e5c126716e3425207778c",
+    "content-hash": "47825ad94fa04f8642b605d1f85bb9a5",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1944,6 +1944,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "prevent malformed email when bulk adding users": "https://www.drupal.org/files/issues/2020-02-03/bulk-add-email-3106985-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6931,10 +6934,10 @@
         },
         {
             "name": "npm-asset/ckeditor-featureblock",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-1.0.0.tgz",
+                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -6959,10 +6962,10 @@
         },
         {
             "name": "npm-asset/ckeditor-medialink",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-1.0.0.tgz",
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.0.tgz",
                 "reference": null,
                 "shasum": null
             },
@@ -9724,9 +9727,9 @@
                 "drupal/webform_views": "5.*",
                 "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
-                "npm-asset/ckeditor-featureblock": "^1.0",
+                "npm-asset/ckeditor-featureblock": "^2.0",
                 "npm-asset/ckeditor-indentblock": "^4.11",
-                "npm-asset/ckeditor-medialink": "^1.0",
+                "npm-asset/ckeditor-medialink": "^2.0",
                 "npm-asset/ckeditor-notification": "^4.7",
                 "npm-asset/ckeditor-wordcount-plugin": "^1.17",
                 "npm-asset/photoswipe": "^4.1",
