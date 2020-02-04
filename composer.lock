@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6efcacc731917ce0247162401b0e9c37",
+    "content-hash": "47825ad94fa04f8642b605d1f85bb9a5",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1944,6 +1944,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "prevent malformed email when bulk adding users": "https://www.drupal.org/files/issues/2020-02-03/bulk-add-email-3106985-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6863,7 +6866,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/w8tcha/CKEditor-AutoSave-Plugin/zipball/7860ff306a888b42bb1c52955c02fb168a957b48",
-                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48"
+                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48",
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6875,7 +6879,9 @@
             "version": "1.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-1.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-1.0.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6887,7 +6893,9 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6899,7 +6907,9 @@
             "version": "1.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-1.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-1.0.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6911,7 +6921,9 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6929,7 +6941,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/w8tcha/CKEditor-WordCount-Plugin/zipball/f23cd04b20b11e112027be4024a2d6f585fd3c53",
-                "reference": "f23cd04b20b11e112027be4024a2d6f585fd3c53"
+                "reference": "f23cd04b20b11e112027be4024a2d6f585fd3c53",
+                "shasum": null
             },
             "type": "npm-asset"
         },
@@ -6938,7 +6951,9 @@
             "version": "4.1.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz"
+                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -6950,7 +6965,9 @@
             "version": "1.8.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -9700,9 +9717,6 @@
                     },
                     "drupal/social_media_links": {
                         "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch"
-                    },
-                    "drupal/migrate_tools": {
-                        "Fix migrations not executed from Drush": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
                     },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
