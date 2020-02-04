@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c6276eb67ba3416c0bf23fb0b8718ab",
+    "content-hash": "47825ad94fa04f8642b605d1f85bb9a5",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1944,6 +1944,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "prevent malformed email when bulk adding users": "https://www.drupal.org/files/issues/2020-02-03/bulk-add-email-3106985-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
