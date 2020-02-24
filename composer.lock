@@ -9769,7 +9769,6 @@
                 "patches": {
                     "drupal/core": {
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
-                        "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch"
                     },
