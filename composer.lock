@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bbcd686383f19b789246f47c24ef4eaa",
+    "content-hash": "14699039f9813a739ed73f9ca0cd21cc",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3175,6 +3175,125 @@
                 "source": "https://git.drupalcode.org/project/fancy_file_delete"
             },
             "time": "2019-06-20T22:03:56+00:00"
+        },
+        {
+            "name": "drupal/fastly",
+            "version": "3.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fastly.git",
+                "reference": "8.x-3.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fastly-8.x-3.9.zip",
+                "reference": "8.x-3.9",
+                "shasum": "3333ac1cbc169fd217476ae8b250f459749acf2a"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/purge": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.9",
+                    "datestamp": "1566575288",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Fastly",
+                    "homepage": "https://www.drupal.org/user/3301349"
+                },
+                {
+                    "name": "Leon Kessler",
+                    "homepage": "https://www.drupal.org/user/595374"
+                },
+                {
+                    "name": "balatin",
+                    "homepage": "https://www.drupal.org/user/2302070"
+                },
+                {
+                    "name": "bradleymgreenwood",
+                    "homepage": "https://www.drupal.org/user/2733843"
+                },
+                {
+                    "name": "drwilco",
+                    "homepage": "https://www.drupal.org/user/3225467"
+                },
+                {
+                    "name": "dwkitchen",
+                    "homepage": "https://www.drupal.org/user/367701"
+                },
+                {
+                    "name": "ebender",
+                    "homepage": "https://www.drupal.org/user/2895513"
+                },
+                {
+                    "name": "ejgreenberg",
+                    "homepage": "https://www.drupal.org/user/3324657"
+                },
+                {
+                    "name": "ezkl",
+                    "homepage": "https://www.drupal.org/user/3009609"
+                },
+                {
+                    "name": "jcpitcho",
+                    "homepage": "https://www.drupal.org/user/2242312"
+                },
+                {
+                    "name": "kimmi8",
+                    "homepage": "https://www.drupal.org/user/3419929"
+                },
+                {
+                    "name": "landing",
+                    "homepage": "https://www.drupal.org/user/994222"
+                },
+                {
+                    "name": "philfastly",
+                    "homepage": "https://www.drupal.org/user/3497097"
+                },
+                {
+                    "name": "robertDouglass",
+                    "homepage": "https://www.drupal.org/user/5449"
+                },
+                {
+                    "name": "tomasinchoo",
+                    "homepage": "https://www.drupal.org/user/3536122"
+                },
+                {
+                    "name": "triblondon",
+                    "homepage": "https://www.drupal.org/user/260433"
+                },
+                {
+                    "name": "vasike",
+                    "homepage": "https://www.drupal.org/user/156237"
+                },
+                {
+                    "name": "vvuksan-fastly",
+                    "homepage": "https://www.drupal.org/user/3520351"
+                }
+            ],
+            "description": "Fastly Integration for Drupal",
+            "homepage": "https://www.drupal.org/project/fastly",
+            "support": {
+                "source": "http://cgit.drupalcode.org/fastly",
+                "issues": "http://drupal.org/project/issues/fastly"
+            }
         },
         {
             "name": "drupal/features",
@@ -6982,7 +7101,7 @@
             "version": "v1.17.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/w8tcha/CKEditor-WordCount-Plugin.git",
+                "url": "git@github.com:w8tcha/CKEditor-WordCount-Plugin.git",
                 "reference": "f23cd04b20b11e112027be4024a2d6f585fd3c53"
             },
             "dist": {
@@ -10219,6 +10338,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2017-08-17T21:21:00+00:00"
         },
         {
@@ -10263,6 +10383,7 @@
                 "escaper",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2016-06-30T19:48:38+00:00"
         },
         {
@@ -10324,6 +10445,7 @@
                 "feed",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-feed",
             "time": "2016-02-11T18:54:29+00:00"
         },
         {
@@ -10369,6 +10491,7 @@
                 "stdlib",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2016-04-12T21:19:36+00:00"
         }
     ],
