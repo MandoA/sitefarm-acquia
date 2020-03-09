@@ -5655,7 +5655,7 @@
             },
             "require": {
                 "abraham/twitteroauth": "^1",
-                "cosenary/instagram": "^2",
+                "espresso-dev/instagram-basic-display-php": "^1.1",
                 "drupal/core": "~8.0",
                 "ext-json": "^1.5",
                 "facebook/graph-sdk": "^5",
@@ -5701,6 +5701,9 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/socialfeed",
                 "issues": "https://www.drupal.org/project/issues/socialfeed"
+            },
+            "patches_applied": {
+                "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-7.patch"
             }
         },
         {
@@ -9832,7 +9835,7 @@
                 "drupal/siteimprove": "^1.0",
                 "drupal/sitemap": "1.*",
                 "drupal/social_media_links": "2.*",
-                "drupal/socialfeed": "^1.0@beta",
+                "drupal/socialfeed": "1.*",
                 "drupal/subrequests": "2.*",
                 "drupal/token": "1.*",
                 "drupal/trumba": "1.*",
