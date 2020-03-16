@@ -132,6 +132,9 @@
     "patches": {
       "drupal/memcache": {
         "Undefined method error on Statistics page": "https://www.drupal.org/files/issues/2018-09-05/memcache_undefined-2997537-3.patch"
+      },
+      "drupal/core":  {
+        "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
       }
     }
   },

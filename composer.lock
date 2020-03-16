@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14699039f9813a739ed73f9ca0cd21cc",
+    "content-hash": "1ed063b33d1bfd61830dfe06377a2030",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2603,6 +2603,7 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
+                    "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch",
                     "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
                     "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
