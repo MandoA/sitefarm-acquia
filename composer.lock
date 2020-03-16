@@ -3362,6 +3362,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9779,6 +9782,9 @@
                     },
                     "drupal/sharemessage": {
                         "Check if the metatag module exists before letting Share Message write OG type.": "https://www.drupal.org/files/issues/2019-03-11/check-if-metatag.patch"
+                    },
+                    "drupal/focal_point": {
+                        "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                     }
                 }
             },
