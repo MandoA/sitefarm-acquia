@@ -5703,7 +5703,7 @@
                 "issues": "https://www.drupal.org/project/issues/socialfeed"
             },
             "patches_applied": {
-                "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-7.patch"
+                "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-8.patch"
             }
         },
         {
