@@ -11463,6 +11463,59 @@
             }
         },
         {
+            "name": "drupal/entity_share_cron",
+            "version": "2.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_share_cron.git",
+                "reference": "8.x-2.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_share_cron-8.x-2.0-alpha3.zip",
+                "reference": "8.x-2.0-alpha3",
+                "shasum": "6adf73b7148aba9fbe8ae0856041292e5ea96255"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/entity_share": "^2.0@alpha",
+                "drupal/entity_share_client": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-alpha3",
+                    "datestamp": "1580139481",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Grimreaper",
+                    "homepage": "https://www.drupal.org/user/2388214"
+                },
+                {
+                    "name": "dbiscalchin",
+                    "homepage": "https://www.drupal.org/user/3081151"
+                }
+            ],
+            "description": "Synchronizes entities on Cron execution.",
+            "homepage": "https://www.drupal.org/project/entity_share_cron",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_share_cron"
+            }
+        },
+        {
             "name": "drupal/node_view_permissions",
             "version": "1.2.0",
             "source": {
