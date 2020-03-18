@@ -5588,7 +5588,7 @@
             },
             "require": {
                 "abraham/twitteroauth": "^1",
-                "cosenary/instagram": "^2",
+                "espresso-dev/instagram-basic-display-php": "^1.1",
                 "drupal/core": "~8.0",
                 "ext-json": "^1.5",
                 "facebook/graph-sdk": "^5",
@@ -5634,6 +5634,9 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/socialfeed",
                 "issues": "https://www.drupal.org/project/issues/socialfeed"
+            },
+            "patches_applied": {
+                "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-8.patch"
             }
         },
         {
@@ -6300,6 +6303,48 @@
                 "twitter cards"
             ],
             "time": "2018-05-22T20:22:20+00:00"
+        },
+        {
+            "name": "espresso-dev/instagram-basic-display-php",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/espresso-dev/instagram-basic-display-php.git",
+                "reference": "49dbb34f3d398edba75f15be2daf1ceb47ec6f51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/espresso-dev/instagram-basic-display-php/zipball/49dbb34f3d398edba75f15be2daf1ceb47ec6f51",
+                "reference": "49dbb34f3d398edba75f15be2daf1ceb47ec6f51",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EspressoDev\\InstagramBasicDisplay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Herman Schutte",
+                    "email": "herman@espresso.dev"
+                }
+            ],
+            "description": "A simple PHP class for accessing the Instagram Basic Display API",
+            "homepage": "https://github.com/espresso-dev/instagram-basic-display-php",
+            "keywords": [
+                "api",
+                "instagram"
+            ],
+            "time": "2020-02-27T15:14:03+00:00"
         },
         {
             "name": "facebook/graph-sdk",
@@ -9720,7 +9765,7 @@
                 "drupal/siteimprove": "^1.0",
                 "drupal/sitemap": "1.*",
                 "drupal/social_media_links": "2.*",
-                "drupal/socialfeed": "^1.0@beta",
+                "drupal/socialfeed": "1.*",
                 "drupal/subrequests": "2.*",
                 "drupal/token": "1.*",
                 "drupal/trumba": "1.*",
