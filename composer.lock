@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ed063b33d1bfd61830dfe06377a2030",
+    "content-hash": "08fd82dd4728877f92d2d2498224c294",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2419,16 +2419,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.7.11",
+            "version": "8.7.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "a691876294fadc2795a8add96359b5ffc109d7f2"
+                "reference": "412ac47f5a17a718617a844504db15208ff61245"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/a691876294fadc2795a8add96359b5ffc109d7f2",
-                "reference": "a691876294fadc2795a8add96359b5ffc109d7f2",
+                "url": "https://api.github.com/repos/drupal/core/zipball/412ac47f5a17a718617a844504db15208ff61245",
+                "reference": "412ac47f5a17a718617a844504db15208ff61245",
                 "shasum": ""
             },
             "require": {
@@ -2639,7 +2639,6 @@
                     "merge-extra": false
                 },
                 "patches_applied": {
-                    "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch",
                     "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
                     "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
@@ -2667,7 +2666,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-12-18T08:55:29+00:00"
+            "time": "2020-03-18T16:27:19+00:00"
         },
         {
             "name": "drupal/crop",
@@ -9830,16 +9829,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.7.11",
+            "version": "8.7.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "e1fd5df67cb79aca1ec1560fb7f428bf1597f713"
+                "reference": "81a5bdeba584636736db0184440ce33efe9faa8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/e1fd5df67cb79aca1ec1560fb7f428bf1597f713",
-                "reference": "e1fd5df67cb79aca1ec1560fb7f428bf1597f713",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/81a5bdeba584636736db0184440ce33efe9faa8b",
+                "reference": "81a5bdeba584636736db0184440ce33efe9faa8b",
                 "shasum": ""
             },
             "require": {
@@ -9940,7 +9939,7 @@
             ],
             "description": "Locked core dependencies",
             "abandoned": "drupal/core-recommended",
-            "time": "2019-12-18T19:00:48+00:00"
+            "time": "2020-03-18T17:30:57+00:00"
         },
         {
             "name": "webflo/drupal-finder",
