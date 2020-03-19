@@ -47,10 +47,11 @@
     "ucdavis/sitefarm_one": "dev-8.x-7.x",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-1.x",
     "drupal/acquia_connector": "1.*",
-    "drupal/acsf": "1.*",
+    "drupal/acsf": "2.*",
     "drupal/fastly": "^3.9",
     "drupal/memcache": "2.0.0-alpha7",
-    "drupal/samlauth": "3.*"
+    "drupal/samlauth": "3.*",
+    "drush/drush": "^9.7"
   },
   "repositories": {
     "drupal": {
