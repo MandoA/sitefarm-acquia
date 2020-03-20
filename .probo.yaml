@@ -19,7 +19,6 @@ steps:
     script:
       - composer self-update ; composer global update
       - composer global require hirak/prestissimo
-      - drush version
       - echo $PATH
       - cd /src
       - composer install --ansi
@@ -27,8 +26,6 @@ steps:
       - composer require "ucdavis/sitefarm:dev-$BRANCH" --ansi
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; else BRANCH=dev; fi
       - composer require "ucdavis/sitefarm_one:dev-$BRANCH" --ansi
-      - drush version
-      - composer global require "drush/drush:^9.7"
       - drush version
   - name: Run PhpUnit
     plugin: Script
