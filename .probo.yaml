@@ -19,7 +19,7 @@ steps:
     script:
       - composer self-update ; composer global update
       - composer global require hirak/prestissimo
-      - composer global require "drush/drush:^8.1.13"
+      - composer global require "drush/drush:^9.7"
       - drush version
       - which drush
       - echo $PATH
