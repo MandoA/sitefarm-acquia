@@ -2830,6 +2830,9 @@
                     "services": {
                         "drush.services.yml": "^9"
                     }
+                },
+                "patches_applied": {
+                    "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3453,7 +3456,8 @@
                     "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
                     "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                     "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
-                    "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch"
+                    "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch",
+                    "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
                 }
             },
             "autoload": {
@@ -5155,6 +5159,9 @@
                     "services": {
                         "drush.services.yml": "^9 || ^10"
                     }
+                },
+                "patches_applied": {
+                    "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10746,7 +10753,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "d2ccdda317251edbd8b5914f878ae3221b861dda"
+                "reference": "ee697691fa3ee25000df567861258d8b2db447d7"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -10835,11 +10842,15 @@
                     ]
                 },
                 "patches": {
+                    "drupal/cas": {
+                        "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch"
+                    },
                     "drupal/core": {
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
                         "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
-                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch"
+                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch",
+                        "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
                     },
                     "drupal/pdb": {
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
@@ -10850,6 +10861,9 @@
                     },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
+                    },
+                    "drupal/migrate_tools": {
+                        "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
                     },
                     "drupal/social_media_links": {
                         "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch"
@@ -10902,7 +10916,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2019-10-23T23:23:13+00:00"
+            "time": "2020-03-23T17:58:33+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
