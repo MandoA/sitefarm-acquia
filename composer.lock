@@ -13762,6 +13762,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/workbench_access": 10,
+        "drupal/entity_share_cron": 15,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20,
         "ucdavis/sitefarm_one": 20
