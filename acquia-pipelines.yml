@@ -11,8 +11,6 @@ events:
           type: script
           script:
             - cd docroot
-            - drush8 version
-            - drush version
             - drush --include=modules/contrib/acsf/acsf_init acsf-init
             - drush --include=modules/contrib/acsf/acsf_init acsf-init-verify
 
