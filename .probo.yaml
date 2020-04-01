@@ -19,6 +19,9 @@ steps:
     script:
       - composer self-update ; composer global update
       - composer global require hirak/prestissimo
+      - composer global require "drush/drush:^8.1"
+      - drush version
+      - which drush
       - echo $PATH
       - cd /src
       - composer install --ansi
