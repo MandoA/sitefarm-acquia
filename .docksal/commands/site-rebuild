@@ -14,7 +14,7 @@ COMPOSER_MEMORY_LIMIT=-1
 fin composer install
 
 # Install Node packages and compile assets
-#fin theme-install
+fin theme-install
 
 # Install Drupal site
 fin reinstall

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Install theme npm dependencies.
+##
+## Usage: fin theme-install
+
+cd $THEME_PATH
+fin exec npm ci
