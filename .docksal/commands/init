@@ -65,7 +65,7 @@ fin exec nvm install 10.16.3
 fin exec nvm alias default 10.16.3
 
 # Install Node packages and compile assets
-#fin theme-install
+fin theme-install
 
 # Install site
 cd $DOCROOT_PATH
