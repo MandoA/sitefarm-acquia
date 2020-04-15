@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "90c3e5320845eecac9785ff105560c15",
+    "content-hash": "32387a56b382ec977a26fcafadb2f59d",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1620,7 +1620,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.8",
-                    "datestamp": "1583988119",
+                    "datestamp": "1582913039",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1950,8 +1950,7 @@
                     }
                 },
                 "patches_applied": {
-                    "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch",
-                    "prevent malformed email when bulk adding users": "https://www.drupal.org/files/issues/2020-02-03/bulk-add-email-3106985-3.patch"
+                    "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3702,7 +3701,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1575649087",
+                    "datestamp": "1581709967",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4392,8 +4391,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch",
-                    "Fix migrations not executed from Drush": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
+                    "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5112,7 +5110,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1582204691",
+                    "datestamp": "1582203772",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -5726,7 +5724,7 @@
             },
             "require": {
                 "abraham/twitteroauth": "^1",
-                "espresso-dev/instagram-basic-display-php": "^1.1",
+                "cosenary/instagram": "^2",
                 "drupal/core": "~8.0",
                 "ext-json": "^1.5",
                 "facebook/graph-sdk": "^5",
@@ -5772,9 +5770,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/socialfeed",
                 "issues": "https://www.drupal.org/project/issues/socialfeed"
-            },
-            "patches_applied": {
-                "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-8.patch"
             }
         },
         {
@@ -6762,6 +6757,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -6808,6 +6804,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -7009,8 +7006,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/w8tcha/CKEditor-AutoSave-Plugin/zipball/7860ff306a888b42bb1c52955c02fb168a957b48",
-                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48",
-                "shasum": null
+                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48"
             },
             "type": "npm-asset",
             "license": [
@@ -7022,9 +7018,7 @@
             "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -7036,9 +7030,7 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -7050,9 +7042,7 @@
             "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.0.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -7064,9 +7054,7 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -7078,9 +7066,7 @@
             "version": "1.17.6",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-wordcount-plugin/-/ckeditor-wordcount-plugin-1.17.6.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/ckeditor-wordcount-plugin/-/ckeditor-wordcount-plugin-1.17.6.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -7092,9 +7078,7 @@
             "version": "4.1.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -7106,9 +7090,7 @@
             "version": "1.8.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
-                "reference": null,
-                "shasum": null
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -9844,6 +9826,7 @@
                     },
                     "drupal/core": {
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
+                        "Correct the RSS views field link": "https://www.drupal.org/files/issues/2019-01-18/2673980-85.full_.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2644468-88.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #27": "https://www.drupal.org/files/issues/2018-09-11/edit_drupalimage-86x-2855521-27.patch",
                         "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
@@ -9862,8 +9845,7 @@
                         "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
                     },
                     "drupal/social_media_links": {
-                        "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch",
-                        "Fixes social media block email validation": "https://www.drupal.org/files/issues/2019-12-01/social_media_links-email_validation_broken-3094177-2.patch"
+                        "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch"
                     },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
@@ -9917,14 +9899,15 @@
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
-            "version": "dev-8.x-1.x",
+            "version": "dev-8.x-2.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
-                "reference": "16a96dfa2a6a2701f5075c73ae702eb6228c7f27"
+                "reference": "debe4b146d54f58a56f36afdfcc24285cd9488c8"
             },
             "require": {
                 "drupal/acquia_purge": "^1.0@beta",
+                "drupal/fastly": "^3.0",
                 "drupal/purge": "^3.0@beta"
             },
             "type": "drupal-module",
@@ -9937,8 +9920,8 @@
                     "email": "sgdearmond@ucdavis.edu"
                 }
             ],
-            "description": "Default configuration for SiteFarm implementation of Acquia Purge.",
-            "time": "2019-06-05T19:27:43+00:00"
+            "description": "Default configuration for SiteFarm implementation of Acquia Purge and Fastly CDN.",
+            "time": "2020-04-07T00:43:38+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
@@ -13748,7 +13731,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/workbench_access": 10,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_one": 20,
         "ucdavis/sitefarm_acquia_purge": 20
