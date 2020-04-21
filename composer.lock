@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32387a56b382ec977a26fcafadb2f59d",
+    "content-hash": "d55830a63664bd118f05b06b15152847",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1930,9 +1930,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.6",
                     "datestamp": "1578260883",
@@ -2823,6 +2820,54 @@
             "homepage": "https://www.drupal.org/project/css_editor",
             "support": {
                 "source": "https://git.drupalcode.org/project/css_editor"
+            }
+        },
+        {
+            "name": "drupal/csv_serialization",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/csv_serialization.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "74cfc47c5c8a907f40112ec4819fe108f2775ef1"
+            },
+            "require": {
+                "drupal/core": "^8.0.4",
+                "league/csv": "^8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1531841921",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "grasmash",
+                    "homepage": "https://www.drupal.org/user/455714"
+                }
+            ],
+            "description": "Provides CSV as a serialization format.",
+            "homepage": "https://www.drupal.org/project/csv_serialization",
+            "support": {
+                "source": "https://git.drupalcode.org/project/csv_serialization"
             }
         },
         {
@@ -4389,8 +4434,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch",
-                    "Fix migrations not executed from Drush": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
+                    "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4417,6 +4461,61 @@
                 "source": "http://cgit.drupalcode.org/migrate_tools",
                 "issues": "http://drupal.org/project/migrate_tools",
                 "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
+            "name": "drupal/node_view_permissions",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/node_view_permissions.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/node_view_permissions-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "25ebeb34821466bc332ed02466d079a9d46768ad"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1514257988",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "adci_contributor",
+                    "homepage": "https://www.drupal.org/user/1830536"
+                },
+                {
+                    "name": "adcillc",
+                    "homepage": "https://www.drupal.org/user/366450"
+                },
+                {
+                    "name": "hoter",
+                    "homepage": "https://www.drupal.org/user/1677790"
+                }
+            ],
+            "description": "Enables permissions \"View own content\" and \"View any content\" for each content type.",
+            "homepage": "https://www.drupal.org/project/node_view_permissions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/node_view_permissions"
             }
         },
         {
@@ -5687,7 +5786,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch"
+                    "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch",
+                    "Fixes social media block email validation": "https://www.drupal.org/files/issues/2019-12-01/social_media_links-email_validation_broken-3094177-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5731,9 +5831,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1571811184",
@@ -5741,6 +5838,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5769,9 +5869,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/socialfeed",
                 "issues": "https://www.drupal.org/project/issues/socialfeed"
-            },
-            "patches_applied": {
-                "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-8.patch"
             }
         },
         {
@@ -6025,6 +6122,78 @@
                 "source": "https://git.drupalcode.org/project/url_embed",
                 "issues": "https://www.drupal.org/project/issues/url_embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
+            }
+        },
+        {
+            "name": "drupal/views_data_export",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_data_export.git",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "aba2df5742d6f231c489cc0e01998a6d364ce4bb"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/csv_serialization": "~1.4"
+            },
+            "require-dev": {
+                "drupal/search_api": "~1.12",
+                "drupal/xls_serialization": "~1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1580333468",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Jones",
+                    "homepage": "https://www.drupal.org/user/99644"
+                },
+                {
+                    "name": "amoebanath",
+                    "homepage": "https://www.drupal.org/user/2810799"
+                },
+                {
+                    "name": "james.williams",
+                    "homepage": "https://www.drupal.org/user/592268"
+                },
+                {
+                    "name": "jamsilver",
+                    "homepage": "https://www.drupal.org/user/476732"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                }
+            ],
+            "description": "Plugin to export views data into various file formats.",
+            "homepage": "https://www.drupal.org/project/views_data_export",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_data_export"
             }
         },
         {
@@ -6443,6 +6612,48 @@
                 "twitter cards"
             ],
             "time": "2020-01-31T19:39:32+00:00"
+        },
+        {
+            "name": "espresso-dev/instagram-basic-display-php",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/espresso-dev/instagram-basic-display-php.git",
+                "reference": "49dbb34f3d398edba75f15be2daf1ceb47ec6f51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/espresso-dev/instagram-basic-display-php/zipball/49dbb34f3d398edba75f15be2daf1ceb47ec6f51",
+                "reference": "49dbb34f3d398edba75f15be2daf1ceb47ec6f51",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EspressoDev\\InstagramBasicDisplay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Herman Schutte",
+                    "email": "herman@espresso.dev"
+                }
+            ],
+            "description": "A simple PHP class for accessing the Instagram Basic Display API",
+            "homepage": "https://github.com/espresso-dev/instagram-basic-display-php",
+            "keywords": [
+                "api",
+                "instagram"
+            ],
+            "time": "2020-02-27T15:14:03+00:00"
         },
         {
             "name": "facebook/graph-sdk",
@@ -6876,6 +7087,63 @@
             "description": "Highlight PHP code in terminal",
             "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "league/csv",
+            "version": "8.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/csv.git",
+                "reference": "d2aab1e7bde802582c3879acf03d92716577c76d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/csv/zipball/d2aab1e7bde802582c3879acf03d92716577c76d",
+                "reference": "d2aab1e7bde802582c3879acf03d92716577c76d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.9",
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Csv data manipulation made easy in PHP",
+            "homepage": "http://csv.thephpleague.com",
+            "keywords": [
+                "csv",
+                "export",
+                "filter",
+                "import",
+                "read",
+                "write"
+            ],
+            "time": "2018-02-06T08:27:03+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -9798,16 +10066,16 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8.x-7.x",
+            "version": "dev-dev-later",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "ee697691fa3ee25000df567861258d8b2db447d7"
+                "reference": "0df579b1b7730d1bc1417d486d2620b973d0adbb"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
                 "drupal/address": "1.*",
-                "drupal/admin_toolbar": "1.*",
+                "drupal/admin_toolbar": "2.*",
                 "drupal/anchor_link": "1.*",
                 "drupal/better_normalizers": "1.*",
                 "drupal/block_style_plugins": "1.*",
@@ -9836,6 +10104,7 @@
                 "drupal/migrate_plus": "4.*",
                 "drupal/migrate_source_csv": "~2",
                 "drupal/migrate_tools": "4.*",
+                "drupal/node_view_permissions": "^1.2",
                 "drupal/notification": "1.*",
                 "drupal/openapi": "1.*",
                 "drupal/openapi_ui": "1.*",
@@ -9857,8 +10126,11 @@
                 "drupal/token": "1.*",
                 "drupal/trumba": "1.*",
                 "drupal/url_embed": "1.*",
+                "drupal/views_data_export": "^1.0@beta",
                 "drupal/webform": "5.*",
                 "drupal/webform_views": "5.*",
+                "drupal/workbench_access": "^1.0@beta",
+                "espresso-dev/instagram-basic-display-php": "^1.1",
                 "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
                 "npm-asset/ckeditor-featureblock": "^2.0",
@@ -9892,7 +10164,8 @@
                 },
                 "patches": {
                     "drupal/cas": {
-                        "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch"
+                        "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch",
+                        "prevent malformed email when bulk adding users": "https://www.drupal.org/files/issues/2020-02-03/bulk-add-email-3106985-3.patch"
                     },
                     "drupal/core": {
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
@@ -9910,12 +10183,16 @@
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                     },
-                    "drupal/migrate_tools": {
-                        "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
+                    "drupal/socialfeed": {
+                        "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-8.patch"
                     },
                     "drupal/social_media_links": {
                         "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch",
                         "Fixes social media block email validation": "https://www.drupal.org/files/issues/2019-12-01/social_media_links-email_validation_broken-3094177-2.patch"
+                    },
+                    "drupal/migrate_tools": {
+                        "Class 'Drush\\Commands\\DrushCommands' not found": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch",
+                        "Fix migrations not executed from Drush": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
                     },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
@@ -9965,7 +10242,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-03-23T17:58:33+00:00"
+            "time": "2020-04-15T19:29:35+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -9995,11 +10272,11 @@
         },
         {
             "name": "ucdavis/sitefarm_one",
-            "version": "dev-8.x-7.x",
+            "version": "dev-dev-later",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "c500e782e34e7320ff83b3fc29865678649055d0"
+                "reference": "11a989ce9d5d47a85759285c3110fdc9bd98ca92"
             },
             "type": "drupal-theme",
             "authors": [
@@ -10009,7 +10286,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2019-10-29T21:41:27+00:00"
+            "time": "2020-04-15T19:49:01+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -11256,54 +11533,6 @@
             "time": "2019-11-05T11:06:10+00:00"
         },
         {
-            "name": "drupal/csv_serialization",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/csv_serialization.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "74cfc47c5c8a907f40112ec4819fe108f2775ef1"
-            },
-            "require": {
-                "drupal/core": "^8.0.4",
-                "league/csv": "^8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1531841921",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "grasmash",
-                    "homepage": "https://www.drupal.org/user/455714"
-                }
-            ],
-            "description": "Provides CSV as a serialization format.",
-            "homepage": "https://www.drupal.org/project/csv_serialization",
-            "support": {
-                "source": "https://git.drupalcode.org/project/csv_serialization"
-            }
-        },
-        {
             "name": "drupal/drupal-driver",
             "version": "v1.4.0",
             "source": {
@@ -11431,175 +11660,6 @@
                 "web"
             ],
             "time": "2017-12-06T20:35:40+00:00"
-        },
-        {
-            "name": "drupal/node_view_permissions",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/node_view_permissions.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/node_view_permissions-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "25ebeb34821466bc332ed02466d079a9d46768ad"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1514257988",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "adci_contributor",
-                    "homepage": "https://www.drupal.org/user/1830536"
-                },
-                {
-                    "name": "adcillc",
-                    "homepage": "https://www.drupal.org/user/366450"
-                },
-                {
-                    "name": "hoter",
-                    "homepage": "https://www.drupal.org/user/1677790"
-                }
-            ],
-            "description": "Enables permissions \"View own content\" and \"View any content\" for each content type.",
-            "homepage": "https://www.drupal.org/project/node_view_permissions",
-            "support": {
-                "source": "https://git.drupalcode.org/project/node_view_permissions"
-            }
-        },
-        {
-            "name": "drupal/views_data_export",
-            "version": "1.0.0-beta4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_data_export.git",
-                "reference": "8.x-1.0-beta4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_data_export-8.x-1.0-beta4.zip",
-                "reference": "8.x-1.0-beta4",
-                "shasum": "aba2df5742d6f231c489cc0e01998a6d364ce4bb"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/csv_serialization": "~1.4"
-            },
-            "require-dev": {
-                "drupal/search_api": "~1.12",
-                "drupal/xls_serialization": "~1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta4",
-                    "datestamp": "1580333468",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Steven Jones",
-                    "homepage": "https://www.drupal.org/user/99644"
-                },
-                {
-                    "name": "amoebanath",
-                    "homepage": "https://www.drupal.org/user/2810799"
-                },
-                {
-                    "name": "james.williams",
-                    "homepage": "https://www.drupal.org/user/592268"
-                },
-                {
-                    "name": "jamsilver",
-                    "homepage": "https://www.drupal.org/user/476732"
-                },
-                {
-                    "name": "jhedstrom",
-                    "homepage": "https://www.drupal.org/user/208732"
-                },
-                {
-                    "name": "nerdstein",
-                    "homepage": "https://www.drupal.org/user/1557710"
-                }
-            ],
-            "description": "Plugin to export views data into various file formats.",
-            "homepage": "https://www.drupal.org/project/views_data_export",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_data_export"
-            }
-        },
-        {
-            "name": "espresso-dev/instagram-basic-display-php",
-            "version": "v1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/espresso-dev/instagram-basic-display-php.git",
-                "reference": "49dbb34f3d398edba75f15be2daf1ceb47ec6f51"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/espresso-dev/instagram-basic-display-php/zipball/49dbb34f3d398edba75f15be2daf1ceb47ec6f51",
-                "reference": "49dbb34f3d398edba75f15be2daf1ceb47ec6f51",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "EspressoDev\\InstagramBasicDisplay\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Herman Schutte",
-                    "email": "herman@espresso.dev"
-                }
-            ],
-            "description": "A simple PHP class for accessing the Instagram Basic Display API",
-            "homepage": "https://github.com/espresso-dev/instagram-basic-display-php",
-            "keywords": [
-                "api",
-                "instagram"
-            ],
-            "time": "2020-02-27T15:14:03+00:00"
         },
         {
             "name": "fabpot/goutte",
@@ -11895,63 +11955,6 @@
                 "schema"
             ],
             "time": "2019-09-25T14:49:45+00:00"
-        },
-        {
-            "name": "league/csv",
-            "version": "8.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/csv.git",
-                "reference": "d2aab1e7bde802582c3879acf03d92716577c76d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/csv/zipball/d2aab1e7bde802582c3879acf03d92716577c76d",
-                "reference": "d2aab1e7bde802582c3879acf03d92716577c76d",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^1.9",
-                "phpunit/phpunit": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "8.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "League\\Csv\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ignace Nyamagana Butera",
-                    "email": "nyamsprod@gmail.com",
-                    "homepage": "https://github.com/nyamsprod/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Csv data manipulation made easy in PHP",
-            "homepage": "http://csv.thephpleague.com",
-            "keywords": [
-                "csv",
-                "export",
-                "filter",
-                "import",
-                "read",
-                "write"
-            ],
-            "time": "2018-02-06T08:27:03+00:00"
         },
         {
             "name": "mikey179/vfsstream",
