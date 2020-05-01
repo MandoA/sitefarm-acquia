@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Compile theme assets from source files.
+##
+## Usage: fin theme-build
+
+cd $THEME_PATH
+fin exec npm run build

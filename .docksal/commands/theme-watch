@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Compile theme assets and watch for changes.
+##
+## Usage: fin theme-watch
+
+cd $THEME_PATH
+fin exec npm start
