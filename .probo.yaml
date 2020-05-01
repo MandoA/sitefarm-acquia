@@ -55,6 +55,7 @@ steps:
   - name: Turn on Media migration modules
     plugin: Script
     script:
+      - cd /var/www/html/docroot
       - drush en sitefarm_migrate_article_media -y
       - drush en sitefarm_migrate_event_media -y
       - drush en sitefarm_migrate_page_media -y
