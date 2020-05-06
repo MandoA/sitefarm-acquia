@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+## Synchronize the master branch of Pattern Lab to the theme.
+##
+## Usage: fin theme-sync [branch]
+
+GIT_FOLDER=tmp-sitefarm-patternlab
+
+cd $THEME_PATH
+cd ../
+
+if [ -z "$1" ]
+then
+  BRANCH=master
+else
+  BRANCH=$1
+fi
+
+# Delete any leftover temporary git repo.
+if [ -d $GIT_FOLDER ]
+then
+  rm -rf $GIT_FOLDER
+fi
+
+# Clone the git repo from Pattern Lab
+git clone --single-branch --branch $BRANCH git@bitbucket.org:ietwebdev/sitefarm-pattern-lab-one.git $GIT_FOLDER || { echo 'git clone failed' ; exit 1; }
+
+# Sync and compile assets.
+cd $THEME_PATH
+fin exec npm run themesync
+
+# Remove the temporary pattern lab directory
+cd ../
+rm -rf $GIT_FOLDER
