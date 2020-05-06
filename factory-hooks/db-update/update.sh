@@ -37,7 +37,7 @@ DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 $DRUSH_CMD sql-query "delete from key_value where collection = 'system.schema' and name in('sitefarm_migrate_json','openapi_redoc','sitefarm_migrate_cascade')"
 
 # Now update database.
-$DRUSH_CMD updatedb
+$DRUSH_CMD updatedb -y
 
 # Run entity updates if the updatedb command didn't fail.
 if [ $? -eq 0 -a -n "$update_entities" ] ; then
