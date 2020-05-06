@@ -31,17 +31,15 @@ steps:
       - which drush
       - echo $PATH
       - cd /src
-      - composer install --ansi
-      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH="$DESTINATION_BRANCH"; else BRANCH=dev; fi
-      - composer require "ucdavis/sitefarm:dev-$BRANCH" --ansi
-      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH="$DESTINATION_BRANCH"; else BRANCH=dev; fi
-      - composer require "ucdavis/sitefarm_one:dev-$BRANCH" --ansi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_THEME="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_THEME="$DESTINATION_BRANCH"; else BRANCH_THEME=dev; fi
+      - composer require "ucdavis/sitefarm_one:dev-$BRANCH_THEME" "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
       - drush version
   - name: Run PhpUnit
     plugin: Script
     script:
       - cd $SRC_DIR/docroot/profiles/sitefarm
-      - $SRC_DIR/vendor/bin/phpunit --colors="always"
+      - SYMFONY_DEPRECATIONS_HELPER=disabled $SRC_DIR/vendor/bin/phpunit --colors="always"
   - name: Drupal site setup
     plugin: Drupal
     drupalVersion: 8

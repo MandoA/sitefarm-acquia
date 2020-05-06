@@ -4,7 +4,7 @@
 
 ## Run project's PHPUnit tests.
 ##
-## Usage: fin phpunit
+## Usage: fin phpunit [arguments]
 ##
 
 # Abort if anything fails
@@ -24,4 +24,4 @@ if [[ ! -f "${phpunit_xml}" ]]; then
 fi
 
 # Launch PHPUnit tests
-/var/www/vendor/bin/phpunit -c ${phpunit_xml}
+/var/www/vendor/bin/phpunit -c ${phpunit_xml} $@

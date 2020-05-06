@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+## Do a complete rebuild with composer, node, and Drupal install. Be sure to have xDebug disabled.
+##
+## Usage: fin site-rebuild
+
+# Start containers
+fin up
+
+cd $PROJECT_ROOT
+
+# Composer Install
+COMPOSER_MEMORY_LIMIT=-1
+fin composer install
+
+# Install Node packages and compile assets
+fin theme-install
+
+# Install Drupal site
+fin reinstall
