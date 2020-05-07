@@ -25,7 +25,7 @@ steps:
       - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
       - DESTINATION_BRANCH=$(jq -r  '.destination.branch.name' <<< "${API_DATA}")
       - composer self-update ; composer global update
-      - composer global require hirak/prestissimo drush/drush:^9
+      - composer global require hirak/prestissimo drush/drush:^8.1
       - drush version
       - which drush
       - echo $PATH
