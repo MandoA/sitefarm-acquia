@@ -10208,7 +10208,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "5c6f1094970df7147e9a3eb80f22e004b61dd844"
+                "reference": "33bed4eecd5523e19ce62ba09462498f9e2fe1b2"
             },
             "type": "drupal-theme",
             "authors": [
@@ -10218,7 +10218,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2020-05-01T17:43:52+00:00"
+            "time": "2020-05-07T00:32:47+00:00"
         },
         {
             "name": "webflo/drupal-finder",
