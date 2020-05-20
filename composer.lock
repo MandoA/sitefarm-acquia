@@ -10182,7 +10182,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
-                "reference": "debe4b146d54f58a56f36afdfcc24285cd9488c8"
+                "reference": "a61799a8610ce26c7fd0ee1311a09d1d5df65b9f"
             },
             "require": {
                 "drupal/acquia_purge": "^1.0@beta",
@@ -10200,7 +10200,7 @@
                 }
             ],
             "description": "Default configuration for SiteFarm implementation of Acquia Purge and Fastly CDN.",
-            "time": "2020-04-07T00:43:38+00:00"
+            "time": "2020-05-20T23:01:32+00:00"
         },
         {
             "name": "ucdavis/sitefarm_one",
