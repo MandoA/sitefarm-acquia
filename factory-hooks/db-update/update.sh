@@ -33,9 +33,6 @@ docroot="/var/www/html/$site.$env/docroot"
 #    on aliases. This can prevent some hard to trace problems.
 DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 
-# remove module references from modules that are no longer in the codebase:
-$DRUSH_CMD sql-query "delete from key_value where collection = 'system.schema' and name in('sitefarm_migrate_json','openapi_redoc','sitefarm_migrate_cascade')"
-
 # Now update database.
 $DRUSH_CMD updatedb -y
 
