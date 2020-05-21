@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d55830a63664bd118f05b06b15152847",
+    "content-hash": "b3738c16632a49895410726c20fd85e3",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1620,7 +1620,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.8",
-                    "datestamp": "1582913039",
+                    "datestamp": "1583988119",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3744,7 +3744,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1581709967",
+                    "datestamp": "1575649087",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4417,9 +4417,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-4.x": "4.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-4.5",
                     "datestamp": "1574693285",
@@ -5070,57 +5067,6 @@
             }
         },
         {
-            "name": "drupal/quicklink",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/quicklink.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/quicklink-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "a5c4bb796886be55dc78b3ab5d1479712bc9d721"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1557583681",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "mherchel",
-                    "homepage": "https://www.drupal.org/user/118428"
-                }
-            ],
-            "description": "Installs Quicklink JS library to prefetch linked pages.",
-            "homepage": "https://www.drupal.org/project/quicklink",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/quicklink",
-                "issues": "https://www.drupal.org/project/issues/quicklink"
-            }
-        },
-        {
             "name": "drupal/redirect",
             "version": "1.5.0",
             "source": {
@@ -5259,7 +5205,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1582203772",
+                    "datestamp": "1582204691",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -5804,6 +5750,75 @@
                 "source": "http://cgit.drupalcode.org/sitemap",
                 "issues": "http://drupal.org/project/issues/sitemap",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/smtp",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smtp.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smtp-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "0dde6db7969a746c5e50a0553c7948f0480f64c6"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "phpmailer/phpmailer": "~6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1589493632",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "LukeLast",
+                    "homepage": "https://www.drupal.org/user/30151"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "josesanmartin",
+                    "homepage": "https://www.drupal.org/user/72012"
+                },
+                {
+                    "name": "oadaeh",
+                    "homepage": "https://www.drupal.org/user/4649"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                },
+                {
+                    "name": "yettyn",
+                    "homepage": "https://www.drupal.org/user/93281"
+                }
+            ],
+            "description": "Allow for site emails to be sent through an SMTP server of your choice.",
+            "homepage": "https://www.drupal.org/project/smtp",
+            "support": {
+                "source": "https://git.drupalcode.org/project/smtp",
+                "issues": "https://www.drupal.org/project/issues/smtp"
             }
         },
         {
@@ -7395,7 +7410,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/w8tcha/CKEditor-AutoSave-Plugin/zipball/7860ff306a888b42bb1c52955c02fb168a957b48",
-                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48"
+                "reference": "7860ff306a888b42bb1c52955c02fb168a957b48",
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7407,7 +7423,9 @@
             "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7419,7 +7437,9 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-indentblock/-/ckeditor-indentblock-4.11.2.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7431,7 +7451,9 @@
             "version": "2.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.0.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7443,7 +7465,9 @@
             "version": "4.11.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-notification/-/ckeditor-notification-4.11.2.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7455,7 +7479,9 @@
             "version": "1.17.6",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-wordcount-plugin/-/ckeditor-wordcount-plugin-1.17.6.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-wordcount-plugin/-/ckeditor-wordcount-plugin-1.17.6.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7467,7 +7493,9 @@
             "version": "4.1.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz"
+                "url": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.1.3.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7479,7 +7507,9 @@
             "version": "1.8.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz"
+                "url": "https://registry.npmjs.org/slick-carousel/-/slick-carousel-1.8.1.tgz",
+                "reference": null,
+                "shasum": null
             },
             "type": "npm-asset",
             "license": [
@@ -7834,6 +7864,68 @@
                 "exception"
             ],
             "time": "2015-02-10T20:07:52+00:00"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a8bf068f64a580302026e484ee29511f661b2ad3",
+                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.2",
+                "friendsofphp/php-cs-fixer": "^2.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "time": "2020-03-14T14:23:48+00:00"
         },
         {
             "name": "psr/container",
@@ -11711,6 +11803,57 @@
                 "web"
             ],
             "time": "2017-12-06T20:35:40+00:00"
+        },
+        {
+            "name": "drupal/quicklink",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/quicklink.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/quicklink-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "a5c4bb796886be55dc78b3ab5d1479712bc9d721"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1557583681",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mherchel",
+                    "homepage": "https://www.drupal.org/user/118428"
+                }
+            ],
+            "description": "Installs Quicklink JS library to prefetch linked pages.",
+            "homepage": "https://www.drupal.org/project/quicklink",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/quicklink",
+                "issues": "https://www.drupal.org/project/issues/quicklink"
+            }
         },
         {
             "name": "fabpot/goutte",
