@@ -39,9 +39,9 @@
     "drupal/core-recommended": "^8.8.0",
     "drupal/memcache": "2.0.0-alpha7",
     "drupal/samlauth": "3.*",
-    "ucdavis/sitefarm": "dev-dev-later",
+    "ucdavis/sitefarm": "dev-8.x-8.x",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x",
-    "ucdavis/sitefarm_one": "dev-dev-later"
+    "ucdavis/sitefarm_one": "dev-8.x-8.x"
   },
   "repositories": {
     "drupal": {

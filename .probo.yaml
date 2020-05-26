@@ -1,6 +1,7 @@
 image: proboci/ubuntu-16.04-lamp:php-7.2
 assets:
   - probossh.tar.gz
+  - bitbucket_auth.sh
 phpIniOptions:
   upload_max_filesize: 64M
   post_max_size: 64M
@@ -17,15 +18,20 @@ steps:
   - name: Build Drupal
     plugin: Script
     script:
+      - apt-get update > /dev/null 2>&1
+      - apt-get install jq xvfb -y > /dev/null 2>&1
+      - . $ASSET_DIR/bitbucket_auth.sh >/dev/null 2>&1
+      - PULL_REQUEST_ID=$(basename "https://bitbucket.org/ietwebdev/sitefarm-acquia/pull-requests/${PULL_REQUEST_LINK}")
+      - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
+      - DESTINATION_BRANCH=$(jq -r  '.destination.branch.name' <<< "${API_DATA}")
       - composer self-update ; composer global update
-      - composer global require hirak/prestissimo
-      - composer global require "drush/drush:^8.1"
+      - composer global require hirak/prestissimo drush/drush:^8.1
       - drush version
       - which drush
       - echo $PATH
       - cd /src
-      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; else BRANCH_PROFILE=dev-later; fi
-      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_THEME="$BRANCH_NAME"; else BRANCH_THEME=dev-later; fi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
+      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_THEME="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_THEME="$DESTINATION_BRANCH"; else BRANCH_THEME=dev; fi
       - composer require "ucdavis/sitefarm_one:dev-$BRANCH_THEME" "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
       - drush version
   - name: Run PhpUnit
