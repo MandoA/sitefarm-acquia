@@ -55,6 +55,7 @@ steps:
       - chown -R www-data:www-data /var/www/html/sites/default/files
       - drush en sitefarm_default_content -y
       - drush pmu hal serialization rest default_content sitefarm_default_content -y
+      - drush cr
   - name: Run Behat NoJS
     plugin: Script
     script:
