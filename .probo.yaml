@@ -49,14 +49,17 @@ steps:
       upload_max_filesize: 256M
       post_max_size: 256M
       memory_limit: 512M
-  - name: Fix files directory permissions and install default content
+  - name: Install default content
+    plugin: Script
+    script:
+      - drush en sitefarm_default_content -y
+      - drush pmu hal serialization rest default_content sitefarm_default_content -y
+      - drush cr
+  - name: Fix files directory permissions
     plugin: Script
     script:
       - chown -R www-data:www-data /var/www/html/sites/default/private-files
       - chown -R www-data:www-data /var/www/html/sites/default/files
-      - drush en sitefarm_default_content -y
-      - drush pmu hal serialization rest default_content sitefarm_default_content -y
-      - drush cr
   - name: Run Behat NoJS
     plugin: Script
     script:
