@@ -25,9 +25,7 @@ steps:
       - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
       - DESTINATION_BRANCH=$(jq -r  '.destination.branch.name' <<< "${API_DATA}")
       - composer self-update ; composer global update
-      - composer global require hirak/prestissimo drush/drush:^8.1
-      - drush version
-      - which drush
+      - composer global require hirak/prestissimo
       - echo $PATH
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
@@ -51,6 +49,12 @@ steps:
       upload_max_filesize: 256M
       post_max_size: 256M
       memory_limit: 512M
+  - name: Install default content
+    plugin: Script
+    script:
+      - drush en sitefarm_default_content -y
+      - drush pmu hal serialization rest default_content sitefarm_default_content -y
+      - drush cr
   - name: Fix files directory permissions
     plugin: Script
     script:
