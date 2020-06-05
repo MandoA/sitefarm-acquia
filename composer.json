@@ -37,7 +37,7 @@
     "drupal/console": "^1.0",
     "drupal/core-composer-scaffold": "^8.8.0",
     "drupal/core-recommended": "^8.8.0",
-    "drupal/memcache": "2.0.0-alpha7",
+    "drupal/memcache": "^2.0",
     "drupal/samlauth": "3.*",
     "ucdavis/sitefarm": "dev-8.x-8.x",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x",
