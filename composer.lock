@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9ca9eb2f380faad06311565be71a6797",
+    "content-hash": "e033fab7536247536ab2d6a1b2b34613",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1273,17 +1273,17 @@
         },
         {
             "name": "drupal/acsf",
-            "version": "1.64.0",
+            "version": "1.65.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/acsf.git",
-                "reference": "8.x-1.64"
+                "reference": "8.x-1.65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.64.zip",
-                "reference": "8.x-1.64",
-                "shasum": "797693c84319f246fb717ade311e4991922cbab8"
+                "url": "https://ftp.drupal.org/files/projects/acsf-8.x-1.65.zip",
+                "reference": "8.x-1.65",
+                "shasum": "1efad07ac07d49dd03d4e91ec9ccf2a3f9e68743"
             },
             "require": {
                 "drupal/acsf_duplication": "*",
@@ -1302,8 +1302,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.64",
-                    "datestamp": "1586427488",
+                    "version": "8.x-1.65",
+                    "datestamp": "1590576869",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1373,7 +1373,7 @@
         },
         {
             "name": "drupal/acsf_duplication",
-            "version": "1.64.0",
+            "version": "1.65.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "^8.5.0"
@@ -1381,8 +1381,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.64",
-                    "datestamp": "1586427488",
+                    "version": "8.x-1.65",
+                    "datestamp": "1590576869",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1443,7 +1443,7 @@
         },
         {
             "name": "drupal/acsf_theme",
-            "version": "1.64.0",
+            "version": "1.65.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/acsf_variables": "*",
@@ -1452,8 +1452,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.64",
-                    "datestamp": "1586427488",
+                    "version": "8.x-1.65",
+                    "datestamp": "1590576869",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1514,7 +1514,7 @@
         },
         {
             "name": "drupal/acsf_variables",
-            "version": "1.64.0",
+            "version": "1.65.0",
             "require": {
                 "drupal/acsf": "self.version",
                 "drupal/core": "^8.5.0"
@@ -1522,8 +1522,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.64",
-                    "datestamp": "1586427488",
+                    "version": "8.x-1.65",
+                    "datestamp": "1590576869",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3971,37 +3971,35 @@
         },
         {
             "name": "drupal/memcache",
-            "version": "2.0.0-alpha7",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/memcache.git",
-                "reference": "8.x-2.0-alpha7"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/memcache-8.x-2.0-alpha7.zip",
-                "reference": "8.x-2.0-alpha7",
-                "shasum": "06a2db4cc3699c5c54a2845058da0869b08371bf"
+                "url": "https://ftp.drupal.org/files/projects/memcache-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "f70fd9c5d5dda510d2b802dea887044eddf5278b"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-2.0-alpha7",
-                    "datestamp": "1536739683",
+                    "version": "8.x-2.1",
+                    "datestamp": "1590610774",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "Undefined method error on Statistics page": "https://www.drupal.org/files/issues/2018-09-05/memcache_undefined-2997537-3.patch"
-                }
+                "branch-alias": {
+                    "dev-8.x-2.x": "2.x-dev"
+                },
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4027,6 +4025,10 @@
                 {
                     "name": "damiankloip",
                     "homepage": "https://www.drupal.org/user/1037976"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
                 },
                 {
                     "name": "jvandyk",
@@ -6464,12 +6466,12 @@
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },
@@ -7310,10 +7312,10 @@
         },
         {
             "name": "npm-asset/ckeditor-medialink",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.1.tgz"
             },
             "type": "npm-asset",
             "license": [
