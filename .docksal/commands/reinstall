@@ -10,5 +10,9 @@ fin up
 # Install site
 cd "${PROJECT_ROOT}/${DOCROOT}"
 fin drush site-install sitefarm -y --site-name="SiteFarm Acquia" $@
+
+# Install default content
+fin drush scr "../factory-hooks/post-install/default_content.php"
+
 # Get login link
 fin drush uli --uri="http://$VIRTUAL_HOST"
