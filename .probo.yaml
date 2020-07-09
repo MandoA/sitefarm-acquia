@@ -52,8 +52,7 @@ steps:
   - name: Install default content
     plugin: Script
     script:
-      - drush en sitefarm_default_content -y
-      - drush pmu hal serialization rest default_content sitefarm_default_content -y
+      - drush scr "$SRC_DIR/factory-hooks/post-install/default_content.php"
       - drush cr
   - name: Fix files directory permissions
     plugin: Script
