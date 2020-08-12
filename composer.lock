@@ -2784,6 +2784,50 @@
             }
         },
         {
+            "name": "drupal/ckeditor_widget_menu",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_widget_menu.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_widget_menu-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "db4701b667f294ae3ce2b30c39e2a15e144dabb7"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1597078510",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "segovia94",
+                    "homepage": "https://www.drupal.org/user/780142"
+                }
+            ],
+            "description": "Allows CKEditor widgets to be placed into a dropdown menu to help save space on the toolbar",
+            "homepage": "https://www.drupal.org/project/ckeditor_widget_menu",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_widget_menu"
+            }
+        },
+        {
             "name": "drupal/ckwordcount",
             "version": "1.0.0",
             "source": {
@@ -8478,6 +8522,20 @@
             "type": "npm-asset",
             "license": [
                 "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
+            ]
+        },
+        {
+            "name": "npm-asset/ckeditor-widgetmenu",
+            "version": "1.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ckeditor-widgetmenu/-/ckeditor-widgetmenu-1.0.0.tgz",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
