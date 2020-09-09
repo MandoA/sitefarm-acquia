@@ -2863,6 +2863,50 @@
             }
         },
         {
+            "name": "drupal/ckeditor_widget_menu",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_widget_menu.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_widget_menu-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "db4701b667f294ae3ce2b30c39e2a15e144dabb7"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1597078510",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "segovia94",
+                    "homepage": "https://www.drupal.org/user/780142"
+                }
+            ],
+            "description": "Allows CKEditor widgets to be placed into a dropdown menu to help save space on the toolbar",
+            "homepage": "https://www.drupal.org/project/ckeditor_widget_menu",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_widget_menu"
+            }
+        },
+        {
             "name": "drupal/ckwordcount",
             "version": "1.1.0",
             "source": {
@@ -6636,6 +6680,78 @@
             }
         },
         {
+            "name": "drupal/smtp",
+            "version": "1.0.0-rc4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smtp.git",
+                "reference": "8.x-1.0-rc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smtp-8.x-1.0-rc4.zip",
+                "reference": "8.x-1.0-rc4",
+                "shasum": "2879396e26bb356b1d17646c324d455eda3044af"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9",
+                "phpmailer/phpmailer": "^6.1.5"
+            },
+            "suggest": {
+                "drupal/mailsystem": "Allows using SMTP alongside other mail modules."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc4",
+                    "datestamp": "1595628445",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "LukeLast",
+                    "homepage": "https://www.drupal.org/user/30151"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "josesanmartin",
+                    "homepage": "https://www.drupal.org/user/72012"
+                },
+                {
+                    "name": "oadaeh",
+                    "homepage": "https://www.drupal.org/user/4649"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                },
+                {
+                    "name": "yettyn",
+                    "homepage": "https://www.drupal.org/user/93281"
+                }
+            ],
+            "description": "Allow for site emails to be sent through an SMTP server of your choice.",
+            "homepage": "https://www.drupal.org/project/smtp",
+            "support": {
+                "source": "https://git.drupalcode.org/project/smtp",
+                "issues": "https://www.drupal.org/project/issues/smtp"
+            }
+        },
+        {
             "name": "drupal/social_media_links",
             "version": "2.7.0",
             "source": {
@@ -6661,8 +6777,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -6717,8 +6832,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -6958,6 +7072,7 @@
                     }
                 },
                 "patches_applied": {
+                    "make embeds responsive": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
                     "Prevent double escaping ampersands": "https://www.drupal.org/files/issues/2729479-2.patch"
                 }
             },
@@ -8486,10 +8601,10 @@
         },
         {
             "name": "npm-asset/ckeditor-medialink",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.1.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-medialink/-/ckeditor-medialink-2.0.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -8506,6 +8621,18 @@
             "type": "npm-asset",
             "license": [
                 "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
+            ]
+        },
+        {
+            "name": "npm-asset/ckeditor-widgetmenu",
+            "version": "1.0.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ckeditor-widgetmenu/-/ckeditor-widgetmenu-1.0.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
@@ -8892,6 +9019,74 @@
                 "exception"
             ],
             "time": "2015-02-10T20:07:52+00:00"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "2c2370ba3df7034f9eb7b8f387c97b52b2ba5ad0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/2c2370ba3df7034f9eb7b8f387c97b52b2ba5ad0",
+                "reference": "2c2370ba3df7034f9eb7b8f387c97b52b2ba5ad0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.2",
+                "friendsofphp/php-cs-fixer": "^2.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "funding": [
+                {
+                    "url": "https://github.com/synchro",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-07-14T18:50:27+00:00"
         },
         {
             "name": "psr/container",
@@ -11361,7 +11556,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "fcb4c18b96cdcb02030b992b5ca9ec9c6cb98b74"
+                "reference": "3b7ce4d202ed326470849fcd379f6fbba3887c39"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -11371,6 +11566,7 @@
                 "drupal/better_normalizers": "1.*",
                 "drupal/block_style_plugins": "1.*",
                 "drupal/cas": "1.*",
+                "drupal/ckeditor_widget_menu": "1.*",
                 "drupal/ckwordcount": "1.*",
                 "drupal/config_update": "1.*",
                 "drupal/crop": "1.*",
@@ -11412,6 +11608,7 @@
                 "drupal/simple_sitemap": "2.*",
                 "drupal/siteimprove": "^1.0",
                 "drupal/sitemap": "1.*",
+                "drupal/smtp": "1.*",
                 "drupal/social_media_links": "2.*",
                 "drupal/socialfeed": "1.*",
                 "drupal/subrequests": "2.*",
@@ -11429,6 +11626,7 @@
                 "npm-asset/ckeditor-indentblock": "^4.11",
                 "npm-asset/ckeditor-medialink": "^2.0",
                 "npm-asset/ckeditor-notification": "^4.7",
+                "npm-asset/ckeditor-widgetmenu": "^1.0",
                 "npm-asset/ckeditor-wordcount-plugin": "^1.17",
                 "npm-asset/photoswipe": "^4.1",
                 "npm-asset/slick-carousel": "^1.8",
@@ -11456,8 +11654,7 @@
                 },
                 "patches": {
                     "drupal/cas": {
-                        "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch",
-                        "prevent malformed email when bulk adding users": "https://www.drupal.org/files/issues/2020-02-03/bulk-add-email-3106985-3.patch"
+                        "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch"
                     },
                     "drupal/core": {
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
@@ -11469,18 +11666,11 @@
                         "fix broken library paths": "https://www.drupal.org/files/issues/2018-03-13/fix-broken-library-path-2952721-2.patch"
                     },
                     "drupal/url_embed": {
-                        "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch",
+                        "make embeds responsive": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
                         "Prevent double escaping ampersands": "https://www.drupal.org/files/issues/2729479-2.patch"
                     },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
-                    },
-                    "drupal/socialfeed": {
-                        "Update Instagram to use Basic Display API": "https://www.drupal.org/files/issues/2020-03-09/basic-display-api-3112416-8.patch"
-                    },
-                    "drupal/social_media_links": {
-                        "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2018-08-10/update-font-awesome-51-2991846-5.patch",
-                        "Fixes social media block email validation": "https://www.drupal.org/files/issues/2019-12-01/social_media_links-email_validation_broken-3094177-2.patch"
                     },
                     "drupal/migrate_tools": {
                         "Fix migrations not executed from Drush": "https://www.drupal.org/files/issues/2019-12-11/3099611-15.patch"
@@ -11533,7 +11723,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-05-04T18:57:10+00:00"
+            "time": "2020-09-09T21:01:45+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -11567,7 +11757,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "33bed4eecd5523e19ce62ba09462498f9e2fe1b2"
+                "reference": "fbdca45257c16b42942b96a57a9da337d597beb5"
             },
             "type": "drupal-theme",
             "authors": [
@@ -11577,7 +11767,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2020-05-07T00:32:47+00:00"
+            "time": "2020-09-09T21:06:42+00:00"
         },
         {
             "name": "w8tcha/ckeditor-wordcount-plugin",
@@ -13356,18 +13546,6 @@
             "time": "2020-06-29T13:22:24+00:00"
         },
         {
-            "name": "npm-asset/ckeditor-widgetmenu",
-            "version": "1.0.0",
-            "dist": {
-                "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-widgetmenu/-/ckeditor-widgetmenu-1.0.0.tgz"
-            },
-            "type": "npm-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
             "name": "phar-io/manifest",
             "version": "1.0.3",
             "source": {
@@ -13928,6 +14106,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
