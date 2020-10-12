@@ -41,3 +41,7 @@ if [ $? -eq 0 -a -n "$update_entities" ] ; then
     # Possibly do some preparation here...
     $DRUSH_CMD entity-updates
 fi
+
+# Purge all Acquia and Fastly caches.
+$DRUSH_CMD cr -y
+$DRUSH_CMD p:invalidate everything -y
