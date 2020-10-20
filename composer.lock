@@ -15393,6 +15393,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/migrate_file_to_media": 10,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20,
         "ucdavis/sitefarm_one": 20
