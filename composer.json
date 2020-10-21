@@ -38,7 +38,7 @@
     "drupal/memcache": "^2.0",
     "drupal/samlauth": "^3.0",
     "drush/drush": "^9.0",
-    "ucdavis/sitefarm": "dev-8.x-8.x",
+    "ucdavis/sitefarm": "dev-SITEFARM-2337",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x",
     "ucdavis/sitefarm_one": "dev-8.x-8.x"
   },
