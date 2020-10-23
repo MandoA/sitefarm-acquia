@@ -3,7 +3,7 @@ imports:
 
 probo:
   extensions:
-    Behat\MinkExtension:
+    Drupal\MinkExtension:
       base_url: http://localhost
       show_cmd: '/usr/bin/google-chrome %s'
       selenium2:
