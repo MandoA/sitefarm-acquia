@@ -36,6 +36,9 @@ DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 # Now update database.
 $DRUSH_CMD updatedb -y
 
+### Copy/paste script lines from /.docksal/commands/media-update here.
+
+
 # Purge all Acquia and Fastly caches.
 $DRUSH_CMD cr -y
 $DRUSH_CMD p:invalidate everything -y

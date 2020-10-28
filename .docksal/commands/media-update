@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# This will run the update scripts necessary to update an existing SiteFarm site to implement Media
+# and migrate all content from file fields to media fields.
+
+# This script is meant to mimic the /factory-hooks/db-update/update.sh script which will eventually be used on SiteFarm.
+
+# Revert commit b83c450 to allow for updates.
+cd "${PROJECT_ROOT}/${DOCROOT}/profiles/sitefarm"
+git revert b83c450 -n
+git restore --staged modules/features
+git revert --skip
+
+DRUSH_CMD="fin drush"
+
+# Update database.
+$DRUSH_CMD updatedb -y
+
+### Everything from this point down should be copy/pasted into /factory-hooks/db-update/update.sh
+
+# Clear all caches
+$DRUSH_CMD cr -y
+
+# Run migrate commands
