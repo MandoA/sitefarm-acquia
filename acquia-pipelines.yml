@@ -7,6 +7,10 @@ events:
           type: script
           script:
             - composer install --prefer-dist --no-dev
+            - cd "docroot/profiles/sitefarm"
+            - git revert b83c450 -n
+            - git restore --staged modules/features
+            - git revert --skip
       - acsf:
           type: script
           script:
