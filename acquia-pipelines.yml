@@ -7,7 +7,7 @@ events:
           type: script
           script:
             - git --version
-            - apt-get update
+            - sudo apt-get update
             - sudo apt-get --only-upgrade install git
             - git --version
             - composer install --prefer-dist --no-dev
