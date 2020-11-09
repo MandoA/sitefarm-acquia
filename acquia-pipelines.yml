@@ -14,7 +14,7 @@ events:
       - acsf:
           type: script
           script:
-            - cd docroot
+            - cd ../../docroot
             - drush --include=modules/contrib/acsf/acsf_init acsf-init
             - drush --include=modules/contrib/acsf/acsf_init acsf-init-verify
 
