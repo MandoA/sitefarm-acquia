@@ -8,7 +8,7 @@ events:
           script:
             - git --version
             - apt-get update
-            - apt-get upgrade git
+            - sudo apt-get --only-upgrade install git
             - git --version
             - composer install --prefer-dist --no-dev
             - cd "docroot/profiles/sitefarm"
