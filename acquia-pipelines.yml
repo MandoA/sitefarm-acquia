@@ -6,6 +6,10 @@ events:
       - build:
           type: script
           script:
+            - git --version
+            - apt-get update
+            - apt-get upgrade git
+            - git --version
             - composer install --prefer-dist --no-dev
             - cd "docroot/profiles/sitefarm"
             - git revert b83c450 -n
