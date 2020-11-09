@@ -4448,6 +4448,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -11813,7 +11816,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "8ddff9b38059b063d5d38145e4898da0e35aba38"
+                "reference": "78c8be01eb000e3bf256ef8bdb5bee5010dcf581"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -11985,7 +11988,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-10-20T22:20:44+00:00"
+            "time": "2020-11-09T20:35:23+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
