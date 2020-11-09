@@ -6,10 +6,10 @@ events:
       - build:
           type: script
           script:
-            - git config user.email "ietwebdev@ucdavis.edu"
-            - git config user.name "IET WebDev"
             - composer install --prefer-dist --no-dev
             - cd "docroot/profiles/sitefarm"
+            - git config user.email "ietwebdev@ucdavis.edu"
+            - git config user.name "IET WebDev"
             - git revert b83c450
       - acsf:
           type: script
