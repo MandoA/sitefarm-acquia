@@ -6,15 +6,9 @@ events:
       - build:
           type: script
           script:
-            - git --version
-            - sudo apt-get update
-            - sudo apt-get --only-upgrade install git
-            - git --version
             - composer install --prefer-dist --no-dev
             - cd "docroot/profiles/sitefarm"
-            - git revert b83c450 -n
-            - git restore --staged modules/features
-            - git revert --skip
+            - git revert b83c450
       - acsf:
           type: script
           script:
