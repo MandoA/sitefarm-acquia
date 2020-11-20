@@ -3,12 +3,12 @@ imports:
 
 probo:
   extensions:
-    Behat\MinkExtension:
+    Drupal\MinkExtension:
       base_url: http://localhost
       show_cmd: '/usr/bin/google-chrome %s'
       selenium2:
         browser: chrome
-        capabilities: {"browser": "chrome", "browserName": "chrome", "browserVersion": "ANY", "version": "ANY", 'chrome': {'switches':['--no-sandbox']}}
+        capabilities: {"browser": "chrome", "browserName": "chrome", "browserVersion": "ANY", "version": "ANY", 'chrome': {'switches':['--no-sandbox']}, "marionette": true}
     Drupal\DrupalExtension:
       api_driver: 'drupal'
       drush:
