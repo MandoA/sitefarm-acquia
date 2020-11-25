@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb93723a1594de99eaccb4349b83ca59",
+    "content-hash": "7d58d58ece9a5b5c0e4a01647bd2981a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4489,6 +4489,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9734,6 +9737,44 @@
             "time": "2020-09-05T13:00:25+00:00"
         },
         {
+            "name": "rubenrua/symfony-clean-tags-composer-plugin",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rubenrua/symfony-clean-tags-composer-plugin.git",
+                "reference": "dea1351786cf0d2d5136da6a9f5a1363a72c9271"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rubenrua/symfony-clean-tags-composer-plugin/zipball/dea1351786cf0d2d5136da6a9f5a1363a72c9271",
+                "reference": "dea1351786cf0d2d5136da6a9f5a1363a72c9271",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Rubenrua\\SymfonyCleanTagsComposerPlugin\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rubenrua\\SymfonyCleanTagsComposerPlugin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ruben Gonzalez",
+                    "email": "rubenrua@gmail.com"
+                }
+            ],
+            "time": "2020-10-06T17:26:13+00:00"
+        },
+        {
             "name": "sibyx/phpgpx",
             "version": "1.0-RC5",
             "source": {
@@ -11918,11 +11959,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-SITEFARM-2337-media",
+            "version": "dev-media",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "83f899965d737078d8dc4a02062907115828afec"
+                "reference": "cd7559886bbff31972b15e52aa137c884b6c74d6"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -12086,7 +12127,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-11-19T18:44:31+00:00"
+            "time": "2020-11-24T21:36:59+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",

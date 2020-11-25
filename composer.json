@@ -37,7 +37,8 @@
     "drupal/memcache": "^2.0",
     "drupal/samlauth": "^3.0",
     "drush/drush": "^9.0",
-    "ucdavis/sitefarm": "dev-SITEFARM-2337-media",
+    "rubenrua/symfony-clean-tags-composer-plugin": "^1.0",
+    "ucdavis/sitefarm": "dev-media",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x",
     "ucdavis/sitefarm_one": "dev-media"
   },
