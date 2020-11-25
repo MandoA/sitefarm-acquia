@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9210067e3665b24a5c4f9447a688bcda",
+    "content-hash": "7d58d58ece9a5b5c0e4a01647bd2981a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -9735,6 +9735,44 @@
                 "xmldsig"
             ],
             "time": "2020-09-05T13:00:25+00:00"
+        },
+        {
+            "name": "rubenrua/symfony-clean-tags-composer-plugin",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rubenrua/symfony-clean-tags-composer-plugin.git",
+                "reference": "dea1351786cf0d2d5136da6a9f5a1363a72c9271"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rubenrua/symfony-clean-tags-composer-plugin/zipball/dea1351786cf0d2d5136da6a9f5a1363a72c9271",
+                "reference": "dea1351786cf0d2d5136da6a9f5a1363a72c9271",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Rubenrua\\SymfonyCleanTagsComposerPlugin\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rubenrua\\SymfonyCleanTagsComposerPlugin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ruben Gonzalez",
+                    "email": "rubenrua@gmail.com"
+                }
+            ],
+            "time": "2020-10-06T17:26:13+00:00"
         },
         {
             "name": "sibyx/phpgpx",
