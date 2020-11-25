@@ -32,6 +32,7 @@ services:
     environment:
       - PHP_IDE_CONFIG
       - SYMFONY_REQUIRE
+      - COMPOSER_DEFAULT_VERSION
   # Varnish
   varnish:
     extends:
