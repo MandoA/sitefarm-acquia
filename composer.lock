@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb93723a1594de99eaccb4349b83ca59",
+    "content-hash": "9210067e3665b24a5c4f9447a688bcda",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4489,6 +4489,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -11918,11 +11921,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-SITEFARM-2337-media",
+            "version": "dev-media",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "83f899965d737078d8dc4a02062907115828afec"
+                "reference": "cd7559886bbff31972b15e52aa137c884b6c74d6"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -12086,7 +12089,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-11-19T18:44:31+00:00"
+            "time": "2020-11-24T21:36:59+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
