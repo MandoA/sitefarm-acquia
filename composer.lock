@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d58d58ece9a5b5c0e4a01647bd2981a",
+    "content-hash": "e27502d9296cf6f28332bb786b690f27",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -11959,11 +11959,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-media",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "cd7559886bbff31972b15e52aa137c884b6c74d6"
+                "reference": "b08f4b77037bced92a46d7eb89d8e0f57a8d959b"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -12127,7 +12127,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-11-24T21:36:59+00:00"
+            "time": "2020-11-30T17:24:06+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -12157,11 +12157,11 @@
         },
         {
             "name": "ucdavis/sitefarm_one",
-            "version": "dev-media",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "c5521dbeab8b8f4d84daf1b078b5aa7a47951865"
+                "reference": "0445d55179a3d41d7ab889834722e3af23bd525e"
             },
             "type": "drupal-theme",
             "authors": [
@@ -12171,7 +12171,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2020-10-12T18:14:21+00:00"
+            "time": "2020-11-30T17:24:20+00:00"
         },
         {
             "name": "w8tcha/ckeditor-wordcount-plugin",
