@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd6f3c643f8fdbfa9131a9060f42b302",
+    "content-hash": "e27502d9296cf6f28332bb786b690f27",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4489,6 +4489,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5231,6 +5234,56 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
+            "name": "drupal/migrate_file_to_media",
+            "version": "1.0.0-beta7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_file_to_media.git",
+                "reference": "8.x-1.0-beta7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_file_to_media-8.x-1.0-beta7.zip",
+                "reference": "8.x-1.0-beta7",
+                "shasum": "961b3f232531b53d9844f45507c47dfc9a4f87f9"
+            },
+            "require": {
+                "drupal/core": "^8",
+                "drupal/migrate_plus": "*",
+                "drupal/migrate_tools": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta7",
+                    "datestamp": "1584963487",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ayalon",
+                    "homepage": "https://www.drupal.org/user/419226"
+                },
+                {
+                    "name": "grahl",
+                    "homepage": "https://www.drupal.org/user/146040"
+                }
+            ],
+            "description": "Migrate file fields to media fields.",
+            "homepage": "https://www.drupal.org/project/migrate_file_to_media",
+            "support": {
+                "source": "https://git.drupalcode.org/project/migrate_file_to_media"
             }
         },
         {
@@ -6937,6 +6990,62 @@
             "homepage": "https://www.drupal.org/project/subrequests",
             "support": {
                 "source": "https://git.drupalcode.org/project/subrequests"
+            }
+        },
+        {
+            "name": "drupal/svg_image_field",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_image_field.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image_field-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "966c50eb6292bf502dfd114948389df2f8f802a7"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1552491485",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "donne93",
+                    "homepage": "https://www.drupal.org/user/3569136"
+                },
+                {
+                    "name": "dunot",
+                    "homepage": "https://www.drupal.org/user/3562626"
+                },
+                {
+                    "name": "romychvk",
+                    "homepage": "https://www.drupal.org/user/361734"
+                },
+                {
+                    "name": "shmel210",
+                    "homepage": "https://www.drupal.org/user/2600028"
+                }
+            ],
+            "description": "Provides svg image field",
+            "homepage": "https://www.drupal.org/project/svg_image_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/svg_image_field"
             }
         },
         {
@@ -9628,6 +9737,44 @@
             "time": "2020-09-05T13:00:25+00:00"
         },
         {
+            "name": "rubenrua/symfony-clean-tags-composer-plugin",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rubenrua/symfony-clean-tags-composer-plugin.git",
+                "reference": "dea1351786cf0d2d5136da6a9f5a1363a72c9271"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rubenrua/symfony-clean-tags-composer-plugin/zipball/dea1351786cf0d2d5136da6a9f5a1363a72c9271",
+                "reference": "dea1351786cf0d2d5136da6a9f5a1363a72c9271",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Rubenrua\\SymfonyCleanTagsComposerPlugin\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rubenrua\\SymfonyCleanTagsComposerPlugin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ruben Gonzalez",
+                    "email": "rubenrua@gmail.com"
+                }
+            ],
+            "time": "2020-10-06T17:26:13+00:00"
+        },
+        {
             "name": "sibyx/phpgpx",
             "version": "1.0-RC5",
             "source": {
@@ -11812,11 +11959,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-SITEFARM-2337",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "441e281708304519103b7ff1fce4f662e666c385"
+                "reference": "b08f4b77037bced92a46d7eb89d8e0f57a8d959b"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -11848,6 +11995,7 @@
                 "drupal/menu_block": "^1.0",
                 "drupal/menu_breadcrumb": "1.*",
                 "drupal/metatag": "^1.0",
+                "drupal/migrate_file_to_media": "^1.0",
                 "drupal/migrate_plus": "^5.0",
                 "drupal/migrate_source_csv": "^3.0",
                 "drupal/migrate_tools": "^5.0",
@@ -11872,6 +12020,7 @@
                 "drupal/social_media_links": "^2.0",
                 "drupal/socialfeed": "^1.0",
                 "drupal/subrequests": "^2.0",
+                "drupal/svg_image_field": "^1.2",
                 "drupal/token": "^1.0",
                 "drupal/trumba": "^1.0",
                 "drupal/url_embed": "^1.0",
@@ -11932,6 +12081,9 @@
                     },
                     "drupal/sharemessage": {
                         "Check if the metatag module exists before letting Share Message write OG type.": "https://www.drupal.org/files/issues/2019-03-11/check-if-metatag.patch"
+                    },
+                    "drupal/focal_point": {
+                        "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                     }
                 }
             },
@@ -11975,7 +12127,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-11-18T15:57:46+00:00"
+            "time": "2020-11-30T17:24:06+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -12005,11 +12157,11 @@
         },
         {
             "name": "ucdavis/sitefarm_one",
-            "version": "dev-8.x-8.x",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git",
-                "reference": "fbdca45257c16b42942b96a57a9da337d597beb5"
+                "reference": "0445d55179a3d41d7ab889834722e3af23bd525e"
             },
             "type": "drupal-theme",
             "authors": [
@@ -12019,7 +12171,7 @@
                 }
             ],
             "description": "UCDavis SiteFarm One theme for Drupal 8",
-            "time": "2020-09-09T21:06:42+00:00"
+            "time": "2020-11-30T17:24:20+00:00"
         },
         {
             "name": "w8tcha/ckeditor-wordcount-plugin",
