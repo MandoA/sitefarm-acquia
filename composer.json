@@ -38,9 +38,9 @@
     "drupal/samlauth": "^3.0",
     "drush/drush": "^9.0",
     "rubenrua/symfony-clean-tags-composer-plugin": "^1.0",
-    "ucdavis/sitefarm": "dev-dev",
+    "ucdavis/sitefarm": "dev-8.x-8.x",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x",
-    "ucdavis/sitefarm_one": "dev-dev"
+    "ucdavis/sitefarm_one": "dev-8.x-8.x"
   },
   "repositories": {
     "drupal": {
