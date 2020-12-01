@@ -25,6 +25,7 @@ steps:
       - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
       - DESTINATION_BRANCH=$(jq -r  '.destination.branch.name' <<< "${API_DATA}")
       - composer global require hirak/prestissimo
+      - composer config extra.symfony.require "^3.4|^4.1"
       - echo $PATH
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
@@ -58,15 +59,6 @@ steps:
     script:
       - chown -R www-data:www-data /var/www/html/sites/default/private-files
       - chown -R www-data:www-data /var/www/html/sites/default/files
-  - name: Turn on Media migration modules
-    plugin: Script
-    script:
-      - cd /var/www/html/docroot
-      - drush en sitefarm_migrate_article_media -y
-      - drush en sitefarm_migrate_event_media -y
-      - drush en sitefarm_migrate_page_media -y
-      - drush en sitefarm_migrate_person_media -y
-      - drush en sitefarm_migrate_photo_gallery_media -y
   - name: Run Behat NoJS
     plugin: Script
     script:
