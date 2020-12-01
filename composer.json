@@ -39,8 +39,7 @@
     "drush/drush": "^9.0",
     "rubenrua/symfony-clean-tags-composer-plugin": "^1.0",
     "ucdavis/sitefarm": "dev-8.x-8.x",
-    "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x",
-    "ucdavis/sitefarm_one": "dev-8.x-8.x"
+    "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {
     "drupal": {
@@ -58,10 +57,6 @@
     "ucdavis/aggiefeed": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git"
-    },
-    "ucdavis/sitefarm_one": {
-      "type": "vcs",
-      "url": "git@bitbucket.org:ietwebdev/sitefarm-theme-one.git"
     },
     "ucdavis/sitefarm_acquia_purge": {
       "type": "vcs",
