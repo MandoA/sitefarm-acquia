@@ -8991,10 +8991,10 @@
         },
         {
             "name": "npm-asset/ckeditor-featureblock",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-3.0.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -12041,7 +12041,7 @@
                 "espresso-dev/instagram-basic-display-php": "^1.1",
                 "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
-                "npm-asset/ckeditor-featureblock": "^2.0",
+                "npm-asset/ckeditor-featureblock": "^3.0",
                 "npm-asset/ckeditor-indentblock": "^4.11",
                 "npm-asset/ckeditor-medialink": "^2.0",
                 "npm-asset/ckeditor-notification": "^4.7",
