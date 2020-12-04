@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Validate the theme SCSS and JS.
+##
+## Usage: fin theme-lint
+
+cd $THEME_PATH
+fin exec npm run lint
