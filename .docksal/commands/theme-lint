@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-## Compile theme assets and watch for changes.
+## Validate the theme SCSS and JS.
 ##
-## Usage: fin theme-watch
+## Usage: fin theme-lint
 
 cd $THEME_PATH
 fin exec npm run lint
