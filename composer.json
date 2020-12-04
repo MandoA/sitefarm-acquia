@@ -36,6 +36,7 @@
     "drupal/core-recommended": "~8.8.0",
     "drupal/memcache": "^2.0",
     "drupal/samlauth": "^3.0",
+    "drupal/scheduled_updates": "^1.0",
     "drush/drush": "^9.0",
     "rubenrua/symfony-clean-tags-composer-plugin": "^1.0",
     "ucdavis/sitefarm": "dev-8.x-8.x",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1accc06e9cd5702ee32cc317071db10",
+    "content-hash": "35d0e4db6584d9a21a57e834129a7672",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -15643,6 +15643,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/scheduled_updates": 15,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20,
         "ucdavis/sitefarm_one": 20
