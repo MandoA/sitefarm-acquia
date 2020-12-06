@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1accc06e9cd5702ee32cc317071db10",
+    "content-hash": "48b4abc09e34575740d1f122428edc2b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -6717,6 +6717,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Error when viewing node revision pages": "https://www.drupal.org/files/issues/2020-12-04/3186609-01.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
