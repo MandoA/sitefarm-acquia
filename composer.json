@@ -126,12 +126,7 @@
         "type:drupal-drush"
       ]
     },
-    "enable-patching": true,
-    "patches": {
-      "drupal/siteimprove": {
-        "Error when viewing node revision pages": "https://www.drupal.org/files/issues/2020-12-04/3186609-01.patch"
-      }
-    }
+    "enable-patching": true
   },
   "autoload": {
     "psr-4": {
