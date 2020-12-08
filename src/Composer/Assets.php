@@ -40,6 +40,7 @@ class Assets {
     'ckeditor-indentblock' => 'indentblock',
     'ckeditor-medialink' => 'media_link',
     'ckeditor-notification' => 'notification',
+    'ckeditor-widgetmenu' => 'widget_menu',
     'ckeditor-wordcount-plugin' => 'wordcount',
     'slick-carousel' => 'slick',
   ];

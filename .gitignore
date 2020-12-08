@@ -17,6 +17,9 @@ services.local.yml
 # Ignore Drupal's file directory
 docroot/sites/*/files
 
+# Ignore Drupal's themes directory
+docroot/sites/*/themes
+
 # Ignore SimpleTest directory
 docroot/sites/simpletest
 

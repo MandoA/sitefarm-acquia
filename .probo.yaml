@@ -1,4 +1,4 @@
-image: proboci/ubuntu-16.04-lamp:php-7.2
+image: proboci/ubuntu:18.04-php7.3
 assets:
   - probossh.tar.gz
   - bitbucket_auth.sh
@@ -24,13 +24,12 @@ steps:
       - PULL_REQUEST_ID=$(basename "https://bitbucket.org/ietwebdev/sitefarm-acquia/pull-requests/${PULL_REQUEST_LINK}")
       - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
       - DESTINATION_BRANCH=$(jq -r  '.destination.branch.name' <<< "${API_DATA}")
-      - composer self-update ; composer global update
       - composer global require hirak/prestissimo
+      - composer config extra.symfony.require "^3.4|^4.1"
       - echo $PATH
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
-      - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_THEME="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm-theme-one.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_THEME="$DESTINATION_BRANCH"; else BRANCH_THEME=dev; fi
-      - composer require "ucdavis/sitefarm_one:dev-$BRANCH_THEME" "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
+      - composer require "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
       - drush version
   - name: Run PhpUnit
     plugin: Script
@@ -52,8 +51,7 @@ steps:
   - name: Install default content
     plugin: Script
     script:
-      - drush en sitefarm_default_content -y
-      - drush pmu hal serialization rest default_content sitefarm_default_content -y
+      - drush scr "$SRC_DIR/factory-hooks/post-install/default_content.php"
       - drush cr
   - name: Fix files directory permissions
     plugin: Script
@@ -71,7 +69,7 @@ steps:
     plugin: Script
     script:
       - apt-get update > /dev/null 2>&1
-      - apt-get install google-chrome-stable xvfb -y > /dev/null 2>&1
+      - apt-get install xvfb -y > /dev/null 2>&1
       - wget http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip > /dev/null 2>&1
       - sudo unzip chromedriver_linux64.zip -d /usr/bin
       - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar > /dev/null 2>&1
