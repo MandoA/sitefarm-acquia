@@ -7,15 +7,10 @@ events:
           type: script
           script:
             - composer install --prefer-dist --no-dev
-            - cd "docroot/profiles/sitefarm"
-            - git config user.email "ietwebdev@ucdavis.edu"
-            - git config user.name "IET WebDev"
-            - git revert b83c450
       - acsf:
           type: script
           script:
-            - pwd
-            - cd ../../
+            - cd "docroot"
             - drush --include=modules/contrib/acsf/acsf_init acsf-init
             - drush --include=modules/contrib/acsf/acsf_init acsf-init-verify
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1accc06e9cd5702ee32cc317071db10",
+    "content-hash": "35d0e4db6584d9a21a57e834129a7672",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4644,17 +4644,17 @@
         },
         {
             "name": "drupal/google_analytics",
-            "version": "3.1.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/google_analytics.git",
-                "reference": "8.x-3.1"
+                "reference": "8.x-2.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-3.1.zip",
-                "reference": "8.x-3.1",
-                "shasum": "171dcac5a67cde66201754baaa52711f45e47a3b"
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.5.zip",
+                "reference": "8.x-2.5",
+                "shasum": "9e0ff72cc313bf9295fe8bd73a68f5f7688513ab"
             },
             "require": {
                 "drupal/core": "^8.8.6|^9.0"
@@ -4665,8 +4665,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.1",
-                    "datestamp": "1591298584",
+                    "version": "8.x-2.5",
+                    "datestamp": "1591298527",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5264,6 +5264,9 @@
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Fix calculateBinaryHash issue": "https://www.drupal.org/files/issues/2020-12-07/calculatebinaryhash-3187119-1.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6690,17 +6693,17 @@
         },
         {
             "name": "drupal/siteimprove",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/siteimprove.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/siteimprove-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "041fdd1337c1ccef5e14bdb8cf4caf7321232fff"
+                "url": "https://ftp.drupal.org/files/projects/siteimprove-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "56a79e06614d0263a53cd83d8d3cd105f44c0844"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -6711,12 +6714,15 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1606297589",
+                    "version": "8.x-1.9",
+                    "datestamp": "1607291825",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Error when viewing View with contextual taxonomy filter": "https://www.drupal.org/files/issues/2020-12-07/error-term-filter-3187125-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -11973,7 +11979,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "8ecac67c873633342dfce3fdc4fe88897b23ac10"
+                "reference": "0de632400076e4e201918770befa791ccf03d16b"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -11998,7 +12004,7 @@
                 "drupal/focal_point": "^1.0",
                 "drupal/footnotes": "^2.0",
                 "drupal/geolocation": "^3.0",
-                "drupal/google_analytics": "^3.0",
+                "drupal/google_analytics": "^2.0",
                 "drupal/google_tag": "^1.0",
                 "drupal/honeypot": "^2.0",
                 "drupal/masquerade": "^2.0",
@@ -12085,11 +12091,17 @@
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                     },
+                    "drupal/migrate_file_to_media": {
+                        "Fix calculateBinaryHash issue": "https://www.drupal.org/files/issues/2020-12-07/calculatebinaryhash-3187119-1.patch"
+                    },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
                     },
                     "drupal/sharemessage": {
                         "Check if the metatag module exists before letting Share Message write OG type.": "https://www.drupal.org/files/issues/2019-03-11/check-if-metatag.patch"
+                    },
+                    "drupal/siteimprove": {
+                        "Error when viewing View with contextual taxonomy filter": "https://www.drupal.org/files/issues/2020-12-07/error-term-filter-3187125-2.patch"
                     },
                     "drupal/focal_point": {
                         "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
@@ -12136,7 +12148,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2020-11-30T23:20:07+00:00"
+            "time": "2020-12-11T22:42:06+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -15614,6 +15626,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/scheduled_updates": 15,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20
     },
