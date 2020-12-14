@@ -15628,8 +15628,7 @@
     "stability-flags": {
         "drupal/scheduled_updates": 15,
         "ucdavis/sitefarm": 20,
-        "ucdavis/sitefarm_acquia_purge": 20,
-        "ucdavis/sitefarm_one": 20
+        "ucdavis/sitefarm_acquia_purge": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
