@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Factory Hook: post-theme-deploy
 #
@@ -22,5 +22,7 @@ docroot="/var/www/html/$site.$env/docroot"
 DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 
 # Purge all Acquia and Fastly caches.
-$DRUSH_CMD cr -y
-$DRUSH_CMD p:invalidate everything -y
+if [ $(hostname) == "web-3352.enterprise-g1.hosting.acquia.com" ] || [ $(hostname) == "staging-997.enterprise-g1.hosting.acquia.com" ] ; then
+    $DRUSH_CMD cr -y
+    $DRUSH_CMD p:invalidate everything -y
+fi
