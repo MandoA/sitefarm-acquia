@@ -9021,10 +9021,10 @@
         },
         {
             "name": "npm-asset/ckeditor-layout-columns",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-layout-columns/-/ckeditor-layout-columns-1.0.2.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-layout-columns/-/ckeditor-layout-columns-1.0.3.tgz"
             },
             "type": "npm-asset",
             "license": [
