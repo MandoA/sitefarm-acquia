@@ -38,6 +38,7 @@ class Assets {
     'ckeditor-autosave-plugin' => 'autosave',
     'ckeditor-featureblock' => 'feature_block',
     'ckeditor-indentblock' => 'indentblock',
+    'ckeditor-layout-columns' => 'layout_columns',
     'ckeditor-medialink' => 'media_link',
     'ckeditor-notification' => 'notification',
     'ckeditor-widgetmenu' => 'widget_menu',
