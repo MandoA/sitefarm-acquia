@@ -9020,6 +9020,18 @@
             ]
         },
         {
+            "name": "npm-asset/ckeditor-layout-columns",
+            "version": "1.0.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ckeditor-layout-columns/-/ckeditor-layout-columns-1.0.3.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/ckeditor-medialink",
             "version": "2.0.2",
             "dist": {
