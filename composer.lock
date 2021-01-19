@@ -7137,17 +7137,17 @@
         },
         {
             "name": "drupal/trumba",
-            "version": "1.9.0",
+            "version": "2.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/trumba.git",
-                "reference": "8.x-1.9"
+                "reference": "2.0.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/trumba-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "30e6d59e0c1e120a47138d3a62994fcead686061"
+                "url": "https://ftp.drupal.org/files/projects/trumba-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "43cd6d10d6564eb4fa1ddf9f8dcde416f3b61202"
             },
             "require": {
                 "drupal/core": "*"
@@ -7155,11 +7155,11 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1555096981",
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1610951820",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12039,7 +12039,7 @@
                 "drupal/subrequests": "^2.0",
                 "drupal/svg_image_field": "^1.2",
                 "drupal/token": "^1.0",
-                "drupal/trumba": "^1.0",
+                "drupal/trumba": "^2.0",
                 "drupal/url_embed": "^1.0",
                 "drupal/views_data_export": "^1.0",
                 "drupal/webform": "^5.0",
