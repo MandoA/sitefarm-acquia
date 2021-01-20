@@ -23,7 +23,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "drupal/core-dev": "~8.8.0",
+    "drupal/core-dev": "~9.1.0",
     "drupal/drupal-extension": "^4.1"
   },
   "require": {
@@ -32,14 +32,13 @@
     "drupal/acquia_connector": "^1.0",
     "drupal/acsf": "^2.0",
     "drupal/console": "^1.0",
-    "drupal/core-composer-scaffold": "~8.8.0",
-    "drupal/core-recommended": "~8.8.0",
+    "drupal/core-composer-scaffold": "~9.1.0",
+    "drupal/core-recommended": "~9.1.0",
     "drupal/memcache": "^2.0",
     "drupal/samlauth": "^3.0",
     "drupal/scheduled_updates": "^1.0",
-    "drush/drush": "^9.0",
-    "rubenrua/symfony-clean-tags-composer-plugin": "^1.0",
-    "ucdavis/sitefarm": "dev-8.x-8.x",
+    "drush/drush": "^10.0",
+    "ucdavis/sitefarm": "dev-SITEFARM-2505",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {
