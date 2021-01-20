@@ -12988,7 +12988,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
-                "reference": "bd0fdc4c131d5cbd7117b34210fe7fef288f1129"
+                "reference": "90a369929654eb0b0bd1c9b64f87f84127bc2dc3"
             },
             "default-branch": true,
             "type": "drupal-module",
@@ -13004,7 +13004,7 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2016-11-28T20:03:21+00:00"
+            "time": "2021-01-20T17:44:29+00:00"
         },
         {
             "name": "ucdavis/sitefarm",
@@ -13012,7 +13012,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "33aed18151acc6685d46d315988db9a4668e0ee2"
+                "reference": "f520b668d6443e7eb9276284df9ad4293c8148b3"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13177,7 +13177,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-01-20T01:27:04+00:00"
+            "time": "2021-01-20T17:41:07+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -13185,7 +13185,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
-                "reference": "acaeba4110c9deb60f6f8a158ebaa14efa33fa40"
+                "reference": "24bd53212596eddb8fdac09afa229a30f4343651"
             },
             "require": {
                 "drupal/acquia_purge": "^1.0@beta",
@@ -13203,7 +13203,7 @@
                 }
             ],
             "description": "Default configuration for SiteFarm implementation of Acquia Purge and Fastly CDN.",
-            "time": "2020-10-13T22:19:11+00:00"
+            "time": "2021-01-19T23:58:19+00:00"
         },
         {
             "name": "w8tcha/ckeditor-wordcount-plugin",
