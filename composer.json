@@ -39,6 +39,7 @@
     "drupal/samlauth": "^3.0",
     "drupal/scheduled_updates": "^1.0",
     "drush/drush": "^10.0",
+    "phpspec/prophecy-phpunit": "^2.0",
     "ucdavis/sitefarm": "dev-SITEFARM-2505",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
