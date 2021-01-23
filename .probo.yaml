@@ -1,4 +1,4 @@
-image: proboci/ubuntu:18.04-php7.4
+image: proboci/ubuntu:18.04-php7.3
 assets:
   - probossh.tar.gz
   - bitbucket_auth.sh
@@ -24,7 +24,7 @@ steps:
       - PULL_REQUEST_ID=$(basename "https://bitbucket.org/ietwebdev/sitefarm-acquia/pull-requests/${PULL_REQUEST_LINK}")
       - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
       - DESTINATION_BRANCH=$(jq -r  '.destination.branch.name' <<< "${API_DATA}")
-      - composer self-update --2
+      - composer self-update
       - echo $PATH
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
