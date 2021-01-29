@@ -38,7 +38,7 @@
     "drupal/samlauth": "^3.0",
     "drupal/scheduled_updates": "^1.0",
     "drush/drush": "^9.0",
-    "ucdavis/sitefarm": "dev-SITEFARM-2509",
+    "ucdavis/sitefarm": "dev-8.x-9.x",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {

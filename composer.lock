@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e21574d7d9a5c05bdb810694b833cb6c",
+    "content-hash": "07b53f2134c291257412f4572e294846",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -12862,11 +12862,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-SITEFARM-2509",
+            "version": "dev-8.x-9.x",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "0a9061d7cc3a2354af13bc4679c8dabf5b187d94"
+                "reference": "24c744a817dd74c99d78f9582527c5278e68ddf5"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13031,7 +13031,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-01-21T00:20:57+00:00"
+            "time": "2021-01-29T17:33:52+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
