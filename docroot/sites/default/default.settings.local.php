@@ -183,4 +183,4 @@ $databases['default']['default'] = [
 /**
  * Configuration Sync directory - Edit this as needed
  */
-$config_directories['sync'] = 'sites/default/files/config_XFJgWG0OOBwFg8asfsKWO8sMf6eYyOq5dbrv14FqkavRVEY6j61JoCbiJ9T_rqphSfdKjkD2Kw/sync';
+$settings['config_sync_directory'] = 'sites/default/files/config_XFJgWG0OOBwFg8asfsKWO8sMf6eYyOq5dbrv14FqkavRVEY6j61JoCbiJ9T_rqphSfdKjkD2Kw/sync';

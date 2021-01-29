@@ -42,6 +42,9 @@ if [ $? -eq 0 -a -n "$update_entities" ] ; then
     $DRUSH_CMD entity-updates
 fi
 
+# Uninstall migrate_file_to_media
+$DRUSH_CMD pmu migrate_file_to_media -y
+
 # Purge all Acquia and Fastly caches.
 $DRUSH_CMD cr -y
 $DRUSH_CMD p:invalidate everything -y
