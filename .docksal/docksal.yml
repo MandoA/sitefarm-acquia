@@ -32,7 +32,8 @@ services:
     environment:
       - PHP_IDE_CONFIG
       - SYMFONY_REQUIRE
-      - COMPOSER_DEFAULT_VERSION
+    ports:
+      - 9003
   # Varnish
   varnish:
     extends:
