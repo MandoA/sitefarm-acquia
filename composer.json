@@ -34,7 +34,7 @@
     "drupal/console": "^1.0",
     "drupal/core-composer-scaffold": "~8.9.0",
     "drupal/core-recommended": "~8.9.0",
-    "drupal/inline_entity_form": "^1.0@RC",
+    "drupal/inline_entity_form": "^1.0",
     "drupal/memcache": "^2.0",
     "drupal/samlauth": "^3.0",
     "drush/drush": "^9.0",
