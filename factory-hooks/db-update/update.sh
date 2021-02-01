@@ -47,7 +47,7 @@ $DRUSH_CMD pmu migrate_file_to_media -y
 
 # Uninstall inline_entity_form if they're not using it
 count=$($DRUSH_CMD sqlq 'SELECT count(name) as count FROM config WHERE data LIKE "%inline_entity_form%";')
-if [[ $count > 1 ]] ; then
+if [ $count -eq 1 ] ; then
   $DRUSH_CMD pmu inline_entity_form -y
 fi
 
