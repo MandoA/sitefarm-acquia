@@ -8,7 +8,7 @@ probo:
       show_cmd: '/usr/bin/google-chrome %s'
       selenium2:
         browser: chrome
-        capabilities: {"browser": "chrome", "browserName": "chrome", "browserVersion": "ANY", "version": "ANY", 'chrome': {'switches':['--no-sandbox']}, "marionette": true}
+        capabilities: {"browser": "chrome", "browserName": "chrome", "browserVersion": "ANY", "version": "ANY", 'chrome': {'switches':['--no-sandbox']}, "marionette": true, "extra_capabilities": { "idle-timeout": 200 }}
     Drupal\DrupalExtension:
       api_driver: 'drupal'
       drush:
