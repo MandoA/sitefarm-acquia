@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07b53f2134c291257412f4572e294846",
+    "content-hash": "fc7376a25f629b307c41d6f08bb0e148",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -6501,55 +6501,6 @@
             }
         },
         {
-            "name": "drupal/scheduled_updates",
-            "version": "1.0.0-alpha7",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/scheduled_updates.git",
-                "reference": "8.x-1.0-alpha7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/scheduled_updates-8.x-1.0-alpha7.zip",
-                "reference": "8.x-1.0-alpha7",
-                "shasum": "4c02187c7202bef453268ed3eb644bb411c01891"
-            },
-            "require": {
-                "drupal/core": "^8",
-                "drupal/inline_entity_form": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-alpha7",
-                    "datestamp": "1524485284",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "rivimey",
-                    "homepage": "https://www.drupal.org/user/393446"
-                },
-                {
-                    "name": "tedbow",
-                    "homepage": "https://www.drupal.org/user/240860"
-                }
-            ],
-            "description": "Create scheduled updates to field values on entities such content, users, and terms.",
-            "homepage": "https://www.drupal.org/project/scheduled_updates",
-            "support": {
-                "source": "https://git.drupalcode.org/project/scheduled_updates"
-            }
-        },
-        {
             "name": "drupal/schemata",
             "version": "1.0.0-beta2",
             "source": {
@@ -12866,7 +12817,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "24c744a817dd74c99d78f9582527c5278e68ddf5"
+                "reference": "b8d1a6dbb5e92929d01f2fdd12207eb93d6ed7db"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13031,7 +12982,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-01-29T17:33:52+00:00"
+            "time": "2021-02-02T00:07:04+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
