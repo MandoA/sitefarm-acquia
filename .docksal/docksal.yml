@@ -31,7 +31,6 @@ services:
       service: cli
     environment:
       - PHP_IDE_CONFIG
-      - SYMFONY_REQUIRE
     ports:
       - 9003
   # Varnish
