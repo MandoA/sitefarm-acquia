@@ -2,6 +2,8 @@ image: proboci/ubuntu:18.04-php7.3
 assets:
   - probossh.tar.gz
   - bitbucket_auth.sh
+  - drush-environment.php
+  - drushrc.php
 phpIniOptions:
   upload_max_filesize: 64M
   post_max_size: 64M
