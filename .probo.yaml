@@ -29,7 +29,6 @@ steps:
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
       - composer require "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
-      - drush version
   - name: Run PhpUnit
     plugin: Script
     script:
@@ -50,6 +49,7 @@ steps:
   - name: Install default content
     plugin: Script
     script:
+      - drush version
       - drush scr "$SRC_DIR/factory-hooks/post-install/default_content.php"
       - drush cr
   - name: Fix files directory permissions
