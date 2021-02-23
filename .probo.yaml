@@ -2,8 +2,6 @@ image: proboci/ubuntu:18.04-php7.3
 assets:
   - probossh.tar.gz
   - bitbucket_auth.sh
-  - drush-environment.php
-  - drushrc.php
 phpIniOptions:
   upload_max_filesize: 64M
   post_max_size: 64M
@@ -22,12 +20,6 @@ steps:
     script:
       - apt-get update > /dev/null 2>&1
       - apt-get install jq xvfb -y > /dev/null 2>&1
-      - composer --working-dir=/usr/local/src/ global require drush/drush:10.*
-      - ln -s /usr/local/src/vendor/bin/drush /usr/bin/drush
-      - mkdir /etc/drush
-      - mkdir /etc/drush/conf.d
-      - cp $ASSET_DIR/drush-environment.php /etc/drush/conf.d/environment.php
-      - cp $ASSET_DIR/drushrc.php /etc/drush/drushrc.php
       - . $ASSET_DIR/bitbucket_auth.sh >/dev/null 2>&1
       - PULL_REQUEST_ID=$(basename "https://bitbucket.org/ietwebdev/sitefarm-acquia/pull-requests/${PULL_REQUEST_LINK}")
       - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
