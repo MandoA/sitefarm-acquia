@@ -10,7 +10,7 @@ events:
       - build_theme:
           type: script
           script:
-            - cd docroot/profiles/sitefarm/themes/sitefarm_one
+            - cd $BUILD_DIR/docroot/profiles/sitefarm/themes/sitefarm_one
             - nvm install 14.15.0
             - nvm alias default 14.15.0
             - npm -v
@@ -19,7 +19,7 @@ events:
       - acsf:
           type: script
           script:
-            - cd "../../../../"
+            - cd $BUILD_DIR/docroot
             - drush --include=modules/contrib/acsf/acsf_init acsf-init
             - drush --include=modules/contrib/acsf/acsf_init acsf-init-verify
 
