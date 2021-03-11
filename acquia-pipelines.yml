@@ -7,6 +7,12 @@ events:
           type: script
           script:
             - composer install --prefer-dist --no-dev
+            - cd docroot/profiles/sitefarm/themes/sitefarm_one
+            - nvm install 14.15.0
+            - nvm alias default 14.15.0
+            - npm -v
+            - node -v
+            - npm ci --unsafe-perm
       - acsf:
           type: script
           script:
