@@ -29,6 +29,20 @@ steps:
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
       - composer require "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
+  - name: Update Node and install NPM packages
+    plugin: Script
+    script: |
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+      which nvm
+      nvm install 14.15.0 > /dev/null 2>&1
+      nvm alias default 14.15.0 > /dev/null 2>&1
+      npm -v
+      node -v
+      cd $SRC_DIR/docroot/profiles/sitefarm/themes/sitefarm_one
+      npm ci --unsafe-perm
   - name: Run PhpUnit
     plugin: Script
     script:
