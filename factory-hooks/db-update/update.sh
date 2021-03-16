@@ -33,6 +33,9 @@ docroot="/var/www/html/$site.$env/docroot"
 #    on aliases. This can prevent some hard to trace problems.
 DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 
+# Enable ck_columns for redesign (This can be removed after deployment of redesign)
+$DRUSH_CMD en ck_columns -y
+
 # Now update database.
 $DRUSH_CMD updatedb -y
 
