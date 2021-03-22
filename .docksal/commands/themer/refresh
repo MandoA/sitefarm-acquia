@@ -24,6 +24,8 @@ if [ ! -f $DBFILE ]; then
     exit 1
 fi
 
+drush sql-drop -y
+
 echo "Importing Database..."
 drush sql-cli < ${DBFILE}
 drush cr
