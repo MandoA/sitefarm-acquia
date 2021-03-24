@@ -2887,17 +2887,17 @@
         },
         {
             "name": "drupal/block_style_plugins",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_style_plugins.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "aaa9eec7ab54aff21ed30f74325d880cf16e2ba1"
+                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "39e01b8ad335ee61ea9a01445b1143438ad68c9a"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -2905,8 +2905,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1591378644",
+                    "version": "8.x-1.5",
+                    "datestamp": "1616622469",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
