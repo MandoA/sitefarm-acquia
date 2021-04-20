@@ -12999,7 +12999,7 @@
                     "drupal/core": {
                         "Media images in the WYSIWYG should default the alignment to None": "https://www.drupal.org/files/issues/2019-12-09/3099878-1.patch",
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
-                        "Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch",
+                        "Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-20/ckeditor-p-tag-added-to-media-3131055-20-do-not-test.patch",
                         "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
                     },
                     "drupal/url_embed": {
