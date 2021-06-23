@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b15c8f78dd7880ca06cbe31d1b84d375",
+    "content-hash": "f6cde51fa49da1b5d19cc4ffe33cf985",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4566,6 +4566,70 @@
             }
         },
         {
+            "name": "drupal/field_group",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_group.git",
+                "reference": "8.x-3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "8a719eaea594f0ba874172831cb28da93c66b77a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/jquery_ui_accordion": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.1",
+                    "datestamp": "1591772567",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
+                },
+                {
+                    "name": "jyve",
+                    "homepage": "https://www.drupal.org/user/591438"
+                },
+                {
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Provides the field_group module.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_group",
+                "issues": "https://www.drupal.org/project/issues/field_group"
+            }
+        },
+        {
             "name": "drupal/focal_point",
             "version": "1.5.0",
             "source": {
@@ -6102,6 +6166,9 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Allow media tokens to be used for caption": "https://www.drupal.org/files/issues/2020-12-16/8.x-2.9-photoswipe-enable-media-fields-3024243-19_0.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -9273,10 +9340,10 @@
         },
         {
             "name": "npm-asset/ckeditor-featureblock",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-2.0.0.tgz"
+                "url": "https://registry.npmjs.org/ckeditor-featureblock/-/ckeditor-featureblock-3.0.0.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -9293,6 +9360,18 @@
             "type": "npm-asset",
             "license": [
                 "(GPL-2.0 OR LGPL-2.1 OR MPL-1.1)"
+            ]
+        },
+        {
+            "name": "npm-asset/ckeditor-layout-columns",
+            "version": "1.0.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/ckeditor-layout-columns/-/ckeditor-layout-columns-1.0.3.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
@@ -12671,11 +12750,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8.x-9.x",
+            "version": "dev-redesign",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "d4dc5fbf83308def940816e393b0c13f1e6693a3"
+                "reference": "0ad479952d9bf5f2fb568a5e40fbbbd00635ea3d"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -12697,6 +12776,7 @@
                 "drupal/externalauth": "^1.0",
                 "drupal/fancy_file_delete": "^2.0",
                 "drupal/features": "^3.0",
+                "drupal/field_group": "^3.1",
                 "drupal/focal_point": "^1.0",
                 "drupal/footnotes": "^2.0",
                 "drupal/geolocation": "^3.0",
@@ -12742,8 +12822,9 @@
                 "espresso-dev/instagram-basic-display-php": "^1.1",
                 "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
-                "npm-asset/ckeditor-featureblock": "^2.0",
+                "npm-asset/ckeditor-featureblock": "^3.0",
                 "npm-asset/ckeditor-indentblock": "^4.11",
+                "npm-asset/ckeditor-layout-columns": "^1.0",
                 "npm-asset/ckeditor-medialink": "^2.0",
                 "npm-asset/ckeditor-notification": "^4.7",
                 "npm-asset/ckeditor-widgetmenu": "^1.0",
@@ -12773,7 +12854,7 @@
                     "drupal/core": {
                         "Media images in the WYSIWYG should default the alignment to None": "https://www.drupal.org/files/issues/2019-12-09/3099878-1.patch",
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
-                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #44": "https://www.drupal.org/files/issues/2018-10-29/edit_drupalimage-86x-2855521-33.patch",
+                        "Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-20/ckeditor-p-tag-added-to-media-3131055-20-do-not-test.patch",
                         "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
                     },
                     "drupal/url_embed": {
@@ -12840,7 +12921,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-05-26T21:40:50+00:00"
+            "time": "2021-06-22T23:51:05+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -16410,5 +16491,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

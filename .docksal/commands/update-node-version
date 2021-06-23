@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+## Compile theme assets from source files.
+##
+## Usage: fin theme-build
+
+# Install NVM to get a modern Node.js version
+fin exec nvm install 14.15.0
+# Set the node default version
+fin exec nvm alias default 14.15.0
