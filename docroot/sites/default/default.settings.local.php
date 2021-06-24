@@ -184,3 +184,8 @@ $databases['default']['default'] = [
  * Configuration Sync directory - Edit this as needed
  */
 $settings['config_sync_directory'] = 'sites/default/files/config_XFJgWG0OOBwFg8asfsKWO8sMf6eYyOq5dbrv14FqkavRVEY6j61JoCbiJ9T_rqphSfdKjkD2Kw/sync';
+
+/**
+ * Use Hot Module Replacement to reload pages with Snowpack on js/css change.
+ */
+$settings['hot_module_replacement'] = TRUE;
