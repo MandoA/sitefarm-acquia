@@ -8,5 +8,10 @@
 // Set max age for Varnish cache as defined in https://docs.acquia.com/site-factory/manage/website/cache/modify/
 $config['system.performance']['cache']['page']['max_age'] = 7776000; // 90 days
 
-// Setting "Soft Purge" for Fastly.
-$config['fastly.settings']['purge_method'] = 'soft';
+// Setting "Soft Purge" for Fastly only when using Drush.
+if (php_sapi_name() == 'cli') {
+  $config['fastly.settings']['purge_method'] = 'soft';
+}
+else {
+  $config['fastly.settings']['purge_method'] = 'instant';
+}

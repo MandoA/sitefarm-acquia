@@ -24,13 +24,25 @@ steps:
       - PULL_REQUEST_ID=$(basename "https://bitbucket.org/ietwebdev/sitefarm-acquia/pull-requests/${PULL_REQUEST_LINK}")
       - API_DATA=$(curl -s --user $BITBUCKET_USER:$BITBUCKET_PASS https://api.bitbucket.org/2.0/repositories/ietwebdev/sitefarm-acquia/pullrequests/${PULL_REQUEST_ID})
       - DESTINATION_BRANCH=$(jq -r  '.destination.branch.name' <<< "${API_DATA}")
-      - composer global require hirak/prestissimo
-      - composer config extra.symfony.require "^3.4|^4.1"
+      - composer self-update
       - echo $PATH
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
       - composer require "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
-      - drush version
+  - name: Update Node and install NPM packages
+    plugin: Script
+    script: |
+      curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+      which nvm
+      nvm install 14.15.0 > /dev/null 2>&1
+      nvm alias default 14.15.0 > /dev/null 2>&1
+      npm -v
+      node -v
+      cd $SRC_DIR/docroot/profiles/sitefarm/themes/sitefarm_one
+      npm ci --unsafe-perm
   - name: Run PhpUnit
     plugin: Script
     script:
@@ -42,8 +54,8 @@ steps:
     subDirectory: docroot
     runInstall: true
     profileName: sitefarm
-    installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu'
-    settingsAppend: '$settings["file_private_path"] = "/var/www/html/sites/default/private-files";'
+    installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu -y'
+    settingsAppend: '$settings["file_private_path"] = "/var/www/html/sites/default/private-files"; $settings["config_sync_directory"] = "sites/default/files/config_XFJgWG0OOBwFg8asfsKWO8sMf6eYyOq5dbrv14FqkavRVEY6j61JoCbiJ9T_rqphSfdKjkD2Kw/sync";'
     phpIniOptions:
       upload_max_filesize: 256M
       post_max_size: 256M
@@ -51,6 +63,7 @@ steps:
   - name: Install default content
     plugin: Script
     script:
+      - drush version
       - drush scr "$SRC_DIR/factory-hooks/post-install/default_content.php"
       - drush cr
   - name: Fix files directory permissions
@@ -68,9 +81,7 @@ steps:
   - name: Run Behat JS
     plugin: Script
     script:
-      - apt-get update > /dev/null 2>&1
-      - apt-get install xvfb -y > /dev/null 2>&1
-      - wget http://chromedriver.storage.googleapis.com/2.42/chromedriver_linux64.zip > /dev/null 2>&1
+      - wget http://chromedriver.storage.googleapis.com/90.0.4430.24/chromedriver_linux64.zip > /dev/null 2>&1
       - sudo unzip chromedriver_linux64.zip -d /usr/bin
       - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar > /dev/null 2>&1
       - xvfb-run java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver="/usr/bin/chromedriver" > /dev/null 2>&1 & sleep 5

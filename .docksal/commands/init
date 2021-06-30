@@ -14,7 +14,6 @@ cd $PROJECT_ROOT
 
 # Start containers
 fin up
-fin exec composer global require hirak/prestissimo
 
 # Remove old directories and install
 rm -rf $PROJECT_ROOT/vendor
@@ -60,9 +59,7 @@ git checkout -b $DISTRO_BRANCH -t origin/$DISTRO_BRANCH
 fi
 
 # Install NVM to get a modern Node.js version
-fin exec nvm install 10.16.3
-# Set the node default version
-fin exec nvm alias default 10.16.3
+fin update-node-version
 
 # Install Node packages and compile assets
 fin theme-install
@@ -70,6 +67,9 @@ fin theme-install
 # Install site
 cd $DOCROOT_PATH
 fin drush site-install sitefarm -y --site-name="SiteFarm Acquia"
+
+# Install default content
+fin drush scr "../factory-hooks/post-install/default_content.php"
 
 # Get login link
 echo "Access SiteFarm: "

@@ -3,19 +3,23 @@ version: 1.1.0
 events:
   build:
     steps:
-      - build:
+      - build_drupal:
           type: script
           script:
             - composer install --prefer-dist --no-dev
-            - cd "docroot/profiles/sitefarm"
-            - git config user.email "ietwebdev@ucdavis.edu"
-            - git config user.name "IET WebDev"
-            - git revert b83c450
+      - build_theme:
+          type: script
+          script:
+            - cd docroot/profiles/sitefarm/themes/sitefarm_one
+            - nvm install 14.15.0
+            - nvm alias default 14.15.0
+            - npm -v
+            - node -v
+            - npm ci --unsafe-perm
       - acsf:
           type: script
           script:
-            - pwd
-            - cd ../../
+            - cd "../../../../"
             - drush --include=modules/contrib/acsf/acsf_init acsf-init
             - drush --include=modules/contrib/acsf/acsf_init acsf-init-verify
 

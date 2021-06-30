@@ -11,7 +11,7 @@ cd ../
 
 if [ -z "$1" ]
 then
-  BRANCH=master
+  BRANCH=redesign
 else
   BRANCH=$1
 fi
