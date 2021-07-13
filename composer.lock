@@ -3926,17 +3926,17 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ctools.git",
-                "reference": "8.x-3.6"
+                "reference": "8.x-3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.6.zip",
-                "reference": "8.x-3.6",
-                "shasum": "9a849bb6ac9f4d02603d04b3265b35b7329e1ef5"
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.7.zip",
+                "reference": "8.x-3.7",
+                "shasum": "b11c0981a1d2ab3cc9e8e614a337d8e2a2a70c0e"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -3944,8 +3944,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.6",
-                    "datestamp": "1620838181",
+                    "version": "8.x-3.7",
+                    "datestamp": "1623860918",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12754,7 +12754,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "16e1a59620f0495727c57fe241dc3ae298000827"
+                "reference": "a98a9e77fc7dca837123e2c099c30678aa87ad11"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -12870,6 +12870,9 @@
                     "drupal/photoswipe": {
                         "Allow media tokens to be used for caption": "https://www.drupal.org/files/issues/2021-01-19/photoswipe-enable-media-fields-3024243-21.patch"
                     },
+                    "drupal/social_media_links": {
+                        "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2021-03-23/social_media_links-fix_font_awesome_style-2991846-15.patch"
+                    },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
                     },
@@ -12921,7 +12924,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-07-07T16:14:37+00:00"
+            "time": "2021-07-13T22:43:15+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
