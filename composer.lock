@@ -6965,6 +6965,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2021-03-23/social_media_links-fix_font_awesome_style-2991846-15.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
