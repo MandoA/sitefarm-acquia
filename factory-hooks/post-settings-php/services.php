@@ -3,7 +3,7 @@
  * @file
  * Adds a new services.yml files
  *
- * Thse file will be included into settings.php for all sites on Site Factory.
+ * This file will be included into settings.php for all sites on Site Factory.
  */
 
 // cors.services.yml from custom theme to adjust CORS settings.
