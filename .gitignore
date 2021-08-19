@@ -10,6 +10,8 @@ services.local.yml
 /docroot/profiles
 /docroot/modules/contrib
 /docroot/themes/contrib
+/docroot/modules/local
+/docroot/themes/local
 
 # Ignore Libraries which have been copied from the Profile.
 /docroot/libraries
