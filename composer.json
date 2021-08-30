@@ -31,7 +31,6 @@
     "cweagans/composer-patches": "^1.5",
     "drupal/acquia_connector": "^1.0",
     "drupal/acsf": "^2.0",
-    "drupal/block_place": "^1.0",
     "drupal/console": "^1.0",
     "drupal/core-composer-scaffold": "~9.2.0",
     "drupal/core-recommended": "~9.2.0",
