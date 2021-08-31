@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04a84fd325111ba6e5d99dbf5575ff28",
+    "content-hash": "d62937f3b32813f23f64734233d3a15f",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -9272,6 +9272,18 @@
                 "reference": "c999df7c361d27d581fca460a6ac6c1082f3e0e2"
             },
             "type": "npm-asset"
+        },
+        {
+            "name": "npm-asset/fakeobjects",
+            "version": "4.15.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/fakeobjects/-/fakeobjects-4.15.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "ISC"
+            ]
         },
         {
             "name": "npm-asset/photoswipe",
