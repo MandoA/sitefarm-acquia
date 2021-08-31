@@ -81,7 +81,7 @@ steps:
   - name: Run Behat JS
     plugin: Script
     script:
-      - wget http://chromedriver.storage.googleapis.com/93.0.4577.15/chromedriver_linux64.zip > /dev/null 2>&1
+      - wget http://chromedriver.storage.googleapis.com/92.0.4515.43/chromedriver_linux64.zip > /dev/null 2>&1
       - sudo unzip chromedriver_linux64.zip -d /usr/bin
       - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar > /dev/null 2>&1
       - xvfb-run java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver="/usr/bin/chromedriver" > /dev/null 2>&1 & sleep 5
