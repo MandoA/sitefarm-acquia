@@ -122,7 +122,12 @@
         "type:drupal-drush"
       ]
     },
-    "enable-patching": true
+    "enable-patching": true,
+    "patches": {
+      "drupal/acquia_purge": {
+        "Increase hash length": "https://git.drupalcode.org/project/acquia_purge/-/merge_requests/1.diff"
+      }
+    }
   },
   "autoload": {
     "psr-4": {
