@@ -21,6 +21,8 @@ docroot="/var/www/html/$site.$env/docroot"
 #    on aliases. This can prevent some hard to trace problems.
 DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 
-# Purge all Acquia and Fastly caches.
+# Remove Fastly site_id, letting it generate a new one, so that it doesn't purge the live site.
+$DRUSH_CMD config-delete fastly.settings site_id
 $DRUSH_CMD cr -y
+# Purge all Acquia and Fastly caches.
 $DRUSH_CMD p:invalidate everything -y
