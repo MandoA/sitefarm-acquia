@@ -118,7 +118,6 @@
       "docroot/libraries/media_link/": ["npm-asset/ckeditor-medialink"],
       "docroot/libraries/notification/": ["npm-asset/ckeditor-notification"],
       "docroot/libraries/widget_menu/": ["npm-asset/ckeditor-widgetmenu"],
-      "docroot/libraries/wordcount/": ["npm-asset/ckeditor-wordcount-plugin"],
       "docroot/libraries/slick/": ["npm-asset/slick-carousel"],
       "docroot/libraries/{$name}": [
         "type:drupal-library",
