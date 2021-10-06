@@ -23,8 +23,9 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "drupal/core-dev": "~8.9.0",
-    "drupal/drupal-extension": "^4.1"
+    "drupal/core-dev": "~9.2.0",
+    "drupal/drupal-extension": "^4.1",
+    "phpspec/prophecy-phpunit": "^2"
   },
   "require": {
     "composer/installers": "^1.2",
@@ -32,13 +33,15 @@
     "drupal/acquia_connector": "^1.0",
     "drupal/acsf": "^2.0",
     "drupal/console": "^1.0",
-    "drupal/css_editor": "1.2",
-    "drupal/core-composer-scaffold": "~8.9.0",
-    "drupal/core-recommended": "~8.9.0",
+    "drupal/core-composer-scaffold": "~9.2.0",
+    "drupal/core-recommended": "~9.2.0",
+    "drupal/footnotes": "3.0",
     "drupal/inline_entity_form": "^1.0",
-    "drupal/memcache": "2.1",
+    "drupal/memcache": "2.3",
+    "drupal/migrate_file_to_media": "2.0",
     "drupal/samlauth": "^3.0",
-    "drush/drush": "^9.0",
+    "drush/drush": "^10.0",
+    "npm-asset/fakeobjects": "^4.15",
     "ucdavis/sitefarm": "dev-8.x-10.x",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
@@ -63,14 +66,6 @@
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git"
     }
-  },
-  "scripts": {
-    "post-install-cmd": [
-      "Sitefarm\\Composer\\Assets::rename"
-    ],
-    "post-update-cmd": [
-      "Sitefarm\\Composer\\Assets::rename"
-    ]
   },
   "config": {
     "sort-packages": true,
@@ -107,11 +102,6 @@
       "docroot/profiles/{$name}": [
         "type:drupal-profile"
       ],
-      "docroot/libraries/{$name}": [
-        "type:drupal-library",
-        "type:bower-asset",
-        "type:npm-asset"
-      ],
       "docroot/themes/contrib/{$name}": [
         "type:drupal-theme"
       ],
@@ -120,6 +110,19 @@
       ],
       "drush/contrib/{$name}": [
         "type:drupal-drush"
+      ],
+      "docroot/libraries/autosave/": ["npm-asset/ckeditor-autosave-plugin"],
+      "docroot/libraries/feature_block/": ["npm-asset/ckeditor-featureblock"],
+      "docroot/libraries/indentblock/": ["npm-asset/ckeditor-indentblock"],
+      "docroot/libraries/layout_columns/": ["npm-asset/ckeditor-layout-columns"],
+      "docroot/libraries/media_link/": ["npm-asset/ckeditor-medialink"],
+      "docroot/libraries/notification/": ["npm-asset/ckeditor-notification"],
+      "docroot/libraries/widget_menu/": ["npm-asset/ckeditor-widgetmenu"],
+      "docroot/libraries/slick/": ["npm-asset/slick-carousel"],
+      "docroot/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
       ]
     },
     "enable-patching": true
