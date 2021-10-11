@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ea9c4a24c32cadc09c92cdfc9b853ad",
+    "content-hash": "d614038ad8bb8f23682559deded94190",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2541,6 +2541,54 @@
             "support": {
                 "source": "https://git.drupal.org/project/better_normalizers.git",
                 "issues": "https://www.drupal.org/project/issues/better_normalizers"
+            }
+        },
+        {
+            "name": "drupal/block_place",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_place.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_place-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "d10b8ce20a9642a99c1b3961324edf4966c64099"
+            },
+            "require": {
+                "drupal/core": "^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1589789731",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "iyyappan.govind",
+                    "homepage": "https://www.drupal.org/user/3217889"
+                },
+                {
+                    "name": "rpsu",
+                    "homepage": "https://www.drupal.org/user/102121"
+                }
+            ],
+            "description": "Allow administrators to place blocks from any Drupal page",
+            "homepage": "https://www.drupal.org/project/block_place",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_place"
             }
         },
         {
@@ -13144,11 +13192,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-8.x-10.x",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "0f0f43089e46e4574c4fefbd07221fc3b60f1bd5"
+                "reference": "08815fbd1aa1a64b85d6e90f381b409cb150c3a5"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13156,6 +13204,7 @@
                 "drupal/admin_toolbar": "^2.0",
                 "drupal/anchor_link": "^1.0",
                 "drupal/better_normalizers": "^1.0",
+                "drupal/block_place": "^1.0",
                 "drupal/block_style_plugins": "^1.0",
                 "drupal/cas": "^1.0",
                 "drupal/ckeditor_widget_menu": "^1.0",
@@ -13223,6 +13272,7 @@
                 "npm-asset/ckeditor-notification": "^4.7",
                 "npm-asset/ckeditor-widgetmenu": "^1.0",
                 "npm-asset/ckeditor-wordcount-plugin": "^1.17",
+                "npm-asset/fakeobjects": "^4.15",
                 "npm-asset/photoswipe": "^4.1",
                 "npm-asset/slick-carousel": "^1.8",
                 "oomphinc/composer-installers-extender": "^2.0",
@@ -13248,18 +13298,21 @@
                     "drupal/core": {
                         "Media images in the WYSIWYG should default the alignment to None": "https://www.drupal.org/files/issues/2019-12-09/3099878-1.patch",
                         "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
-                        "Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-20/ckeditor-p-tag-added-to-media-3131055-20-do-not-test.patch",
+                        "Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch",
                         "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
+                    },
+                    "drupal/css_editor": {
+                        "Fix the checkbox for the enabling the css editor not finding default value": "https://www.drupal.org/files/issues/2021-04-19/css_editor_fixed.patch"
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
                         "Prevent double escaping ampersands": "https://www.drupal.org/files/issues/2729479-2.patch"
                     },
+                    "drupal/metatag": {
+                        "Fix malformed html https://www.drupal.org/i/3230747": "https://git.drupalcode.org/project/metatag/-/merge_requests/27.diff"
+                    },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
-                    },
-                    "drupal/migrate_file_to_media": {
-                        "Fix calculateBinaryHash issue": "https://www.drupal.org/files/issues/2020-12-07/calculatebinaryhash-3187119-1.patch"
                     },
                     "drupal/photoswipe": {
                         "Allow media tokens to be used for caption": "https://www.drupal.org/files/issues/2021-01-19/photoswipe-enable-media-fields-3024243-21.patch"
@@ -13318,7 +13371,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-08-26T01:31:36+00:00"
+            "time": "2021-10-06T21:28:05+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
