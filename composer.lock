@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d614038ad8bb8f23682559deded94190",
+    "content-hash": "63855dc67242ac82889f80ac19b10989",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -13192,11 +13192,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-dev",
+            "version": "dev-release",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "08815fbd1aa1a64b85d6e90f381b409cb150c3a5"
+                "reference": "a997f39540856a3a9c3a517d1a60dd2373addf16"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13293,41 +13293,41 @@
                 },
                 "patches": {
                     "drupal/cas": {
-                        "CAS Username token doesn't work if no user entity is created": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch"
+                        "CAS Username token doesn't work if no user entity is created https://drupal.org/i/3120957": "https://www.drupal.org/files/issues/2020-03-20/3120957-5.patch"
                     },
                     "drupal/core": {
-                        "Media images in the WYSIWYG should default the alignment to None": "https://www.drupal.org/files/issues/2019-12-09/3099878-1.patch",
-                        "Negate the condition on block visibility for Roles": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
-                        "Wrapping drupal-media image in a link produces empty P tags after image": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch",
-                        "delete-form and edit-form links in header for anonymous users": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
+                        "Media images in the WYSIWYG should default the alignment to None https://drupal.org/i/3099878": "https://www.drupal.org/files/issues/2019-12-09/3099878-1.patch",
+                        "Negate the condition on block visibility for Roles https://drupal.org/i/2986958": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
+                        "Wrapping drupal-media image in a link produces empty P tags after image https://drupal.org/i/3131055": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch",
+                        "delete-form and edit-form links in header for anonymous users https://drupal.org/i/2856823": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
                     },
                     "drupal/css_editor": {
-                        "Fix the checkbox for the enabling the css editor not finding default value": "https://www.drupal.org/files/issues/2021-04-19/css_editor_fixed.patch"
+                        "Fix the checkbox for the enabling the css editor not finding default value https://drupal.org/i/3203706": "https://www.drupal.org/files/issues/2021-04-19/css_editor_fixed.patch"
                     },
                     "drupal/url_embed": {
-                        "make embeds responsive": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
-                        "Prevent double escaping ampersands": "https://www.drupal.org/files/issues/2729479-2.patch"
+                        "make embeds responsive https://drupal.org/i/2825602": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
+                        "Prevent double escaping ampersands https://drupal.org/i/2729479": "https://www.drupal.org/files/issues/2729479-2.patch"
                     },
                     "drupal/metatag": {
-                        "Fix malformed html https://www.drupal.org/i/3230747": "https://git.drupalcode.org/project/metatag/-/merge_requests/27.diff"
+                        "Fix malformed html https://drupal.org/i/3230747": "https://git.drupalcode.org/project/metatag/-/merge_requests/27.diff"
                     },
                     "drupal/migrate_plus": {
-                        "Fix xml parser from always attaching the last item": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
+                        "Fix xml parser from always attaching the last item https://drupal.org/i/2891964": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                     },
                     "drupal/photoswipe": {
-                        "Allow media tokens to be used for caption": "https://www.drupal.org/files/issues/2021-01-19/photoswipe-enable-media-fields-3024243-21.patch"
+                        "Allow media tokens to be used for caption https://drupal.org/i/3024243": "https://www.drupal.org/files/issues/2021-01-19/photoswipe-enable-media-fields-3024243-21.patch"
                     },
                     "drupal/social_media_links": {
-                        "Update Font Awesome to 5.1": "https://www.drupal.org/files/issues/2021-03-23/social_media_links-fix_font_awesome_style-2991846-15.patch"
+                        "Update Font Awesome to 5.1 https://drupal.org/i/2991846": "https://www.drupal.org/files/issues/2021-03-23/social_media_links-fix_font_awesome_style-2991846-15.patch"
                     },
                     "drupal/token": {
-                        "Token module custom menu_link base field breaks JSON API": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
+                        "Token module custom menu_link base field breaks JSON API https://drupal.org/i/2978262": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
                     },
                     "drupal/sharemessage": {
-                        "Check if the metatag module exists before letting Share Message write OG type.": "https://www.drupal.org/files/issues/2019-03-11/check-if-metatag.patch"
+                        "Check if the metatag module exists before letting Share Message write OG type. https://drupal.org/i/3039277": "https://www.drupal.org/files/issues/2019-03-11/check-if-metatag.patch"
                     },
                     "drupal/focal_point": {
-                        "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form)": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
+                        "Integrate focal point with media_library (Missing crosshairs on image preview in media library modal form) https://drupal.org/i/3094478": "https://www.drupal.org/files/issues/2020-01-09/3094478-10.patch"
                     }
                 }
             },
@@ -13371,7 +13371,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-10-06T21:28:05+00:00"
+            "time": "2021-10-18T16:56:18+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -17423,5 +17423,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
