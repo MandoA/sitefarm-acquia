@@ -50,7 +50,7 @@ steps:
       - SYMFONY_DEPRECATIONS_HELPER=disabled $SRC_DIR/vendor/bin/phpunit --colors="always"
   - name: Drupal site setup
     plugin: Drupal
-    drupalVersion: 8
+    drupalVersion: 9
     subDirectory: docroot
     runInstall: true
     profileName: sitefarm
