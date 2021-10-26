@@ -13161,7 +13161,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "144479585af747805885946dfaf7e3ba55ecbb98"
+                "reference": "f5c7ed22efa0059413b1ea8f3c3c6ac60afe6d6d"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13266,6 +13266,9 @@
                         "Wrapping drupal-media image in a link produces empty P tags after image https://drupal.org/i/3131055": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch",
                         "delete-form and edit-form links in header for anonymous users https://drupal.org/i/2856823": "https://www.drupal.org/files/issues/2020-01-24/2856823-37.patch"
                     },
+                    "drupal/block_place": {
+                        "Use absolute path url in css to core icons https://drupal.org/i/3245818": "https://git.drupalcode.org/project/block_place/-/merge_requests/1.diff"
+                    },
                     "drupal/css_editor": {
                         "Fix the checkbox for the enabling the css editor not finding default value https://drupal.org/i/3203706": "https://www.drupal.org/files/issues/2021-04-19/css_editor_fixed.patch"
                     },
@@ -13336,7 +13339,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2021-10-19T23:20:40+00:00"
+            "time": "2021-10-26T17:23:40+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
