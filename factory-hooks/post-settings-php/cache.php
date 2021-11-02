@@ -15,3 +15,7 @@ if (php_sapi_name() == 'cli') {
 else {
   $config['fastly.settings']['purge_method'] = 'instant';
 }
+
+// More Fastly settings
+$config['fastly.settings']['site_id'] = $databases['default']['default']['database'];
+$config['fastly.settings']['cache_tag_hash_length'] = 5;
