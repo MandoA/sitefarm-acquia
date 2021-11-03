@@ -39,6 +39,7 @@
     "drupal/inline_entity_form": "^1.0",
     "drupal/memcache": "2.3",
     "drupal/migrate_file_to_media": "2.0",
+    "drupal/purge": "3.0",
     "drupal/samlauth": "^3.0",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
