@@ -42,9 +42,6 @@ if [ $? -eq 0 -a -n "$update_entities" ] ; then
     $DRUSH_CMD entity-updates
 fi
 
-# Remove log out all users.
-$DRUSH_CMD sql:query "TRUNCATE TABLE sessions"
-
 # Purge all Acquia and Fastly caches.
 $DRUSH_CMD cr -y
 $DRUSH_CMD p:invalidate everything -y
