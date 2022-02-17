@@ -78,7 +78,8 @@
       "cweagans/composer-patches": true,
       "drupal/console-extend-plugin": true,
       "oomphinc/composer-installers-extender": true,
-      "drupal/core-composer-scaffold": true
+      "drupal/core-composer-scaffold": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
   "conflict": {
@@ -132,6 +133,11 @@
         "type:bower-asset",
         "type:npm-asset"
       ]
+    },
+    "patches": {
+      "drupal/core": {
+        "D9.4 Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma https://www.drupal.org/project/drupal/issues/3226117": "https://www.drupal.org/files/issues/2022-01-31/3226117-email-sending-broken-if-site-name-contains-coma.patch"
+      }
     },
     "enable-patching": true
   },
