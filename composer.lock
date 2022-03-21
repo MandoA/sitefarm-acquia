@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64ca48cf33553038970d67d202237c64",
+    "content-hash": "2990931813905784344e20c73aa318df",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -13179,11 +13179,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-dev",
+            "version": "dev-merge-904",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "ede3142414de67a8fdc118721f819ba39ffa615a"
+                "reference": "fc5f1e8d9c5e8726b3b05d191650ae8f8965891a"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13286,7 +13286,7 @@
                         "Media images in the WYSIWYG should default the alignment to None https://drupal.org/i/3099878": "https://www.drupal.org/files/issues/2019-12-09/3099878-1.patch",
                         "Negate the condition on block visibility for Roles https://drupal.org/i/2986958": "https://www.drupal.org/files/issues/2018-07-19/enable-block-visibility-user-role-negation-2986958-2.patch",
                         "Wrapping drupal-media image in a link produces empty P tags after image https://drupal.org/i/3131055": "https://www.drupal.org/files/issues/2021-04-19/ckeditor-p-tag-added-to-media-3131055-17.patch",
-                        "D9.4 Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma https://www.drupal.org/project/drupal/issues/3226117": "https://www.drupal.org/files/issues/2022-01-31/3226117-email-sending-broken-if-site-name-contains-coma.patch"
+                        "Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma https://www.drupal.org/project/drupal/issues/3226117": "https://git.drupalcode.org/project/drupal/-/merge_requests/1070.diff"
                     },
                     "drupal/block_place": {
                         "Use absolute path url in css to core icons https://drupal.org/i/3245818": "https://git.drupalcode.org/project/block_place/-/merge_requests/1.diff"
@@ -13355,7 +13355,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-03-21T16:30:31+00:00"
+            "time": "2022-03-15T20:43:40+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
