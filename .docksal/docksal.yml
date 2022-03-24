@@ -1,4 +1,5 @@
 # Extending stack-acquia.yml
+version: "3.9"
 
 services:
   # CLI
