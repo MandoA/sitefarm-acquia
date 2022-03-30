@@ -13183,7 +13183,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "26eaf1e3921e9b8ce2bf40f664b1a081cf6eb5af"
+                "reference": "30139007d4769cc2dc564bed94f1b301cd356ba9"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13298,9 +13298,6 @@
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item https://drupal.org/i/2891964": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                     },
-                    "drupal/photoswipe": {
-                        "Allow media tokens to be used for caption https://drupal.org/i/3024243": "https://www.drupal.org/files/issues/2022-03-15/photoswipe-enable-media-fields-3024243-27.patch"
-                    },
                     "drupal/social_media_links": {
                         "Update Font Awesome to 5.1 https://drupal.org/i/2991846": "https://www.drupal.org/files/issues/2021-03-23/social_media_links-fix_font_awesome_style-2991846-15.patch"
                     },
@@ -13355,7 +13352,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-03-29T20:17:00+00:00"
+            "time": "2022-03-30T00:16:27+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
