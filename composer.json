@@ -23,7 +23,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "drupal/core-dev": "~9.2.0",
+    "drupal/core-dev": "~9.3.0",
     "drupal/drupal-extension": "^4.1",
     "phpspec/prophecy-phpunit": "^2"
   },
@@ -33,8 +33,8 @@
     "drupal/acquia_connector": "^1.0",
     "drupal/acsf": "^2.0",
     "drupal/console": "^1.0",
-    "drupal/core-composer-scaffold": "~9.2.0",
-    "drupal/core-recommended": "~9.2.0",
+    "drupal/core-composer-scaffold": "~9.3.0",
+    "drupal/core-recommended": "~9.3.0",
     "drupal/footnotes": "3.0",
     "drupal/inline_entity_form": "^1.0",
     "drupal/memcache": "2.3",
@@ -133,11 +133,6 @@
         "type:bower-asset",
         "type:npm-asset"
       ]
-    },
-    "patches": {
-      "drupal/core": {
-        "D9.4 Uncaught RfcComplianceException thrown when sending email from a site whose name contains a comma https://www.drupal.org/project/drupal/issues/3226117": "https://www.drupal.org/files/issues/2022-01-31/3226117-email-sending-broken-if-site-name-contains-coma.patch"
-      }
     },
     "enable-patching": true
   },
