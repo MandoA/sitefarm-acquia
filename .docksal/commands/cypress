@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+## Run End-to-end tests with Cypress.
+##
+## Usage: fin cypress [arguments]
+
+cd ${PROJECT_ROOT}/docroot/profiles/sitefarm/tests/cypress
+
+CYPRESS_BASE_URL=http://${VIRTUAL_HOST}
+CYPRESS_DRUPAL_BASE_URL=http://${VIRTUAL_HOST}
+
+export CYPRESS_BASE_URL
+export CYPRESS_DRUPAL_BASE_URL
+
+npm test $@
