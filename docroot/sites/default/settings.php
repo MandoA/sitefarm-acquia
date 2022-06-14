@@ -713,7 +713,7 @@ $settings['config_exclude_modules'] = [
  * Enable the Test Session module variable on Probo only.
  */
 if (isset($_ENV['PROBO_ENVIRONMENT'])) {
-  print_r('PROB ENV: ' . $_ENV['PROBO_ENVIRONMENT'])
+  print_r('PROB ENV: ' . $_ENV['PROBO_ENVIRONMENT']);
   putenv('TEST_SESSION_ENABLED=true');
 }
 print_r($_ENV);
