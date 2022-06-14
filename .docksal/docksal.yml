@@ -23,6 +23,7 @@ services:
       service: cli
     environment:
       - PHP_IDE_CONFIG
+      - 'TEST_SESSION_ENABLED=true'
     ports:
       - 9003
   # Varnish
