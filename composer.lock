@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64ca48cf33553038970d67d202237c64",
+    "content-hash": "66dd6da154ed96810929761ff857f317",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -6980,6 +6980,54 @@
             "homepage": "https://www.drupal.org/project/svg_image_field",
             "support": {
                 "source": "https://git.drupalcode.org/project/svg_image_field"
+            }
+        },
+        {
+            "name": "drupal/test_session",
+            "version": "1.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/test_session.git",
+                "reference": "1.2.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/test_session-1.2.10.zip",
+                "reference": "1.2.10",
+                "shasum": "4fb9d3cf8062645c8112ea860ad0720a2920cced"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.2.10",
+                    "datestamp": "1637763065",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Leksat",
+                    "homepage": "https://www.drupal.org/user/390336"
+                },
+                {
+                    "name": "pmelab",
+                    "homepage": "https://www.drupal.org/user/555322"
+                }
+            ],
+            "description": "Helpers for E2E testing.",
+            "homepage": "https://www.drupal.org/project/test_session",
+            "support": {
+                "source": "https://git.drupalcode.org/project/test_session"
             }
         },
         {
