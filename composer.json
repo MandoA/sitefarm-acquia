@@ -35,6 +35,7 @@
     "drupal/console": "^1.0",
     "drupal/core-composer-scaffold": "~9.3.0",
     "drupal/core-recommended": "~9.3.0",
+    "drupal/embed": "1.4",
     "drupal/footnotes": "3.0",
     "drupal/inline_entity_form": "^1.0",
     "drupal/memcache": "2.3",
@@ -43,7 +44,7 @@
     "drupal/samlauth": "^3.0",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
-    "ucdavis/sitefarm": "dev-dev",
+    "ucdavis/sitefarm": "9.x-dev",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {

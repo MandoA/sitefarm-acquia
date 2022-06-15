@@ -45,8 +45,8 @@ if ($memcache_module_is_present && ($memcache_exists || $memcached_exists)) {
     // Set key_prefix to avoid drush cr flushing all bins on multisite.
     $settings['memcache']['key_prefix'] = $conf['acquia_hosting_site_info']['db']['name'] . '_';
 
-    // Settings for SASL Authenticated Memcached.
-    $settings['memcache']['options'][Memcached::OPT_BINARY_PROTOCOL] = TRUE;
+    // Decrease latency.
+    $settings['memcache']['options'][Memcached::OPT_TCP_NODELAY] = TRUE;
 
     // Bootstrap cache.container with memcache rather than database.
     $settings['bootstrap_container_definition'] = [
@@ -94,6 +94,9 @@ if ($memcache_module_is_present && ($memcache_exists || $memcached_exists)) {
         ],
       ],
     ];
+
+    // Content Hub 2.x requires the Depcalc module which needs to use the database backend.
+    $settings['cache']['bins']['depcalc'] = 'cache.backend.database';
 
     // Use memcache for bootstrap, discovery, config instead of fast chained
     // backend to properly invalidate caches on multiple webs.
