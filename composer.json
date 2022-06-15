@@ -35,7 +35,6 @@
     "drupal/console": "^1.0",
     "drupal/core-composer-scaffold": "~9.3.0",
     "drupal/core-recommended": "~9.3.0",
-    "drupal/embed": "1.4",
     "drupal/footnotes": "3.0",
     "drupal/inline_entity_form": "^1.0",
     "drupal/memcache": "2.3",
