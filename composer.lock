@@ -13228,7 +13228,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "30139007d4769cc2dc564bed94f1b301cd356ba9"
+                "reference": "33f5fb6089e0b5df000b4c0ecde995cd985eb287"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13338,7 +13338,8 @@
                     },
                     "drupal/url_embed": {
                         "make embeds responsive https://drupal.org/i/2825602": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
-                        "Prevent double escaping ampersands https://drupal.org/i/2729479": "https://www.drupal.org/files/issues/2729479-2.patch"
+                        "Prevent double escaping ampersands https://drupal.org/i/2729479": "https://www.drupal.org/files/issues/2729479-2.patch",
+                        "Embed now requires a csrf token https://www.drupal.org/project/url_embed/issues/3285139": "https://git.drupalcode.org/project/url_embed/-/merge_requests/5.diff"
                     },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item https://drupal.org/i/2891964": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
@@ -13397,7 +13398,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-03-30T00:16:27+00:00"
+            "time": "2022-06-15T22:47:32+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
