@@ -24,7 +24,7 @@
   "prefer-stable": true,
   "require-dev": {
     "drupal/core-dev": "~9.3.0",
-    "drupal/drupal-extension": "^4.1",
+    "drupal/drupal-extension": "4.1.0",
     "phpspec/prophecy-phpunit": "^2"
   },
   "require": {
