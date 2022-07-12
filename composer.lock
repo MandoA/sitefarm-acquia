@@ -4,32 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c86d34020f2b857070b53f2c1f298f78",
+    "content-hash": "699a68d27d2e72c0c8f21508a6f79890",
     "packages": [
         {
             "name": "abraham/twitteroauth",
-            "version": "1.2.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abraham/twitteroauth.git",
-                "reference": "f5cda73d1deae8b9e3e54f1572a6d28d03e06644"
+                "reference": "55dcddb3bb8e87325acab2f219c08750b68efb74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/f5cda73d1deae8b9e3e54f1572a6d28d03e06644",
-                "reference": "f5cda73d1deae8b9e3e54f1572a6d28d03e06644",
+                "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/55dcddb3bb8e87325acab2f219c08750b68efb74",
+                "reference": "55dcddb3bb8e87325acab2f219c08750b68efb74",
                 "shasum": ""
             },
             "require": {
                 "composer/ca-bundle": "^1.2",
                 "ext-curl": "*",
-                "php": "^7.2 || ^7.3 || ^7.4"
+                "php": "^7.4 || ^8.0 || ^8.1"
             },
             "require-dev": {
                 "php-vcr/php-vcr": "^1",
-                "php-vcr/phpunit-testlistener-vcr": "^3",
+                "php-vcr/phpunit-testlistener-vcr": "dev-php-8",
                 "phpmd/phpmd": "^2",
-                "phpunit/phpunit": "^8",
+                "phpunit/phpunit": "^8 || ^9",
+                "rector/rector": "^0.12.19",
                 "squizlabs/php_codesniffer": "^3"
             },
             "type": "library",
@@ -65,7 +66,7 @@
                 "issues": "https://github.com/abraham/twitteroauth/issues",
                 "source": "https://github.com/abraham/twitteroauth"
             },
-            "time": "2020-09-22T14:27:00+00:00"
+            "time": "2022-04-02T16:47:22+00:00"
         },
         {
             "name": "alchemy/zippy",
@@ -6814,20 +6815,14 @@
         },
         {
             "name": "drupal/socialfeed",
-            "version": "1.4.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/socialfeed.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialfeed-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "889cfe249d0b33690e094cbf13a40e51ead7d06e"
+                "reference": "651c43942ffe37c19b553d09972d8c2cef513918"
             },
             "require": {
-                "abraham/twitteroauth": "^1",
+                "abraham/twitteroauth": "^4",
                 "drupal/core": "^8.8 || ^9",
                 "espresso-dev/instagram-basic-display-php": "^1.1",
                 "ext-json": "*",
@@ -6836,12 +6831,15 @@
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1643633216",
+                    "version": "8.x-1.4+2-dev",
+                    "datestamp": "1655987626",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -7937,20 +7935,20 @@
         },
         {
             "name": "facebook/graph-sdk",
-            "version": "5.7.0",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/facebook/php-graph-sdk.git",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b"
+                "url": "https://bitbucket.org/dearmond/facebook-graph-sdk.git",
+                "reference": "9d133aceb47e4ac8e9842bd646e9c995b9d0c014"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/2d8250638b33d73e7a87add65f47fabf91f8ad9b",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b",
+                "url": "https://bitbucket.org/dearmond/facebook-graph-sdk/get/9d133aceb47e4ac8e9842bd646e9c995b9d0c014.zip",
+                "reference": "9d133aceb47e4ac8e9842bd646e9c995b9d0c014",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4|^7.0"
+                "php": "^5.4|^8.0"
             },
             "require-dev": {
                 "guzzlehttp/guzzle": "~5.0",
@@ -7975,7 +7973,11 @@
                     "src/Facebook/polyfills.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Facebook\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "Facebook Platform"
             ],
@@ -7992,11 +7994,9 @@
                 "sdk"
             ],
             "support": {
-                "issues": "https://github.com/facebook/php-graph-sdk/issues",
-                "source": "https://github.com/facebook/php-graph-sdk/tree/5.7.0"
+                "source": "https://bitbucket.org/dearmond/facebook-graph-sdk/src/9d133aceb47e4ac8e9842bd646e9c995b9d0c014/?at=5.7.1"
             },
-            "abandoned": true,
-            "time": "2018-12-11T22:56:31+00:00"
+            "time": "2022-07-12T18:26:47+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -9050,16 +9050,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.57.0",
+            "version": "2.59.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "4a54375c21eea4811dbd1149fe6b246517554e78"
+                "reference": "a9000603ea337c8df16cc41f8b6be95a65f4d0f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/4a54375c21eea4811dbd1149fe6b246517554e78",
-                "reference": "4a54375c21eea4811dbd1149fe6b246517554e78",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/a9000603ea337c8df16cc41f8b6be95a65f4d0f5",
+                "reference": "a9000603ea337c8df16cc41f8b6be95a65f4d0f5",
                 "shasum": ""
             },
             "require": {
@@ -9074,10 +9074,12 @@
                 "doctrine/orm": "^2.7",
                 "friendsofphp/php-cs-fixer": "^3.0",
                 "kylekatarnls/multi-tester": "^2.0",
+                "ondrejmirtes/better-reflection": "*",
                 "phpmd/phpmd": "^2.9",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12.54 || ^1.0",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.14",
+                "phpstan/phpstan": "^0.12.99 || ^1.7.14",
+                "phpunit/php-file-iterator": "^2.0.5 || ^3.0.6",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.26 || ^9.5.20",
                 "squizlabs/php_codesniffer": "^3.4"
             },
             "bin": [
@@ -9134,15 +9136,19 @@
             },
             "funding": [
                 {
-                    "url": "https://opencollective.com/Carbon",
-                    "type": "open_collective"
+                    "url": "https://github.com/sponsors/kylekatarnls",
+                    "type": "github"
                 },
                 {
-                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                    "url": "https://opencollective.com/Carbon#sponsor",
+                    "type": "opencollective"
+                },
+                {
+                    "url": "https://tidelift.com/subscription/pkg/packagist-nesbot-carbon?utm_source=packagist-nesbot-carbon&utm_medium=referral&utm_campaign=readme",
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-13T18:13:33+00:00"
+            "time": "2022-06-29T21:43:55+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -17732,6 +17738,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/socialfeed": 20,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20
     },
@@ -17739,5 +17746,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

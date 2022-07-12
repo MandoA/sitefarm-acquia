@@ -41,6 +41,7 @@
     "drupal/migrate_file_to_media": "2.0",
     "drupal/purge": "3.0",
     "drupal/samlauth": "^3.0",
+    "drupal/socialfeed": "1.x-dev",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
     "ucdavis/sitefarm": "9.x-dev",
@@ -55,6 +56,10 @@
       "type": "composer",
       "url": "https://asset-packagist.org"
     },
+      "facebook/graph-sdk": {
+          "type": "vcs",
+          "url": "https://bitbucket.org/dearmond/facebook-graph-sdk.git"
+      },
     "ucdavis/sitefarm": {
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm.git"
