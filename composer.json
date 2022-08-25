@@ -41,19 +41,24 @@
     "drupal/migrate_file_to_media": "2.0",
     "drupal/purge": "3.0",
     "drupal/samlauth": "^3.0",
+    "drupal/socialfeed": "dev-3295588-facebookgraph-sdk-is-deprecated",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
-    "ucdavis/sitefarm": "9.x-dev",
+    "ucdavis/sitefarm": "dev-SITEFARM-2936",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {
-    "drupal": {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
     "assets": {
       "type": "composer",
       "url": "https://asset-packagist.org"
+    },
+    "drupal/socialfeed": {
+      "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/socialfeed-3295588.git"
+    },
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     },
     "ucdavis/sitefarm": {
       "type": "vcs",
