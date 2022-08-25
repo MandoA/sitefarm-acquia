@@ -41,7 +41,6 @@
     "drupal/migrate_file_to_media": "2.0",
     "drupal/purge": "3.0",
     "drupal/samlauth": "^3.0",
-    "drupal/socialfeed": "dev-3295588-facebookgraph-sdk-is-deprecated",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
     "ucdavis/sitefarm": "dev-SITEFARM-2936",
