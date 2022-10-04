@@ -2,6 +2,7 @@ image: proboci/ubuntu:18.04-php8.0
 assets:
   - probossh.tar.gz
   - bitbucket_auth.sh
+  - probo-settings.php
 phpIniOptions:
   upload_max_filesize: 64M
   post_max_size: 64M
@@ -55,6 +56,7 @@ steps:
     runInstall: true
     profileName: sitefarm
     installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu -y'
+    settingsRequireFile: $ASSET_DIR/probo-settings.php
     settingsAppend: '$settings["file_private_path"] = "/var/www/html/sites/default/private-files"; $settings["config_sync_directory"] = "sites/default/files/config_XFJgWG0OOBwFg8asfsKWO8sMf6eYyOq5dbrv14FqkavRVEY6j61JoCbiJ9T_rqphSfdKjkD2Kw/sync";'
     phpIniOptions:
       upload_max_filesize: 256M
