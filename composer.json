@@ -51,10 +51,6 @@
       "type": "composer",
       "url": "https://asset-packagist.org"
     },
-    "drupal/socialfeed": {
-      "type": "vcs",
-      "url": "https://git.drupalcode.org/issue/socialfeed-3295588.git"
-    },
     "drupal": {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
