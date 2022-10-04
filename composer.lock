@@ -13237,7 +13237,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
-                "reference": "90a369929654eb0b0bd1c9b64f87f84127bc2dc3"
+                "reference": "18ca674e8c3c08f185842e9d8f1e867fd1241b5f"
             },
             "default-branch": true,
             "type": "drupal-module",
@@ -13253,7 +13253,7 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2021-01-20T17:44:29+00:00"
+            "time": "2022-07-12T23:23:18+00:00"
         },
         {
             "name": "ucdavis/sitefarm",
