@@ -4,69 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c86d34020f2b857070b53f2c1f298f78",
+    "content-hash": "3d9d6caab9a6f2bb585e9753e8f83191",
     "packages": [
-        {
-            "name": "abraham/twitteroauth",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/abraham/twitteroauth.git",
-                "reference": "f5cda73d1deae8b9e3e54f1572a6d28d03e06644"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/abraham/twitteroauth/zipball/f5cda73d1deae8b9e3e54f1572a6d28d03e06644",
-                "reference": "f5cda73d1deae8b9e3e54f1572a6d28d03e06644",
-                "shasum": ""
-            },
-            "require": {
-                "composer/ca-bundle": "^1.2",
-                "ext-curl": "*",
-                "php": "^7.2 || ^7.3 || ^7.4"
-            },
-            "require-dev": {
-                "php-vcr/php-vcr": "^1",
-                "php-vcr/phpunit-testlistener-vcr": "^3",
-                "phpmd/phpmd": "^2",
-                "phpunit/phpunit": "^8",
-                "squizlabs/php_codesniffer": "^3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Abraham\\TwitterOAuth\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Abraham Williams",
-                    "email": "abraham@abrah.am",
-                    "homepage": "https://abrah.am",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The most popular PHP library for use with the Twitter OAuth REST API.",
-            "homepage": "https://twitteroauth.com",
-            "keywords": [
-                "Twitter API",
-                "Twitter oAuth",
-                "api",
-                "oauth",
-                "rest",
-                "social",
-                "twitter"
-            ],
-            "support": {
-                "issues": "https://github.com/abraham/twitteroauth/issues",
-                "source": "https://github.com/abraham/twitteroauth"
-            },
-            "time": "2020-09-22T14:27:00+00:00"
-        },
         {
             "name": "alchemy/zippy",
             "version": "0.4.9",
@@ -6851,59 +6790,6 @@
             }
         },
         {
-            "name": "drupal/socialfeed",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/socialfeed.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialfeed-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "889cfe249d0b33690e094cbf13a40e51ead7d06e"
-            },
-            "require": {
-                "abraham/twitteroauth": "^1",
-                "drupal/core": "^8.8 || ^9",
-                "espresso-dev/instagram-basic-display-php": "^1.1",
-                "ext-json": "*",
-                "facebook/graph-sdk": "^5",
-                "nesbot/carbon": "^2.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1643633216",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Hemangi Gokhale",
-                    "homepage": "https://www.drupal.org/user/2008064"
-                }
-            ],
-            "description": "Provides user an option to easily fetch feeds from Facebook, Twitter or Instagram and then display them accordingly using block",
-            "homepage": "https://www.drupal.org/project/socialfeed",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/socialfeed",
-                "issues": "https://www.drupal.org/project/issues/socialfeed"
-            }
-        },
-        {
             "name": "drupal/subrequests",
             "version": "2.3.0",
             "source": {
@@ -6946,8 +6832,8 @@
                     "email": "mateu.aguilo.bosch@gmail.com"
                 },
                 {
-                    "name": "mglaman",
-                    "homepage": "https://www.drupal.org/user/2416470"
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
                 }
             ],
             "description": "Add a front controller that you can use to make subrequests.",
@@ -7933,116 +7819,6 @@
                 "source": "https://github.com/enlightn/security-checker/tree/v1.10.0"
             },
             "time": "2022-02-21T22:40:16+00:00"
-        },
-        {
-            "name": "espresso-dev/instagram-basic-display-php",
-            "version": "v1.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/espresso-dev/instagram-basic-display-php.git",
-                "reference": "e15ac322fd5ee3b8469bcb3e16c90667b8f2e208"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/espresso-dev/instagram-basic-display-php/zipball/e15ac322fd5ee3b8469bcb3e16c90667b8f2e208",
-                "reference": "e15ac322fd5ee3b8469bcb3e16c90667b8f2e208",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "EspressoDev\\InstagramBasicDisplay\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Herman Schutte",
-                    "email": "herman@espresso.dev"
-                }
-            ],
-            "description": "A simple PHP class for accessing the Instagram Basic Display API",
-            "homepage": "https://github.com/espresso-dev/instagram-basic-display-php",
-            "keywords": [
-                "api",
-                "instagram"
-            ],
-            "support": {
-                "issues": "https://github.com/espresso-dev/instagram-basic-display-php/issues",
-                "source": "https://github.com/espresso-dev/instagram-basic-display-php/tree/v1.1.6"
-            },
-            "time": "2021-04-13T06:37:08+00:00"
-        },
-        {
-            "name": "facebook/graph-sdk",
-            "version": "5.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facebook/php-graph-sdk.git",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/2d8250638b33d73e7a87add65f47fabf91f8ad9b",
-                "reference": "2d8250638b33d73e7a87add65f47fabf91f8ad9b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.4|^7.0"
-            },
-            "require-dev": {
-                "guzzlehttp/guzzle": "~5.0",
-                "mockery/mockery": "~0.8",
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client",
-                "paragonie/random_compat": "Provides a better CSPRNG option in PHP 5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Facebook\\": "src/Facebook/"
-                },
-                "files": [
-                    "src/Facebook/polyfills.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Facebook Platform"
-            ],
-            "authors": [
-                {
-                    "name": "Facebook",
-                    "homepage": "https://github.com/facebook/php-graph-sdk/contributors"
-                }
-            ],
-            "description": "Facebook SDK for PHP",
-            "homepage": "https://github.com/facebook/php-graph-sdk",
-            "keywords": [
-                "facebook",
-                "sdk"
-            ],
-            "support": {
-                "issues": "https://github.com/facebook/php-graph-sdk/issues",
-                "source": "https://github.com/facebook/php-graph-sdk/tree/5.7.0"
-            },
-            "abandoned": true,
-            "time": "2018-12-11T22:56:31+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -9093,102 +8869,6 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.7.5"
             },
             "time": "2021-07-01T14:25:37+00:00"
-        },
-        {
-            "name": "nesbot/carbon",
-            "version": "2.57.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "4a54375c21eea4811dbd1149fe6b246517554e78"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/4a54375c21eea4811dbd1149fe6b246517554e78",
-                "reference": "4a54375c21eea4811dbd1149fe6b246517554e78",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^7.1.8 || ^8.0",
-                "symfony/polyfill-mbstring": "^1.0",
-                "symfony/polyfill-php80": "^1.16",
-                "symfony/translation": "^3.4 || ^4.0 || ^5.0 || ^6.0"
-            },
-            "require-dev": {
-                "doctrine/dbal": "^2.0 || ^3.0",
-                "doctrine/orm": "^2.7",
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "kylekatarnls/multi-tester": "^2.0",
-                "phpmd/phpmd": "^2.9",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12.54 || ^1.0",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.14",
-                "squizlabs/php_codesniffer": "^3.4"
-            },
-            "bin": [
-                "bin/carbon"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev",
-                    "dev-master": "2.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Carbon\\Laravel\\ServiceProvider"
-                    ]
-                },
-                "phpstan": {
-                    "includes": [
-                        "extension.neon"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Carbon\\": "src/Carbon/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Nesbitt",
-                    "email": "brian@nesbot.com",
-                    "homepage": "https://markido.com"
-                },
-                {
-                    "name": "kylekatarnls",
-                    "homepage": "https://github.com/kylekatarnls"
-                }
-            ],
-            "description": "An API extension for DateTime that supports 281 different languages.",
-            "homepage": "https://carbon.nesbot.com",
-            "keywords": [
-                "date",
-                "datetime",
-                "time"
-            ],
-            "support": {
-                "docs": "https://carbon.nesbot.com/docs",
-                "issues": "https://github.com/briannesbitt/Carbon/issues",
-                "source": "https://github.com/briannesbitt/Carbon"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/Carbon",
-                    "type": "open_collective"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-02-13T18:13:33+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -13250,7 +12930,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/aggiefeed-drupal-module.git",
-                "reference": "90a369929654eb0b0bd1c9b64f87f84127bc2dc3"
+                "reference": "18ca674e8c3c08f185842e9d8f1e867fd1241b5f"
             },
             "default-branch": true,
             "type": "drupal-module",
@@ -13266,15 +12946,15 @@
                 "issues": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/issues",
                 "source": "https://bitbucket.org/ietwebdev/aggiefeed-drupal-module/src/8.x-1.x"
             },
-            "time": "2021-01-20T17:44:29+00:00"
+            "time": "2022-07-12T23:23:18+00:00"
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "9.x-dev",
+            "version": "dev-SITEFARM-2936",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "aa7f1f1a46a3528a917e799a3fc7721243e612b7"
+                "reference": "d846af9b7f1ed1e3fe421431a96848620cdc6e24"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13330,7 +13010,6 @@
                 "drupal/siteimprove": "^1.0",
                 "drupal/sitemap": "^2.0",
                 "drupal/social_media_links": "^2.0",
-                "drupal/socialfeed": "^1.0",
                 "drupal/subrequests": "^2.0",
                 "drupal/svg_image_field": "^1.2",
                 "drupal/token": "^1.0",
@@ -13340,7 +13019,6 @@
                 "drupal/webform": "^6.0",
                 "drupal/webform_views": "^5.0",
                 "drupal/workbench_access": "^1.0",
-                "espresso-dev/instagram-basic-display-php": "^1.1",
                 "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
                 "npm-asset/ckeditor-featureblock": "^3.0",
@@ -13444,7 +13122,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-09-16T21:24:39+00:00"
+            "time": "2022-10-05T21:25:47+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
