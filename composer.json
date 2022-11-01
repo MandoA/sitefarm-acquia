@@ -47,13 +47,13 @@
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {
-    "drupal": {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    },
     "assets": {
       "type": "composer",
       "url": "https://asset-packagist.org"
+    },
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     },
     "ucdavis/sitefarm": {
       "type": "vcs",
