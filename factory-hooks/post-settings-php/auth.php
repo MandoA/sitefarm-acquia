@@ -32,11 +32,12 @@ $config['samlauth.authentication']['map_users'] = TRUE;
 $config['samlauth.authentication']['map_users_name'] = FALSE;
 $config['samlauth.authentication']['map_users_mail'] = TRUE;
 $config['samlauth.authentication']['map_users_roles'] = [
+  'authenticated' => 'authenticated',
   'site_manager' => 'site_manager',
   'administrator' => 'administrator',
-  'contributor' => '0',
-  'editor' => '0',
-  'site_builder' => '0'
+  'contributor' => 'contributor',
+  'editor' => 'editor',
+  'site_builder' => 'site_builder'
   ];
 $config['samlauth.authentication']['create_users'] = TRUE;
 $config['samlauth.authentication']['sync_name'] = TRUE;
