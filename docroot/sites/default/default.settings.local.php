@@ -140,7 +140,7 @@ $settings['hash_salt'] = 'S8hk3uuCAW46j8VxXtM_J6NAmKT7Vb9gXzyDRoncKgd2LqxIII5mh9
 /**
  * Import CAS config from the Sitefarm Acquia factory hooks if available
  */
-$cas_settings_include = __DIR__ . '/../../../factory-hooks/post-settings-php/cas.php';
+$cas_settings_include = __DIR__ . '/../../../factory-hooks/post-settings-php/auth.php';
 if (file_exists($cas_settings_include)) {
   include $cas_settings_include;
 }
