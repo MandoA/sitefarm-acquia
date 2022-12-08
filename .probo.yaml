@@ -29,7 +29,8 @@ steps:
       - echo $PATH
       - cd /src
       - if [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $BRANCH_NAME | wc -l) = 1 ]; then BRANCH_PROFILE="$BRANCH_NAME"; elif [ $(git ls-remote --heads git@bitbucket.org:ietwebdev/sitefarm.git $DESTINATION_BRANCH | wc -l) = 1 ]; then BRANCH_PROFILE="$DESTINATION_BRANCH"; else BRANCH_PROFILE=dev; fi
-      - composer require "ucdavis/sitefarm:dev-$BRANCH_PROFILE" --ansi
+      - if [[ $BRANCH_PROFILE =~ ^[0-9]{1,2}\.x$ ]]; then VERSION="$BRANCH_PROFILE-dev"; else VERSION="dev-$BRANCH_PROFILE"; fi
+      - composer require "ucdavis/sitefarm:$VERSION" --ansi
   - name: Update Node and install NPM packages
     plugin: Script
     script: |
