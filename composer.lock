@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1a0323113af5b9198fbd405d76990e8",
+    "content-hash": "d3f219f106497df4c8b752db6b0f36c1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12878,11 +12878,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "9.x-dev",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "e398ed3f13743dae9691628d322e1d0a4cc96c02"
+                "reference": "cdbd70a4956b98931d9c51457011fc1c7560d287"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13050,7 +13050,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-10-17T20:28:34+00:00"
+            "time": "2022-12-08T18:39:26+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -17436,5 +17436,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }
