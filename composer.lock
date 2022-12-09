@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4358d5d856d71d5e634218296df2f93",
+    "content-hash": "d3f219f106497df4c8b752db6b0f36c1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -13090,11 +13090,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-SITEFARM-2927",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "eaf72a13376a6d9b444dc96ce1d97dacd61a1f96"
+                "reference": "7952dfec1456788d67c2715998311cbdd4c43795"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13104,7 +13104,7 @@
                 "drupal/better_normalizers": "^1.0",
                 "drupal/block_place": "^1.0",
                 "drupal/block_style_plugins": "^1.0",
-                "drupal/cas": "^2.0",
+                "drupal/cas": "^2.1",
                 "drupal/ckeditor_widget_menu": "^1.0",
                 "drupal/ckwordcount": "^2.0",
                 "drupal/config_update": "^1.0",
@@ -13258,7 +13258,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-12-07T19:06:30+00:00"
+            "time": "2022-12-09T17:30:04+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
