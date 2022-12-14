@@ -37,15 +37,13 @@
     "drupal/core-recommended": "~9.4.0",
     "drupal/footnotes": "3.0",
     "drupal/inline_entity_form": "^1.0",
-    "drupal/media_entity_file_replace": "^1.1",
     "drupal/memcache": "2.3",
     "drupal/purge": "3.0",
-    "drupal/purge_file": "^1.0",
     "drupal/samlauth": "^3.0",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
-    "ucdavis/sitefarm": "dev-dev",
-    "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
+    "ucdavis/sitefarm": "dev-SITEFARM-2727",
+    "ucdavis/sitefarm_acquia_purge": "dev-SITEFARM-2727"
   },
   "repositories": {
     "assets": {

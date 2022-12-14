@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf2987a69a37e6f34e334db83de68fb1",
+    "content-hash": "8cde91c9a13acd5c6001a2c2f38aa064",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -13189,11 +13189,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-dev",
+            "version": "dev-SITEFARM-2727",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "7952dfec1456788d67c2715998311cbdd4c43795"
+                "reference": "7661a34eba7653a4543644751e57d2498464514f"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13223,6 +13223,7 @@
                 "drupal/google_tag": "^1.0",
                 "drupal/honeypot": "^2.0",
                 "drupal/masquerade": "^2.0",
+                "drupal/media_entity_file_replace": "^1.0",
                 "drupal/menu_block": "^1.0",
                 "drupal/menu_breadcrumb": "1.*",
                 "drupal/metatag": "^1.0",
@@ -13357,22 +13358,22 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-12-10T22:11:29+00:00"
+            "time": "2022-12-14T23:04:57+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
-            "version": "dev-8.x-2.x",
+            "version": "dev-SITEFARM-2727",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
-                "reference": "24bd53212596eddb8fdac09afa229a30f4343651"
+                "reference": "5b09107ad58ba5058ab5705af045cb09140436fa"
             },
             "require": {
                 "drupal/acquia_purge": "^1.0@beta",
                 "drupal/fastly": "^3.0",
-                "drupal/purge": "^3.0@beta"
+                "drupal/purge": "^3.0@beta",
+                "drupal/purge_file": "^1.0"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "license": [
                 "proprietary"
@@ -13384,7 +13385,7 @@
                 }
             ],
             "description": "Default configuration for SiteFarm implementation of Acquia Purge and Fastly CDN.",
-            "time": "2021-01-19T23:58:19+00:00"
+            "time": "2022-12-14T22:58:04+00:00"
         },
         {
             "name": "webflo/drupal-finder",
