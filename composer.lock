@@ -13193,7 +13193,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "7661a34eba7653a4543644751e57d2498464514f"
+                "reference": "7c610afae532cb1ea18e65a37ebd979c44f8d4ed"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13358,7 +13358,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2022-12-14T23:04:57+00:00"
+            "time": "2022-12-14T23:20:16+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -13366,7 +13366,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
-                "reference": "5b09107ad58ba5058ab5705af045cb09140436fa"
+                "reference": "1f05128a6f773598f86d4f2a64779c502341e6d7"
             },
             "require": {
                 "drupal/acquia_purge": "^1.0@beta",
@@ -13385,7 +13385,7 @@
                 }
             ],
             "description": "Default configuration for SiteFarm implementation of Acquia Purge and Fastly CDN.",
-            "time": "2022-12-14T22:58:04+00:00"
+            "time": "2022-12-14T23:19:51+00:00"
         },
         {
             "name": "webflo/drupal-finder",
