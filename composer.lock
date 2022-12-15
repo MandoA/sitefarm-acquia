@@ -13366,7 +13366,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git",
-                "reference": "cc2611c75bc9733d412b6d5163d4197d0d6821d9"
+                "reference": "605061e64986128b4a4ed6e6ae0a13d93e9557aa"
             },
             "require": {
                 "drupal/acquia_purge": "^1.0@beta",
@@ -13385,7 +13385,7 @@
                 }
             ],
             "description": "Default configuration for SiteFarm implementation of Acquia Purge and Fastly CDN.",
-            "time": "2022-12-14T23:33:22+00:00"
+            "time": "2022-12-15T01:10:41+00:00"
         },
         {
             "name": "webflo/drupal-finder",
