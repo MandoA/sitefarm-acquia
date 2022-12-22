@@ -8,11 +8,7 @@
  */
 
 if (extension_loaded('newrelic')) {
-  $env = 'local';
-
-  if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
-    $env = $_ENV['AH_SITE_ENVIRONMENT'];
-  }
+  $env = $_ENV['AH_SITE_ENVIRONMENT'] ?? 'local';
 
   global $_acsf_site_name;
   newrelic_set_appname("ucdsitefarm.$env.$_acsf_site_name; ucdsitefarm.$env", '', 'true');
