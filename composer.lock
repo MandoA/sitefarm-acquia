@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fcf061b1b8208178128bcd34cbe41da",
+    "content-hash": "02e58c45ccf0216fe04210d58f9cdf26",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1750,95 +1750,6 @@
                 "source": "https://github.com/ckeditor/ckeditor4/tree/master/plugins/notification"
             },
             "time": "2022-07-19T13:39:38+00:00"
-        },
-        {
-            "name": "drupal/acquia_connector",
-            "version": "1.26.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/acquia_connector.git",
-                "reference": "8.x-1.26"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/acquia_connector-8.x-1.26.zip",
-                "reference": "8.x-1.26",
-                "shasum": "632932100c3d2946a11055c472c7e6dbfc1269bd"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9",
-                "ext-json": "*"
-            },
-            "require-dev": {
-                "acquia/coding-standards": "^0.4.1",
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-                "drupal/acquia_search": "*",
-                "drupal/search_api": "^1.17",
-                "drupal/search_api_solr": "~1.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.26",
-                    "datestamp": "1617213585",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "branch-alias": {
-                    "dev-8.x-1.x": "1.x-dev"
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9"
-                    }
-                },
-                "phpcodesniffer-search-depth": 4
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "acquia",
-                    "homepage": "https://www.drupal.org/user/1231722"
-                },
-                {
-                    "name": "blueminds",
-                    "homepage": "https://www.drupal.org/user/128652"
-                },
-                {
-                    "name": "Dane Powell",
-                    "homepage": "https://www.drupal.org/user/339326"
-                },
-                {
-                    "name": "irek02",
-                    "homepage": "https://www.drupal.org/user/736644"
-                },
-                {
-                    "name": "japerry",
-                    "homepage": "https://www.drupal.org/user/45640"
-                },
-                {
-                    "name": "kolafson",
-                    "homepage": "https://www.drupal.org/user/822402"
-                },
-                {
-                    "name": "Mark Trapp",
-                    "homepage": "https://www.drupal.org/user/212019"
-                },
-                {
-                    "name": "vlad.pavlovic",
-                    "homepage": "https://www.drupal.org/user/92673"
-                }
-            ],
-            "description": "Allows Drupal websites to connect with Acquia.",
-            "homepage": "https://www.drupal.org/project/acquia_connector",
-            "support": {
-                "source": "https://git.drupalcode.org/project/acquia_connector"
-            }
         },
         {
             "name": "drupal/acquia_purge",
@@ -5325,59 +5236,6 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
-            }
-        },
-        {
-            "name": "drupal/migrate_file_to_media",
-            "version": "2.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_file_to_media.git",
-                "reference": "2.0.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_file_to_media-2.0.9.zip",
-                "reference": "2.0.9",
-                "shasum": "2c8ab6114e3b8a2a2799482c57864c5352afc24d"
-            },
-            "require": {
-                "drupal/core": "^8.9 || ^9",
-                "drupal/migrate_plus": "*",
-                "drupal/migrate_tools": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.9",
-                    "datestamp": "1659433729",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10 || ^11"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jon (ayalon)",
-                    "homepage": "https://www.drupal.org/u/ayalon",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Migrate file fields to media fields.",
-            "homepage": "https://drupal.org/project/migrate_file_to_media",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migrate_file_to_media",
-                "issues": "https://www.drupal.org/project/issues/migrate_file_to_media"
             }
         },
         {
@@ -13193,7 +13051,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "9697a88917bb77b5de4927dc6078308e80af8f76"
+                "reference": "3e22771ef75fdd573fe7687517e6309be01eb108"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13227,7 +13085,6 @@
                 "drupal/menu_block": "^1.0",
                 "drupal/menu_breadcrumb": "1.*",
                 "drupal/metatag": "^1.0",
-                "drupal/migrate_file_to_media": "^2.0",
                 "drupal/migrate_plus": "^6.0",
                 "drupal/migrate_source_csv": "^3.5",
                 "drupal/migrate_tools": "^6.0",
@@ -13258,8 +13115,6 @@
                 "drupal/webform": "^6.0",
                 "drupal/webform_views": "^5.0",
                 "drupal/workbench_access": "^1.0",
-                "ext-dom": "*",
-                "ext-simplexml": "*",
                 "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
                 "npm-asset/ckeditor-featureblock": "^3.0",
@@ -13360,7 +13215,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2023-01-06T18:01:45+00:00"
+            "time": "2023-01-06T23:28:19+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
