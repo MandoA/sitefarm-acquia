@@ -6414,7 +6414,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/regions_override.git",
-                "reference": "2c07446d025d54ec58daa51763e1c4a51dec48c1"
+                "reference": "49182a596f7e577a51fd09444bf3d6e80ccc01d5"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -6426,10 +6426,10 @@
                 },
                 "drupal": {
                     "version": "1.x-dev",
-                    "datestamp": "1673400447",
+                    "datestamp": "1673402681",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
