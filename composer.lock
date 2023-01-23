@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "da401707a58a43ab81c8a5fb4cd5236e",
+    "content-hash": "af2ea732d3deb59f1a5af0db4519ba49",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6406,6 +6406,52 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/regions_override",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/regions_override.git",
+                "reference": "49182a596f7e577a51fd09444bf3d6e80ccc01d5"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "1.x-dev",
+                    "datestamp": "1673402681",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sashaz",
+                    "homepage": "https://www.drupal.org/user/3602299"
+                },
+                {
+                    "name": "segovia94",
+                    "homepage": "https://www.drupal.org/user/780142"
+                }
+            ],
+            "description": "Disable regions from appearing on a page",
+            "homepage": "https://www.drupal.org/project/regions_override",
+            "support": {
+                "source": "https://git.drupalcode.org/project/regions_override",
+                "issues": "https://www.drupal.org/project/issues/regions_override"
             }
         },
         {
@@ -17750,6 +17796,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/regions_override": 20,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20
     },
