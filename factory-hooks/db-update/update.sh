@@ -35,7 +35,6 @@ DRUSH_CMD="drush8 --root=$docroot --uri=https://$domain"
 
 # Now update database.
 $DRUSH_CMD updatedb -y
-$DRUSH_CMD pmu acquia_connector -y
 
 # Run entity updates if the updatedb command didn't fail.
 if [ $? -eq 0 -a -n "$update_entities" ] ; then
