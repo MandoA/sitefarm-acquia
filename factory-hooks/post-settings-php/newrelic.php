@@ -13,5 +13,6 @@ if (extension_loaded('newrelic')) {
 // Get the site's name from the first domain.
   global $_acsf_site_name;
   $_acsf_site_name = explode('.', array_keys($domains)[0])[0];
-  newrelic_set_appname("ucdsitefarm.$env.$_acsf_site_name; ucdsitefarm.$env", '', 'true');
+  $sf_env = $_SERVER['AH_SITE_ENVIRONMENT'];
+  newrelic_set_appname("$_acsf_site_name;ucdsitefarm.$sf_env", '', 'true');
 }
