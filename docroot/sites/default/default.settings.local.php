@@ -140,7 +140,7 @@ $settings['hash_salt'] = 'S8hk3uuCAW46j8VxXtM_J6NAmKT7Vb9gXzyDRoncKgd2LqxIII5mh9
 /**
  * Import CAS config from the Sitefarm Acquia factory hooks if available
  */
-$cas_settings_include = __DIR__ . '/../../../factory-hooks/post-settings-php/cas.php';
+$cas_settings_include = __DIR__ . '/../../../factory-hooks/post-settings-php/auth.php';
 if (file_exists($cas_settings_include)) {
   include $cas_settings_include;
 }
@@ -164,7 +164,21 @@ if (file_exists($cas_settings_include)) {
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = 'sites/default/files';
+$settings['file_private_path'] = 'sites/default/files/private';
+
+/**
+ * Public file path:
+ *
+ * A local file system path where public files will be stored. This directory
+ * must exist and be writable by Drupal. This directory must be relative to
+ * the Drupal installation directory and be accessible over the web.
+ */
+$settings['file_public_path'] = 'sites/default/files';
+
+/**
+ * Temporary files path
+ */
+$config['file_temporary_path'] = "/tmp";
 
 /**
  * Database settings - Edit these as needed
