@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "894b5c08f30a462c5c731d3dfd68b500",
+    "content-hash": "6eb900fd9db14080e5ae2474ad1eb6e7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2590,7 +2590,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_style_plugins.git",
-                "reference": "4a9311adc6631168a566a73138ffc1be09cce17c"
+                "reference": "e9f0bc24bbb1d61a2a0da94fbabdd94235a7ec0d"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2602,7 +2602,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.x-dev",
-                    "datestamp": "1676502688",
+                    "datestamp": "1677543060",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
