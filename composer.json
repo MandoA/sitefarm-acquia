@@ -66,6 +66,10 @@
       "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git"
     }
   },
+  "replace": {
+    "drupal/ckeditor": "self.version",
+    "drupal/hal": "self.version"
+  },
   "config": {
     "sort-packages": true,
     "preferred-install": {
