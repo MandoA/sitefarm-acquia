@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0acc3c0aa3cfa11239327a9715851a96",
+    "content-hash": "ed0fd4f7adfe9fba01b397c67db1c11c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -13394,7 +13394,7 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-later",
+            "version": "dev-layout",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
@@ -13402,7 +13402,6 @@
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
-                "oomphinc/composer-installers-extender": "^2.0",
                 "drupal/address": "^1.0",
                 "drupal/admin_toolbar": "^3.1",
                 "drupal/anchor_link": "^1.0",
@@ -13460,6 +13459,7 @@
                 "drupal/sitemap": "^2.0",
                 "drupal/social_media_links": "^2.0",
                 "drupal/subrequests": "^3.0",
+                "drupal/svg_image_field": "^2.0",
                 "drupal/token": "^1.0",
                 "drupal/trumba": "^2.0",
                 "drupal/url_embed": "^1.0",
@@ -13467,6 +13467,7 @@
                 "drupal/webform": "^6.0",
                 "drupal/webform_views": "^5.0",
                 "drupal/workbench_access": "^1.0",
+                "firebase/php-jwt": "^5.0",
                 "npm-asset/ckeditor-autosave-plugin": "^0.18.2",
                 "npm-asset/ckeditor-featureblock": "^3.0",
                 "npm-asset/ckeditor-indentblock": "^4.11",
@@ -13478,9 +13479,8 @@
                 "npm-asset/fakeobjects": "^4.15",
                 "npm-asset/photoswipe": "^4.1",
                 "npm-asset/slick-carousel": "^1.8",
-                "ucdavis/aggiefeed": "dev-8.x-1.x",
-                "firebase/php-jwt": "^5.0",
-                "drupal/svg_image_field": "^2.0"
+                "oomphinc/composer-installers-extender": "^2.0",
+                "ucdavis/aggiefeed": "dev-8.x-1.x"
             },
             "require-dev": {
                 "drupal/drupal-extension": "^4.1"
@@ -13569,7 +13569,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2023-03-01T22:11:29+00:00"
+            "time": "2023-03-01T18:20:52+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -17906,7 +17906,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/regions_override": 20,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20
     },
