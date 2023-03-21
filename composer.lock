@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1eff13152551e7b0c19f1843f6c66002",
+    "content-hash": "c18f1f532cb7bf70b49c02c48f209fdc",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -13599,7 +13599,7 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-release-9.1.14",
+            "version": "dev-SITEFARM-3077",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
