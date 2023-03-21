@@ -23,7 +23,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "drupal/core-dev": "~9.4.0",
+    "drupal/core-dev": "~9.5.0",
     "drupal/drupal-extension": "^4.1",
     "phpspec/prophecy-phpunit": "^2"
   },
@@ -32,16 +32,14 @@
     "cweagans/composer-patches": "^1.5",
     "drupal/acsf": "^2.0",
     "drupal/console": "^1.0",
-    "drupal/core-composer-scaffold": "~9.4.0",
-    "drupal/core-recommended": "~9.4.0",
-    "drupal/footnotes": "3.0",
+    "drupal/core-composer-scaffold": "~9.5.0",
+    "drupal/core-recommended": "~9.5.0",
     "drupal/inline_entity_form": "^1.0",
-    "drupal/memcache": "2.3",
-    "drupal/purge": "3.0",
+    "drupal/memcache": "^2.5",
     "drupal/samlauth": "^3.0",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
-    "ucdavis/sitefarm": "9.x-dev",
+    "ucdavis/sitefarm": "dev-SITEFARM-3077",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {
