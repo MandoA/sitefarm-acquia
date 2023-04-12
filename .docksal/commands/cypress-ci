@@ -4,6 +4,9 @@
 ##
 ## Usage: fin cypress [arguments]
 
+# Ensure our custom cypress module is enabled.
+fin drush en sitefarm_cypress -y
+
 cd ${PROJECT_ROOT}/docroot/profiles/sitefarm/tests/cypress
 
 export CYPRESS_BASE_URL=http://${VIRTUAL_HOST}

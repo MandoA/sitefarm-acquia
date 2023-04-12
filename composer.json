@@ -138,7 +138,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Sitefarm\\": "src"
+      "Sitefarm\\": "src",
+      "Cypress\\": "docroot/profiles/sitefarm/tests/cypress/src"
     }
   }
 }
