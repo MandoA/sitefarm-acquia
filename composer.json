@@ -23,22 +23,19 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require-dev": {
-    "drupal/core-dev": "~9.4.0",
+    "drupal/core-dev": "~9.5.0",
     "drupal/drupal-extension": "^4.1",
     "phpspec/prophecy-phpunit": "^2"
   },
   "require": {
     "composer/installers": "^1.2",
     "cweagans/composer-patches": "^1.5",
-    "drupal/acquia_connector": "^1.0",
     "drupal/acsf": "^2.0",
     "drupal/console": "^1.0",
-    "drupal/core-composer-scaffold": "~9.4.0",
-    "drupal/core-recommended": "~9.4.0",
-    "drupal/footnotes": "3.0",
+    "drupal/core-composer-scaffold": "~9.5.0",
+    "drupal/core-recommended": "~9.5.0",
     "drupal/inline_entity_form": "^1.0",
-    "drupal/memcache": "2.3",
-    "drupal/purge": "3.0",
+    "drupal/memcache": "^2.5",
     "drupal/samlauth": "^3.0",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
@@ -66,6 +63,10 @@
       "type": "vcs",
       "url": "git@bitbucket.org:ietwebdev/sitefarm_acquia_purge.git"
     }
+  },
+  "replace": {
+    "drupal/ckeditor": "self.version",
+    "drupal/hal": "self.version"
   },
   "config": {
     "sort-packages": true,
