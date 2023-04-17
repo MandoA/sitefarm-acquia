@@ -13972,7 +13972,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "3699857767d9ed2bfcf034eb65d520323e2ebb34"
+                "reference": "2af08791c66a7426dc80e4298508bf2ca33055cd"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -14078,8 +14078,7 @@
                         "Media images in the WYSIWYG should default the alignment to None https://drupal.org/i/3099878": "https://www.drupal.org/files/issues/2022-12-19/3099878-40.patch",
                         "Negate the condition on block visibility for Roles https://drupal.org/i/2986958": "https://www.drupal.org/files/issues/2022-08-08/enable-block-visibility-user-role-negation-2986958-43.patch",
                         "Wrapping drupal-media image in a link produces empty P tags after image https://drupal.org/i/3131055": "https://www.drupal.org/files/issues/2022-12-07/3131055-47.patch",
-                        "Support third party settings for components within a section https://drupal.org/i/3015152": "https://www.drupal.org/files/issues/2022-05-09/3015152-150.patch",
-                        "Allow block style plugins to apply to sections on first insert https://drupal.org/i/3044117": "https://www.drupal.org/files/issues/2021-10-18/expose-properties-config-section-form-3044117-34.patch"
+                        "Support third party settings for components within a section https://drupal.org/i/3015152": "https://www.drupal.org/files/issues/2023-02-03/3015152-191.patch"
                     },
                     "drupal/block_place": {
                         "Use absolute path url in css to core icons https://drupal.org/i/3245818": "https://git.drupalcode.org/project/block_place/-/merge_requests/1.diff"
@@ -14146,7 +14145,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2023-04-17T17:52:36+00:00"
+            "time": "2023-04-17T21:17:04+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
