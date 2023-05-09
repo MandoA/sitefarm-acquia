@@ -14036,7 +14036,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "2af08791c66a7426dc80e4298508bf2ca33055cd"
+                "reference": "e4ca31ddebb4f51177bd66ae3b09fabed744b320"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -14092,6 +14092,7 @@
                 "drupal/regions_override": "1.x-dev@dev",
                 "drupal/robotstxt": "^1.0",
                 "drupal/roleassign": "^1.0",
+                "drupal/section_library": "^1.1",
                 "drupal/sharemessage": "^1.0",
                 "drupal/simple_sitemap": "^4.0",
                 "drupal/siteimprove": "^1.0",
@@ -14147,6 +14148,9 @@
                     "drupal/block_place": {
                         "Use absolute path url in css to core icons https://drupal.org/i/3245818": "https://git.drupalcode.org/project/block_place/-/merge_requests/1.diff"
                     },
+                    "drupal/default_content": {
+                        "Add a Normalizer and Denormalizer to support Layout Builder https://drupal.org/i/3160146": "https://www.drupal.org/files/issues/2022-12-06/default_content-3160146-53.patch"
+                    },
                     "drupal/url_embed": {
                         "make embeds responsive https://drupal.org/i/2825602": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
                         "Prevent double escaping ampersands https://drupal.org/i/2729479": "https://www.drupal.org/files/issues/2729479-2.patch",
@@ -14154,6 +14158,9 @@
                     },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item https://drupal.org/i/2891964": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
+                    },
+                    "drupal/section_library": {
+                        "Support Third Party Settings on section components https://drupal.org/i/3356720": "https://www.drupal.org/files/issues/2023-04-26/3356720-support-third-party-settings-2.patch"
                     },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API https://drupal.org/i/2978262": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
@@ -14209,7 +14216,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2023-04-17T21:17:04+00:00"
+            "time": "2023-05-09T16:07:07+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -18588,7 +18595,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/default_content": 15,
         "ucdavis/sitefarm": 20,
         "ucdavis/sitefarm_acquia_purge": 20
     },
@@ -18596,5 +18602,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
