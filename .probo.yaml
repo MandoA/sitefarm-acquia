@@ -88,3 +88,20 @@ steps:
       - xvfb-run java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver="/usr/local/bin/chromedriver" > /dev/null 2>&1 & sleep 5
       - cd /var/www/html/profiles/sitefarm
       - $SRC_DIR/vendor/bin/behat --profile probo --tags "@javascript" --colors --format progress
+  - name: Install Cypress
+    plugin: Script
+    script:
+      # Enable testing modules.
+      - cd $SRC_DIR/docroot
+      - drush pm-enable sitefarm_cypress --yes
+      # Install Cypress and node dependencies.
+      - cd $SRC_DIR/docroot/profiles/sitefarm/tests/cypress
+      - npm ci
+  - name: Run Cypress
+    plugin: Script
+    script:
+      # Set environment variables and run Cypress.
+      - cd $SRC_DIR/docroot/profiles/sitefarm/tests/cypress
+      - export CYPRESS_DRUPAL_BASE_URL='http://localhost'
+      - export CYPRESS_BASE_URL='http://localhost'
+      - npm run test:ci -- --quiet --browser chrome
