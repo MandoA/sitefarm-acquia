@@ -2498,7 +2498,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_style_plugins.git",
-                "reference": "ec9f51b34d7959eda722f2c7e9fb9fd738a081d9"
+                "reference": "139e6b55da402cb005ed2bb847c42b920cd9fe17"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
@@ -2510,7 +2510,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.x-dev",
-                    "datestamp": "1678951283",
+                    "datestamp": "1682985934",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
