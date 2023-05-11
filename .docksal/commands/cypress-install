@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+## Install Cypress using OS' native npm.
+##
+## Usage: fin cypress-install
+
+cd ${PROJECT_ROOT}/docroot/profiles/sitefarm/tests/cypress
+npm ci
