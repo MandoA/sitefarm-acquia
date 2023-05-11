@@ -704,6 +704,11 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  * example.org, with all subdomains included.
  */
 
+$settings['config_exclude_modules'] = [
+  'test_session',
+  'sitefarm_cypress',
+];
+
 /**
  * Load local development override configuration, if available.
  *

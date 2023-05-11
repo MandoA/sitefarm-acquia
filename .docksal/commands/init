@@ -71,6 +71,9 @@ fin drush site-install sitefarm -y --site-name="SiteFarm Acquia"
 # Install default content
 fin drush scr "../factory-hooks/post-install/default_content.php"
 
+# Enable the Local modules.
+fin drush en test_session sitefarm_cypress -y
+
 # Get login link
 echo "Access SiteFarm: "
 fin drush uli --uri="http://$VIRTUAL_HOST"
