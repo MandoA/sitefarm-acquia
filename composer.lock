@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18a6cfd1b8c17a4a5b52840b561dc882",
+    "content-hash": "7950e32f1565a2e2cb95a7685412c3a7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7129,6 +7129,54 @@
             }
         },
         {
+            "name": "drupal/test_session",
+            "version": "1.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/test_session.git",
+                "reference": "1.2.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/test_session-1.2.10.zip",
+                "reference": "1.2.10",
+                "shasum": "4fb9d3cf8062645c8112ea860ad0720a2920cced"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.2.10",
+                    "datestamp": "1637763065",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Leksat",
+                    "homepage": "https://www.drupal.org/user/390336"
+                },
+                {
+                    "name": "pmelab",
+                    "homepage": "https://www.drupal.org/user/555322"
+                }
+            ],
+            "description": "Helpers for E2E testing.",
+            "homepage": "https://www.drupal.org/project/test_session",
+            "support": {
+                "source": "https://git.drupalcode.org/project/test_session"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.11.0",
             "source": {
@@ -13599,11 +13647,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "9.x-dev",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "e9d6078d0fff2709f6b7d9a34536594eddb633a2"
+                "reference": "be855ce0696df34e4dca3cf5d307996ef20232c4"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13660,6 +13708,7 @@
                 "drupal/social_media_links": "^2.0",
                 "drupal/subrequests": "^3.0",
                 "drupal/svg_image_field": "^2.0",
+                "drupal/test_session": "^1.2",
                 "drupal/token": "^1.0",
                 "drupal/trumba": "^2.0",
                 "drupal/url_embed": "^1.0",
@@ -13715,6 +13764,9 @@
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item https://drupal.org/i/2891964": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
                     },
+                    "drupal/test_session": {
+                        "Only hide the admin toolbar in Cypress tests https://drupal.org/i/3272555": "https://git.drupalcode.org/project/test_session/-/merge_requests/1.diff"
+                    },
                     "drupal/token": {
                         "Token module custom menu_link base field breaks JSON API https://drupal.org/i/2978262": "https://www.drupal.org/files/issues/2018-06-20/token-empty-menu-link-base-field-2978262-29.patch"
                     },
@@ -13769,7 +13821,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2023-04-18T15:21:34+00:00"
+            "time": "2023-05-11T07:09:03+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -18155,5 +18207,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

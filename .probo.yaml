@@ -58,7 +58,7 @@ steps:
     profileName: sitefarm
     installArgs: '--site-name="Testing Acquia SiteFarm on Probo" --account-pass=probo --account-mail=wdtest@ucdavis.edu -y'
     settingsRequireFile: $ASSET_DIR/probo-settings.php
-    settingsAppend: '$settings["file_private_path"] = "/var/www/html/sites/default/private-files"; $settings["config_sync_directory"] = "sites/default/files/config_XFJgWG0OOBwFg8asfsKWO8sMf6eYyOq5dbrv14FqkavRVEY6j61JoCbiJ9T_rqphSfdKjkD2Kw/sync";'
+    settingsAppend: '$settings["file_private_path"] = "/var/www/html/sites/default/private-files"; $settings["config_sync_directory"] = "sites/default/files/config_XFJgWG0OOBwFg8asfsKWO8sMf6eYyOq5dbrv14FqkavRVEY6j61JoCbiJ9T_rqphSfdKjkD2Kw/sync"; putenv("TEST_SESSION_ENABLED=true");'
     phpIniOptions:
       upload_max_filesize: 256M
       post_max_size: 256M
@@ -88,3 +88,20 @@ steps:
       - xvfb-run java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver="/usr/local/bin/chromedriver" > /dev/null 2>&1 & sleep 5
       - cd /var/www/html/profiles/sitefarm
       - $SRC_DIR/vendor/bin/behat --profile probo --tags "@javascript" --colors --format progress
+  - name: Install Cypress
+    plugin: Script
+    script:
+      # Enable testing modules.
+      - cd $SRC_DIR/docroot
+      - drush pm-enable sitefarm_cypress --yes
+      # Install Cypress and node dependencies.
+      - cd $SRC_DIR/docroot/profiles/sitefarm/tests/cypress
+      - npm ci
+  - name: Run Cypress
+    plugin: Script
+    script:
+      # Set environment variables and run Cypress.
+      - cd $SRC_DIR/docroot/profiles/sitefarm/tests/cypress
+      - export CYPRESS_DRUPAL_BASE_URL='http://localhost'
+      - export CYPRESS_BASE_URL='http://localhost'
+      - npm run test:ci -- --quiet --browser chrome

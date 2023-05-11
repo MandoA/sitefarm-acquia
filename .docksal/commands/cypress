@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+## Run End-to-end tests with Cypress.
+##
+## Usage: fin cypress [arguments]
+
+# Ensure our custom cypress module is enabled.
+fin drush en sitefarm_cypress -y
+
+cd ${PROJECT_ROOT}/docroot/profiles/sitefarm/tests/cypress
+
+export CYPRESS_BASE_URL=http://${VIRTUAL_HOST}
+export CYPRESS_DRUPAL_BASE_URL=http://${VIRTUAL_HOST}
+export CYPRESS_DRUPAL_DRUSH='fin drush'
+
+# Seed the database with common data for all tests.
+npm run test:ci -- --spec e2e/_pre-run/*.cy.js --quiet
+
+# Run the GUI.
+npm test $@
