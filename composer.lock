@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7950e32f1565a2e2cb95a7685412c3a7",
+    "content-hash": "0c624d74d8b49321f89e2d7fff9c06f1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -13778,6 +13778,9 @@
                     },
                     "drupal/media_entity_file_replace": {
                         "Flush image styles for media thumbnail on file replace https://drupal.org/i/3231852": "https://www.drupal.org/files/issues/2022-10-11/media_entity_file_replace-flush_media_thumbnail_derivatives-5.patch"
+                    },
+                    "drupal/field_group": {
+                      "Make field group horizontal tabs responsive https://drupal.org/i/3363047": "https://www.drupal.org/files/issues/2023-05-31/field-group-responsive-horizontal-tabs-3363047.patch"
                     }
                 }
             },
