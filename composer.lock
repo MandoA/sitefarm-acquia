@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7950e32f1565a2e2cb95a7685412c3a7",
+    "content-hash": "0a6383c22e3eeedfeb1e62a5b56b6697",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -14141,7 +14141,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "0de187e7850a64ee3943f37f328fb1c0f6ca4753"
+                "reference": "41a42a3bd8857f730d1fbf4b90f00792cb2f6a5a"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -14165,7 +14165,7 @@
                 "drupal/entity_clone": "^1.0",
                 "drupal/fancy_file_delete": "^2.0",
                 "drupal/features": "^3.0",
-                "drupal/field_group": "^3.1",
+                "drupal/field_group": "^3.4",
                 "drupal/focal_point": "^1.0",
                 "drupal/footnotes": "^3.0",
                 "drupal/geolocation": "^3.0",
@@ -14283,6 +14283,9 @@
                     },
                     "drupal/media_entity_file_replace": {
                         "Flush image styles for media thumbnail on file replace https://drupal.org/i/3231852": "https://www.drupal.org/files/issues/2022-10-11/media_entity_file_replace-flush_media_thumbnail_derivatives-5.patch"
+                    },
+                    "drupal/field_group": {
+                        "Make field group horizontal tabs responsive https://drupal.org/i/3363047": "https://www.drupal.org/files/issues/2023-05-31/field-group-responsive-horizontal-tabs-3363047.patch"
                     }
                 }
             },
@@ -14326,7 +14329,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2023-05-11T07:09:03+00:00"
+            "time": "2023-07-05T21:35:55+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
