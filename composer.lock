@@ -6703,10 +6703,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/regions_override.git",
-                "reference": "181e4063e66d2dd2696631592091b12fc3fcbe9d"
+                "reference": "2385ed14c9d68cdc2ec2910b50c5360b19c1c767"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
@@ -6715,7 +6715,7 @@
                 },
                 "drupal": {
                     "version": "1.x-dev",
-                    "datestamp": "1673486252",
+                    "datestamp": "1688587611",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6738,6 +6738,10 @@
             ],
             "description": "Disable regions from appearing on a page",
             "homepage": "https://www.drupal.org/project/regions_override",
+            "keywords": [
+                "Drupal",
+                "Layout Builder"
+            ],
             "support": {
                 "source": "https://git.drupalcode.org/project/regions_override",
                 "issues": "https://www.drupal.org/project/issues/regions_override"
@@ -14137,7 +14141,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "be855ce0696df34e4dca3cf5d307996ef20232c4"
+                "reference": "0de187e7850a64ee3943f37f328fb1c0f6ca4753"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -18707,5 +18711,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
