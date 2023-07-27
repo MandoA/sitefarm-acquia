@@ -14255,6 +14255,9 @@
                     "drupal/block_place": {
                         "Use absolute path url in css to core icons https://drupal.org/i/3245818": "https://git.drupalcode.org/project/block_place/-/merge_requests/1.diff"
                     },
+                    "drupal/layout_builder_iframe_modal": {
+                        "Settings Tray does not close on placement of block https://drupal.org/i/3344334": "https://git.drupalcode.org/project/layout_builder_iframe_modal/-/merge_requests/7.diff"
+                    },
                     "drupal/default_content": {
                         "Add a Normalizer and Denormalizer to support Layout Builder https://drupal.org/i/3160146": "https://www.drupal.org/files/issues/2022-12-06/default_content-3160146-53.patch"
                     },
