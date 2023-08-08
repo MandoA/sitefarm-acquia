@@ -14371,11 +14371,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-layout",
+            "version": "dev-later",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "41a42a3bd8857f730d1fbf4b90f00792cb2f6a5a"
+                "reference": "6dacca3d21f30fd928eded3c9bfed024736013e3"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
