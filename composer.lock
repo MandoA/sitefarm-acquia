@@ -13881,11 +13881,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-SITEFARM-3215",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "0fad22b6d71e88fe94f9232517502cf2f6d187fa"
+                "reference": "e22dd1f6610bca1ef6bb75ea60097cd2dde0b635"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
