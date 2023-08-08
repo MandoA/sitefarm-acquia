@@ -74,20 +74,6 @@ steps:
     script:
       - chown -R www-data:www-data /var/www/html/sites/default/private-files
       - chown -R www-data:www-data /var/www/html/sites/default/files
-  - name: Run Behat NoJS
-    plugin: Script
-    script:
-      - cp $SRC_DIR/behat.probo.yml /var/www/html/profiles/sitefarm/behat.yml
-      - cp -r $SRC_DIR/tests/features/acquia /var/www/html/profiles/sitefarm/tests/features/.
-      - cd /var/www/html/profiles/sitefarm
-      - $SRC_DIR/vendor/bin/behat --profile probo --tags "~@javascript" --colors --format progress
-  - name: Run Behat JS
-    plugin: Script
-    script:
-      - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar > /dev/null 2>&1
-      - xvfb-run java -jar selenium-server-standalone-2.53.1.jar -Dwebdriver.chrome.driver="/usr/local/bin/chromedriver" > /dev/null 2>&1 & sleep 5
-      - cd /var/www/html/profiles/sitefarm
-      - $SRC_DIR/vendor/bin/behat --profile probo --tags "@javascript" --colors --format progress
   - name: Install Cypress
     plugin: Script
     script:

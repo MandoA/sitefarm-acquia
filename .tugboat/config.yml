@@ -1,0 +1,12 @@
+services:
+  mysql:
+    image: tugboatqa/mariadb:latest
+
+  php:
+    image: tugboatqa/php:8.1-fpm
+    default: true
+    checkout: true
+    depends:
+      - mysql
+
+   # Empty file so tugboat doesn't reply with a failed build.
