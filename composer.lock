@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7950e32f1565a2e2cb95a7685412c3a7",
+    "content-hash": "0a6383c22e3eeedfeb1e62a5b56b6697",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2399,6 +2399,52 @@
             }
         },
         {
+            "name": "drupal/block_form_alter",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/block_form_alter.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/block_form_alter-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "108240e556564c664618cf65745438e0c9e204fe"
+            },
+            "require": {
+                "drupal/core": "^9.0|^10.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1657764157",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Burge",
+                    "homepage": "https://www.drupal.org/u/chris-burge",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides block form alter functions.",
+            "homepage": "https://www.drupal.org/project/block_form_alter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/block_form_alter",
+                "issues": "https://www.drupal.org/project/issues/block_form_alter"
+            }
+        },
+        {
             "name": "drupal/block_place",
             "version": "1.0.0",
             "source": {
@@ -2448,35 +2494,32 @@
         },
         {
             "name": "drupal/block_style_plugins",
-            "version": "1.6.0",
+            "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/block_style_plugins.git",
-                "reference": "8.x-1.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_style_plugins-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "f5fa323ae38d513843c49cff271b864fc065d79a"
+                "reference": "b1b0aaaf8db4029dd84ddf7377bb91d45d2fe19e"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1676397041",
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1690351739",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3571,27 +3614,30 @@
         },
         {
             "name": "drupal/default_content",
-            "version": "1.0.0-alpha9",
+            "version": "2.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/default_content.git",
-                "reference": "8.x-1.0-alpha9"
+                "reference": "2.0.0-alpha2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha9.zip",
-                "reference": "8.x-1.0-alpha9",
-                "shasum": "e8d5cc6ae96b14e882852512fbf5887e752146a0"
+                "url": "https://ftp.drupal.org/files/projects/default_content-2.0.0-alpha2.zip",
+                "reference": "2.0.0-alpha2",
+                "shasum": "5c365ea21b0be63dc00ec2db50179291d6fb3d89"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9",
-                "drupal/hal": "*"
+                "drupal/core": "^9.1 || ^10"
+            },
+            "require-dev": {
+                "drupal/hal": " ^9 || ^1 || ^2",
+                "drupal/paragraphs": "^1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-alpha9",
-                    "datestamp": "1588280141",
+                    "version": "2.0.0-alpha2",
+                    "datestamp": "1659466706",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3599,7 +3645,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -3750,6 +3796,66 @@
             "homepage": "https://www.drupal.org/project/embed",
             "support": {
                 "source": "https://git.drupalcode.org/project/embed"
+            }
+        },
+        {
+            "name": "drupal/entity_block",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_block.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_block-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "16744324796d76dfdff2e1160c4f4a94327b135c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1660775172",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/66163"
+                },
+                {
+                    "name": "Jaesin",
+                    "homepage": "https://www.drupal.org/user/841054"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "rrrob",
+                    "homepage": "https://www.drupal.org/user/273533"
+                },
+                {
+                    "name": "shadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                }
+            ],
+            "description": "Let site administrators place content entities as blocks.",
+            "homepage": "https://www.drupal.org/project/entity_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_block"
             }
         },
         {
@@ -4965,6 +5071,152 @@
             }
         },
         {
+            "name": "drupal/layout_builder_iframe_modal",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_iframe_modal.git",
+                "reference": "1.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_iframe_modal-1.3.0.zip",
+                "reference": "1.3.0",
+                "shasum": "c52c7c0ed91e747b49183dae911f6b640344fded"
+            },
+            "require": {
+                "drupal/core": "^8.8.0 || ^9.0 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.3.0",
+                    "datestamp": "1671889303",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Hug",
+                    "homepage": "https://www.drupal.org/u/dulnan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "dulnan",
+                    "homepage": "https://www.drupal.org/user/3652792"
+                }
+            ],
+            "description": "Render Laybout Builder block edit forms in an iframe, using the admin theme.",
+            "homepage": "https://www.drupal.org/project/layout_builder_iframe_modal",
+            "keywords": [
+                "Drupal",
+                "Layout Builder"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_iframe_modal",
+                "issues": "https://www.drupal.org/project/issues/3169342?categories=All"
+            }
+        },
+        {
+            "name": "drupal/layout_builder_restrictions",
+            "version": "2.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/layout_builder_restrictions.git",
+                "reference": "8.x-2.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/layout_builder_restrictions-8.x-2.17.zip",
+                "reference": "8.x-2.17",
+                "shasum": "6916564f2fd96c3d8e5fc66179bb2d26c4569b00"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "require-dev": {
+                "drupal/dashboards": "^2",
+                "drupal/layout_library": "dev-1.x",
+                "drupal/mini_layouts": "dev-2.0.x"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.17",
+                    "datestamp": "1668183343",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "The University of Texas at Austin",
+                    "homepage": "https://www.drupal.org/university-of-texas-at-austin",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Eirik Morland (eiriksm)",
+                    "homepage": "https://www.drupal.org/u/eiriksm",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jeff Cardwell",
+                    "homepage": "https://www.drupal.org/user/2913129"
+                },
+                {
+                    "name": "lreynaga",
+                    "homepage": "https://www.drupal.org/user/3400232"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "mmarler",
+                    "homepage": "https://www.drupal.org/user/500192"
+                },
+                {
+                    "name": "ricksta",
+                    "homepage": "https://www.drupal.org/user/311042"
+                },
+                {
+                    "name": "texas_tater",
+                    "homepage": "https://www.drupal.org/user/753614"
+                },
+                {
+                    "name": "twfahey",
+                    "homepage": "https://www.drupal.org/user/3403722"
+                },
+                {
+                    "name": "utexas",
+                    "homepage": "https://www.drupal.org/user/3716409"
+                }
+            ],
+            "description": "Manage which fields & layouts are available in Layout Builder",
+            "homepage": "https://www.drupal.org/project/layout_builder_restrictions",
+            "keywords": [
+                "Drupal",
+                "Layout Builder Restrictions"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/layout_builder_restrictions",
+                "issues": "https://www.drupal.org/project/issues/layout_builder_restrictions"
+            }
+        },
+        {
             "name": "drupal/masquerade",
             "version": "2.0.0-rc1",
             "source": {
@@ -5077,6 +5329,80 @@
             "homepage": "https://www.drupal.org/project/media_entity_file_replace",
             "support": {
                 "source": "https://git.drupalcode.org/project/media_entity_file_replace"
+            }
+        },
+        {
+            "name": "drupal/media_library_form_element",
+            "version": "2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/media_library_form_element.git",
+                "reference": "2.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/media_library_form_element-2.0.6.zip",
+                "reference": "2.0.6",
+                "shasum": "91363cbea0d1895fbf0fbb9640d70fee47775111"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10"
+            },
+            "require-dev": {
+                "drupal/webform": "6.2.x-dev@dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.6",
+                    "datestamp": "1674069446",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kim Kennof",
+                    "homepage": "https://www.drupal.org/u/nightlife2008",
+                    "email": "kim.kennof@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "AUSY, a randstad company",
+                    "homepage": "https://www.ausy.be",
+                    "email": "info@ausy.be",
+                    "role": "Sponsor"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "nightlife2008",
+                    "homepage": "https://www.drupal.org/user/333515"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                }
+            ],
+            "description": "This module provides a Media Library Form API element to be used in all sorts of forms.",
+            "homepage": "https://www.drupal.org/project/media_library_form_element",
+            "keywords": [
+                "Drupal",
+                "Form API",
+                "Media",
+                "Media Library"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/media_library_form_element",
+                "issues": "https://www.drupal.org/project/issues/media_library_form_element"
             }
         },
         {
@@ -6372,6 +6698,56 @@
             }
         },
         {
+            "name": "drupal/regions_override",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/regions_override.git",
+                "reference": "2385ed14c9d68cdc2ec2910b50c5360b19c1c767"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "1.x-dev",
+                    "datestamp": "1688587611",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sashaz",
+                    "homepage": "https://www.drupal.org/user/3602299"
+                },
+                {
+                    "name": "segovia94",
+                    "homepage": "https://www.drupal.org/user/780142"
+                }
+            ],
+            "description": "Disable regions from appearing on a page",
+            "homepage": "https://www.drupal.org/project/regions_override",
+            "keywords": [
+                "Drupal",
+                "Layout Builder"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/regions_override",
+                "issues": "https://www.drupal.org/project/issues/regions_override"
+            }
+        },
+        {
             "name": "drupal/robotstxt",
             "version": "1.5.0",
             "source": {
@@ -6710,6 +7086,67 @@
             }
         },
         {
+            "name": "drupal/section_library",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/section_library.git",
+                "reference": "1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/section_library-1.1.0.zip",
+                "reference": "1.1.0",
+                "shasum": "4508ba92797916089e94cc8c9f91a2d3e4aa6174"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.0",
+                    "datestamp": "1673701139",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mahmoud Zayed",
+                    "homepage": "https://www.drupal.org/u/mahmoud-zayed",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mahmoud-zayed",
+                    "homepage": "https://www.drupal.org/user/2947001"
+                },
+                {
+                    "name": "Rajab Natshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                }
+            ],
+            "description": "Create reusable templates for single or multiple sections at the layout builder.",
+            "homepage": "https://www.drupal.org/project/section_library",
+            "keywords": [
+                "Drupal",
+                "Layout Builder",
+                "library",
+                "section",
+                "template"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/section_library",
+                "issues": "https://www.drupal.org/project/issues/section_library"
+            }
+        },
+        {
             "name": "drupal/sharemessage",
             "version": "1.0.0-beta4",
             "source": {
@@ -6815,6 +7252,59 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/simple_sitemap",
                 "issues": "https://drupal.org/project/issues/simple_sitemap"
+            }
+        },
+        {
+            "name": "drupal/single_content_sync",
+            "version": "1.3.16",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/single_content_sync.git",
+                "reference": "1.3.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/single_content_sync-1.3.16.zip",
+                "reference": "1.3.16",
+                "shasum": "aa6cfa2fc3a484996ea1f19167f0b34d073cf1e7"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "ext-dom": "*",
+                "ext-zip": "*",
+                "php": ">=7.4"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.3.16",
+                    "datestamp": "1688837467",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Kuzava (nginex)",
+                    "homepage": "https://www.drupal.org/u/nginex",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "nginex",
+                    "homepage": "https://www.drupal.org/user/2822325"
+                }
+            ],
+            "description": "This is a simple way of exporting a single node to yml file with possibility to import it on another environment.",
+            "homepage": "https://drupal.org/project/single_content_sync",
+            "support": {
+                "source": "https://cgit.drupalcode.org/single_content_sync",
+                "issues": "https://drupal.org/project/issues/single_content_sync"
             }
         },
         {
@@ -13647,11 +14137,11 @@
         },
         {
             "name": "ucdavis/sitefarm",
-            "version": "dev-dev",
+            "version": "dev-layout",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:ietwebdev/sitefarm.git",
-                "reference": "be855ce0696df34e4dca3cf5d307996ef20232c4"
+                "reference": "41a42a3bd8857f730d1fbf4b90f00792cb2f6a5a"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
@@ -13659,8 +14149,9 @@
                 "drupal/admin_toolbar": "^3.1",
                 "drupal/anchor_link": "^1.0",
                 "drupal/better_normalizers": "^1.0",
+                "drupal/block_form_alter": "^2.0",
                 "drupal/block_place": "^1.0",
-                "drupal/block_style_plugins": "^1.0",
+                "drupal/block_style_plugins": "2.x-dev@dev",
                 "drupal/cas": "^2.1",
                 "drupal/ckeditor_widget_menu": "^1.0",
                 "drupal/ckwordcount": "^2.0",
@@ -13668,20 +14159,24 @@
                 "drupal/crop": "^2.0",
                 "drupal/css_editor": "^2.0",
                 "drupal/ctools": "^3.0",
-                "drupal/default_content": "^1.0",
+                "drupal/default_content": "^2.0",
                 "drupal/editor_file": "^1.0",
+                "drupal/entity_block": "^1.1",
                 "drupal/entity_clone": "^1.0",
                 "drupal/fancy_file_delete": "^2.0",
                 "drupal/features": "^3.0",
-                "drupal/field_group": "^3.1",
+                "drupal/field_group": "^3.4",
                 "drupal/focal_point": "^1.0",
                 "drupal/footnotes": "^3.0",
                 "drupal/geolocation": "^3.0",
                 "drupal/google_analytics": "^4.0",
                 "drupal/google_tag": "^1.0",
                 "drupal/honeypot": "^2.0",
+                "drupal/layout_builder_iframe_modal": "^1.3",
+                "drupal/layout_builder_restrictions": "^2.17",
                 "drupal/masquerade": "^2.0",
                 "drupal/media_entity_file_replace": "^1.0",
+                "drupal/media_library_form_element": "^2.0",
                 "drupal/menu_block": "^1.0",
                 "drupal/menu_breadcrumb": "1.*",
                 "drupal/metatag": "^1.0",
@@ -13699,10 +14194,13 @@
                 "drupal/photoswipe": "^3.0",
                 "drupal/quicklink": "^2.0",
                 "drupal/redirect": "^1.0",
+                "drupal/regions_override": "1.x-dev@dev",
                 "drupal/robotstxt": "^1.0",
                 "drupal/roleassign": "^1.0",
+                "drupal/section_library": "^1.1",
                 "drupal/sharemessage": "^1.0",
                 "drupal/simple_sitemap": "^4.0",
+                "drupal/single_content_sync": "^1.3",
                 "drupal/siteimprove": "^1.0",
                 "drupal/sitemap": "^2.0",
                 "drupal/social_media_links": "^2.0",
@@ -13751,10 +14249,17 @@
                     "drupal/core": {
                         "Media images in the WYSIWYG should default the alignment to None https://drupal.org/i/3099878": "https://www.drupal.org/files/issues/2022-12-19/3099878-40.patch",
                         "Negate the condition on block visibility for Roles https://drupal.org/i/2986958": "https://www.drupal.org/files/issues/2022-08-08/enable-block-visibility-user-role-negation-2986958-43.patch",
-                        "Wrapping drupal-media image in a link produces empty P tags after image https://drupal.org/i/3131055": "https://www.drupal.org/files/issues/2022-12-07/3131055-47.patch"
+                        "Wrapping drupal-media image in a link produces empty P tags after image https://drupal.org/i/3131055": "https://www.drupal.org/files/issues/2022-12-07/3131055-47.patch",
+                        "Support third party settings for components within a section https://drupal.org/i/3015152": "https://www.drupal.org/files/issues/2023-02-03/3015152-191.patch"
                     },
                     "drupal/block_place": {
                         "Use absolute path url in css to core icons https://drupal.org/i/3245818": "https://git.drupalcode.org/project/block_place/-/merge_requests/1.diff"
+                    },
+                    "drupal/layout_builder_iframe_modal": {
+                        "Settings Tray does not close on placement of block https://drupal.org/i/3344334": "https://git.drupalcode.org/project/layout_builder_iframe_modal/-/merge_requests/7.diff"
+                    },
+                    "drupal/default_content": {
+                        "Add a Normalizer and Denormalizer to support Layout Builder https://drupal.org/i/3160146": "https://www.drupal.org/files/issues/2022-12-06/default_content-3160146-53.patch"
                     },
                     "drupal/url_embed": {
                         "make embeds responsive https://drupal.org/i/2825602": "https://www.drupal.org/files/issues/2020-06-24/url_embed-responsive_option-2825602-24.patch",
@@ -13763,6 +14268,9 @@
                     },
                     "drupal/migrate_plus": {
                         "Fix xml parser from always attaching the last item https://drupal.org/i/2891964": "https://www.drupal.org/files/issues/fix-ignored-predicate-2891964-2.patch"
+                    },
+                    "drupal/section_library": {
+                        "Support Third Party Settings on section components https://drupal.org/i/3356720": "https://www.drupal.org/files/issues/2023-04-26/3356720-support-third-party-settings-2.patch"
                     },
                     "drupal/test_session": {
                         "Only hide the admin toolbar in Cypress tests https://drupal.org/i/3272555": "https://git.drupalcode.org/project/test_session/-/merge_requests/1.diff"
@@ -13780,7 +14288,7 @@
                         "Flush image styles for media thumbnail on file replace https://drupal.org/i/3231852": "https://www.drupal.org/files/issues/2022-10-11/media_entity_file_replace-flush_media_thumbnail_derivatives-5.patch"
                     },
                     "drupal/field_group": {
-                      "Make field group horizontal tabs responsive https://drupal.org/i/3363047": "https://www.drupal.org/files/issues/2023-05-31/field-group-responsive-horizontal-tabs-3363047.patch"
+                        "Make field group horizontal tabs responsive https://drupal.org/i/3363047": "https://www.drupal.org/files/issues/2023-05-31/field-group-responsive-horizontal-tabs-3363047.patch"
                     }
                 }
             },
@@ -13824,7 +14332,7 @@
                 "issues": "https://ucdavis.jira.com/projects/SITEFARM/issues",
                 "source": "https://bitbucket.org/ietwebdev/sitefarm/src/8.x-1.x"
             },
-            "time": "2023-05-11T07:09:03+00:00"
+            "time": "2023-07-05T21:35:55+00:00"
         },
         {
             "name": "ucdavis/sitefarm_acquia_purge",
@@ -18210,5 +18718,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

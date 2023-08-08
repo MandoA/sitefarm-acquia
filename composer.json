@@ -39,7 +39,7 @@
     "drupal/samlauth": "^3.0",
     "drush/drush": "^10.0",
     "npm-asset/fakeobjects": "^4.15",
-    "ucdavis/sitefarm": "dev-dev",
+    "ucdavis/sitefarm": "dev-layout",
     "ucdavis/sitefarm_acquia_purge": "dev-8.x-2.x"
   },
   "repositories": {
