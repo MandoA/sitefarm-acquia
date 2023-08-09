@@ -90,4 +90,4 @@ steps:
       - cd $SRC_DIR/docroot/profiles/sitefarm/tests/cypress
       - export CYPRESS_DRUPAL_BASE_URL='http://localhost'
       - export CYPRESS_BASE_URL='http://localhost'
-      - npm run test:ci -- --quiet --browser chrome
+      - npm run test:ci -- --browser chrome
