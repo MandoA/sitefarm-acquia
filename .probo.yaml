@@ -67,7 +67,8 @@ steps:
     plugin: Script
     script:
       - drush version
-      - $SRC_DIR/factory-hooks/post-install/default_content.sh
+      - drush en sitefarm_default_content -y
+      - drush pm-uninstall default_content rest hal serialization sitefarm_default_content single_content_sync -y
       - drush cr
   - name: Fix files directory permissions
     plugin: Script
