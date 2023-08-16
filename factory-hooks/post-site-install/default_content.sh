@@ -25,7 +25,7 @@ db_role="$3"
 internal_domain="$4"
 
 # The websites' document root can be derived from the site/env:
-docroot="/var/www/html/$site.$env/docroot"
+docroot="/var/www/html/$sitegroup.$env/docroot"
 
 # Acquia recommends the following two practices:
 # 1. Hardcode the drush version.
