@@ -67,7 +67,7 @@ steps:
     plugin: Script
     script:
       - drush version
-      - drush scr "$SRC_DIR/factory-hooks/post-install/default_content.php"
+      - $SRC_DIR/factory-hooks/post-install/default_content.sh
       - drush cr
   - name: Fix files directory permissions
     plugin: Script
