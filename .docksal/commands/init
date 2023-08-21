@@ -69,7 +69,8 @@ cd $DOCROOT_PATH
 fin drush site-install sitefarm -y --site-name="SiteFarm Acquia"
 
 # Install default content
-fin drush scr "../factory-hooks/post-install/default_content.php"
+fin drush en sitefarm_default_content -y
+fin drush pm-uninstall default_content rest hal serialization sitefarm_default_content single_content_sync -y
 
 # Enable the Local modules.
 fin drush en test_session sitefarm_cypress -y
